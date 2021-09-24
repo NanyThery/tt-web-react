@@ -1,12 +1,10 @@
-import "../styles/normalize.css"
 import Head from "next/head"
-import Theme from "../components/Theme/Theme"
-import GlobalStyle from "../components/theme/GlobalStyle"
 import Layout from "../components/Layout"
+import GlobalStyle from "../components/Theme/GlobalStyle"
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Theme>
+    <>
       <GlobalStyle />
       <Head>
         <title>TeachT3ch</title>
@@ -21,7 +19,7 @@ function MyApp({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </Theme>
+    </>
   )
 }
 

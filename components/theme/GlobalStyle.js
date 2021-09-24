@@ -6,10 +6,10 @@ html {
     display: flex; 
     flex-flow: column; 
     align-items: center; 
-    
 }
 body {
     font-family: 'Ubuntu', sans-serif;
+    width: 100%;
     max-width: 1140px; 
     background-color: #F2F6FF;
     margin: 0; 
