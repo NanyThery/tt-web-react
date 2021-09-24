@@ -1,9 +1,12 @@
 import Head from "next/head"
 import Layout from "../components/Layout"
+import GlobalStyle from "../components/theme/GlobalStyle"
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <GlobalStyle />
+
       <Head>
         <title>TeachT3ch</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
