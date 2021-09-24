@@ -16,7 +16,6 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
-
       <Layout>
         <Component {...pageProps} />
       </Layout>
