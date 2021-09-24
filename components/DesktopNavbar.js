@@ -1,6 +1,6 @@
 import MenuItems from "../utils/menuItems"
 import NavLink from "next/link"
-import styled from "styled-components"
+import styled, { theme } from "styled-components"
 
 const NavbarContainerWrapper = styled.div`
   width: 100%;
@@ -12,7 +12,7 @@ const NavbarContainerWrapper = styled.div`
   background-color: transparent;
   box-sizing: border-box;
   font-size: 14px;
-  color: white;
+
   padding: 30px 20px;
   z-index: 10;
   transition: background-color 1s ease-in-out, color 0.5s ease-in,
