@@ -21,7 +21,7 @@ body {
 }
 h1 {
     font-size: 46px;
-    font-weight: 400; 
+    font-weight: 500; 
     line-height: 54px;
     margin: 0;
 }
@@ -52,6 +52,8 @@ h5 {
 
  p {
     margin: 0; 
+    font-weight: 400;
+    line-height: 28px;
  }
 `
 

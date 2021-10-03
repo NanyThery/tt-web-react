@@ -4,6 +4,9 @@ import GlobalStyle from "../components/theme/GlobalStyle"
 import Theme from "../components/theme/Theme"
 
 function MyApp({ Component, pageProps }) {
+  //Change 'true/false" in order to show the open / close mode of the page.
+  const isCourseOpen = true
+
   return (
     <>
       <GlobalStyle />
@@ -22,7 +25,7 @@ function MyApp({ Component, pageProps }) {
           />
         </Head>
         <Layout>
-          <Component {...pageProps} />
+          <Component {...pageProps} isCourseOpen={isCourseOpen} />
         </Layout>
       </Theme>
     </>

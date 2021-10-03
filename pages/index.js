@@ -5,10 +5,14 @@ const Container = styled.div`
   width: 100%;
 `
 
-export default function Home() {
+const onSignUpClick = () => {
+  console.log("Quiero apuntarme")
+}
+
+export default function Home({ isCourseOpen }) {
   return (
     <Container>
-      <Header></Header>
+      <Header isCourseOpen={isCourseOpen} onClick={onSignUpClick}></Header>
     </Container>
   )
 }

@@ -5,7 +5,7 @@ import Brand from "./Brand"
 
 const NavbarContainerWrapper = styled.div`
   width: 100%;
-  max-width: 1140px;
+  max-width: 1108px;
   height: 90px;
   position: fixed;
   display: flex;

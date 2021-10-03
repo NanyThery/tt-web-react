@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components"
 const theme = {
   colors: {
     orange: "#ff7c04",
+    orangeDark: "rgba(234, 114, 3, 1)",
     yellow: "#ffc11a",
     purpleLight: "#9d4edd",
     purple: "#5d21d1",

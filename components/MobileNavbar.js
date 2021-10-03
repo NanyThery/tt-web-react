@@ -92,6 +92,7 @@ const MenuButton = styled.div`
 `
 
 const Panel = styled.div`
+  z-index: 2;
   position: absolute;
   height: 100vh;
   top: 0;
