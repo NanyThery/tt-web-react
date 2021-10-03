@@ -2,22 +2,24 @@ import MenuItems from "../utils/menuItems"
 import NavLink from "next/link"
 import styled from "styled-components"
 import { useState } from "react"
-import { MenuIcon } from "./Icons"
+import { MenuIcon, CloseIcon } from "./Icons"
+import SocialMedia from "../utils/socialMedia"
+import Brand from "../components/Brand"
 
 const MobileNavBarWrapper = styled.div`
   width: 100%;
-  height: 90px;
   position: fixed;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: transparent;
   box-sizing: border-box;
   font-size: 14px;
   color: white;
-  padding: 30px 20px;
+  padding: 16px;
   z-index: 10;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in,
-    padding 0.5s ease-in, height 1s ease-in-out;
+  transition: all 0.5s ease-in-out, color 0.5s ease-in, padding 0.5s ease-in,
+    height 1s ease-in-out;
   &.lightBackground {
     background-color: white;
     color: black;
@@ -28,120 +30,176 @@ const MobileNavBarWrapper = styled.div`
     padding: 15px 20px;
     height: 60px;
   }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 850px) {
     display: none;
   }
 `
 
 const NavBarContainer = styled.div`
+  z-index: 3;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `
 
 const MainLogo = styled.div`
-  height: 30px;
+  height: 28px;
   cursor: pointer;
   > svg {
     height: 100%;
   }
 `
 
-const MenuContainer = styled.ul`
-  list-style: none;
-  padding: 0;
+const MenuContainer = styled.div`
+  display: flex;
+  position: relative;
+  margin-top: 60px;
+  gap: 32px;
+  flex-flow: column;
+  padding: 48px 0 0 0;
 `
 
-const Logo = styled.div`
-  height: 30px;
+const MenuButton = styled.div`
+  height: 42px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  box-shadow: 0px 4px 25px rgba(93, 33, 209, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  gap: 11px;
   cursor: pointer;
+
   > svg {
     height: 100%;
+    fill: ${(props) =>
+      props.positiveStyle ? props.theme.colors.orange : "currentColor"};
+  }
+
+  &.open-menu-btn {
+    background-color: rgb(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  &.close-menu-btn {
+    color: ${(props) => props.theme.colors.text100};
+    background-color: white;
   }
 `
 
 const Panel = styled.div`
   position: absolute;
-  height: 0;
-  top: ${({ scrolledNavBar }) => (scrolledNavBar ? "60px" : "100px")};
-  margin: 0 auto 0 auto;
+  height: 100vh;
+  top: 0;
+  right: -100vw;
   transition: all 0.5s ease-in;
-  overflow: hidden;
-  color: black;
-  background-color: white;
+  overflow: auto;
+  background: ${(props) => props.theme.gradients.backgroundPurple};
   display: flex;
+  justify-content: space-between;
   flex-flow: column;
-  width: ${({ scrolledNavBar }) => (scrolledNavBar ? "100%" : "80%")};
+  width: 100vw;
   &.show-menu {
-    height: 280px;
+    right: 0;
   }
 `
 
-const NavItem = styled.li`
-  cursor: pointer;
+const NavItem = styled.h3`
+  display: flex;
+  justify-content: center;
   border-bottom: none;
-  text-align: center;
-  padding: 10px;
   transition: all 0.2s ease-in-out;
-  &.active {
-    color: red;
+  width: 100%;
+  margin: 0;
+  color: rgb(255, 255, 255, 0.7);
+
+  &.active > p {
+    width: fit-content;
+    text-align: center;
+    background-color: ${(props) =>
+      props.positiveStyle
+        ? props.theme.buttons.menuSelectedPositive
+        : props.theme.buttons.menuSelectedNegative};
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+  }
+
+  &.secondary {
+    font-size: 18px;
+    line-height: 16px;
   }
 `
 
-const MobileNavbar = ({
-  router,
-  scrolledNavBar,
-  isDarkMode,
-  currentLocale,
-}) => {
+const SocialContainer = styled.div`
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+`
+const SocialItem = styled.a`
+  width: 30px;
+  color: rgb(255, 255, 255, 0.7);
+
+  a::active {
+    color: rgb(255, 255, 255, 0.7);
+  }
+`
+
+const MobileNavbar = ({ router }) => {
   const [showMenu, setShowMenu] = useState(false)
+  const positiveStyle = !showMenu
 
   return (
-    <MobileNavBarWrapper
-      className={`${scrolledNavBar && "scrolled-navbar"} ${
-        !isDarkMode && "lightBackground"
-      }`}
-    >
+    <MobileNavBarWrapper>
       <NavBarContainer>
         <NavLink href="/">
           <MainLogo>
-            <img src="../img/logo.svg" />
+            <Brand height="28" width="150" positive={positiveStyle} />
           </MainLogo>
         </NavLink>
 
-        <Logo onClick={() => setShowMenu(!showMenu)}>
-          <MenuIcon />
-        </Logo>
+        <MenuButton
+          onClick={() => setShowMenu(!showMenu)}
+          className={showMenu ? "open-menu-btn" : "close-menu-btn"}
+        >
+          {showMenu ? <CloseIcon /> : <MenuIcon />}
+          Menu
+        </MenuButton>
       </NavBarContainer>
-      <Panel
-        className={showMenu && "show-menu"}
-        scrolledNavBar={scrolledNavBar}
-      >
+      <Panel className={showMenu && "show-menu"}>
         <MenuContainer onClick={() => setShowMenu(!showMenu)}>
           {MenuItems.map((item, index) => {
             return (
-              <NavItem
-                className={router.asPath === item.url && "active"}
-                key={index}
-              >
-                {item.active && (
-                  <NavLink href={item.url}>
-                    <p>{item.label}</p>
-                  </NavLink>
+              <>
+                {item.active && item.mobile && (
+                  <NavItem
+                    className={`${router.asPath === item.url && "active"} ${
+                      item.style
+                    }`}
+                    key={index}
+                  >
+                    <NavLink href={item.url}>
+                      <p>{item.label}</p>
+                    </NavLink>
+                  </NavItem>
                 )}
-              </NavItem>
+              </>
             )
           })}
-          <NavItem>
-            <NavLink
-              href={router.asPath}
-              locale={currentLocale === "es-ES" ? "en-GB" : "es-ES"}
-            >
-              {currentLocale === "es-ES" ? "ENG" : "ES"}
-            </NavLink>
-          </NavItem>
         </MenuContainer>
+        <SocialContainer>
+          {SocialMedia.map(({ icon, url }) => {
+            return (
+              <SocialItem href={url} key={url}>
+                {icon}
+              </SocialItem>
+            )
+          })}
+        </SocialContainer>
       </Panel>
     </MobileNavBarWrapper>
   )

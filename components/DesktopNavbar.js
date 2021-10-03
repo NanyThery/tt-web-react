@@ -1,6 +1,7 @@
 import MenuItems from "../utils/menuItems"
 import NavLink from "next/link"
 import styled, { theme } from "styled-components"
+import Brand from "./Brand"
 
 const NavbarContainerWrapper = styled.div`
   width: 100%;
@@ -12,22 +13,22 @@ const NavbarContainerWrapper = styled.div`
   background-color: transparent;
   box-sizing: border-box;
   font-size: 14px;
+  color: white;
 
-  padding: 30px 20px;
+  padding: 20px 20px;
   z-index: 10;
-  transition: background-color 1s ease-in-out, color 0.5s ease-in,
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in,
     padding 0.5s ease-in, height 1s ease-in-out;
   &.lightBackground {
-    background-color: white;
-    color: black;
+    color: ${(props) => props.theme.colors.text100};
   }
   &.scrolled-navbar {
-    background-color: white;
-    color: black;
-    padding: 15px 20px;
+    color: ${(props) => props.theme.colors.text100};
+    padding: 5px 20px;
     height: 60px;
   }
-  @media only screen and (max-width: 600px) {
+
+  @media only screen and (max-width: 850px) {
     display: none;
   }
 `
@@ -43,7 +44,11 @@ const NavBarContainer = styled.div`
 const ItemsContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 48px;
+
+  @media only screen and (max-width: 1000px) {
+    gap: 20px;
+  }
 `
 
 const NavItem = styled.div`
@@ -51,12 +56,20 @@ const NavItem = styled.div`
   border-bottom: none;
   transition: all 0.2s ease-in-out;
   &.active {
-    color: purple;
+    background-color: ${(props) =>
+      props.positiveStyle
+        ? props.theme.buttons.menuSelectedPositive
+        : props.theme.buttons.menuSelectedNegative};
+    padding: 8px;
+    border-radius: 4px;
   }
   & :hover {
-    color: gray;
+    color: white;
     margin-bottom: 5px;
   }
+  ${(props) =>
+    props.itemStyle === "action" &&
+    "padding: 8px; border: 2px solid white; border-radius: 4px"}
 `
 
 const MainLogo = styled.div`
@@ -67,12 +80,8 @@ const MainLogo = styled.div`
   }
 `
 
-const DesktopNavbar = ({
-  router,
-  scrolledNavBar,
-  isDarkMode,
-  currentLocale,
-}) => {
+const DesktopNavbar = ({ router, scrolledNavBar, isDarkMode }) => {
+  const positiveStyle = (!isDarkMode && !scrolledNavBar) || scrolledNavBar
   return (
     <NavbarContainerWrapper
       className={`${scrolledNavBar && "scrolled-navbar"} ${
@@ -82,22 +91,26 @@ const DesktopNavbar = ({
       <NavBarContainer>
         <NavLink href="/">
           <MainLogo>
-            <img src="../img/logo.svg" />
+            <Brand positive={positiveStyle} />
           </MainLogo>
         </NavLink>
         <ItemsContainer>
           {MenuItems.map((item, index) => {
             return (
-              <NavItem
-                className={router.asPath === item.url && "active"}
-                key={index}
-              >
-                {item.active && (
-                  <NavLink href={item.url}>
-                    <p>{item.label}</p>
-                  </NavLink>
+              <>
+                {item.active && item.desktop && (
+                  <NavItem
+                    positiveStyle={positiveStyle}
+                    itemStyle={item.style}
+                    className={router.asPath === item.url && "active"}
+                    key={index}
+                  >
+                    <NavLink href={item.url}>
+                      <p>{item.label}</p>
+                    </NavLink>
+                  </NavItem>
                 )}
-              </NavItem>
+              </>
             )
           })}
         </ItemsContainer>

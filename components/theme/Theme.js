@@ -13,6 +13,14 @@ const theme = {
     text40: "#e1e5ee",
     text20: "#f2f6ff",
   },
+  buttons: {
+    menuSelectedNegative: "rgba(255, 255, 255, 0.25);",
+    menuSelectedPositive: "rgba(0,0,0,0.25)",
+  },
+  gradients: {
+    backgroundPurple:
+      "linear-gradient(142.63deg, #150639 -6.95%, #3B21D1 42.99%, #9D4EDD 93.83%)",
+  },
 }
 
 const Theme = ({ children }) => (

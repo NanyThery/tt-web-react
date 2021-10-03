@@ -5,7 +5,21 @@ import MobileNavbar from "./MobileNavbar"
 import styled from "styled-components"
 
 const Container = styled.div`
-  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 90px;
+  background-color: transparent;
+  transition: all 0.5s ease;
+
+  @media only screen and (min-width: 850px) {
+    height: 74px;
+    &.scrolled-navbar {
+      background-color: white;
+      height: 60px;
+    }
+  }
 `
 
 export const Navbar = () => {
@@ -26,14 +40,10 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll)
   })
 
+  console.log(scrolledNavBar)
   return (
-    <Container>
-      <MobileNavbar
-        isDarkMode={isDarkMode}
-        router={router}
-        scrolledNavBar={scrolledNavBar}
-        currentLocale={currentLocale}
-      />
+    <Container className={scrolledNavBar && "scrolled-navbar"}>
+      <MobileNavbar router={router} />
       <DesktopNavbar
         isDarkMode={isDarkMode}
         scrolledNavBar={scrolledNavBar}

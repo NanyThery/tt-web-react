@@ -1,34 +1,67 @@
 const MenuItems = [
   {
-    label: "Home",
-    url: "/",
-    active: true,
-  },
-
-  {
     label: "Curso",
     url: "/curso",
     active: true,
+    style: "link",
+    mobile: true,
+    desktop: true,
   },
   {
     label: "Mentores y Profes",
     url: "/staff",
     active: true,
+    style: "link",
+    mobile: true,
+    desktop: true,
   },
   {
     label: "Alumnos",
     url: "/alumnos",
     active: true,
+    style: "link",
+    mobile: true,
+    desktop: true,
   },
   {
     label: "Sobre nosotros",
     url: "/about",
     active: true,
+    style: "link",
+    mobile: true,
+    desktop: true,
   },
   {
     label: "Blog",
     url: "/blog",
     active: true,
+    style: "link",
+    mobile: true,
+    desktop: true,
+  },
+  {
+    label: "Quiero apuntarme",
+    url: "/signup",
+    active: true,
+    style: "action",
+    mobile: false,
+    desktop: true,
+  },
+  {
+    label: "Contacto",
+    url: "/contact",
+    active: true,
+    style: "secondary",
+    mobile: true,
+    desktop: false,
+  },
+  {
+    label: "Código de conducta",
+    url: "/form",
+    active: true,
+    style: "secondary",
+    mobile: true,
+    desktop: false,
   },
 ]
 
