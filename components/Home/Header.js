@@ -12,6 +12,8 @@ const Container = styled.div`
 
   @media only screen and (max-width: 850px) {
     background: transparent;
+    height: fit-content;
+    padding-bottom: 24px;
   }
 `
 

@@ -101,7 +101,7 @@ const Panel = styled.div`
   overflow: auto;
   background: ${(props) => props.theme.gradients.backgroundPurple};
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
   flex-flow: column;
   width: 100vw;
   &.show-menu {

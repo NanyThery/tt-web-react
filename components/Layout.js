@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Navbar from "./Navbar"
+import Footer from "../components/Footer"
 
 const StyledWrapper = styled.div`
   height: 100vh;
@@ -11,6 +12,7 @@ const Layout = ({ children }) => {
     <StyledWrapper>
       <Navbar />
       {children}
+      <Footer></Footer>
     </StyledWrapper>
   )
 }
