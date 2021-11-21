@@ -175,7 +175,7 @@ const MobileNavbar = ({ router }) => {
         <MenuContainer onClick={() => setShowMenu(!showMenu)}>
           {MenuItems.map((item, index) => {
             return (
-              <>
+              <div key={index}>
                 {item.active && item.mobile && (
                   <NavItem
                     className={`${router.asPath === item.url && "active"} ${
@@ -188,7 +188,7 @@ const MobileNavbar = ({ router }) => {
                     </NavLink>
                   </NavItem>
                 )}
-              </>
+              </div>
             )
           })}
         </MenuContainer>

@@ -54,7 +54,7 @@ const PreTitle = styled.div`
   border: 2px solid ${(props) => props.theme.colors.purpleLight};
   border-radius: 4px;
 `
-const Title = styled.h1`
+const Title = styled.div`
   > p {
     line-height: 1;
   }
@@ -88,7 +88,7 @@ const HeroImg = styled.div`
 
 const Header = ({ isCourseOpen, onClick }) => {
   const status = isCourseOpen ? "open" : "closed"
-  console.log(isCourseOpen)
+
   return (
     <Container>
       <HeroContainer>

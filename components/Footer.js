@@ -126,7 +126,7 @@ const Footer = () => {
         <ul>
           {footerItems.links.map((item, index) => {
             return (
-              <>
+              <div key={index}>
                 {item.active && (
                   <NavItem key={index}>
                     <NavLink href={item.url}>
@@ -134,7 +134,7 @@ const Footer = () => {
                     </NavLink>
                   </NavItem>
                 )}
-              </>
+              </div>
             )
           })}
         </ul>
