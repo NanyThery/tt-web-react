@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import SectionLayout from "../SectionLayout"
-import copies from "../../utils/copies"
+import { home } from "../../utils/copies"
 import Image from "next/image"
 import heroImg from "../../public/img/Hero-image.png"
 import Button from "../Button"
@@ -93,9 +93,9 @@ const Header = ({ isCourseOpen, onClick }) => {
     <Container>
       <HeroContainer>
         <HeroInfo>
-          <PreTitle>{copies.home.header["preTitle"][status]}</PreTitle>
-          <Title>{copies.home.header.title}</Title>
-          <Description>{copies.home.header["description"][status]}</Description>
+          <PreTitle>{home.header["preTitle"][status]}</PreTitle>
+          <Title>{home.header.title}</Title>
+          <Description>{home.header["description"][status]}</Description>
           <ActionsContainer>
             {isCourseOpen ? (
               <Button variant="primary" onClick={onClick}>

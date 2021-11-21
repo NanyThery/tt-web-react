@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import copies from "../../utils/copies"
+import { home } from "../../utils/copies"
 import NavLink from "next/link"
 import SectionLayout from "../SectionLayout"
 import Button from "../Button"
@@ -137,12 +137,12 @@ const AboutUsSection = ({}) => {
         </AboutUsImage>
       </LeftCol>
       <RightCol>
-        <Title>{copies.home.aboutUsSection.title}</Title>
-        {copies.home.aboutUsSection.description}
+        <Title>{home.aboutUsSection.title}</Title>
+        {home.aboutUsSection.description}
         <Button variant="primary" onClick={handlePrimaryCTA}>
-          {copies.home.aboutUsSection.cta}
+          {home.aboutUsSection.cta}
         </Button>
-        <NavLink href="/about">{copies.home.aboutUsSection.link}</NavLink>
+        <NavLink href="/about">{home.aboutUsSection.link}</NavLink>
       </RightCol>
     </Container>
   )

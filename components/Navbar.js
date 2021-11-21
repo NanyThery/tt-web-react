@@ -12,6 +12,7 @@ const Container = styled.div`
   height: 90px;
   background-color: transparent;
   transition: all 0.5s ease;
+  z-index: 5;
 
   @media only screen and (min-width: 850px) {
     height: 74px;
