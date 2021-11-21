@@ -40,7 +40,6 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll)
   })
 
-  console.log(scrolledNavBar)
   return (
     <Container className={scrolledNavBar && "scrolled-navbar"}>
       <MobileNavbar router={router} />

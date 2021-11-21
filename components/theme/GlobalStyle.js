@@ -55,6 +55,18 @@ h5 {
     font-weight: 400;
     line-height: 28px;
  }
+
+ .bold {
+  font-weight: bold;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.color-emphasys {
+  color: #ff7c04;
+}
 `
 
 export default GlobalStyle

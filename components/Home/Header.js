@@ -55,13 +55,9 @@ const PreTitle = styled.div`
   border-radius: 4px;
 `
 const Title = styled.h1`
-  > span.no-wrap {
-    white-space: nowrap;
-    > span.emphasys {
-      color: ${(props) => props.theme.colors.orange};
-    }
+  > p {
+    line-height: 1;
   }
-
   @media only screen and (max-width: 850px) {
     text-align: center;
   }
@@ -98,14 +94,7 @@ const Header = ({ isCourseOpen, onClick }) => {
       <HeroContainer>
         <HeroInfo>
           <PreTitle>{copies.home.header["preTitle"][status]}</PreTitle>
-          <Title>
-            Aprende a{" "}
-            <span className="no-wrap">
-              <span className="emphasys"> {`{`} </span> programar{" "}
-              <span className="emphasys"> {"}"} </span>
-            </span>{" "}
-            desde cero
-          </Title>
+          <Title>{copies.home.header.title}</Title>
           <Description>{copies.home.header["description"][status]}</Description>
           <ActionsContainer>
             {isCourseOpen ? (

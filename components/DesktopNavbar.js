@@ -97,7 +97,7 @@ const DesktopNavbar = ({ router, scrolledNavBar, isDarkMode }) => {
         <ItemsContainer>
           {MenuItems.map((item, index) => {
             return (
-              <>
+              <div key={index}>
                 {item.active && item.desktop && (
                   <NavItem
                     positiveStyle={positiveStyle}
@@ -110,7 +110,7 @@ const DesktopNavbar = ({ router, scrolledNavBar, isDarkMode }) => {
                     </NavLink>
                   </NavItem>
                 )}
-              </>
+              </div>
             )
           })}
         </ItemsContainer>
