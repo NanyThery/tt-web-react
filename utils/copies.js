@@ -214,9 +214,9 @@ export const testimonials = {
       },
       {
         testimonial:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Donec gravida tincidunt euismod. Mauris lacus mi, vulputate eget sem      vitae, imperdiet consectetur urna. In ante sapien, mattis eu nisi ut,     malesuada fringilla massa. Ut pulvinar, quam quis",
-        author: "Teacher 3",
-        image: "default",
+          "Acompañar a una persona en sus primeros pasos en el mundo de la programación es muy reconfortante y una hermosa manera de hacer crecer la comunidad hispana de programadores.",
+        author: "Diego Domínguez",
+        image: "diego-dom.jpg",
         role: "teacher",
         tag: "Mentor y Profe",
         edition: "2021",
