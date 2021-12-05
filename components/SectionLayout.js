@@ -4,7 +4,7 @@ const Container = styled.div`
   display: flex;
   box-sizing: border-box;
   width: 100%;
-  max-width: 1108px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 
