@@ -5,6 +5,8 @@ import { testimonials } from "../utils/copies"
 import Header from "../components/Home/Header"
 import HomeTestimonials from "../components/Home/HomeTestimonials"
 import CourseSection from "../components/Home/CourseSection"
+import AchieveSection from "../components/Home/AchieveSection"
+import CtaSection from "../components/Home/CtaSection"
 
 const Container = styled.div`
   width: 100%;
@@ -24,6 +26,10 @@ export default function Home({ isCourseOpen, testimonials }) {
       <HomeTestimonials data={testimonials} />
       <SectionSeparator/>
       <CourseSection isCourseOpen={isCourseOpen} />
+      <SectionSeparator/>
+      <AchieveSection/>
+      <SectionSeparator/>
+      <CtaSection/>
       <SectionSeparator/>
     </Container>
   )

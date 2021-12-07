@@ -2,46 +2,12 @@ import styled, { css } from "styled-components"
 import SectionLayout from "../SectionLayout"
 import { QuotesIcon } from "../Icons"
 import { useState, useEffect } from "react"
+import SectionTitleDescription from "../SectionTitleDescription"
 
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
   flex-flow: column;
   gap: 16px;
-`
-
-const Title = styled.h1`
-  color: ${(props) => props.theme.colors.purpleDark};
-  line-height: 1;
-  margin-bottom: 16px;
-
-  @media only screen and (max-width: 850px) {
-    text-align: center;
-  }
-`
-
-const DescriptionContainer = styled.div`
-  box-sizing: border-box;
-  padding: 0 24px;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  gap: 32px;
-  width: 100%;
-
-  @media only screen and (max-width: 850px) {
-    width: 100%;
-  }
-
-  > div {
-    width: 50%;
-    @media only screen and (max-width: 850px) {
-      width: 100%;
-    }
-
-    > p {
-      color: ${(props) => props.theme.colors.text80};
-    }
-  }
 `
 
 const TestimonialContainer = styled.div`
@@ -241,12 +207,7 @@ const HomeTestimonials = ({ data: testimonials }) => {
 
   return (
     <Container>
-      <DescriptionContainer>
-        <div>
-          <Title>{testimonials.title}</Title>
-          <p>{testimonials.description}</p>
-        </div>
-      </DescriptionContainer>
+      <SectionTitleDescription title={testimonials.title} description={testimonials.description}/>
       <TestimonialContainer>
         {selectedTestimonials.map(
           ({ testimonial, author, tag, image }, index) => {

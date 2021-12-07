@@ -35,10 +35,42 @@ export const home = {
     cta: "Conoce a los profes y mentores",
     link: "O descubre cómo surgió Teach[t3ch]",
   },
-  courseSection:{
-    title: 'Mismo curso, dos modalidades',
-    description: "En cada edición buscamos tener un enfoque práctico que te ayude a aprender con las manos en la masa. Podrás completar el curso en dos modalidades, Full Power o A tu aire."
-  }
+  courseSection: {
+    title: "Mismo curso, dos modalidades",
+    description:
+      "En cada edición buscamos tener un enfoque práctico que te ayude a aprender con las manos en la masa. Podrás completar el curso en dos modalidades, Full Power o A tu aire.",
+  },
+  achieveSection: {
+    title: "¿Y cómo lo conseguiremos?",
+    description:
+      "La clave está en dedicarle tiempo al curso, al igual que los profes y mentores lo dedican en prepararlo para ti.",
+    items: [
+      {
+        img: "calendar.png",
+        title: "Clases semanales",
+        description:
+          "Clases online una vez por semana donde prodrás interactuar con otros alumnos y profesores",
+      },
+      {
+        img: "carpeta.png",
+        title: "Ejercicios",
+        description:
+          "Tendrás ejercicios para aplica los nuevos conocimientos de diversa dificultad",
+      },
+      {
+        img: "manos.png",
+        title: "Una mentorización",
+        description:
+          "Uno de nuestros miembros de Teach[T3ch] te acompañará personalmente durante todo el proceso",
+      },
+      {
+        img: "mano-lapiz.png",
+        title: "Proyecto final",
+        description:
+          "Harás un proyecto que tú elijas para poner en práctica todo lo que has aprendido",
+      },
+    ],
+  },
 }
 
 export const testimonials = {
@@ -231,9 +263,9 @@ export const testimonials = {
 
 export const courseInfo = {
   modA: {
-    icon: '🔥',
+    icon: "🔥",
     title: "Full Power",
-    imgFileName: 'full-power.png',
+    imgFileName: "full-power.png",
     description: (
       <p>
         Ideal si puedes dedicarle al menos{" "}
@@ -271,9 +303,9 @@ export const courseInfo = {
   },
   modB: {
     title: "A tu aire",
-    icon: '🌊',
+    icon: "🌊",
     description: "Por tu cuenta y a tu ritmo",
-    imgFileName: 'a-tu-aire.png',
+    imgFileName: "a-tu-aire.png",
     summary: [
       { icon: "cup", text: "Gestionas tu ritmo" },
       { icon: "book", text: "Dispones de las clases, ejercicios y soluciones" },

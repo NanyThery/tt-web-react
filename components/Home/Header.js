@@ -1,8 +1,6 @@
 import styled from "styled-components"
 import SectionLayout from "../SectionLayout"
 import { home } from "../../utils/copies"
-import Image from "next/image"
-import heroImg from "../../public/img/Hero-image.png"
 import Button from "../Button"
 
 const Container = styled.div`
