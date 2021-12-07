@@ -35,6 +35,10 @@ export const home = {
     cta: "Conoce a los profes y mentores",
     link: "O descubre cómo surgió Teach[t3ch]",
   },
+  courseSection:{
+    title: 'Mismo curso, dos modalidades',
+    description: "En cada edición buscamos tener un enfoque práctico que te ayude a aprender con las manos en la masa. Podrás completar el curso en dos modalidades, Full Power o A tu aire."
+  }
 }
 
 export const testimonials = {
@@ -222,5 +226,77 @@ export const testimonials = {
         edition: "2021",
       },
     ],
+  },
+}
+
+export const courseInfo = {
+  modA: {
+    icon: '🔥',
+    title: "Full Power",
+    imgFileName: 'full-power.png',
+    description: (
+      <p>
+        Ideal si puedes dedicarle al menos{" "}
+        <span className="bold"> 10 horas</span> a la semana
+      </p>
+    ),
+    summary: [
+      { icon: "smile", text: "Una mentora o mentor asignado" },
+      { icon: "chat", text: "Grupo privado con otros alumnos" },
+      { icon: "code", text: "Clases en directo" },
+      { icon: "people", text: "Mentorización del proyecto" },
+      { icon: "medal", text: "Diploma tras presentar el proyecto" },
+    ],
+    requirements: [
+      { icon: "check", text: "Implicación con las clases y ejercicios" },
+      {
+        icon: "check",
+        text: "Edad mínima 15 años (menores require autorización)",
+      },
+      { icon: "check", text: "Ningún conocimiento de programación previo" },
+    ],
+    cta: {
+      open: { icon: "check", text: "Quiero apuntarme", url: "#" },
+      closed: {
+        icon: "info",
+        text: (
+          <p>
+            <span className="bold"> Inscripciones cerradas.</span> Pero puedes
+            apuntante a la <a href="#newsletter">newsletter</a> para estar al
+            tanto de las nuevas ediciones y eventos
+          </p>
+        ),
+      },
+    },
+  },
+  modB: {
+    title: "A tu aire",
+    icon: '🌊',
+    description: "Por tu cuenta y a tu ritmo",
+    imgFileName: 'a-tu-aire.png',
+    summary: [
+      { icon: "cup", text: "Gestionas tu ritmo" },
+      { icon: "book", text: "Dispones de las clases, ejercicios y soluciones" },
+      { icon: "cross", text: "No entregas ejercicios" },
+      { icon: "cross", text: "No entregas proyecto" },
+      { icon: "cross", text: "No dispones de mentor" },
+    ],
+    requirements: [
+      { icon: "check", text: "Solo requieres de constancia" },
+      { icon: "check", text: "Ningún conocimiento de programación previo" },
+    ],
+    cta: {
+      open: { icon: "check", text: "Quiero apuntarme", url: "#" },
+      closed: {
+        icon: "info",
+        text: (
+          <p>
+            <span className="bold"> Inscripciones cerradas.</span> Pero puedes
+            apuntante a la <a href="#newsletter">newsletter</a> para estar al
+            tanto de las nuevas ediciones y eventos
+          </p>
+        ),
+      },
+    },
   },
 }

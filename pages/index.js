@@ -4,6 +4,7 @@ import SectionSeparator from "../components/SectionSeparator"
 import { testimonials } from "../utils/copies"
 import Header from "../components/Home/Header"
 import HomeTestimonials from "../components/Home/HomeTestimonials"
+import CourseSection from "../components/Home/CourseSection"
 
 const Container = styled.div`
   width: 100%;
@@ -21,6 +22,9 @@ export default function Home({ isCourseOpen, testimonials }) {
       <AboutUsSection></AboutUsSection>
       <SectionSeparator />
       <HomeTestimonials data={testimonials} />
+      <SectionSeparator/>
+      <CourseSection isCourseOpen={isCourseOpen} />
+      <SectionSeparator/>
     </Container>
   )
 }
