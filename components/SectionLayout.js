@@ -8,6 +8,7 @@ const Container = styled.div`
   margin: 0 auto;
 
   @media only screen and (min-width: 500px) and (max-width: 850px) {
+    max-width: 575px;
     padding: 0 50px;
   }
 

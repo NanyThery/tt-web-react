@@ -8,27 +8,36 @@ const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
+  flex-flow: column; 
 
   @media only screen and (max-width: 850px) {
-    background: transparent;
     flex-flow: wrap column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    padding: 0;
   }
+`
+const StyledDescription = styled((props) => (
+  <SectionTitleDescription {...props} />
+))`
+  padding: 0 24px;
 `
 
 const CourseWrapper = styled.div`
-display: flex; 
-justify-content: center;
-` 
+  display: flex;
+  justify-content: center;
+  width: 100%; 
+`
 
-const CourseSection = ({isCourseOpen}) => {
+const CourseSection = ({ isCourseOpen }) => {
   return (
     <Container>
-      <SectionTitleDescription title={home.courseSection.title} description={home.courseSection.description} />
+      <StyledDescription
+        title={home.courseSection.title}
+        description={home.courseSection.description}
+      />
       <CourseWrapper>
-      <CourseTabs isCourseOpen={isCourseOpen}></CourseTabs>
+        <CourseTabs isCourseOpen={isCourseOpen}></CourseTabs>
       </CourseWrapper>
     </Container>
   )

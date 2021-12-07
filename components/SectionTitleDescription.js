@@ -9,6 +9,7 @@ const Title = styled.h1`
   @media only screen and (max-width: 850px) {
     max-width: fit-content;
     text-align: center;
+    font-size: 36px; 
   }
 `
 const DescriptionContainer = styled.div`
@@ -33,9 +34,9 @@ const DescriptionContainer = styled.div`
   }
 `
 
-const SectionTitleDescription = ({ title, description }) => {
+const SectionTitleDescription = ({ title, description, ...others }) => {
   return (
-    <DescriptionContainer>
+    <DescriptionContainer {...others}>
       <div>
         <Title>{title}</Title>
         <p>{description}</p>

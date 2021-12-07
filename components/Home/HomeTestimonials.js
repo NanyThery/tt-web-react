@@ -20,7 +20,6 @@ const TestimonialContainer = styled.div`
     "card1 card1 card2"
     "card3 card4 card4"
     "card5 card5 card6";
-  padding: 20px;
   gap: 16px;
 
   @media only screen and (max-width: 650px) {
