@@ -4,6 +4,7 @@ import NavLink from "next/link"
 import SectionLayout from "../SectionLayout"
 import Button from "../Button"
 import { useRouter } from "next/router"
+import SectionTitleDescription from "../SectionTitleDescription"
 
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
@@ -24,7 +25,6 @@ const LeftCol = styled.div`
     width: 100%;
   }
 `
-
 const AboutUsImage = styled.div`
   position: relative;
   align-items: center;
@@ -92,10 +92,8 @@ const AboutUsImage = styled.div`
     }
   }
 `
-
 const RightCol = styled.div`
   width: 50%;
-  padding: 0 24px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -103,21 +101,19 @@ const RightCol = styled.div`
 
   @media only screen and (max-width: 850px) {
     width: 100%;
+    text-align: center;
+
+    > div {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
   }
 
   > p {
     color: ${(props) => props.theme.colors.text80};
   }
 `
-const Title = styled.h1`
-  color: ${(props) => props.theme.colors.purpleDark};
-  line-height: 1;
-
-  @media only screen and (max-width: 850px) {
-    text-align: center;
-  }
-`
-
 const AboutUsSection = ({}) => {
   const router = useRouter()
 
@@ -137,11 +133,15 @@ const AboutUsSection = ({}) => {
         </AboutUsImage>
       </LeftCol>
       <RightCol>
-        <Title>{home.aboutUsSection.title}</Title>
-        {home.aboutUsSection.description}
-        <Button variant="primary" onClick={handlePrimaryCTA}>
-          {home.aboutUsSection.cta}
-        </Button>
+        <SectionTitleDescription
+          title={home.aboutUsSection.title}
+          description={home.aboutUsSection.description}
+        />
+        <div>
+          <Button variant="primary" onClick={handlePrimaryCTA}>
+            {home.aboutUsSection.cta}
+          </Button>
+        </div>
         <NavLink href="/about">{home.aboutUsSection.link}</NavLink>
       </RightCol>
     </Container>
