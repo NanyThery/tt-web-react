@@ -1,6 +1,6 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-const Title = styled.h1`
+export const Title = styled.h1`
   max-width: 400px;
   color: ${(props) => props.theme.colors.purpleDark};
   line-height: 1;
@@ -9,9 +9,9 @@ const Title = styled.h1`
   @media only screen and (max-width: 850px) {
     max-width: 100%;
     text-align: center;
-    font-size: 36px; 
+    font-size: 36px;
   }
-`
+`;
 const DescriptionContainer = styled.div`
   box-sizing: border-box;
   margin-bottom: 30px;
@@ -33,7 +33,7 @@ const DescriptionContainer = styled.div`
       width: 100%;
     }
   }
-`
+`;
 
 const SectionTitleDescription = ({ title, description, ...others }) => {
   return (
@@ -43,7 +43,7 @@ const SectionTitleDescription = ({ title, description, ...others }) => {
         <div>{description}</div>
       </div>
     </DescriptionContainer>
-  )
-}
+  );
+};
 
-export default SectionTitleDescription
+export default SectionTitleDescription;

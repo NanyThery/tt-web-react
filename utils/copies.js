@@ -72,20 +72,25 @@ export const home = {
     ],
   },
   ctaSection: {
-    open:{
-      title: '¡Este año sí que sí!',
-      description: '¿Te interesa lo que has visto? Pues vamos a por ello. El equipo de profes y mentores de TeachT3ch estará encantado de tenerte en nuestras filas.',
-      img: 'home-victory.png',
-      cta: '¡Quiero apuntarme!'
+    open: {
+      title: "¡Este año sí que sí!",
+      description:
+        "¿Te interesa lo que has visto? Pues vamos a por ello. El equipo de profes y mentores de TeachT3ch estará encantado de tenerte en nuestras filas.",
+      img: "home-victory.png",
+      cta: "¡Quiero apuntarme!",
     },
-    closed:{
-      title: 'Únete a nuestra newsletter',
-      description: '¿Te interesa lo que has visto? Si quieres estar al día sobre la apertura de nuevas plazas, trucos sobre programación y mucho más, únete a nuestra newsletter.',
-      img: 'home-sign-hand.png',
-      cta: 'here the email input'
-    }
-  }
-}
+    closed: {
+      title: "Únete a nuestra newsletter",
+      description:
+        "¿Te interesa lo que has visto? Si quieres estar al día sobre la apertura de nuevas plazas, trucos sobre programación y mucho más, únete a nuestra newsletter.",
+      img: "home-sign-hand.png",
+      cta: "here the email input",
+    },
+  },
+  figuresSection: {
+    title: "Ya estamos logrando grandes cosas",
+  },
+};
 
 export const testimonials = {
   title: "Lo que dicen de nosotros",
@@ -273,7 +278,7 @@ export const testimonials = {
       },
     ],
   },
-}
+};
 
 export const courseInfo = {
   modA: {
@@ -345,4 +350,24 @@ export const courseInfo = {
       },
     },
   },
-}
+};
+
+export const figures = [
+  // Add here the new edition figure. The home will only take the last 2
+  {
+    event: "Edición 2021",
+    figures: [
+      { number: 140, description: "Alumnxs FullPower y ATuAire" },
+      { number: "88%", description: "Alumnxs continúan formándose" },
+      { number: 40, description: "Profes y mentorxs" },
+    ],
+  },
+  {
+    event: "Edición 2020",
+    figures: [
+      { number: 19, description: "Alumnxs" },
+      { number: "50%", description: "Alumnxs continuaron formándose" },
+      { number: 11, description: "Profes y mentorxs" },
+    ],
+  },
+];
