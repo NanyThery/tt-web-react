@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import SectionLayout from "../SectionLayout";
 import { figures, home } from "../../utils/copies";
-import Image from "next/Image";
+import Image from "next/image";
 import SectionTitleDescription from "../SectionTitleDescription";
 import { Title } from "../SectionTitleDescription";
 
