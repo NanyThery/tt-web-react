@@ -8,9 +8,6 @@ import { Title } from "../SectionTitleDescription";
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
   gap: 80px;
-  @media only screen and (max-width: 850px) {
-    display: none;
-  }
 `;
 const LeftCol = styled.div`
   width: 50%;
@@ -92,9 +89,9 @@ const Divider = styled.hr`
   border: 1px solid ${(props) => props.theme.colors.text40};
   margin-bottom: 30px;
 `;
-const FiguresSection = () => {
+const FiguresSection = (props) => {
   return (
-    <Container>
+    <Container {...props}>
       <LeftCol>
         <Image
           src="/img/discover.png"

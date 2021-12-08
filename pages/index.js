@@ -8,9 +8,16 @@ import CourseSection from "../components/Home/CourseSection";
 import AchieveSection from "../components/Home/AchieveSection";
 import CtaSection from "../components/Home/CtaSection";
 import FiguresSection from "../components/Home/FiguresSection";
+import FAQSection from "../components/Home/FAQSection";
 
 const Container = styled.div`
   width: 100%;
+
+  @media only screen and (max-width: 850px) {
+    & .not-in-responsive {
+      display: none;
+    }
+  }
 `;
 
 const onSignUpClick = () => {
@@ -30,8 +37,10 @@ export default function Home({ isCourseOpen, testimonials }) {
       <SectionSeparator />
       <AchieveSection />
       <SectionSeparator />
-      <FiguresSection />
-      <SectionSeparator />
+      <FiguresSection className="not-in-responsive" />
+      <SectionSeparator className="not-in-responsive" />
+      <FAQSection className="not-in-responsive" />
+      <SectionSeparator className="not-in-responsive" />
       <CtaSection isCourseOpen={isCourseOpen} />
       <SectionSeparator />
     </Container>

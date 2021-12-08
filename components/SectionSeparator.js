@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Container = styled.div`
   height: 96px;
@@ -7,10 +7,10 @@ const Container = styled.div`
   @media only screen and (max-width: 850px) {
     height: 48px;
   }
-`
+`;
 
-const SectionSeparator = () => {
-  return <Container />
-}
+const SectionSeparator = (props) => {
+  return <Container {...props} />;
+};
 
-export default SectionSeparator
+export default SectionSeparator;
