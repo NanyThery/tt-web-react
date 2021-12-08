@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { home } from "../../utils/copies"
 import NavLink from "next/link"
 import SectionLayout from "../SectionLayout"
-import Button from "../Button"
+import {ButtonPrimary} from "../Button"
 import { useRouter } from "next/router"
 import SectionTitleDescription from "../SectionTitleDescription"
 
@@ -138,9 +138,9 @@ const AboutUsSection = ({}) => {
           description={home.aboutUsSection.description}
         />
         <div>
-          <Button variant="primary" onClick={handlePrimaryCTA}>
+          <ButtonPrimary onClick={handlePrimaryCTA}>
             {home.aboutUsSection.cta}
-          </Button>
+          </ButtonPrimary>
         </div>
         <NavLink href="/about">{home.aboutUsSection.link}</NavLink>
       </RightCol>

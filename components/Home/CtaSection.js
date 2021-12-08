@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import SectionLayout from "../SectionLayout"
 import { home } from "../../utils/copies"
-import Button from "../Button"
+import Button, { ButtonSecondaryWhite } from "../Button"
 import Image from "next/image"
 
 const Container = styled((props) => <SectionLayout {...props} />)`
@@ -97,9 +97,9 @@ const CtaSection = ({ isCourseOpen, onClick }) => {
         <Description>{home.ctaSection[status]["description"]}</Description>
         <ActionsContainer>
           {isCourseOpen ? (
-            <Button variant="secondaryWhite" onClick={onClick}>
+            <ButtonSecondaryWhite onClick={onClick}>
               {home.ctaSection[status]["cta"]}
-            </Button>
+            </ButtonSecondaryWhite>
           ) : (
             <div> {home.ctaSection[status]["cta"]} </div>
           )}

@@ -3,7 +3,7 @@ import { courseInfo } from "../utils/copies"
 import { useState } from "react"
 import Image from "next/image"
 import { getIconByName } from "./Icons"
-import Button from "./Button"
+import {ButtonPrimary} from "./Button"
 
 const Container = styled.div`
   background-color: white;
@@ -210,9 +210,9 @@ const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
           <div className="right-col-bottom">
             {console.log(isCourseOpen)}
             {isCourseOpen ? (
-              <Button variant="primary" onClick={() => {}}>
+              <ButtonPrimary onClick={() => {}}>
                 {courseInfo[option]["cta"]["open"]["text"]}
-              </Button>
+              </ButtonPrimary>
             ) : (
               <InfoBox>
                 {getIconByName(courseInfo[option]["cta"]["closed"]["icon"])}

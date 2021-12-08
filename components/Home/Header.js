@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import SectionLayout from "../SectionLayout"
 import { home } from "../../utils/copies"
-import Button from "../Button"
+import Button, { ButtonPrimary } from "../Button"
 
 const Container = styled.div`
   height: 700px;
@@ -96,9 +96,9 @@ const Header = ({ isCourseOpen, onClick }) => {
           <Description>{home.header["description"][status]}</Description>
           <ActionsContainer>
             {isCourseOpen ? (
-              <Button variant="primary" onClick={onClick}>
+              <ButtonPrimary onClick={onClick}>
                 Quiero apuntarme
-              </Button>
+              </ButtonPrimary>
             ) : (
               <div> Newsletter </div>
             )}

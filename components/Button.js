@@ -1,52 +1,40 @@
 import styled from "styled-components"
 
-//@TODO re-do with button and Styled button instead of variants like this. Hover is not working.
-const componentVariants = (theme) => ({
-  primary: {
-    color: "white",
-    backgroundColor: theme.colors.orange,
-    "&:hover": {
-      backgroundColor: theme.colors.darkOrange,
-    },
-  },
-  secondary: {
-    color: theme.colors.orange,
-    border: `2px solid ${theme.colors.orange}`,
-    backgroundColor: "transparent",
-    "&:hover": {
-      color: theme.colors.darkOrange,
-      border: `2px solid ${theme.colors.darkOrange}`,
-    },
-  },
-  secondaryWhite: {
-    color: 'white',
-    border: `2px solid white`,
-    backgroundColor: "transparent",
-    '&:hover': {
-      color: theme.colors.darkOrange,
-      border: `2px solid ${theme.colors.darkOrange}`,
-    },
-  },
-})
-
-const Container = styled.div`
+const Button = styled.button`
   padding: 16px 24px;
   border-radius: 4px;
   width: fit-content;
   cursor: pointer;
-
-  ${(props) => componentVariants(props.theme)[props.variant]}
-
 `
 
-const Button = (props) => {
-  const { variant, size, children, onClick, ...others } = props
+export const ButtonPrimary = styled(Button)`
+  color: white;
+  border: none;
+  background-color: ${(props) => props.theme.colors.orange};
 
-  return (
-    <Container variant={variant} size={size} {...others} onClick={onClick}>
-      {children}
-    </Container>
-  )
-}
+  &:hover {
+    background-color: ${(props) => props.theme.colors.orangeDark};
+  }
+`
+export const ButtonSecondary = styled(Button)`
+  color: ${(props) => props.theme.colors.orange};
+  border: 2px solid ${(props) => props.theme.colors.orange};
+  background-color: transparent;
+
+  &:hover {
+    color: ${(props) => props.theme.colors.orangeDark};
+    border: 2px solid ${(props) => props.theme.colors.orangeDark};
+  }
+`
+
+export const ButtonSecondaryWhite = styled(Button)`
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  &:hover {
+    color: ${(props) => props.theme.colors.orangeDark};
+    border: 2px solid ${(props) => props.theme.colors.orangeDark};
+  }
+`
 
 export default Button
