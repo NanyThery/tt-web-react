@@ -1,11 +1,11 @@
-import Head from "next/head"
-import Layout from "../components/Layout"
-import GlobalStyle from "../components/theme/GlobalStyle"
-import Theme from "../components/theme/Theme"
+import Head from "next/head";
+import Layout from "../components/Layout";
+import GlobalStyle from "../components/theme/GlobalStyle";
+import Theme from "../components/theme/Theme";
 
 function MyApp({ Component, pageProps }) {
   //Change 'true/false" in order to show the open / close mode of the page.
-  const isCourseOpen = true
+  const isCourseOpen = false;
 
   return (
     <>
@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
         </Layout>
       </Theme>
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

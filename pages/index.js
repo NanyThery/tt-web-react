@@ -20,14 +20,10 @@ const Container = styled.div`
   }
 `;
 
-const onSignUpClick = () => {
-  console.log("Quiero apuntarme");
-};
-
 export default function Home({ isCourseOpen, testimonials }) {
   return (
     <Container>
-      <Header isCourseOpen={isCourseOpen} onClick={onSignUpClick}></Header>
+      <Header isCourseOpen={isCourseOpen}></Header>
       <SectionSeparator />
       <AboutUsSection></AboutUsSection>
       <SectionSeparator />
