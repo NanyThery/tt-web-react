@@ -1,10 +1,10 @@
-import styled from "styled-components"
-import { home } from "../../utils/copies"
-import NavLink from "next/link"
-import SectionLayout from "../SectionLayout"
-import {ButtonPrimary} from "../Button"
-import { useRouter } from "next/router"
-import SectionTitleDescription from "../SectionTitleDescription"
+import styled from "styled-components";
+import { home } from "../../utils/copies";
+import NavLink from "next/link";
+import SectionLayout from "../SectionLayout";
+import { ButtonPrimary } from "../Button";
+import { useRouter } from "next/router";
+import SectionTitleDescription from "../SectionTitleDescription";
 
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
@@ -12,7 +12,7 @@ const Container = styled((props) => <SectionLayout {...props} />)`
     flex-wrap: wrap-reverse;
     gap: 24px;
   }
-`
+`;
 const LeftCol = styled.div`
   margin: 0 24px;
   position: relative;
@@ -24,7 +24,7 @@ const LeftCol = styled.div`
   @media only screen and (max-width: 850px) {
     width: 100%;
   }
-`
+`;
 const AboutUsImage = styled.div`
   position: relative;
   align-items: center;
@@ -91,7 +91,7 @@ const AboutUsImage = styled.div`
       height: 175px;
     }
   }
-`
+`;
 const RightCol = styled.div`
   width: 50%;
   display: flex;
@@ -113,13 +113,13 @@ const RightCol = styled.div`
   > p {
     color: ${(props) => props.theme.colors.text80};
   }
-`
+`;
 const AboutUsSection = ({}) => {
-  const router = useRouter()
+  const router = useRouter();
 
   const handlePrimaryCTA = () => {
-    router.push("/staff")
-  }
+    router.push("/staff");
+  };
   return (
     <Container>
       <LeftCol>
@@ -145,7 +145,7 @@ const AboutUsSection = ({}) => {
         <NavLink href="/about">{home.aboutUsSection.link}</NavLink>
       </RightCol>
     </Container>
-  )
-}
+  );
+};
 
-export default AboutUsSection
+export default AboutUsSection;

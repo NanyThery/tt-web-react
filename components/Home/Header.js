@@ -3,6 +3,7 @@ import SectionLayout from "../SectionLayout";
 import { home } from "../../utils/copies";
 import { ButtonPrimary } from "../Button";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Container = styled.div`
   width: 100%;
@@ -84,8 +85,13 @@ const HeroImg = styled.div`
   }
 `;
 
-const Header = ({ isCourseOpen, onClick }) => {
+const Header = ({ isCourseOpen }) => {
   const status = isCourseOpen ? "open" : "closed";
+  const router = useRouter();
+
+  const handlePrimaryCTA = () => {
+    router.push("/curso");
+  };
 
   return (
     <Container>
@@ -96,7 +102,9 @@ const Header = ({ isCourseOpen, onClick }) => {
           <Description>{home.header["description"][status]}</Description>
           <ActionsContainer>
             {isCourseOpen ? (
-              <ButtonPrimary onClick={onClick}>Quiero apuntarme</ButtonPrimary>
+              <ButtonPrimary onClick={handlePrimaryCTA}>
+                Quiero apuntarme
+              </ButtonPrimary>
             ) : (
               <div> Newsletter </div>
             )}
