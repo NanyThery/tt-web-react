@@ -1,60 +1,44 @@
-import styled from 'styled-components'
-import SectionLayout from '../SectionLayout'
+import styled from "styled-components"
+import SectionLayout from "../SectionLayout"
 import { home } from "../../utils/copies"
-import Button from '../Button'
+import Button from "../Button"
+import Image from "next/image"
 
-
-const Container = styled.div`
-  height: 700px;
-  width: 100%;
-  background: ${(props) => props.theme.gradients.backgroundPurple};
-
-  @media only screen and (max-width: 850px) {
-    background: transparent;
-    height: fit-content;
-    padding-bottom: 24px;
-  }
-`
-
-
-const HeroContainer = styled((props) => <SectionLayout {...props} />)`
+const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
   justify-content: space-between;
-  padding: 100px 20px 0 20px;
   box-sizing: border-box;
+  border-radius: 6px;
+  background: ${(props) => props.theme.gradients.backgroundPurple};
+  gap: 24px; 
 
   @media only screen and (max-width: 850px) {
-    background: transparent;
-    flex-flow: wrap column;
+    flex-flow: wrap;
     justify-content: center;
     align-items: center;
     gap: 40px;
   }
 `
-const HeroInfo = styled.div`
+const LeftCol = styled.div`
+  width: 50%;
+  height: 100%;
   color: ${(props) => props.theme.colors.text20};
-  max-width: 540px;
+  padding: 80px 0 80px 80px;
   display: flex;
-  flex-wrap: wrap;
   flex-flow: column;
   justify-content: center;
   box-sizing: border-box;
   gap: 16px;
 
   @media only screen and (max-width: 850px) {
+    width: 100%;
+    padding: 32px 32px 0 32px; 
     align-items: center;
-    color: ${(props) => props.theme.colors.text100};
+    color: ${(props) => props.theme.colors.white};
   }
 `
 
-const PreTitle = styled.div`
-  width: fit-content;
-  font-weight: 700;
-  padding: 5px 10px;
-  border: 2px solid ${(props) => props.theme.colors.purpleLight};
-  border-radius: 4px;
-`
-const Title = styled.div`
+const Title = styled.h2`
   > p {
     line-height: 1;
   }
@@ -68,21 +52,38 @@ const Description = styled.p`
 
   @media only screen and (max-width: 850px) {
     text-align: center;
-    color: ${(props) => props.theme.colors.text80};
+
   }
 `
 
 const ActionsContainer = styled.div`
   margin-top: 10px;
 `
-const HeroImg = styled.div`
-  height: 100%;
+const RightCol = styled.div`
+  width: 50%;
+  padding: 40px 40px 40px 0;
+  display: flex;
+  justify-content: center;
+  > div {
+    width: 75%;
+    height: 100%;
+    position: relative;
+    display: flex; 
+    align-items: center;
+  }
 
-  max-height: 513px;
-
-  > img {
+    @media only screen and (max-width: 850px) {
     width: 100%;
-    height: auto;
+    padding: 0; 
+    align-items: center;
+    color: ${(props) => props.theme.colors.white};
+    > div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex; 
+    align-items: center;
+  }
   }
 `
 
@@ -91,28 +92,31 @@ const CtaSection = ({ isCourseOpen, onClick }) => {
 
   return (
     <Container>
-      <HeroContainer>
-        <HeroInfo>
-          <PreTitle>{home.header["preTitle"][status]}</PreTitle>
-          <Title>{home.header.title}</Title>
-          <Description>{home.header["description"][status]}</Description>
-          <ActionsContainer>
-            {isCourseOpen ? (
-              <Button variant="primary" onClick={onClick}>
-                Quiero apuntarme
-              </Button>
-            ) : (
-              <div> Newsletter </div>
-            )}
-          </ActionsContainer>
-        </HeroInfo>
-        <HeroImg>
-          <img
-            src="../img/Hero-image.png"
+      <LeftCol>
+        <Title>{home.ctaSection[status]["title"]}</Title>
+        <Description>{home.ctaSection[status]["description"]}</Description>
+        <ActionsContainer>
+          {isCourseOpen ? (
+            <Button variant="secondaryWhite" onClick={onClick}>
+              {home.ctaSection[status]["cta"]}
+            </Button>
+          ) : (
+            <div> {home.ctaSection[status]["cta"]} </div>
+          )}
+        </ActionsContainer>
+      </LeftCol>
+      <RightCol>
+        <div>
+          <Image
+            key={home.ctaSection[status]["cta"]}
+            src={`/img/${home.ctaSection[status]["img"]}`}
             alt="TeachT3ch aprende a programar"
+            width="426"
+            height="326"
+            layout="intrinsic"
           />
-        </HeroImg>
-      </HeroContainer>
+        </div>
+      </RightCol>
     </Container>
   )
 }

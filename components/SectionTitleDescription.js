@@ -7,7 +7,7 @@ const Title = styled.h1`
   margin-bottom: 16px;
 
   @media only screen and (max-width: 850px) {
-    max-width: fit-content;
+    max-width: 100%;
     text-align: center;
     font-size: 36px; 
   }
@@ -22,8 +22,9 @@ const DescriptionContainer = styled.div`
   width: 100%;
 
   > div {
-    > p {
+    > div {
       color: ${(props) => props.theme.colors.text80};
+      line-height: 2;
     }
   }
 
@@ -39,7 +40,7 @@ const SectionTitleDescription = ({ title, description, ...others }) => {
     <DescriptionContainer {...others}>
       <div>
         <Title>{title}</Title>
-        <p>{description}</p>
+        <div>{description}</div>
       </div>
     </DescriptionContainer>
   )

@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+//@TODO re-do with button and Styled button instead of variants like this. Hover is not working.
 const componentVariants = (theme) => ({
   primary: {
     color: "white",
@@ -17,6 +18,15 @@ const componentVariants = (theme) => ({
       border: `2px solid ${theme.colors.darkOrange}`,
     },
   },
+  secondaryWhite: {
+    color: 'white',
+    border: `2px solid white`,
+    backgroundColor: "transparent",
+    '&:hover': {
+      color: theme.colors.darkOrange,
+      border: `2px solid ${theme.colors.darkOrange}`,
+    },
+  },
 })
 
 const Container = styled.div`
@@ -26,6 +36,7 @@ const Container = styled.div`
   cursor: pointer;
 
   ${(props) => componentVariants(props.theme)[props.variant]}
+
 `
 
 const Button = (props) => {

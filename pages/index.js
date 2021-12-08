@@ -29,7 +29,7 @@ export default function Home({ isCourseOpen, testimonials }) {
       <SectionSeparator/>
       <AchieveSection/>
       <SectionSeparator/>
-      <CtaSection/>
+      <CtaSection isCourseOpen={isCourseOpen}/>
       <SectionSeparator/>
     </Container>
   )

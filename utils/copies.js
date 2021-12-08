@@ -71,6 +71,20 @@ export const home = {
       },
     ],
   },
+  ctaSection: {
+    open:{
+      title: '¡Este año sí que sí!',
+      description: '¿Te interesa lo que has visto? Pues vamos a por ello. El equipo de profes y mentores de TeachT3ch estará encantado de tenerte en nuestras filas.',
+      img: 'home-victory.png',
+      cta: '¡Quiero apuntarme!'
+    },
+    closed:{
+      title: 'Únete a nuestra newsletter',
+      description: '¿Te interesa lo que has visto? Si quieres estar al día sobre la apertura de nuevas plazas, trucos sobre programación y mucho más, únete a nuestra newsletter.',
+      img: 'home-sign-hand.png',
+      cta: 'here the email input'
+    }
+  }
 }
 
 export const testimonials = {
