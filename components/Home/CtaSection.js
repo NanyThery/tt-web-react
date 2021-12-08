@@ -10,7 +10,7 @@ const Container = styled((props) => <SectionLayout {...props} />)`
   box-sizing: border-box;
   border-radius: 6px;
   background: ${(props) => props.theme.gradients.backgroundPurple};
-  gap: 24px; 
+  gap: 24px;
 
   @media only screen and (max-width: 850px) {
     flex-flow: wrap;
@@ -32,7 +32,7 @@ const LeftCol = styled.div`
 
   @media only screen and (max-width: 850px) {
     width: 100%;
-    padding: 32px 32px 0 32px; 
+    padding: 32px 32px 0 32px;
     align-items: center;
     color: ${(props) => props.theme.colors.white};
   }
@@ -52,7 +52,6 @@ const Description = styled.p`
 
   @media only screen and (max-width: 850px) {
     text-align: center;
-
   }
 `
 
@@ -68,22 +67,18 @@ const RightCol = styled.div`
     width: 75%;
     height: 100%;
     position: relative;
-    display: flex; 
+    display: flex;
     align-items: center;
   }
 
-    @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 850px) {
     width: 100%;
-    padding: 0; 
+    padding: 0;
     align-items: center;
     color: ${(props) => props.theme.colors.white};
     > div {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex; 
-    align-items: center;
-  }
+      height: 100%;
+    }
   }
 `
 
