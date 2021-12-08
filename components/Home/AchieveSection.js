@@ -1,8 +1,8 @@
-import styled from "styled-components"
-import SectionLayout from "../SectionLayout"
-import { home } from "../../utils/copies"
-import Image from "next/Image"
-import SectionTitleDescription from "../SectionTitleDescription"
+import styled from "styled-components";
+import SectionLayout from "../SectionLayout";
+import { home } from "../../utils/copies";
+import Image from "next/image";
+import SectionTitleDescription from "../SectionTitleDescription";
 
 const Container = styled((props) => <SectionLayout {...props} />)`
   box-sizing: border-box;
@@ -14,7 +14,7 @@ const Container = styled((props) => <SectionLayout {...props} />)`
     flex-wrap: wrap-reverse;
     gap: 25px;
   }
-`
+`;
 const RightCol = styled.div`
   width: 50%;
   display: flex;
@@ -46,7 +46,7 @@ const RightCol = styled.div`
       display: none;
     }
   }
-`
+`;
 const LeftCol = styled.div`
   box-sizing: border-box;
   width: 50%;
@@ -80,9 +80,7 @@ const LeftCol = styled.div`
       transform: none;
     }
   }
-
-
-`
+`;
 const Card = styled.div`
   min-height: 250px;
   padding: 12px;
@@ -123,7 +121,7 @@ const Card = styled.div`
       font-size: 16px;
     }
   }
-`
+`;
 
 const AchieveSection = () => {
   return (
@@ -188,8 +186,11 @@ const AchieveSection = () => {
         </div>
       </LeftCol>
       <RightCol>
-        <SectionTitleDescription title={home.achieveSection.title} description={home.achieveSection.description}/>
-       
+        <SectionTitleDescription
+          title={home.achieveSection.title}
+          description={home.achieveSection.description}
+        />
+
         <div className="img-container">
           <Image
             src="/img/home-achieve-section.png"
@@ -199,7 +200,7 @@ const AchieveSection = () => {
         </div>
       </RightCol>
     </Container>
-  )
-}
+  );
+};
 
-export default AchieveSection
+export default AchieveSection;

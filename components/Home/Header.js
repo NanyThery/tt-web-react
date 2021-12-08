@@ -10,7 +10,6 @@ const Container = styled.div`
 
   @media only screen and (max-width: 850px) {
     background: transparent;
-
     padding-bottom: 24px;
   }
 `;
@@ -26,6 +25,7 @@ const HeroContainer = styled((props) => <SectionLayout {...props} />)`
     flex-flow: wrap column;
     justify-content: center;
     align-items: center;
+
     gap: 40px;
   }
 `;

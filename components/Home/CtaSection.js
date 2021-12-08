@@ -1,8 +1,8 @@
-import styled from "styled-components"
-import SectionLayout from "../SectionLayout"
-import { home } from "../../utils/copies"
-import Button, { ButtonSecondaryWhite } from "../Button"
-import Image from "next/image"
+import styled from "styled-components";
+import SectionLayout from "../SectionLayout";
+import { home } from "../../utils/copies";
+import { ButtonSecondaryWhite } from "../Button";
+import Image from "next/image";
 
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
@@ -18,7 +18,7 @@ const Container = styled((props) => <SectionLayout {...props} />)`
     align-items: center;
     gap: 40px;
   }
-`
+`;
 const LeftCol = styled.div`
   width: 50%;
   height: 100%;
@@ -36,7 +36,7 @@ const LeftCol = styled.div`
     align-items: center;
     color: ${(props) => props.theme.colors.white};
   }
-`
+`;
 
 const Title = styled.h2`
   > p {
@@ -45,7 +45,7 @@ const Title = styled.h2`
   @media only screen and (max-width: 850px) {
     text-align: center;
   }
-`
+`;
 
 const Description = styled.p`
   font-size: 18px;
@@ -53,11 +53,11 @@ const Description = styled.p`
   @media only screen and (max-width: 850px) {
     text-align: center;
   }
-`
+`;
 
 const ActionsContainer = styled.div`
   margin-top: 10px;
-`
+`;
 const RightCol = styled.div`
   width: 50%;
   padding: 40px 40px 40px 0;
@@ -80,10 +80,10 @@ const RightCol = styled.div`
       height: 100%;
     }
   }
-`
+`;
 
 const CtaSection = ({ isCourseOpen, onClick }) => {
-  const status = isCourseOpen ? "open" : "closed"
+  const status = isCourseOpen ? "open" : "closed";
 
   return (
     <Container>
@@ -113,7 +113,7 @@ const CtaSection = ({ isCourseOpen, onClick }) => {
         </div>
       </RightCol>
     </Container>
-  )
-}
+  );
+};
 
-export default CtaSection
+export default CtaSection;
