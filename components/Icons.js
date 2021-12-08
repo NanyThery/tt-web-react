@@ -1,29 +1,31 @@
 const getIconByName = (iconName) => {
-  switch(iconName){
+  switch (iconName) {
     case "book":
-      return <BookIcon/>
+      return <BookIcon />;
     case "chat":
-      return <ChatIcon/>
+      return <ChatIcon />;
     case "check":
-      return <CheckIcon/>
+      return <CheckIcon />;
     case "code":
-      return <CodeIcon/>
+      return <CodeIcon />;
     case "cross":
-      return <CrossIcon/>
+      return <CrossIcon />;
     case "cup":
-      return <CupIcon/>
+      return <CupIcon />;
     case "info":
-      return <InfoIcon/>
+      return <InfoIcon />;
     case "medal":
-      return <MedalIcon/>
+      return <MedalIcon />;
     case "people":
-      return <PeopleIcon/>
+      return <PeopleIcon />;
+    case "plus":
+      return <PlusIcon />;
     case "smile":
-      return <SmileIcon/>
+      return <SmileIcon />;
     default:
-      return; 
+      return;
   }
-}
+};
 
 const HomeIcon = () => (
   <svg
@@ -39,7 +41,7 @@ const HomeIcon = () => (
       d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
     />
   </svg>
-)
+);
 const ContactIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +56,7 @@ const ContactIcon = () => (
       d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
     />
   </svg>
-)
+);
 
 const QuotesIcon = () => (
   <svg
@@ -69,7 +71,7 @@ const QuotesIcon = () => (
       fill="currentColor"
     />
   </svg>
-)
+);
 const TwitterIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
@@ -80,7 +82,7 @@ const TwitterIcon = () => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);
 
 const LinkedinIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,7 +108,7 @@ const LinkedinIcon = () => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);
 
 const GithubIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -118,7 +120,7 @@ const GithubIcon = () => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);
 
 const CloseIcon = () => (
   <svg
@@ -143,7 +145,7 @@ const CloseIcon = () => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);
 
 const MenuIcon = () => (
   <svg
@@ -175,7 +177,7 @@ const MenuIcon = () => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);
 
 const EmailIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -194,7 +196,7 @@ const EmailIcon = () => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);
 
 const SmileIcon = () => (
   <svg
@@ -229,7 +231,7 @@ const SmileIcon = () => (
       fill="#767B91"
     />
   </svg>
-)
+);
 
 const ChatIcon = () => (
   <svg
@@ -247,7 +249,7 @@ const ChatIcon = () => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);
 
 const CodeIcon = () => (
   <svg
@@ -270,7 +272,7 @@ const CodeIcon = () => (
       fill="#767B91"
     />
   </svg>
-)
+);
 
 const PeopleIcon = () => (
   <svg
@@ -305,7 +307,7 @@ const PeopleIcon = () => (
       fill="#767B91"
     />
   </svg>
-)
+);
 
 const MedalIcon = () => (
   <svg
@@ -337,7 +339,7 @@ const MedalIcon = () => (
       </clipPath>
     </defs>
   </svg>
-)
+);
 
 const CheckIcon = () => (
   <svg
@@ -355,7 +357,7 @@ const CheckIcon = () => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);
 
 const CupIcon = () => (
   <svg
@@ -372,7 +374,7 @@ const CupIcon = () => (
       fill="#767B91"
     />
   </svg>
-)
+);
 
 const BookIcon = () => (
   <svg
@@ -395,7 +397,7 @@ const BookIcon = () => (
       fill="#767B91"
     />
   </svg>
-)
+);
 
 const CrossIcon = () => (
   <svg
@@ -420,15 +422,51 @@ const CrossIcon = () => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);
 
 const InfoIcon = () => (
-  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fillRule="evenodd" clipRule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z" fill="#767B91"/>
-<path fillRule="evenodd" clipRule="evenodd" d="M12 7C12.5523 7 13 7.44772 13 8V12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12V8C11 7.44772 11.4477 7 12 7Z" fill="#767B91"/>
-<path fillRule="evenodd" clipRule="evenodd" d="M11 16C11 15.4477 11.4477 15 12 15H12.01C12.5623 15 13.01 15.4477 13.01 16C13.01 16.5523 12.5623 17 12.01 17H12C11.4477 17 11 16.5523 11 16Z" fill="#767B91"/>
-</svg>
-)
+  <svg
+    width="32"
+    height="32"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z"
+      fill="#767B91"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12 7C12.5523 7 13 7.44772 13 8V12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12V8C11 7.44772 11.4477 7 12 7Z"
+      fill="#767B91"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11 16C11 15.4477 11.4477 15 12 15H12.01C12.5623 15 13.01 15.4477 13.01 16C13.01 16.5523 12.5623 17 12.01 17H12C11.4477 17 11 16.5523 11 16Z"
+      fill="#767B91"
+    />
+  </svg>
+);
+
+const PlusIcon = () => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5V11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H11V19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19V13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H13V5Z"
+      fill="#767B91"
+    />
+  </svg>
+);
 export {
   BookIcon,
   CloseIcon,
@@ -441,13 +479,14 @@ export {
   EmailIcon,
   GithubIcon,
   HomeIcon,
-  InfoIcon, 
+  InfoIcon,
   LinkedinIcon,
   MedalIcon,
   MenuIcon,
   PeopleIcon,
+  PlusIcon,
   SmileIcon,
   TwitterIcon,
   QuotesIcon,
   getIconByName,
-}
+};

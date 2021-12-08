@@ -371,3 +371,31 @@ export const figures = [
     ],
   },
 ];
+
+export const faqSection = {
+  title: "¿Tienes alguna duda?",
+  description:
+    "Consulta nuestras preguntas frecuentes o escríbenos, estaremos encantados de leerte :).",
+  qa: [
+    {
+      q: "¿Cuáles son los requisitos técnicos?",
+      a: "Los ejercicios de programación que haremos no requieren disponer de un gran despliegue tecnológico. Pero es fundamental que puedas disponer de un ordenador y conexión a internet que te permitan asistir y participar en las clases sin interrupciones.",
+      links: [
+        {
+          label: "Velocidad que necesitas para una videollamada",
+          url: "https://www.redeszone.net/2018/10/20/que-velocidad-internet-necesaria/",
+        },
+      ],
+    },
+    {
+      q: "¿Tengo que repasar o saber algo de antemano?",
+      a: "NO. De hecho, este curso empieza verdaderamente desde cero. Por lo que si ya has estudiado programación (Bootcamp, FP, Universidad, cursos online...) y sabes aplicar los principios básicos como bucles (for, while, do-while), condicionales, tipos de variables o recursividad quizás este curso no sea el adecuado para ti. Puedes consultar el temario en el enlace a continuación para ver si el contenido se ajusta a lo que ya sabes. ",
+      links: [{ label: "Temario del curso", url: "/curso" }],
+    },
+    {
+      q: "¿Qué significa que hace falta implicación en el curso?",
+      a: "Si quieres apuntarte a la modalidad 'Full Power 🔥', tienes que asistir a las clases, interactuar con los demás, realizar los ejercicios, entregarlos y preparar el proyecto. Si tus ocupaciones actuales no te permiten atender esto, quizás te interese apuntarte mejor a la modalidad 'A tu aire 🌊'. Pedimos implicación porque durante las 10 semanas que dura el curso tanto los profes como los mentores estamos implicados al 100% con el proyecto y con el aprendizaje y pedimos lo mismo a cambio para que la iniciativa sea un éxito.",
+      links: [],
+    },
+  ],
+};
