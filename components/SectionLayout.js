@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
@@ -6,6 +6,7 @@ const Container = styled.div`
   width: 100%;
   max-width: 1108px;
   margin: 0 auto;
+  padding: 0 20px;
 
   @media only screen and (min-width: 500px) and (max-width: 850px) {
     max-width: 575px;
@@ -15,16 +16,16 @@ const Container = styled.div`
   @media only screen and (max-width: 499px) {
     padding: 0 30px;
   }
-`
+`;
 
 const SectionLayout = (props) => {
-  const { minHeight, children, ...other } = props
+  const { minHeight, children, ...other } = props;
 
   return (
     <Container {...other} minHeight={minHeight}>
       {children}
     </Container>
-  )
-}
+  );
+};
 
-export default SectionLayout
+export default SectionLayout;

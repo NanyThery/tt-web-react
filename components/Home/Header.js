@@ -1,19 +1,19 @@
-import styled from "styled-components"
-import SectionLayout from "../SectionLayout"
-import { home } from "../../utils/copies"
-import Button, { ButtonPrimary } from "../Button"
+import styled from "styled-components";
+import SectionLayout from "../SectionLayout";
+import { home } from "../../utils/copies";
+import { ButtonPrimary } from "../Button";
+import Image from "next/image";
 
 const Container = styled.div`
-  height: 700px;
   width: 100%;
   background: ${(props) => props.theme.gradients.backgroundPurple};
 
   @media only screen and (max-width: 850px) {
     background: transparent;
-    height: fit-content;
+
     padding-bottom: 24px;
   }
-`
+`;
 
 const HeroContainer = styled((props) => <SectionLayout {...props} />)`
   display: flex;
@@ -28,7 +28,7 @@ const HeroContainer = styled((props) => <SectionLayout {...props} />)`
     align-items: center;
     gap: 40px;
   }
-`
+`;
 const HeroInfo = styled.div`
   color: ${(props) => props.theme.colors.text20};
   max-width: 540px;
@@ -43,7 +43,7 @@ const HeroInfo = styled.div`
     align-items: center;
     color: ${(props) => props.theme.colors.text100};
   }
-`
+`;
 
 const PreTitle = styled.div`
   width: fit-content;
@@ -51,7 +51,7 @@ const PreTitle = styled.div`
   padding: 5px 10px;
   border: 2px solid ${(props) => props.theme.colors.purpleLight};
   border-radius: 4px;
-`
+`;
 const Title = styled.div`
   > p {
     line-height: 1;
@@ -59,7 +59,7 @@ const Title = styled.div`
   @media only screen and (max-width: 850px) {
     text-align: center;
   }
-`
+`;
 
 const Description = styled.p`
   font-size: 18px;
@@ -68,24 +68,24 @@ const Description = styled.p`
     text-align: center;
     color: ${(props) => props.theme.colors.text80};
   }
-`
+`;
 
 const ActionsContainer = styled.div`
   margin-top: 10px;
-`
+`;
 const HeroImg = styled.div`
-  height: 100%;
+  box-sizing: border-box;
+  padding: 50px;
+  height: 80%;
+  width: 100%;
 
-  max-height: 513px;
-
-  > img {
-    width: 100%;
-    height: auto;
+  @media only screen and (max-width: 850px) {
+    padding: 20px;
   }
-`
+`;
 
 const Header = ({ isCourseOpen, onClick }) => {
-  const status = isCourseOpen ? "open" : "closed"
+  const status = isCourseOpen ? "open" : "closed";
 
   return (
     <Container>
@@ -96,23 +96,24 @@ const Header = ({ isCourseOpen, onClick }) => {
           <Description>{home.header["description"][status]}</Description>
           <ActionsContainer>
             {isCourseOpen ? (
-              <ButtonPrimary onClick={onClick}>
-                Quiero apuntarme
-              </ButtonPrimary>
+              <ButtonPrimary onClick={onClick}>Quiero apuntarme</ButtonPrimary>
             ) : (
               <div> Newsletter </div>
             )}
           </ActionsContainer>
         </HeroInfo>
         <HeroImg>
-          <img
-            src="../img/Hero-image.png"
+          <Image
+            src="/img/Hero-image.png"
             alt="TeachT3ch aprende a programar"
+            width="470"
+            height="513"
+            layout="responsive"
           />
         </HeroImg>
       </HeroContainer>
     </Container>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
