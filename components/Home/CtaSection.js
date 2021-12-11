@@ -3,6 +3,7 @@ import SectionLayout from "../SectionLayout";
 import { home } from "../../utils/copies";
 import { ButtonSecondaryWhite } from "../Button";
 import Image from "next/image";
+import NewsletterForm from "./NewsletterForm";
 
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
@@ -86,17 +87,17 @@ const CtaSection = ({ isCourseOpen, onClick }) => {
   const status = isCourseOpen ? "open" : "closed";
 
   return (
-    <Container>
+    <Container id="cta-section">
       <LeftCol>
         <Title>{home.ctaSection[status]["title"]}</Title>
         <Description>{home.ctaSection[status]["description"]}</Description>
         <ActionsContainer>
-          {isCourseOpen ? (
+          {isCourseOpen = false ? (
             <ButtonSecondaryWhite onClick={onClick}>
               {home.ctaSection[status]["cta"]}
             </ButtonSecondaryWhite>
           ) : (
-            <div> {home.ctaSection[status]["cta"]} </div>
+            <NewsletterForm>{home.ctaSection[status]["cta"]}</NewsletterForm>
           )}
         </ActionsContainer>
       </LeftCol>
