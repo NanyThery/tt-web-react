@@ -1,4 +1,4 @@
-import { useRouter } from "next/router"
+
 import { useState, useEffect } from "react"
 import DesktopNavbar from "./DesktopNavbar"
 import MobileNavbar from "./MobileNavbar"
@@ -23,8 +23,8 @@ const Container = styled.div`
   }
 `
 
-export const Navbar = () => {
-  const router = useRouter()
+export const Navbar = ({router}) => {
+
   const [scrolledNavBar, setScrolledNavBar] = useState(false)
   const routesWithDarkHeader = ["/"]
   const isDarkMode = routesWithDarkHeader.includes(router.asPath)
