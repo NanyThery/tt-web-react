@@ -1,6 +1,12 @@
-This is the TeachT3ch website revamped. It's build in NextJs and uses Styled Components for styling. Check out below how deploy and test environment.
-It is directly deployed in Vercel, and the repository `main`branch will automatically deploy.
+## Intro
 
+This is the TeachT3ch website revamped. It's build in NextJs and uses Styled Components for styling. Check out below how deploy and test environment.
+It is directly deployed in Vercel, and the repository `main` branch will automatically deploy.
+
+
+## Tech debt
+- Cookie banner: we decided to postpone this banner since the website does not use cookies at the moment.
+- Adding a custom check box according to the original design. 
 
 
 ## Getting Started
@@ -39,6 +45,3 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 
-##Tech debt
-- Cookie banner: we decided to postpone this banner since the website does not use cookies at the moment.
-- Adding a custom check box according to the original design. 
