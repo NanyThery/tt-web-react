@@ -26,7 +26,7 @@ const Container = styled.div`
 export const Navbar = () => {
   const router = useRouter()
   const [scrolledNavBar, setScrolledNavBar] = useState(false)
-  const routesWithDarkHeader = ["/"]
+  const routesWithDarkHeader = ["/", "/staff"]
   const isDarkMode = routesWithDarkHeader.includes(router.asPath)
   const currentLocale = router.locale
 

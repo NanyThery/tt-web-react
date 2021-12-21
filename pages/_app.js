@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
           <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
-            crossOrigin={true}
+            crossOrigin="true"
           />
           <link
             href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
