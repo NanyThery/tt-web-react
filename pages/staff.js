@@ -5,6 +5,7 @@ import SectionLayout from "../components/SectionLayout"
 import { useState } from "react"
 import Image from "next/image";
 import staff from "../utils/staff.json"
+import slugify from 'slugify'
 
 const Strong = styled.strong`
   font-weight: 500;
@@ -192,7 +193,7 @@ export default function Staff() {
                   <div className="content">
                     <div className="image-container">
                       <Image
-                        src={member.picture}
+                        src={`/img/team/${slugify(member.name).toLowerCase()}.jpg`}
                         alt=""
                         layout="fill"
                         objectFit="cover"
