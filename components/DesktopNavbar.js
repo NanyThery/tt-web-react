@@ -1,7 +1,7 @@
-import MenuItems from "../utils/menuItems"
-import NavLink from "next/link"
-import styled, { theme } from "styled-components"
-import Brand from "./Brand"
+import MenuItems from "../utils/menuItems";
+import NavLink from "next/link";
+import styled, { theme } from "styled-components";
+import Brand from "./Brand";
 
 const NavbarContainerWrapper = styled.div`
   width: 100%;
@@ -14,7 +14,7 @@ const NavbarContainerWrapper = styled.div`
   box-sizing: border-box;
   font-size: 14px;
   color: white;
-
+  top: ${(props) => props.startingPosition};
   padding: 20px 20px;
   z-index: 10;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in,
@@ -31,7 +31,7 @@ const NavbarContainerWrapper = styled.div`
   @media only screen and (max-width: 850px) {
     display: none;
   }
-`
+`;
 
 const NavBarContainer = styled.div`
   width: 100%;
@@ -39,7 +39,7 @@ const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-`
+`;
 
 const ItemsContainer = styled.div`
   display: flex;
@@ -49,7 +49,7 @@ const ItemsContainer = styled.div`
   @media only screen and (max-width: 1000px) {
     gap: 20px;
   }
-`
+`;
 
 const NavItem = styled.div`
   cursor: pointer;
@@ -70,7 +70,7 @@ const NavItem = styled.div`
   ${(props) =>
     props.itemStyle === "action" &&
     "padding: 8px; border: 2px solid white; border-radius: 4px"}
-`
+`;
 
 const MainLogo = styled.div`
   height: 30px;
@@ -78,12 +78,18 @@ const MainLogo = styled.div`
   > svg {
     height: 100%;
   }
-`
+`;
 
-const DesktopNavbar = ({ router, scrolledNavBar, isDarkMode }) => {
-  const positiveStyle = (!isDarkMode && !scrolledNavBar) || scrolledNavBar
+const DesktopNavbar = ({
+  router,
+  scrolledNavBar,
+  isDarkMode,
+  startingPosition,
+}) => {
+  const positiveStyle = (!isDarkMode && !scrolledNavBar) || scrolledNavBar;
   return (
     <NavbarContainerWrapper
+      startingPosition={startingPosition}
       className={`${scrolledNavBar && "scrolled-navbar"} ${
         !isDarkMode && "lightBackground"
       }`}
@@ -111,12 +117,12 @@ const DesktopNavbar = ({ router, scrolledNavBar, isDarkMode }) => {
                   </NavItem>
                 )}
               </div>
-            )
+            );
           })}
         </ItemsContainer>
       </NavBarContainer>
     </NavbarContainerWrapper>
-  )
-}
+  );
+};
 
-export default DesktopNavbar
+export default DesktopNavbar;
