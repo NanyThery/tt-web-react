@@ -1,0 +1,191 @@
+[
+  {
+    "name": "JM",
+    "picture": "/img/JM.jpg",
+    "mentor": true,
+    "teacher": true,
+    "linkedin": "jmnavarro",
+    "twitter": "jmnavarro",
+    "years": [2021]
+  },
+  {
+    "name": "Adrián",
+    "picture": "/img/team/Adrian.png",
+    "mentor": true,
+    "teacher": true,
+    "years": [2021]
+  },
+  {
+    "name": "Luis",
+    "picture": "/img/team/Luis-Rodellar-web.jpg",
+    "mentor": true,
+    "teacher": true,
+    "linkedin": "luis-rodellar",
+    "twitter": "luisrbosso",
+    "years": [2021]
+  },
+  {
+    "name": "Juanlu",
+    "picture": "/img/team/juanlu-web.png",
+    "mentor": true,
+    "teacher": false,
+    "linkedin": "gomezchanclon",
+    "twitter": "juanlu_u",
+    "years": [2021]
+  },
+  {
+    "name": "Nadine",
+    "picture": "/img/team/nadine-web.jpg",
+    "mentor": true,
+    "teacher": false,
+    "linkedin": "nadinethery",
+    "twitter": "nanythery",
+    "years": [2021]
+  },
+  {
+    "name": "Dani",
+    "picture": "/img/team/dani-web.jpg",
+    "mentor": true,
+    "teacher": true,
+    "linkedin": "dcarrion",
+    "twitter": "dani_carrion",
+    "years": [2021]
+  },
+  {
+    "name": "Teffa",
+    "picture": "/img/team/estefania-web.jpg",
+    "mentor": true,
+    "teacher": true,
+    "linkedin": "estefaniaoterogarcia",
+    "twitter": "_teffa_",
+    "years": [2021]
+  },
+  {
+    "name": "Rodrigo",
+    "picture": "/img/team/Rodrigo-web.jpg",
+    "mentor": false,
+    "teacher": true,
+    "years": [2021]
+  },
+  {
+    "name": "Juan",
+    "picture": "/img/team/Juan de Bravo-web.jpg",
+    "mentor": true,
+    "teacher": true,
+    "linkedin": "juandebravo",
+    "twitter": "juandebravo",
+    "years": [2021]
+  },
+  {
+    "name": "Nacho",
+    "picture": "/img/team/Nacho-web.jpg",
+    "mentor": false,
+    "teacher": true,
+    "linkedin": "icarretero",
+    "twitter": "Carretops",
+    "years": [2021]
+  },
+  {
+    "name": "Diego",
+    "picture": "/img/team/diego-web.jpg",
+    "mentor": true,
+    "teacher": true,
+    "linkedin": "diego-dom%C3%ADnguez-gonz%C3%A1lez-11622b176",
+    "twitter": "DGlez1111",
+    "years": [2021]
+  },
+  {
+    "name": "Alejandro",
+    "picture": "/img/team/Alejandro.jpg",
+    "mentor": true,
+    "teacher": true,
+    "twitter": "alejandrohdezma",
+    "years": [2021]
+  },
+  {
+    "name": "Jorge Ferrer",
+    "picture": "/img/team/Jorge-Ferrer-web.jpg",
+    "mentor": false,
+    "teacher": true,
+    "years": [2021]
+  },
+  {
+    "name": "Manu",
+    "picture": "/img/team/Manuel-web.jpg",
+    "mentor": true,
+    "teacher": false,
+    "linkedin": "mdelapenya",
+    "twitter": "mdelapenya",
+    "years": [2021]
+  },
+  {
+    "name": "Joaquín",
+    "picture": "/img/team/joaquin.jpeg",
+    "mentor": true,
+    "teacher": false,
+    "linkedin": "hjoaquindiez",
+    "years": [2021]
+  },
+  {
+    "name": "Jesús Armand",
+    "picture": "/img/team/jesus-armand-web.Jpg",
+    "mentor": true,
+    "teacher": false,
+    "years": [2021]
+  },
+  {
+    "name": "Jorge Jardines",
+    "picture": "/img/team/joege-jardines-web.jpg",
+    "mentor": true,
+    "teacher": false,
+    "years": [2021]
+  },
+  {
+    "name": "Eduardo García",
+    "picture": "/img/team/eduardo-garcia-web.jpg",
+    "mentor": true,
+    "teacher": true,
+    "years": [2021]
+  },
+  {
+    "name": "Javier Gamarra",
+    "picture": "/img/team/javier-gamarra-web.jpg",
+    "mentor": true,
+    "teacher": true,
+    "years": [2021]
+  },
+  {
+    "name": "Sergio Saenz",
+    "picture": "/img/team/sergio-saenz-web.jpeg",
+    "mentor": false,
+    "teacher": true,
+    "years": [2021]
+  },
+  {
+    "name": "Alejandro Tardín",
+    "picture": "/img/team/alejandro-tardin-web.jpg",
+    "mentor": true,
+    "teacher": true,
+    "linkedin": "alejandrotardin",
+    "twitter": "4lejandrito",
+    "years": [2021]
+  },
+  {
+    "name": "Pablo Molina",
+    "picture": "/img/team/pablo-molina-web.jpg",
+    "mentor": true,
+    "teacher": true,
+    "linkedin": "p2kmgcl",
+    "twitter": "p2kmgcl",
+    "years": [2021]
+  },
+  {
+    "name": "Javier de Arcos",
+    "picture": "/img/team/javier-de-arcos.jpg",
+    "mentor": true,
+    "teacher": true,
+    "linkedin": "javierdearcos",
+    "twitter": "JavierDeArcosTL",
+    "years": [2021]
+  }
+]

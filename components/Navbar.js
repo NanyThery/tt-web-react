@@ -22,11 +22,12 @@ const Container = styled.div`
   }
 `;
 
-export const Navbar = ({ router, startingPosition }) => {
-  const [scrolledNavBar, setScrolledNavBar] = useState(false);
-  const routesWithDarkHeader = ["/"];
-  const isDarkMode = routesWithDarkHeader.includes(router.asPath);
-  const currentLocale = router.locale;
+export const Navbar = () => {
+  const router = useRouter()
+  const [scrolledNavBar, setScrolledNavBar] = useState(false)
+  const routesWithDarkHeader = ["/", "/staff"]
+  const isDarkMode = routesWithDarkHeader.includes(router.asPath)
+  const currentLocale = router.locale
 
   const handleScroll = () => {
     if (window.scrollY > 3) {

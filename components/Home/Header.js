@@ -15,7 +15,7 @@ const Container = styled.div`
   }
 `;
 
-const HeroContainer = styled((props) => <SectionLayout {...props} />)`
+export const HeroContainer = styled((props) => <SectionLayout {...props} />)`
   display: flex;
   justify-content: space-between;
   padding: 100px 20px 0 20px;
@@ -30,7 +30,7 @@ const HeroContainer = styled((props) => <SectionLayout {...props} />)`
     gap: 40px;
   }
 `;
-const HeroInfo = styled.div`
+export const HeroInfo = styled.div`
   color: ${(props) => props.theme.colors.text20};
   max-width: 540px;
   display: flex;
