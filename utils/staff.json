@@ -5,13 +5,19 @@
     "teacher": true,
     "linkedin": "jmnavarro",
     "twitter": "jmnavarro",
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Mostrar por pantalla los números del 1 al 10",
+    "hobbies": "Aprender (autodidacta) y enseñar. Juegos de rol y mundos de fantasía. Tocar la guitarra. Cocinar (y comerme lo que cocino)",
+    "quote": "No tengas prisa, pero nunca te pares"
   },
   {
     "name": "Adrián",
     "mentor": true,
     "teacher": true,
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Hola mundo en C",
+    "hobbies": "Deporte (Triatlón). Naturaleza (Alpinismo, escalada). Lectura. Música. Viajes",
+    "quote": "Cuéntame algo y lo olvidaré. Enséñamelo y lo recordaré. Involúcrame y lo entenderé"
   },
   {
     "name": "Luis",
@@ -19,7 +25,10 @@
     "teacher": true,
     "linkedin": "luis-rodellar",
     "twitter": "luisrbosso",
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Hello World en PHP",
+    "hobbies": "Ciclismo. Ciberseguridad. Visitar parajes naturales",
+    "quote": "La función de un buen software es hacer que lo complejo aparente ser simple Grady Booch"
   },
   {
     "name": "Juanlu",
@@ -27,7 +36,10 @@
     "teacher": false,
     "linkedin": "gomezchanclon",
     "twitter": "juanlu_u",
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Sumar y Restar números",
+    "hobbies": "Videojuegos. Baloncesto. Todo lo que tenga motor y como mínimo rueda",
+    "quote": "Nadie conoce un lenguaje de cabeza, no te vengas abajo y usa el buscador (siempre con cabeza)"
   },
   {
     "name": "Nadine",
@@ -35,7 +47,10 @@
     "teacher": false,
     "linkedin": "nadinethery",
     "twitter": "nanythery",
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Una carta de restaurante en Visual Basic para cobrarle a mis padres los cafés que me pedían al día",
+    "hobbies": "Juegos de mesa (modernos). Grabar vídeos de youtube/podcast. Yoga. Senderismo",
+    "quote": "La paciencia es la madre de todas las ciencias"
   },
   {
     "name": "Dani",
@@ -43,7 +58,10 @@
     "teacher": true,
     "linkedin": "dcarrion",
     "twitter": "dani_carrion",
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "a los 7 años un programa en Commodore64 que imprimía COMMODORE64 infinitamente",
+    "hobbies": "Tocar el teclado en bandas de rock. Ciencia ficción. NBA",
+    "quote": "It's the user, stupid!"
   },
   {
     "name": "Teffa",
@@ -51,13 +69,19 @@
     "teacher": true,
     "linkedin": "estefaniaoterogarcia",
     "twitter": "_teffa_",
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Agenda telefónica que se imprimía por pantalla",
+    "hobbies": "Pilates. Videojuegos. Maratón de sries. Lectura de fantasía o ciencia ficción",
+    "quote": "Tengo muchos Teffa dixit pero nunca me acuerdo de ellos. De todas formas, en caso de duda, StackOverflow"
   },
   {
     "name": "Rodrigo",
     "mentor": false,
     "teacher": true,
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Editor de sonidos para el Korg N364 (5 años antes)",
+    "hobbies": "Música (toco el teclado en un grupo de metal). Deporte (practicarlo). Juegos de rol",
+    "quote": "Digo muchas, pero no recuerdo ninguna. Además, probablemente no fuera mía"
   },
   {
     "name": "Juan",
@@ -65,7 +89,10 @@
     "teacher": true,
     "linkedin": "juandebravo",
     "twitter": "juandebravo",
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Interfaz gráfico para la utilidad de Windows Net Send",
+    "hobbies": "Ciclismo. Trail running & Marathon. Tecnología",
+    "quote": "Esto es una maratón, dividida en sprints"
   },
   {
     "name": "Nacho",
@@ -73,7 +100,10 @@
     "teacher": true,
     "linkedin": "icarretero",
     "twitter": "Carretops",
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Calcular el área de un círculo",
+    "hobbies": "Deporte (natación, remo y lo que surja). Lenguajes (en este caso no de programación). Perros",
+    "quote": "El no ya lo tienes"
   },
   {
     "name": "Diego",
@@ -81,20 +111,29 @@
     "teacher": true,
     "linkedin": "diego-dom%C3%ADnguez-gonz%C3%A1lez-11622b176",
     "twitter": "DGlez1111",
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": null,
+    "hobbies": "Juegos de rol, wargames, videojuegos",
+    "quote": "Beethoven era un buen compositor porque utilizaba ideas nuevas en combinación con ideas antiguas. Nadie, ni siquiera Beethoven podría inventar la música desde cero. Es igual con la informática"
   },
   {
     "name": "Alejandro",
     "mentor": true,
     "teacher": true,
     "twitter": "alejandrohdezma",
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Una aplicación para organizar archivos de películas y subtítulos en Haskell",
+    "hobbies": "Juegos de mesa. CrossFit. Bricolaje",
+    "quote": "Escucha al compilador, el compilador es tu amigo"
   },
   {
     "name": "Jorge Ferrer",
     "mentor": false,
     "teacher": true,
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Modificar el juego Gorillas que venía en MS Dos, para cambiar las reglas de gravedad para mi gorila y ganar a mi primo 0=)",
+    "hobbies": "Practicar deportes (especialmente tenis), rutas por la naturaleza, todo lo relacionado con tecnología y espacio, aprender cosas nuevas y enseñarlas",
+    "quote": "A los ignorantes les aventajan los que leen libros. A estos, los que retienen lo leído. A estos, los que comprenden lo leído. A estos, los que se ponen manos a la obra. Proverbio Hindú"
   },
   {
     "name": "Manu",
@@ -102,44 +141,65 @@
     "teacher": false,
     "linkedin": "mdelapenya",
     "twitter": "mdelapenya",
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Jugueteé con calculadoras programables de adolescente, pero el primer programa serio fue el hundir la flota en la carrera",
+    "hobbies": "Programar. Juegos de rol y mundos de fantasía en todos sus formatos (juegos, series, películas, libros)",
+    "quote": "Es muy fácil: el ordenador no te insulta ni te va a morder, simplemente hace lo que tú le dices"
   },
   {
     "name": "Joaquín",
     "mentor": true,
     "teacher": false,
     "linkedin": "hjoaquindiez",
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Una aplicación en Pascal de encuestas para el colegio",
+    "hobbies": "Jugar al tenis, ver Baloncesto, aprender sobre economía",
+    "quote": "Ama a la gente y usa cosas, por que lo contrario, no funciona"
   },
   {
     "name": "Jesús Armand",
     "mentor": true,
     "teacher": false,
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Cosas de empezar en esto con un spectrum 64k. Un programa que listaba por pantalla la plantilla del FCB y un cuadrado que simulaba un campo",
+    "hobbies": "Lectura (hace unos años conseguí completar el reto 52 libros 52 semanas) y perderme en Jaca con mi mujer y mi hija",
+    "quote": "Hacer predicciones es muy difícil, especialmente cuando se trata del futuro., Niels Bohr"
   },
   {
     "name": "Jorge Jardines",
     "mentor": true,
     "teacher": false,
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Hola mundo en C#",
+    "hobbies": "Cualquier actividad con mis hijas, prácticar deportes, la música para escucharla y bailarla, leer",
+    "quote": "Vive y Disfruta cada momento!"
   },
   {
     "name": "Eduardo García",
     "mentor": true,
     "teacher": true,
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "si programar un vídeo Beta no cuenta, entonces Hello World en Java :)",
+    "hobbies": "Comics. Dibujar. Viajar. Senderismo",
+    "quote": "El único hombre que no se equivoca es el que nunca hace nada Goethe"
   },
   {
     "name": "Javier Gamarra",
     "mentor": true,
     "teacher": true,
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Calculadora en Basic",
+    "hobbies": "Lego, Libros y Comics, Organizar conferencias, Películas",
+    "quote": "A fire-eater must eat fire even if he has to kindle it himself"
   },
   {
     "name": "Sergio Saenz",
     "mentor": false,
     "teacher": true,
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Algún ejercicio básico en Ada",
+    "hobbies": "Plantas y animales",
+    "quote": "Depende"
   },
   {
     "name": "Alejandro Tardín",
@@ -147,7 +207,10 @@
     "teacher": true,
     "linkedin": "alejandrotardin",
     "twitter": "4lejandrito",
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "futbol.exe: un juego de lanzamiento de faltas en Visual Basic que de haberme pillado en la era iPhone me habría dado para jubilarme en Andorra",
+    "hobbies": "Programar y ser eterno aprendiz de la guitarra flamenca",
+    "quote": "Aquí estamos para lo que haga falta"
   },
   {
     "name": "Pablo Molina",
@@ -155,7 +218,10 @@
     "teacher": true,
     "linkedin": "p2kmgcl",
     "twitter": "p2kmgcl",
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Un bucle en C que escribía Cojo un muelle y lo tiro por el retrete... una y otra vez",
+    "hobbies": "Juegos de mesa, videojuegos, senderismo y libros de fantasía",
+    "quote": "Yo soy porque nosotros somos"
   },
   {
     "name": "Javier de Arcos",
@@ -163,6 +229,9 @@
     "teacher": true,
     "linkedin": "javierdearcos",
     "twitter": "JavierDeArcosTL",
-    "years": [2021]
+    "years": [2021],
+    "firstProgram": "Ordenar los tiempos de una carrera de coches para obtener el ganador en Ada 95, en el primer año de universidad",
+    "hobbies": "Música, leer, planes de naturaleza y disfrutar de todo junto a la familia",
+    "quote": "Ningún viento es favorable si no sabes a qué puerto te diriges, Séneca"
   }
 ]
