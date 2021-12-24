@@ -1,12 +1,14 @@
 import styled from "styled-components"
 import SectionSeparator from "../components/SectionSeparator"
 import { HeroContainer, HeroInfo } from "../components/Home/Header"
+import Modal from "../components/Modal"
 import SectionLayout from "../components/SectionLayout"
 import { useState } from "react"
 import Image from "next/image";
 import staff from "../utils/staff.json"
 import slugify from 'slugify'
 import Link from 'next/link'
+import router, { useRouter } from 'next/router'
 
 const Strong = styled.strong`
   font-weight: 500;
@@ -114,12 +116,6 @@ const StaffMemberContainer = styled.div`
     border: 1px solid #E1E5EE;
     border-radius: 4px;
   }
-  .badges {
-    display: flex;
-    gap: 6px;
-    margin-top: 24px;
-    margin-bottom: 16px;
-  }
   main,footer {
     display: flex;
     align-items: end;
@@ -129,14 +125,22 @@ const StaffMemberContainer = styled.div`
     font-size: 14px;
   }
   main {
-    gap: 18px;
     margin-bottom: 4px;
   }
   footer a {
     color: #9D4EDD;
   }
 `
-
+const BadgesContainer = styled.div`
+  display: flex;
+  gap: 6px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+`
+const SocialContainer = styled.div`
+  display: flex;
+  gap: 18px;
+`
 const StaffMember = ({ className, name, href, image, badges, body, footer }) => (
   <StaffMemberContainer className={className}>
     <div className="frame" />
@@ -150,9 +154,9 @@ const StaffMember = ({ className, name, href, image, badges, body, footer }) => 
         />
       </div>
       <Strong>{name}</Strong>
-      <div className="badges">
+      <BadgesContainer>
         {badges}
-      </div>
+      </BadgesContainer>
       <main>
         {body}
       </main>
@@ -189,9 +193,56 @@ const SocialLink = styled((props) => (
   align-items: center;
   justify-content: center;
 `
+const Badges = ({ member }) => (
+  <>
+    {member.mentor && <Badge>Mentor</Badge>}
+    {member.teacher && <Badge secondary>Instructor</Badge>}
+  </>
+)
+const Social = ({ member }) => (
+  <SocialContainer>
+    {member.linkedin && <SocialLink name="linkedin" handle={member.linkedin} />}
+    {member.twitter && <SocialLink name="twitter" handle={member.twitter} />}
+  </SocialContainer>
+)
+const ModalContainer = styled.div`
+  width: 600px;
+  header {
+    display: flex;
+    align-items: stretch;
+    gap: 32px;
+    .header-image {
+      border-radius: 100%;
+    }
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  dt {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: #2A324B;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 32px;
+    margin-bottom: 7px;
+  }
+  dd {
+    color: #767B91;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+`
 
 export default function Staff() {
   const [selectedYear, setSelectedYear] = useState(2021)
+  const { query } = useRouter();
+  const selectedMember = staff.find(member => slugify(member.name).toLocaleLowerCase() === query.name)
   return (
     <>
       <HeaderContainer>
@@ -238,14 +289,8 @@ export default function Staff() {
                   name={member.name}
                   href={`/staff?name=${slugify(member.name).toLowerCase()}`}
                   image={`/img/team/${slugify(member.name).toLowerCase()}.jpg`}
-                  badges={[
-                    member.mentor && <Badge>Mentor</Badge>,
-                    member.teacher && <Badge secondary>Instructor</Badge>
-                  ]}
-                  body={[
-                    member.linkedin && <SocialLink name="linkedin" handle={member.linkedin} />,
-                    member.twitter && <SocialLink name="twitter" handle={member.twitter} />
-                  ]}
+                  badges={<Badges member={member} />}
+                  body={<Social member={member} />}
                   footer={`Saber más sobre ${member.name}`}
                 />
               </li>
@@ -265,6 +310,51 @@ export default function Staff() {
         </StaffSection>
       </Container>
       <SectionSeparator />
+      <Modal
+        title={selectedMember?.name}
+        isOpen={!!selectedMember}
+        onClose={() => router.push('/staff', 'staff', { scroll: false })}
+      >
+        {selectedMember && <ModalContainer>
+          <header>
+            <Image
+              className="header-image"
+              src={`/img/team/${slugify(selectedMember.name).toLowerCase()}.jpg`}
+              alt=""
+              objectFit="cover"
+              width={158}
+              height={158}
+            />
+            <div>
+              <h2>{selectedMember.name}</h2>
+              <BadgesContainer>
+                <Badges member={selectedMember} />
+              </BadgesContainer>
+              <Social member={selectedMember} />
+            </div>
+          </header>
+          <dl>
+            <dt>
+              <img src="/img/program.svg" /> Primer Programa
+            </dt>
+            <dd>
+              {selectedMember.firstProgram}.
+            </dd>
+            <dt>
+              <img src="/img/hobby.svg" /> Hobbies
+            </dt>
+            <dd>
+              {selectedMember.hobbies}.
+            </dd>
+            <dt>
+              <img src="/img/quote.svg" /> Frase destacada
+            </dt>
+            <dd>
+              “{selectedMember.quote}.”
+            </dd>
+          </dl>
+        </ModalContainer>}
+      </Modal>
     </>
   )
 }
