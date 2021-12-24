@@ -96,6 +96,12 @@ const StaffMember = styled.div`
       margin-top: 24px;
     }
   }
+  &.inverse {
+    .frame {
+      background: ${(props) => props.theme.gradients.backgroundPurple};
+    }
+    color: white;
+  }
   > .frame {
     position absolute;
     bottom: 0;
@@ -108,12 +114,13 @@ const StaffMember = styled.div`
 const BadgeContainer = styled.div`
   display: flex;
   gap: 6px;
-  margin: 24px;
+  margin-top: 24px;
+  margin-bottom: 16px;
 `
 const Badge = styled.span`
   font-size: 12px;
   line-height: 16px;
-  border: 1px solid ${props => props.secondary ? '#9D4EDD' : '#FF7C04'};
+  border: 1px solid ${props => props.inverse ? 'white' : props.secondary ? '#9D4EDD' : '#FF7C04'};
   border-radius: 6px;
   padding: 4px 16px;
   font-weight: bold;
@@ -121,10 +128,12 @@ const Badge = styled.span`
 `
 const SocialLinkContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   gap: 18px;
   height: 32px;
+  text-align: center;
+  font-size: 14px;
 `
 const SocialLink = styled((props) => (
   <a
@@ -212,6 +221,28 @@ export default function Staff() {
                 </StaffMember>
               </li>
             ))}
+            <li>
+              <StaffMember className="inverse">
+                <div className="frame" />
+                <div className="content">
+                  <div className="image-container">
+                    <Image
+                      src={`/img/team/placeholder.svg`}
+                      alt=""
+                      layout="fill"
+                      objectFit="cover"
+                    />
+                  </div>
+                  <Strong>Tú</Strong>
+                  <BadgeContainer>
+                    <Badge inverse>?????</Badge>
+                  </BadgeContainer>
+                  <SocialLinkContainer>
+                    Esta puede ser tu próxima aventura.
+                  </SocialLinkContainer>
+                </div>
+              </StaffMember>
+            </li>
           </StaffMembers>
         </StaffSection>
       </Container>
