@@ -6,6 +6,7 @@ import { useState } from "react"
 import Image from "next/image";
 import staff from "../utils/staff.json"
 import slugify from 'slugify'
+import Link from 'next/link'
 
 const Strong = styled.strong`
   font-weight: 500;
@@ -79,7 +80,7 @@ const StaffMemberContainer = styled.div`
     position: relative;
     z-index: 1;
     box-sizing: border-box;
-    padding: 22px;
+    padding: 32px 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -101,6 +102,9 @@ const StaffMemberContainer = styled.div`
       background: ${(props) => props.theme.gradients.backgroundPurple};
     }
     color: white;
+    footer a {
+      color: white;
+    }
   }
   > .frame {
     position absolute;
@@ -116,18 +120,24 @@ const StaffMemberContainer = styled.div`
     margin-top: 24px;
     margin-bottom: 16px;
   }
-  main {
+  main,footer {
     display: flex;
     align-items: end;
     justify-content: center;
-    gap: 18px;
     height: 32px;
     text-align: center;
     font-size: 14px;
   }
+  main {
+    gap: 18px;
+    margin-bottom: 4px;
+  }
+  footer a {
+    color: #9D4EDD;
+  }
 `
 
-const StaffMember = ({ className, name, image, badges, body }) => (
+const StaffMember = ({ className, name, href, image, badges, body, footer }) => (
   <StaffMemberContainer className={className}>
     <div className="frame" />
     <div className="content">
@@ -146,6 +156,9 @@ const StaffMember = ({ className, name, image, badges, body }) => (
       <main>
         {body}
       </main>
+      <footer>
+        <Link href={href} scroll={false}>{footer}</Link>
+      </footer>
     </div>
   </StaffMemberContainer>
 )
@@ -223,6 +236,7 @@ export default function Staff() {
               <li key={i}>
                 <StaffMember
                   name={member.name}
+                  href={`/staff?name=${slugify(member.name).toLowerCase()}`}
                   image={`/img/team/${slugify(member.name).toLowerCase()}.jpg`}
                   badges={[
                     member.mentor && <Badge>Mentor</Badge>,
@@ -232,6 +246,7 @@ export default function Staff() {
                     member.linkedin && <SocialLink name="linkedin" handle={member.linkedin} />,
                     member.twitter && <SocialLink name="twitter" handle={member.twitter} />
                   ]}
+                  footer={`Saber más sobre ${member.name}`}
                 />
               </li>
             ))}
@@ -239,9 +254,11 @@ export default function Staff() {
               <StaffMember
                 className="inverse"
                 name="Tú"
+                href="/staff"
                 image="/img/team/placeholder.svg"
                 badges={<Badge inverse>?????</Badge>}
                 body="Esta puede ser tu próxima aventura."
+                footer="!Únete a nosotros!"
               />
             </li>
           </StaffMembers>
