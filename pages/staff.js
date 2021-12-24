@@ -72,7 +72,7 @@ const StaffMembers = styled.ol`
     padding: 8px 16px;
   }
 `
-const StaffMember = styled.div`
+const StaffMemberContainer = styled.div`
   width: 255px;
   position: relative;
   .content {
@@ -110,13 +110,46 @@ const StaffMember = styled.div`
     border: 1px solid #E1E5EE;
     border-radius: 4px;
   }
+  .badges {
+    display: flex;
+    gap: 6px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  main {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 18px;
+    height: 32px;
+    text-align: center;
+    font-size: 14px;
+  }
 `
-const BadgeContainer = styled.div`
-  display: flex;
-  gap: 6px;
-  margin-top: 24px;
-  margin-bottom: 16px;
-`
+
+const StaffMember = ({ className, name, image, badges, body }) => (
+  <StaffMemberContainer className={className}>
+    <div className="frame" />
+    <div className="content">
+      <div className="image-container">
+        <Image
+          src={image}
+          alt=""
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <Strong>{name}</Strong>
+      <div className="badges">
+        {badges}
+      </div>
+      <main>
+        {body}
+      </main>
+    </div>
+  </StaffMemberContainer>
+)
+
 const Badge = styled.span`
   font-size: 12px;
   line-height: 16px;
@@ -125,15 +158,6 @@ const Badge = styled.span`
   padding: 4px 16px;
   font-weight: bold;
   text-align: center;
-`
-const SocialLinkContainer = styled.div`
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  gap: 18px;
-  height: 32px;
-  text-align: center;
-  font-size: 14px;
 `
 const SocialLink = styled((props) => (
   <a
@@ -197,51 +221,28 @@ export default function Staff() {
           <StaffMembers>
             {staff.filter(({ years }) => years.includes(selectedYear)).map((member, i) => (
               <li key={i}>
-                <StaffMember>
-                  <div className="frame" />
-                  <div className="content">
-                    <div className="image-container">
-                      <Image
-                        src={`/img/team/${slugify(member.name).toLowerCase()}.jpg`}
-                        alt=""
-                        layout="fill"
-                        objectFit="cover"
-                      />
-                    </div>
-                    <Strong>{member.name}</Strong>
-                    <BadgeContainer>
-                      {member.mentor && <Badge>Mentor</Badge>}
-                      {member.teacher && <Badge secondary>Instructor</Badge>}
-                    </BadgeContainer>
-                    <SocialLinkContainer>
-                      {member.linkedin && <SocialLink name="linkedin" handle={member.linkedin} />}
-                      {member.twitter && <SocialLink name="twitter" handle={member.twitter} />}
-                    </SocialLinkContainer>
-                  </div>
-                </StaffMember>
+                <StaffMember
+                  name={member.name}
+                  image={`/img/team/${slugify(member.name).toLowerCase()}.jpg`}
+                  badges={[
+                    member.mentor && <Badge>Mentor</Badge>,
+                    member.teacher && <Badge secondary>Instructor</Badge>
+                  ]}
+                  body={[
+                    member.linkedin && <SocialLink name="linkedin" handle={member.linkedin} />,
+                    member.twitter && <SocialLink name="twitter" handle={member.twitter} />
+                  ]}
+                />
               </li>
             ))}
             <li>
-              <StaffMember className="inverse">
-                <div className="frame" />
-                <div className="content">
-                  <div className="image-container">
-                    <Image
-                      src={`/img/team/placeholder.svg`}
-                      alt=""
-                      layout="fill"
-                      objectFit="cover"
-                    />
-                  </div>
-                  <Strong>Tú</Strong>
-                  <BadgeContainer>
-                    <Badge inverse>?????</Badge>
-                  </BadgeContainer>
-                  <SocialLinkContainer>
-                    Esta puede ser tu próxima aventura.
-                  </SocialLinkContainer>
-                </div>
-              </StaffMember>
+              <StaffMember
+                className="inverse"
+                name="Tú"
+                image="/img/team/placeholder.svg"
+                badges={<Badge inverse>?????</Badge>}
+                body="Esta puede ser tu próxima aventura."
+              />
             </li>
           </StaffMembers>
         </StaffSection>
