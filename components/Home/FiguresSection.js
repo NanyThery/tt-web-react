@@ -109,9 +109,9 @@ const FiguresSection = (props) => {
         <div>
           {figures.map(({ event, figures }, index) => {
             return (
-              <>
+              <div key={event}>
                 {index < 2 && (
-                  <FigureWrapper className={index > 0 && "past"} key={event}>
+                  <FigureWrapper className={index > 0 && "past"}>
                     <Tag>{event}</Tag>
                     <FigureContainer className={index > 0 && "past"}>
                       {figures.map(({ number, description }, figureIndex) => {
@@ -126,7 +126,7 @@ const FiguresSection = (props) => {
                     {index === 0 && <Divider />}
                   </FigureWrapper>
                 )}
-              </>
+              </div>
             );
           })}
         </div>

@@ -3,11 +3,36 @@
 This is the TeachT3ch website revamped. It's build in NextJs and uses Styled Components for styling. Check out below how deploy and test environment.
 It is directly deployed in Vercel, and the repository `main` branch will automatically deploy.
 
+## Adding Event info bar
+
+Modify the file placed into `/utils/eventBarInfo.js` with the following info:
+
+```js
+export const eventBarInfo = {
+  showUntilTimeStamp: null,
+  eventTitle: (
+    <p>
+      No te pierdas las <span className="bold">Winter Sessions 2021</span>. No
+      te pierdas las Winter Sessions 2021. No te pierdas las Winter Sessions
+      2021. No te pierdas las Winter Sessions 2021.
+    </p>
+  ),
+  eventLinkText: "Comprueba el calendario 👉",
+  eventLinkURL: "/blog",
+};
+```
+
+Where:
+
+- `showUntilTimeStamp`: the bar will be displaying this event until this date. Enter it in timestamp format, number. If empty, the event bar will always show on load.
+- `eventTitle`: the text that will describe the event. Bar will grow according to this text. Max recommended 160 char. Ideal: 100 char.
+- `eventLinkText`: the text of the link if any.
+- `eventLinkURL`: the URL where the link must head to.
 
 ## Tech debt
-- Cookie banner: we decided to postpone this banner since the website does not use cookies at the moment.
-- Adding a custom check box according to the original design. 
 
+- Cookie banner: we decided to postpone this banner since the website does not use cookies at the moment.
+- Adding a custom check box according to the original design.
 
 ## Getting Started
 
@@ -43,5 +68,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-

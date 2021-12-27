@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -14,7 +14,7 @@ html {
 }
 body {
     font-family: 'Ubuntu', sans-serif;
-    width: 100vw;
+    width: 100%;
     background-color: #F2F6FF;
     margin: 0; 
 
@@ -67,6 +67,6 @@ h5 {
 .color-emphasys {
   color: #ff7c04;
 }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
