@@ -94,8 +94,8 @@ const Header = ({ isCourseOpen }) => {
   };
 
   const handleNewsletter = () => {
-    router.push("#cta-section")
-  }
+    router.push("#cta-section");
+  };
 
   return (
     <Container>
@@ -111,8 +111,8 @@ const Header = ({ isCourseOpen }) => {
               </ButtonPrimary>
             ) : (
               <ButtonPrimary onClick={handleNewsletter}>
-              Quiero estar al tanto
-            </ButtonPrimary>
+                Quiero estar al tanto
+              </ButtonPrimary>
             )}
           </ActionsContainer>
         </HeroInfo>

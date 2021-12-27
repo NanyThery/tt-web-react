@@ -1,8 +1,8 @@
-import styled from "styled-components"
-import MenuItems from "../utils/menuItems"
-import SocialMedia from "../utils/socialMedia"
-import Brand from "../components/Brand"
-import NavLink from "next/link"
+import styled from "styled-components";
+import MenuItems from "../utils/menuItems";
+import SocialMedia from "../utils/socialMedia";
+import Brand from "../components/Brand";
+import NavLink from "next/link";
 
 const Container = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ const Container = styled.div`
       order: 2;
     }
   }
-`
+`;
 const Section = styled.div`
   display: flex;
   flex-flow: column;
@@ -54,7 +54,7 @@ const Section = styled.div`
       padding: 0 30px;
     }
   }
-`
+`;
 const NavItem = styled.li`
   font-size: small;
   cursor: pointer;
@@ -65,7 +65,7 @@ const NavItem = styled.li`
   > p {
     line-height: 40px;
   }
-`
+`;
 
 const SocialItem = styled.a`
   display: flex;
@@ -88,9 +88,9 @@ const SocialItem = styled.a`
       display: none;
     }
   }
-`
+`;
 const Footer = () => {
-  const today = new Date()
+  const today = new Date();
   const footerItems = {
     links: [
       ...MenuItems,
@@ -112,7 +112,7 @@ const Footer = () => {
       },
     ],
     social: [...SocialMedia],
-  }
+  };
 
   return (
     <Container>
@@ -135,7 +135,7 @@ const Footer = () => {
                   </NavItem>
                 )}
               </div>
-            )
+            );
           })}
         </ul>
       </Section>
@@ -146,11 +146,11 @@ const Footer = () => {
               <span>{icon}</span>
               <p className="social-label">{label}</p>
             </SocialItem>
-          )
+          );
         })}
       </Section>
     </Container>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

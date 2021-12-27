@@ -92,13 +92,15 @@ const CtaSection = ({ isCourseOpen, onClick }) => {
         <Title>{home.ctaSection[status]["title"]}</Title>
         <Description>{home.ctaSection[status]["description"]}</Description>
         <ActionsContainer>
-          {isCourseOpen = false ? (
-            <ButtonSecondaryWhite onClick={onClick}>
-              {home.ctaSection[status]["cta"]}
-            </ButtonSecondaryWhite>
-          ) : (
-            <NewsletterForm>{home.ctaSection[status]["cta"]}</NewsletterForm>
-          )}
+          {
+            (isCourseOpen = false ? (
+              <ButtonSecondaryWhite onClick={onClick}>
+                {home.ctaSection[status]["cta"]}
+              </ButtonSecondaryWhite>
+            ) : (
+              <NewsletterForm>{home.ctaSection[status]["cta"]}</NewsletterForm>
+            ))
+          }
         </ActionsContainer>
       </LeftCol>
       <RightCol>

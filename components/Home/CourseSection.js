@@ -1,14 +1,14 @@
-import styled from "styled-components"
-import SectionLayout from "../SectionLayout"
-import CourseTabs from "../CourseTabs"
-import { home } from "../../utils/copies"
-import SectionTitleDescription from "../SectionTitleDescription"
+import styled from "styled-components";
+import SectionLayout from "../SectionLayout";
+import CourseTabs from "../CourseTabs";
+import { home } from "../../utils/copies";
+import SectionTitleDescription from "../SectionTitleDescription";
 
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  flex-flow: column; 
+  flex-flow: column;
 
   @media only screen and (max-width: 850px) {
     flex-flow: wrap column;
@@ -16,18 +16,18 @@ const Container = styled((props) => <SectionLayout {...props} />)`
     align-items: center;
     padding: 0;
   }
-`
+`;
 const StyledDescription = styled((props) => (
   <SectionTitleDescription {...props} />
 ))`
   padding: 0 24px;
-`
+`;
 
 const CourseWrapper = styled.div`
   display: flex;
   justify-content: center;
-  width: 100%; 
-`
+  width: 100%;
+`;
 
 const CourseSection = ({ isCourseOpen }) => {
   return (
@@ -40,7 +40,7 @@ const CourseSection = ({ isCourseOpen }) => {
         <CourseTabs isCourseOpen={isCourseOpen}></CourseTabs>
       </CourseWrapper>
     </Container>
-  )
-}
+  );
+};
 
-export default CourseSection
+export default CourseSection;

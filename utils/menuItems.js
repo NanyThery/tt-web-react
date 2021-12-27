@@ -47,6 +47,6 @@ const MenuItems = [
     mobile: false,
     desktop: false,
   },
-]
+];
 
-export default MenuItems
+export default MenuItems;

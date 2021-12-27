@@ -1,6 +1,6 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-const Container = styled.div``
+const Container = styled.div``;
 
 const Brand = ({ positive = true, height = "36", width = "201" }) => {
   return (
@@ -73,7 +73,7 @@ const Brand = ({ positive = true, height = "36", width = "201" }) => {
         />
       </svg>
     </Container>
-  )
-}
+  );
+};
 
-export default Brand
+export default Brand;

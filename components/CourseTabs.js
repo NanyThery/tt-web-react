@@ -1,9 +1,9 @@
-import styled from "styled-components"
-import { courseInfo } from "../utils/copies"
-import { useState } from "react"
-import Image from "next/image"
-import { getIconByName } from "./Icons"
-import {ButtonPrimary} from "./Button"
+import styled from "styled-components";
+import { courseInfo } from "../utils/copies";
+import { useState } from "react";
+import Image from "next/image";
+import { getIconByName } from "./Icons";
+import { ButtonPrimary } from "./Button";
 
 const Container = styled.div`
   background-color: white;
@@ -12,13 +12,13 @@ const Container = styled.div`
   @media only screen and (min-width: 600px) and (max-width: 850px) {
     width: 80%;
   }
-`
+`;
 
 const TabContainer = styled.div`
   display: flex;
   height: 74px;
   border-bottom: 1px solid ${(props) => props.theme.colors.text40};
-`
+`;
 
 const Tab = styled.h4`
   display: flex;
@@ -34,7 +34,7 @@ const Tab = styled.h4`
     text-align: center;
     padding: 0;
   }
-`
+`;
 
 const TabContent = styled.div`
   display: flex;
@@ -43,7 +43,7 @@ const TabContent = styled.div`
   @media only screen and (max-width: 850px) {
     flex-flow: column;
   }
-`
+`;
 const LeftCol = styled.div`
   box-sizing: border-box;
   padding: 20px 24px 0 24px;
@@ -79,15 +79,15 @@ const LeftCol = styled.div`
     height: 250px;
 
     & .left-col-content {
-       & .img-container {
-      position: relative;
-      margin: 0 auto; 
-      width: 60%;
-      height: 60%;
+      & .img-container {
+        position: relative;
+        margin: 0 auto;
+        width: 60%;
+        height: 60%;
+      }
     }
   }
-}
-`
+`;
 
 const RightCol = styled.div`
   flex: 1;
@@ -110,7 +110,7 @@ const RightCol = styled.div`
   }
 
   @media only screen and (max-width: 850px) {
-    padding: 0; 
+    padding: 0;
     & .right-col-top {
       flex-flow: column;
 
@@ -119,12 +119,12 @@ const RightCol = styled.div`
       }
     }
   }
-`
+`;
 const SectionTitle = styled.h4`
   color: ${(props) => props.theme.colors.purpleDark};
   font-weight: 500;
   padding-bottom: 18px;
-`
+`;
 const ReqList = styled.ul`
   list-style: none;
   padding: 0;
@@ -138,7 +138,7 @@ const ReqList = styled.ul`
     font-size: 14px;
     margin-bottom: 24px;
   }
-`
+`;
 const InfoBox = styled.div`
   background-color: ${(props) => props.theme.colors.text20};
   display: flex;
@@ -146,10 +146,10 @@ const InfoBox = styled.div`
   padding: 20px;
   border-radius: 6px;
   color: ${(props) => props.theme.colors.text80};
-`
+`;
 
 const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
-  const [option, setOption] = useState("modA")
+  const [option, setOption] = useState("modA");
   return (
     <Container>
       <TabContainer>
@@ -187,7 +187,7 @@ const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
                     <li key={index}>
                       {getIconByName(icon)} <p>{text}</p>
                     </li>
-                  )
+                  );
                 })}
               </ReqList>
             </div>
@@ -201,7 +201,7 @@ const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
                       <li key={index}>
                         {getIconByName(icon)} <p>{text}</p>
                       </li>
-                    )
+                    );
                   }
                 )}
               </ReqList>
@@ -223,7 +223,7 @@ const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
         </RightCol>
       </TabContent>
     </Container>
-  )
-}
+  );
+};
 
-export default CourseTabs
+export default CourseTabs;

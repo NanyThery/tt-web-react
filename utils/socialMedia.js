@@ -3,7 +3,7 @@ import {
   TwitterIcon,
   LinkedinIcon,
   EmailIcon,
-} from "../components/Icons"
+} from "../components/Icons";
 
 const SocialMedia = [
   {
@@ -29,6 +29,6 @@ const SocialMedia = [
     url: "mailto:teacht3ch@gmail.com",
     icon: <EmailIcon />,
   },
-]
+];
 
-export default SocialMedia
+export default SocialMedia;
