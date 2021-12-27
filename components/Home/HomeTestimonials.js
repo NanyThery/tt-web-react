@@ -1,14 +1,14 @@
-import styled, { css } from "styled-components"
-import SectionLayout from "../SectionLayout"
-import { QuotesIcon } from "../Icons"
-import { useState, useEffect } from "react"
-import SectionTitleDescription from "../SectionTitleDescription"
+import styled, { css } from "styled-components";
+import SectionLayout from "../SectionLayout";
+import { QuotesIcon } from "../Icons";
+import { useState, useEffect } from "react";
+import SectionTitleDescription from "../SectionTitleDescription";
 
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
   flex-flow: column;
   gap: 16px;
-`
+`;
 
 const TestimonialContainer = styled.div`
   box-sizing: border-box;
@@ -35,7 +35,7 @@ const TestimonialContainer = styled.div`
       "card6";
     justify-content: center;
   }
-`
+`;
 
 const darkCardStyles = css`
   right: 0;
@@ -61,7 +61,7 @@ const darkCardStyles = css`
     border-color: ${({ theme: { colors } }) => colors.orange};
     color: ${({ theme: { colors } }) => colors.orange};
   }
-`
+`;
 
 const lightCardStyles = css`
   background-color: white;
@@ -86,7 +86,7 @@ const lightCardStyles = css`
   .tag {
     border-color: ${({ theme: { colors } }) => colors.text60};
   }
-`
+`;
 
 const TestimonialCard = styled.div`
   display: flex;
@@ -123,14 +123,14 @@ const TestimonialCard = styled.div`
     grid-area: card6;
     ${darkCardStyles};
   }
-`
+`;
 
 const TestimonialInfo = styled.div`
   display: flex;
   gap: 16px;
   justify-content: flex-start;
   align-items: center;
-`
+`;
 const Signature = styled.div`
   display: flex;
   flex-flow: column;
@@ -140,7 +140,7 @@ const Signature = styled.div`
     border-radius: 8px;
     padding: 5px;
   }
-`
+`;
 
 const Avatar = styled.div`
   width: 50px;
@@ -154,59 +154,62 @@ const Avatar = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-`
+`;
 const getRandomTestimonials = ({ maxNum, testimonials }) => {
-  let random = []
+  let random = [];
 
-  const pickedStudentPos = []
-  const pickedCollaboratorPos = []
+  const pickedStudentPos = [];
+  const pickedCollaboratorPos = [];
 
   function getStudent() {
     const randomStudentTestimonial = Math.floor(
       Math.random() * testimonials.content.students.length
-    )
+    );
     if (!pickedStudentPos.includes(randomStudentTestimonial)) {
-      pickedStudentPos.push(randomStudentTestimonial)
+      pickedStudentPos.push(randomStudentTestimonial);
       return random.push(
         testimonials.content.students[randomStudentTestimonial]
-      )
+      );
     } else {
-      getStudent()
+      getStudent();
     }
   }
 
   function getCollaborator() {
     const randomCollaboratorTestimonial = Math.floor(
       Math.random() * testimonials.content.collaborators.length
-    )
+    );
     if (!pickedCollaboratorPos.includes(randomCollaboratorTestimonial)) {
-      pickedCollaboratorPos.push(randomCollaboratorTestimonial)
+      pickedCollaboratorPos.push(randomCollaboratorTestimonial);
       return random.push(
         testimonials.content.collaborators[randomCollaboratorTestimonial]
-      )
+      );
     } else {
-      getCollaborator()
+      getCollaborator();
     }
   }
 
   for (let i = 0; i < maxNum / 2; i++) {
-    getStudent()
-    getCollaborator()
+    getStudent();
+    getCollaborator();
   }
 
-  return random
-}
+  return random;
+};
 
 const HomeTestimonials = ({ data: testimonials }) => {
-  const [selectedTestimonials, setSelectedTestimonials] = useState([])
+  const [selectedTestimonials, setSelectedTestimonials] = useState([]);
 
   useEffect(() => {
-    setSelectedTestimonials(getRandomTestimonials({ maxNum: 6, testimonials }))
-  }, [testimonials])
+    setSelectedTestimonials(getRandomTestimonials({ maxNum: 6, testimonials }));
+  }, [testimonials]);
 
   return (
     <Container>
-      <SectionTitleDescription title={testimonials.title} description={testimonials.description}/>
+      <SectionTitleDescription
+        title={testimonials.title}
+        description={testimonials.description}
+      />
       <TestimonialContainer>
         {selectedTestimonials.map(
           ({ testimonial, author, tag, image }, index) => {
@@ -224,12 +227,12 @@ const HomeTestimonials = ({ data: testimonials }) => {
                   </Signature>
                 </TestimonialInfo>
               </TestimonialCard>
-            )
+            );
           }
         )}
       </TestimonialContainer>
     </Container>
-  )
-}
+  );
+};
 
-export default HomeTestimonials
+export default HomeTestimonials;

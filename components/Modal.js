@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import ReactModal from 'react-modal'
-import styled from "styled-components"
+import { useEffect, useState } from "react";
+import ReactModal from "react-modal";
+import styled from "styled-components";
 
-ReactModal.setAppElement('#__next');
+ReactModal.setAppElement("#__next");
 
 const CloseButton = styled.button`
   background: none;
@@ -12,13 +12,13 @@ const CloseButton = styled.button`
   top: 16px;
   right: 32px;
   padding: 0;
-`
+`;
 
 export default function Modal({ title, children, isOpen, onClose }) {
   const [modalIsOpen, setModalIsOpen] = useState(isOpen);
   useEffect(() => {
-    setModalIsOpen(isOpen)
-  }, [isOpen])
+    setModalIsOpen(isOpen);
+  }, [isOpen]);
   return (
     <>
       <style>{`
@@ -46,18 +46,18 @@ export default function Modal({ title, children, isOpen, onClose }) {
         shouldCloseOnOverlayClick
         style={{
           overlay: {
-            zIndex: '1000',
+            zIndex: "1000",
           },
           content: {
-            backgroundColor: 'white',
-            top: '50%',
-            left: '50%',
-            right: 'auto',
-            bottom: 'auto',
-            marginRight: '-50%',
-            transform: 'translate(-50%, -50%)',
-            padding: "48px 48px 24px 48px"
-          }
+            backgroundColor: "white",
+            top: "50%",
+            left: "50%",
+            right: "auto",
+            bottom: "auto",
+            marginRight: "-50%",
+            transform: "translate(-50%, -50%)",
+            padding: "48px 48px 24px 48px",
+          },
         }}
         onRequestClose={() => setModalIsOpen(false)}
         onAfterClose={onClose}
@@ -68,5 +68,5 @@ export default function Modal({ title, children, isOpen, onClose }) {
         </CloseButton>
       </ReactModal>
     </>
-  )
+  );
 }

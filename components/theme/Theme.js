@@ -1,4 +1,4 @@
-import { ThemeProvider } from "styled-components"
+import { ThemeProvider } from "styled-components";
 
 const theme = {
   colors: {
@@ -25,10 +25,10 @@ const theme = {
     backgroundPurpleInverse:
       "linear-gradient(142.63deg, #9D4EDD -6.95%, #3B21D1 42.99%, #150639 93.83%)",
   },
-}
+};
 
 const Theme = ({ children }) => (
   <ThemeProvider theme={theme}>{children}</ThemeProvider>
-)
+);
 
-export default Theme
+export default Theme;

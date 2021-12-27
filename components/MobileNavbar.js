@@ -1,10 +1,10 @@
-import MenuItems from "../utils/menuItems"
-import NavLink from "next/link"
-import styled from "styled-components"
-import { useState } from "react"
-import { MenuIcon, CloseIcon } from "./Icons"
-import SocialMedia from "../utils/socialMedia"
-import Brand from "../components/Brand"
+import MenuItems from "../utils/menuItems";
+import NavLink from "next/link";
+import styled from "styled-components";
+import { useState } from "react";
+import { MenuIcon, CloseIcon } from "./Icons";
+import SocialMedia from "../utils/socialMedia";
+import Brand from "../components/Brand";
 
 const MobileNavBarWrapper = styled.div`
   width: 100%;
@@ -33,7 +33,7 @@ const MobileNavBarWrapper = styled.div`
   @media only screen and (min-width: 850px) {
     display: none;
   }
-`
+`;
 
 const NavBarContainer = styled.div`
   z-index: 3;
@@ -42,7 +42,7 @@ const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`
+`;
 
 const MainLogo = styled.div`
   height: 28px;
@@ -50,7 +50,7 @@ const MainLogo = styled.div`
   > svg {
     height: 100%;
   }
-`
+`;
 
 const MenuContainer = styled.div`
   display: flex;
@@ -59,7 +59,7 @@ const MenuContainer = styled.div`
   gap: 32px;
   flex-flow: column;
   padding: 48px 0 0 0;
-`
+`;
 
 const MenuButton = styled.div`
   height: 42px;
@@ -89,7 +89,7 @@ const MenuButton = styled.div`
     color: ${(props) => props.theme.colors.text100};
     background-color: white;
   }
-`
+`;
 
 const Panel = styled.div`
   z-index: 2;
@@ -107,7 +107,7 @@ const Panel = styled.div`
   &.show-menu {
     right: 0;
   }
-`
+`;
 
 const NavItem = styled.h3`
   display: flex;
@@ -134,13 +134,13 @@ const NavItem = styled.h3`
     font-size: 18px;
     line-height: 16px;
   }
-`
+`;
 
 const SocialContainer = styled.div`
   display: flex;
   padding: 30px;
   justify-content: space-between;
-`
+`;
 const SocialItem = styled.a`
   width: 30px;
   color: rgb(255, 255, 255, 0.7);
@@ -148,11 +148,11 @@ const SocialItem = styled.a`
   a::active {
     color: rgb(255, 255, 255, 0.7);
   }
-`
+`;
 
 const MobileNavbar = ({ router }) => {
-  const [showMenu, setShowMenu] = useState(false)
-  const positiveStyle = !showMenu
+  const [showMenu, setShowMenu] = useState(false);
+  const positiveStyle = !showMenu;
 
   return (
     <MobileNavBarWrapper>
@@ -189,7 +189,7 @@ const MobileNavbar = ({ router }) => {
                   </NavItem>
                 )}
               </div>
-            )
+            );
           })}
         </MenuContainer>
         <SocialContainer>
@@ -198,12 +198,12 @@ const MobileNavbar = ({ router }) => {
               <SocialItem href={url} key={url}>
                 {icon}
               </SocialItem>
-            )
+            );
           })}
         </SocialContainer>
       </Panel>
     </MobileNavBarWrapper>
-  )
-}
+  );
+};
 
-export default MobileNavbar
+export default MobileNavbar;

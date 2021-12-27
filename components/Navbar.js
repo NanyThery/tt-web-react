@@ -3,7 +3,6 @@ import DesktopNavbar from "./DesktopNavbar";
 import MobileNavbar from "./MobileNavbar";
 import styled from "styled-components";
 
-
 const Container = styled.div`
   position: fixed;
   display: flex;
@@ -24,12 +23,11 @@ const Container = styled.div`
   }
 `;
 
-export const Navbar = ({router, startingPosition}) => {
-  
-  const [scrolledNavBar, setScrolledNavBar] = useState(false)
-  const routesWithDarkHeader = ["/", "/staff"]
-  const isDarkMode = routesWithDarkHeader.includes(router.asPath)
-  const currentLocale = router.locale
+export const Navbar = ({ router, startingPosition }) => {
+  const [scrolledNavBar, setScrolledNavBar] = useState(false);
+  const routesWithDarkHeader = ["/", "/staff"];
+  const isDarkMode = routesWithDarkHeader.includes(router.asPath);
+  const currentLocale = router.locale;
 
   const handleScroll = () => {
     if (window.scrollY > 3) {
@@ -43,7 +41,10 @@ export const Navbar = ({router, startingPosition}) => {
   });
 
   return (
-    <Container className={scrolledNavBar && "scrolled-navbar"} startingPosition={startingPosition}>
+    <Container
+      className={scrolledNavBar && "scrolled-navbar"}
+      startingPosition={startingPosition}
+    >
       <MobileNavbar router={router} />
       <DesktopNavbar
         startingPosition={startingPosition}
