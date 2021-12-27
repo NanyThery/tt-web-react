@@ -3,8 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { ButtonPrimary } from "../Button";
 
-const Container = styled.div`
-`;
+const Container = styled.div``;
 
 const InputField = styled.div`
   display: flex;
@@ -30,9 +29,9 @@ const InputField = styled.div`
   }
 `;
 const CheckboxInput = styled.div`
-display: flex; 
-gap: 8px; 
-padding: 8px 0 12px 0; 
+  display: flex;
+  gap: 8px;
+  padding: 8px 0 12px 0;
   > input {
   }
 
@@ -43,14 +42,12 @@ padding: 8px 0 12px 0;
   }
 `;
 
-const CustomButton = styled(props => <ButtonPrimary {...props}/>)`
-
-
-@media only screen and (max-width: 850px) {
-  margin-top: 15px; 
+const CustomButton = styled((props) => <ButtonPrimary {...props} />)`
+  @media only screen and (max-width: 850px) {
+    margin-top: 15px;
     width: 100%;
   }
-`
+`;
 const NewsletterForm = () => {
   const [data, setData] = useState({ username: "", email: "", rgpd: "" });
   const urlId =
@@ -136,6 +133,7 @@ const NewsletterForm = () => {
             name="b_1359a4d31ba1d60fad7f7d4e7_616d10efaf"
             tabIndex="-1"
             value=""
+            readOnly
           />
         </div>
         <CustomButton
@@ -144,7 +142,9 @@ const NewsletterForm = () => {
           name="subscribe"
           id="mc-embedded-subscribe"
           className="button"
-        >Enviar</CustomButton>
+        >
+          Enviar
+        </CustomButton>
       </form>
 
       {/* <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script> */}
