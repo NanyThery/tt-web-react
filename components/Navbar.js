@@ -3,6 +3,7 @@ import DesktopNavbar from "./DesktopNavbar";
 import MobileNavbar from "./MobileNavbar";
 import styled from "styled-components";
 
+
 const Container = styled.div`
   position: fixed;
   display: flex;
@@ -17,13 +18,14 @@ const Container = styled.div`
     height: 74px;
     &.scrolled-navbar {
       background-color: white;
+      top: ${(props) => props.startingPosition};
       height: 60px;
     }
   }
 `;
 
-export const Navbar = () => {
-  const router = useRouter()
+export const Navbar = ({router, startingPosition}) => {
+  
   const [scrolledNavBar, setScrolledNavBar] = useState(false)
   const routesWithDarkHeader = ["/", "/staff"]
   const isDarkMode = routesWithDarkHeader.includes(router.asPath)
@@ -41,7 +43,7 @@ export const Navbar = () => {
   });
 
   return (
-    <Container className={scrolledNavBar && "scrolled-navbar"}>
+    <Container className={scrolledNavBar && "scrolled-navbar"} startingPosition={startingPosition}>
       <MobileNavbar router={router} />
       <DesktopNavbar
         startingPosition={startingPosition}
