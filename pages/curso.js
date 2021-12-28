@@ -15,14 +15,14 @@ const Container = styled.div`
   }
 `;
 
-export default function Curso() {
+export default function Curso({ isCourseOpen }) {
   return (
     <Container>
       <HeaderCurso
         title={cursoSection.header.title}
         description={cursoSection.header.description}
       ></HeaderCurso>
-      <ContentCurso cursoInfo={cursoSection} />
+      <ContentCurso cursoInfo={cursoSection} isCourseOpen={isCourseOpen} />
       <FAQSection />
     </Container>
   );

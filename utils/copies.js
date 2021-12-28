@@ -406,36 +406,21 @@ export const cursoSection = {
     description:
       "Conoce nuesto curso de verano para iniciarte en la programación",
   },
-  videoUrl: "https://youtu.be/Ai0yO3zh06s",
+  videoId: "Ai0yO3zh06s",
   objective: {
     title: "¿Cuál es el objetivo del curso?",
     description: (
-      <div>
-        <p>
-          El objetivo es que le pierdas el miedo y que veas que empezar es más
-          fácil de lo que crees.
-        </p>
-        <p>
-          Nos adentraremos en la programación poquito a poco, a través del
-          desarrollo de una pequeña aplicación web
-        </p>
-        .{" "}
-        <p>
-          Conoceremos los básicos del HTML y el CSS para hacer interfaces, y
-          luego le daremos comportamiento con JavaScript.
-        </p>{" "}
-        <p>
-          Con JavaScript empezaremos a conocer los fundamentos de la
-          programación como las estructuras condicionales, bucles y sentencias
-          entre otros. Usaremos el desarrollo web para que empieces pero desde
-          aquí podrás tomar el camino que tú quieras.
-        </p>
-      </div>
+      <p>
+        El objetivo es que le pierdas el miedo y que veas que empezar es más
+        fácil de lo que crees. Nos adentraremos en la programación poquito a
+        poco, a través del desarrollo de una pequeña aplicación web.
+      </p>
     ),
   },
   syllabus: {
+    title: "Temario",
     description:
-      "Éstos son los contenidos que recorreremos juntos a lo largo de estas 10 semanas",
+      "Éstos son los contenidos que recorreremos juntos a lo largo de estas 10 semanas.",
     items: [
       {
         tag: "Semana 1",

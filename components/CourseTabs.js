@@ -10,7 +10,9 @@ const Container = styled.div`
   width: 100%;
 
   @media only screen and (min-width: 600px) and (max-width: 850px) {
-    width: 80%;
+    &. image {
+      width: 80%;
+    }
   }
 `;
 
@@ -145,6 +147,10 @@ const RightCol = styled.div`
         width: 100%;
       }
     }
+
+    & .column {
+      padding: 24px;
+    }
   }
 `;
 const SectionTitle = styled.h4`
@@ -178,7 +184,7 @@ const InfoBox = styled.div`
 const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
   const [option, setOption] = useState("modA");
   return (
-    <Container>
+    <Container className={variant}>
       <TabContainer variant={variant}>
         <Tab
           className={variant}
