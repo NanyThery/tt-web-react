@@ -433,18 +433,30 @@ export default function Staff({ staff }) {
               </div>
             </header>
             <dl>
-              <dt>
-                <img src="/img/program.svg" /> Primer Programa
-              </dt>
-              <dd>{selectedMember.firstProgram}.</dd>
-              <dt>
-                <img src="/img/hobby.svg" /> Hobbies
-              </dt>
-              <dd>{selectedMember.hobbies}.</dd>
-              <dt>
-                <img src="/img/quote.svg" /> Frase destacada
-              </dt>
-              <dd>“{selectedMember.quote}.”</dd>
+              {selectedMember.firstProgram && (
+                <>
+                  <dt>
+                    <img src="/img/program.svg" /> Primer Programa
+                  </dt>
+                  <dd>{selectedMember.firstProgram}.</dd>
+                </>
+              )}
+              {selectedMember.hobbies && (
+                <>
+                  <dt>
+                    <img src="/img/hobby.svg" /> Hobbies
+                  </dt>
+                  <dd>{selectedMember.hobbies}.</dd>
+                </>
+              )}
+              {selectedMember.quote && (
+                <>
+                  <dt>
+                    <img src="/img/quote.svg" /> Frase destacada
+                  </dt>
+                  <dd>“{selectedMember.quote}.”</dd>
+                </>
+              )}
             </dl>
           </ModalContainer>
         )}
