@@ -15,10 +15,13 @@ export async function getStaticProps() {
   return {
     props: {
       staff: staff.map((member) => {
+        const imageUrl = getRelativeUrl(member, "jpg");
         const videoUrl = getRelativeUrl(member, "mp4");
         return {
           ...member,
-          image: getRelativeUrl(member, "jpg"),
+          image: existsSync(path.join(process.cwd(), "public", imageUrl))
+            ? imageUrl
+            : `/img/team/placeholder.svg`,
           video: existsSync(path.join(process.cwd(), "public", videoUrl))
             ? videoUrl
             : null,
