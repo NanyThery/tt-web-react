@@ -7,7 +7,6 @@ const Container = styled.div`
   background: ${(props) => props.theme.gradients.backgroundOrange};
 
   @media only screen and (max-width: 850px) {
-    padding-bottom: 24px;
   }
 `;
 
@@ -17,11 +16,13 @@ const HeroImg = styled.div`
   width: 30%;
 
   @media only screen and (max-width: 850px) {
-    padding: 20px;
+    height: 100%;
+    width: 100%;
   }
 `;
 
 const StyledHeroInfo = styled((props) => <HeroInfo {...props} />)`
+  color: white;
   max-width: 100%;
 `;
 export default function HeaderCurso({ title, description }) {

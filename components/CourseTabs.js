@@ -112,7 +112,7 @@ const RightCol = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  padding: 10px 24px;
+  padding: 10px 24px 24px 24px;
 
   & .right-col-top {
     width: 100%;
@@ -139,17 +139,18 @@ const RightCol = styled.div`
   }
 
   @media only screen and (max-width: 850px) {
-    padding: 0;
+    padding: 10px 24px;
     & .right-col-top {
       flex-flow: column;
-
-      > div {
-        width: 100%;
-      }
     }
 
     & .column {
-      padding: 24px;
+    }
+
+    & .image {
+      > div {
+        width: 100%;
+      }
     }
   }
 `;
