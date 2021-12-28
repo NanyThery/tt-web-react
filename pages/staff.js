@@ -11,6 +11,8 @@ import Link from "next/link";
 import router, { useRouter } from "next/router";
 import saly from "../public/img/saly.png";
 import staffHeaderImage from "../public/img/staff-header.png";
+import { existsSync } from "fs";
+import path from "path";
 
 const Strong = styled.strong`
   font-weight: 500;
@@ -83,6 +85,42 @@ const StaffMembers = styled.ol`
     padding: 8px 16px;
   }
 `;
+const StaffImage = styled(({ src, videoSrc, ...rest }) => {
+  const [showVideo, setShowVideo] = useState(false);
+  const [videoReady, setVideoReady] = useState(false);
+  return (
+    <div
+      onMouseEnter={() => setShowVideo(true)}
+      onMouseLeave={() => setShowVideo(false)}
+      {...rest}
+    >
+      <Image src={src} alt="" layout="fill" objectFit="cover" />
+      {videoSrc && (showVideo || videoReady) && (
+        <video
+          style={{ opacity: showVideo && videoReady ? 1 : 0 }}
+          autoPlay
+          loop
+          muted
+          playsInline
+          src={videoSrc}
+          onCanPlay={() => setVideoReady(true)}
+          onTransitionEnd={() => !showVideo && setVideoReady(false)}
+        />
+      )}
+    </div>
+  );
+})`
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0); /* for safari */
+  video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+  }
+`;
 const StaffMemberContainer = styled.div`
   width: 255px;
   position: relative;
@@ -95,9 +133,7 @@ const StaffMemberContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    .image-container {
-      position: relative;
-      overflow: hidden;
+    ${StaffImage} {
       border-radius: 4px;
       width: 100%;
       height: 173px;
@@ -154,6 +190,7 @@ const StaffMember = ({
   name,
   href,
   image,
+  video,
   badges,
   body,
   footer,
@@ -161,9 +198,7 @@ const StaffMember = ({
   <StaffMemberContainer className={className}>
     <div className="frame" />
     <div className="content">
-      <div className="image-container">
-        <Image src={image} alt="" layout="fill" objectFit="cover" />
-      </div>
+      <StaffImage src={image} videoSrc={video} />
       <Strong>{name}</Strong>
       <BadgesContainer>{badges}</BadgesContainer>
       <main>{body}</main>
@@ -223,8 +258,10 @@ const ModalContainer = styled.div`
     display: flex;
     align-items: stretch;
     gap: 32px;
-    .header-image {
+    ${StaffImage} {
       border-radius: 100%;
+      width: 158px;
+      height: 158px;
     }
     > div {
       display: flex;
@@ -277,7 +314,26 @@ const FooterBanner = styled.div`
   }
 `;
 
-export default function Staff() {
+export async function getStaticProps() {
+  const getRelativeUrl = (member, extension) =>
+    `/img/team/${slugify(member.name).toLowerCase()}.${extension}`;
+  return {
+    props: {
+      staff: staff.map((member) => {
+        const videoUrl = getRelativeUrl(member, "mp4");
+        return {
+          ...member,
+          image: getRelativeUrl(member, "jpg"),
+          video: existsSync(path.join(process.cwd(), "public", videoUrl))
+            ? videoUrl
+            : null,
+        };
+      }),
+    },
+  };
+}
+
+export default function Staff({ staff }) {
   const [selectedYear, setSelectedYear] = useState(2021);
   const { query } = useRouter();
   const selectedMember = staff.find(
@@ -333,9 +389,8 @@ export default function Staff() {
                   <StaffMember
                     name={member.name}
                     href={`/staff?name=${slugify(member.name).toLowerCase()}`}
-                    image={`/img/team/${slugify(
-                      member.name
-                    ).toLowerCase()}.jpg`}
+                    image={member.image}
+                    video={member.video}
                     badges={<Badges member={member} />}
                     body={<Social member={member} />}
                     footer={`Saber más sobre ${member.name}`}
@@ -365,15 +420,9 @@ export default function Staff() {
         {selectedMember && (
           <ModalContainer>
             <header>
-              <Image
-                className="header-image"
-                src={`/img/team/${slugify(
-                  selectedMember.name
-                ).toLowerCase()}.jpg`}
-                alt=""
-                objectFit="cover"
-                width={158}
-                height={158}
+              <StaffImage
+                src={selectedMember.image}
+                videoSrc={selectedMember.video}
               />
               <div>
                 <h2>{selectedMember.name}</h2>
