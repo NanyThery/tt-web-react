@@ -399,3 +399,151 @@ export const faqSection = {
     },
   ],
 };
+
+export const cursoSection = {
+  header: {
+    title: "Curso de programación TeachTech",
+    description:
+      "Conoce nuesto curso de verano para iniciarte en la programación",
+  },
+  videoUrl: "https://youtu.be/Ai0yO3zh06s",
+  objective: {
+    title: "¿Cuál es el objetivo del curso?",
+    description: (
+      <div>
+        <p>
+          El objetivo es que le pierdas el miedo y que veas que empezar es más
+          fácil de lo que crees.
+        </p>
+        <p>
+          Nos adentraremos en la programación poquito a poco, a través del
+          desarrollo de una pequeña aplicación web
+        </p>
+        .{" "}
+        <p>
+          Conoceremos los básicos del HTML y el CSS para hacer interfaces, y
+          luego le daremos comportamiento con JavaScript.
+        </p>{" "}
+        <p>
+          Con JavaScript empezaremos a conocer los fundamentos de la
+          programación como las estructuras condicionales, bucles y sentencias
+          entre otros. Usaremos el desarrollo web para que empieces pero desde
+          aquí podrás tomar el camino que tú quieras.
+        </p>
+      </div>
+    ),
+  },
+  syllabus: {
+    description:
+      "Éstos son los contenidos que recorreremos juntos a lo largo de estas 10 semanas",
+    items: [
+      {
+        tag: "Semana 1",
+        imageURL: "html5.png",
+        title: "HTML",
+        description: (
+          <p>
+            Contruyamos el esqueleto de nuestro proyecto. Aprenderemos{" "}
+            <span className="bold">qué es el HTML</span>, las principales
+            etiquetas que se usan habitualmente y cómo ver este documento en el
+            ordenador.
+          </p>
+        ),
+      },
+      {
+        tag: "Semana 2",
+        imageURL: "css.png",
+        title: "CSS",
+        description: (
+          <p>
+            Vamos a darle formato a nuestro esqueleto con CSS. Separaremos la
+            capa de contenido (HTML) de la capa de presentación (CSS) y
+            repasaremos las principales propiedades que podemos encontrarnos.
+          </p>
+        ),
+      },
+      {
+        tag: "Semana 3",
+        imageURL: "dom.png",
+        title: "El DOM (1)",
+        description: (
+          <p>
+            ¡Por fin! Vamos a meterle mano a JavaScript. Empezaremos por conocer
+            el DOM, y cómo crear objetos y dotarlos de comportamiento. Y para
+            ello conoceremos qué son las variables y los eventos.
+          </p>
+        ),
+      },
+      {
+        tag: "Semana 4",
+        imageURL: "dom.png",
+        title: "El DOM (2)",
+        description: (
+          <p>
+            Ahora que ya sabemos crearlos, vamos a modificarlos. Vamos a
+            aprender a identificar nuestros elementos a través de JS para poder
+            modificarlos, así como dotarlos de comportamientos adicionales a
+            través de funciones.
+          </p>
+        ),
+      },
+      {
+        tag: "Semana 5",
+        imageURL: "js.png",
+        title: "Javascript - Bucles y arrays",
+        description: (
+          <p>
+            Vamos conocer las estructuras básicas de la programación y que están
+            presentes en casi todos los lenguajes (no sólo en Javascript).
+            Trabajaremos el concepto de &aposarrays&apos (arreglos) para poder
+            manejar variables con muchos datos y cómo poder acceder a ellos y
+            usarlos. Para ello también tendremos que conocer los bucles una
+            estructura fundamental para trabajar con arrays, entre otras cosas.
+          </p>
+        ),
+      },
+      {
+        tag: "Semana 6",
+        imageURL: "js.png",
+        title: "Javascript - Objetos y funciones",
+        description: (
+          <p>
+            Ampliemos nuestra caja de herramientas aprendiendo a eliminar
+            elementos de los arrays. Introduciremos el concepto de
+            &aposobjeto&apos dentro de la programación (también conocidos como
+            &aposdiccionarios&apos).
+          </p>
+        ),
+      },
+      {
+        tag: "Semana 7",
+        imageURL: "data.png",
+        title: "Persistencia de datos en Local Storage",
+        description: (
+          <p>
+            En algún punto quizás necesites guardar información y luego poder
+            recuperarla. Hay muchas formas de conseguir esto, como con bases de
+            datos. Pero vamos a conocer una forma muy sencilla para que puedas
+            ir empezando. Aprenderemos cómo persistir (guardar) datos en nuestro
+            disco local a través de nuestra app y cómo recuperarlos.
+          </p>
+        ),
+      },
+      {
+        tag: "Semana 8, 9 y 10",
+        imageURL: "project.png",
+        title: "Proyecto personal",
+        description: (
+          <p>
+            Durante estas semanas, tendrás que ponerte manos a la obra y poner
+            en práctica todo lo que has aprendido estas semanas. Porque a
+            programar se aprende programando, así que con este proyecto (el que
+            tú elijas) y mano a mano con tu mentor o mentora, te enfrentarás a
+            problemas reales de la programación. ¡Al acaba el curso
+            compartiremos entre todos nuestro proyecto!
+          </p>
+        ),
+      },
+    ],
+  },
+};
