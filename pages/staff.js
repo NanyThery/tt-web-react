@@ -242,8 +242,10 @@ const SocialLink = styled((props) => (
 `;
 const Badges = ({ member }) => (
   <>
-    {member.mentor && <Badge>Mentor</Badge>}
-    {member.teacher && <Badge secondary>Instructor</Badge>}
+    {member.mentor && <Badge>Mentor{member.female && "a"}</Badge>}
+    {member.teacher && (
+      <Badge secondary>Instructor{member.female && "a"}</Badge>
+    )}
   </>
 );
 const Social = ({ member }) => (

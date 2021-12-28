@@ -43,6 +43,7 @@
   },
   {
     "name": "Nadine",
+    "female": true,
     "mentor": true,
     "teacher": false,
     "linkedin": "nadinethery",
@@ -65,6 +66,7 @@
   },
   {
     "name": "Teffa",
+    "female": true,
     "mentor": true,
     "teacher": true,
     "linkedin": "estefaniaoterogarcia",
@@ -236,6 +238,7 @@
   },
   {
     "name": "Andrea",
+    "female": true,
     "mentor": true,
     "teacher": false,
     "linkedin": "andreamaganrey",
