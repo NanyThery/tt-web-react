@@ -10,7 +10,9 @@ const Container = styled.div`
   width: 100%;
 
   @media only screen and (min-width: 600px) and (max-width: 850px) {
-    width: 80%;
+    &. image {
+      width: 80%;
+    }
   }
 `;
 
@@ -29,6 +31,15 @@ const Tab = styled.h4`
     props.active ? "3px solid " + props.theme.colors.orange : ""};
   cursor: pointer;
   padding: 0 24px;
+
+  &.column {
+    flex: 1;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: ${(props) =>
+      props.active ? "" : props.theme.colors.text20};
+  }
+
   @media only screen and (max-width: 850px) {
     width: 50%;
     text-align: center;
@@ -38,8 +49,15 @@ const Tab = styled.h4`
 
 const TabContent = styled.div`
   display: flex;
-  padding: 32px 24px;
   gap: 24px;
+
+  &.image {
+    padding: 32px 24px;
+  }
+  &.column {
+    padding: 0;
+  }
+
   @media only screen and (max-width: 850px) {
     flex-flow: column;
   }
@@ -94,26 +112,42 @@ const RightCol = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  padding: 10px 24px;
+  padding: 10px 24px 24px 24px;
 
   & .right-col-top {
     width: 100%;
     display: flex;
+  }
 
+  & .column {
+    flex-flow: column;
+    padding: 14px 0;
+    > div {
+      width: 100%;
+    }
+  }
+
+  & .image {
     > div {
       width: 50%;
     }
   }
+
   & .right-col-bottom {
     display: flex;
     justify-content: center;
   }
 
   @media only screen and (max-width: 850px) {
-    padding: 0;
+    padding: 10px 24px;
     & .right-col-top {
       flex-flow: column;
+    }
 
+    & .column {
+    }
+
+    & .image {
       > div {
         width: 100%;
       }
@@ -151,34 +185,44 @@ const InfoBox = styled.div`
 const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
   const [option, setOption] = useState("modA");
   return (
-    <Container>
-      <TabContainer>
-        <Tab active={option === "modA"} onClick={() => setOption("modA")}>
+    <Container className={variant}>
+      <TabContainer variant={variant}>
+        <Tab
+          className={variant}
+          active={option === "modA"}
+          onClick={() => setOption("modA")}
+        >
           {courseInfo.modA.icon} {courseInfo.modA.title}
         </Tab>
-        <Tab active={option === "modB"} onClick={() => setOption("modB")}>
+        <Tab
+          className={variant}
+          active={option === "modB"}
+          onClick={() => setOption("modB")}
+        >
           {courseInfo.modB.icon} {courseInfo.modB.title}
         </Tab>
       </TabContainer>
-      <TabContent>
-        <LeftCol option={option}>
-          <div className="left-col-content">
-            <h2>
-              {courseInfo[option]["title"]} {courseInfo[option].icon}
-            </h2>
-            {courseInfo[option]["description"]}
-            <div className="img-container">
-              <Image
-                key={courseInfo[option]["imgFileName"]}
-                src={`/img/${courseInfo[option]["imgFileName"]}`}
-                alt="Imagen full power"
-                layout="fill"
-              />
+      <TabContent className={variant}>
+        {variant === "image" && (
+          <LeftCol option={option}>
+            <div className="left-col-content">
+              <h2>
+                {courseInfo[option]["title"]} {courseInfo[option].icon}
+              </h2>
+              {courseInfo[option]["description"]}
+              <div className="img-container">
+                <Image
+                  key={courseInfo[option]["imgFileName"]}
+                  src={`/img/${courseInfo[option]["imgFileName"]}`}
+                  alt="Imagen full power"
+                  layout="fill"
+                />
+              </div>
             </div>
-          </div>
-        </LeftCol>
-        <RightCol>
-          <div className="right-col-top">
+          </LeftCol>
+        )}
+        <RightCol variant={variant}>
+          <div className={`right-col-top ${variant}`}>
             <div>
               <SectionTitle>Resumen</SectionTitle>
               <ReqList>
