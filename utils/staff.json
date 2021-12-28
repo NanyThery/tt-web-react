@@ -233,5 +233,16 @@
     "firstProgram": "Ordenar los tiempos de una carrera de coches para obtener el ganador en Ada 95, en el primer año de universidad",
     "hobbies": "Música, leer, planes de naturaleza y disfrutar de todo junto a la familia",
     "quote": "Ningún viento es favorable si no sabes a qué puerto te diriges, Séneca"
+  },
+  {
+    "name": "Andrea",
+    "mentor": true,
+    "teacher": false,
+    "linkedin": "andreamaganrey",
+    "twitter": "AndreaMaganRey",
+    "years": [2021],
+    "firstProgram": "Una 'caja registradora' que registraba un pago y calculaba la vuelta",
+    "hobbies": "Me encantan los videojuegos y ahora estoy enganchada a los libros de Sanderson",
+    "quote": "Primero resuelve el problema. Después, escribe el código -- John Johnson"
   }
 ]
