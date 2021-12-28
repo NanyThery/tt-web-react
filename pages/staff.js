@@ -9,6 +9,8 @@ import staff from "../utils/staff.json";
 import slugify from "slugify";
 import Link from "next/link";
 import router, { useRouter } from "next/router";
+import saly from "../public/img/saly.png";
+import staffHeaderImage from "../public/img/staff-header.png";
 
 const Strong = styled.strong`
   font-weight: 500;
@@ -22,8 +24,14 @@ const HeaderContainer = styled.div`
     padding-bottom: 24px;
   }
 `;
-const HeaderImage = styled.img`
+const HeaderImage = styled((props) => (
+  <div {...props}>
+    {" "}
+    <Image src={props.src} />
+  </div>
+))`
   width: 350px;
+  display: flex;
 `;
 const HeaderVolunteer = styled.div`
   display: flex;
@@ -242,6 +250,32 @@ const ModalContainer = styled.div`
     line-height: 24px;
   }
 `;
+const FooterSection = styled((props) => <SectionLayout {...props} />)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 96px;
+  padding: 0 42px;
+`;
+
+const FooterBanner = styled.div`
+  background: ${(props) => props.theme.gradients.backgroundOrange};
+  border-radius: 6px;
+  color: white;
+  padding: 80px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  .copy {
+    max-width: 431px;
+  }
+  h2 {
+    margin-bottom: 18px;
+    line-height: 42px;
+  }
+`;
 
 export default function Staff() {
   const [selectedYear, setSelectedYear] = useState(2021);
@@ -263,7 +297,7 @@ export default function Staff() {
             </p>
           </HeroInfo>
           <HeroInfo>
-            <HeaderImage src="/img/staff-header.png" />
+            <HeaderImage src={staffHeaderImage} />
           </HeroInfo>
           <HeroInfo>
             <HeaderVolunteer>
@@ -366,6 +400,23 @@ export default function Staff() {
           </ModalContainer>
         )}
       </Modal>
+      <FooterSection>
+        <FooterBanner>
+          <div className="copy">
+            <h2>Únete a Teach[Tech]</h2>
+            <p>
+              Seguimos necesitando <Strong>colaboradores</Strong> que nos ayuden
+              a impulsar el proyecto. Si tienes un perfil en{" "}
+              <Strong>programación, diseño, marketing, social media</Strong> o
+              simplemente <Strong>quieres ayudar</Strong> y unirte a esta
+              apasionante aventura, ¡te esperamos!
+            </p>
+          </div>
+          <div className="image">
+            <Image src={saly} />
+          </div>
+        </FooterBanner>
+      </FooterSection>
     </>
   );
 }
