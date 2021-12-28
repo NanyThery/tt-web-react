@@ -50,12 +50,20 @@ const StaffMemberContainer = styled.div`
     height: 32px;
     text-align: center;
     font-size: 14px;
+    max-width: 100%;
   }
   main {
     margin-bottom: 4px;
   }
   footer a {
     color: #9D4EDD;
+  }
+  footer a, .name {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
   }
 `;
 
@@ -73,7 +81,7 @@ export const StaffMemberCard = ({
     <div className="frame" />
     <div className="content">
       <StaffImage src={image} videoSrc={video} />
-      <Strong>{name}</Strong>
+      <Strong className="name">{name}</Strong>
       <BadgesContainer>{badges}</BadgesContainer>
       <main>{body}</main>
       <footer>
