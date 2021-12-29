@@ -285,6 +285,7 @@ export const courseInfo = {
     icon: "🔥",
     title: "Full Power",
     imgFileName: "full-power.png",
+    badge: "Plazas limitadas",
     description: (
       <p>
         Ideal si puedes dedicarle al menos{" "}
@@ -322,6 +323,7 @@ export const courseInfo = {
   },
   modB: {
     title: "A tu aire",
+    badge: "Sin límite de plazas",
     icon: "🌊",
     description: "Por tu cuenta y a tu ritmo",
     imgFileName: "a-tu-aire.png",
@@ -409,13 +411,8 @@ export const cursoSection = {
   videoId: "Ai0yO3zh06s",
   objective: {
     title: "¿Cuál es el objetivo del curso?",
-    description: (
-      <p>
-        El objetivo es que le pierdas el miedo y que veas que empezar es más
-        fácil de lo que crees. Nos adentraremos en la programación poquito a
-        poco, a través del desarrollo de una pequeña aplicación web.
-      </p>
-    ),
+    description:
+      "El objetivo es que le pierdas el miedo y que veas que empezar es más fácil de lo que crees. Nos adentraremos en la programación poquito a     poco, a través del desarrollo de una pequeña aplicación web.",
   },
   syllabus: {
     title: "Temario",
@@ -480,10 +477,10 @@ export const cursoSection = {
           <p>
             Vamos conocer las estructuras básicas de la programación y que están
             presentes en casi todos los lenguajes (no sólo en Javascript).
-            Trabajaremos el concepto de &aposarrays&apos (arreglos) para poder
-            manejar variables con muchos datos y cómo poder acceder a ellos y
-            usarlos. Para ello también tendremos que conocer los bucles una
-            estructura fundamental para trabajar con arrays, entre otras cosas.
+            Trabajaremos el concepto de arrays (arreglos) para poder manejar
+            variables con muchos datos y cómo poder acceder a ellos y usarlos.
+            Para ello también tendremos que conocer los bucles una estructura
+            fundamental para trabajar con arrays, entre otras cosas.
           </p>
         ),
       },
@@ -494,9 +491,8 @@ export const cursoSection = {
         description: (
           <p>
             Ampliemos nuestra caja de herramientas aprendiendo a eliminar
-            elementos de los arrays. Introduciremos el concepto de
-            &aposobjeto&apos dentro de la programación (también conocidos como
-            &aposdiccionarios&apos).
+            elementos de los arrays. Introduciremos el concepto de objeto dentro
+            de la programación (también conocidos como diccionarios).
           </p>
         ),
       },
@@ -515,7 +511,7 @@ export const cursoSection = {
         ),
       },
       {
-        tag: "Semana 8, 9 y 10",
+        tag: "Semanas 8, 9 y 10",
         imageURL: "project.png",
         title: "Proyecto personal",
         description: (
@@ -524,7 +520,7 @@ export const cursoSection = {
             en práctica todo lo que has aprendido estas semanas. Porque a
             programar se aprende programando, así que con este proyecto (el que
             tú elijas) y mano a mano con tu mentor o mentora, te enfrentarás a
-            problemas reales de la programación. ¡Al acaba el curso
+            problemas reales de la programación. ¡Al acabar el curso
             compartiremos entre todos nuestro proyecto!
           </p>
         ),

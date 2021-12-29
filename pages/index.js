@@ -8,7 +8,7 @@ import CourseSection from "../components/Home/CourseSection";
 import AchieveSection from "../components/Home/AchieveSection";
 import CtaSection from "../components/Home/CtaSection";
 import FiguresSection from "../components/Home/FiguresSection";
-import FAQSection from "../components/Home/FAQSection";
+import FAQSection from "../components/FAQSection";
 
 const Container = styled.div`
   width: 100%;
