@@ -22,6 +22,8 @@ const theme = {
     backgroundPurple:
       "linear-gradient(142.63deg, #150639 -6.95%, #3B21D1 42.99%, #9D4EDD 93.83%)",
     backgroundOrange: "linear-gradient(316.58deg, #5D21D1 2.61%, #FF7C04 100%)",
+    backgroundOrangeInverse:
+      "linear-gradient(142.63deg, #5D21D1 2.61%, #FF7C04 100%)",
     backgroundPurpleInverse:
       "linear-gradient(142.63deg, #9D4EDD -6.95%, #3B21D1 42.99%, #150639 93.83%)",
   },

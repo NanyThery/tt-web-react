@@ -4,9 +4,10 @@ import Image from "next/image";
 
 const Container = styled.div`
   width: 100%;
-  background: ${(props) => props.theme.gradients.backgroundOrange};
+  background: ${(props) => props.theme.gradients.backgroundOrangeInverse};
 
   @media only screen and (max-width: 850px) {
+    background: ${(props) => props.theme.gradients.backgroundOrange};
   }
 `;
 
