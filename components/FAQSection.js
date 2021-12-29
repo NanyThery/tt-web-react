@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import SectionLayout from "../SectionLayout";
-import SectionTitleDescription from "../SectionTitleDescription";
-import { faqSection } from "../../utils/copies";
-import { getIconByName } from "../Icons";
+import SectionLayout from "./SectionLayout";
+import SectionTitleDescription from "./SectionTitleDescription";
+import { faqSection } from "../utils/copies";
+import { getIconByName } from "./Icons";
 import Image from "next/image";
 import { Collapse } from "react-collapse";
 import { useState } from "react";
@@ -10,6 +10,14 @@ import { useState } from "react";
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
   flex-flow: column;
+`;
+
+const TopSection = styled.div`
+  display: flex;
+
+  @media screen and (max-width: 850px) {
+    margin-bottom: 25px;
+  }
 `;
 const FAQWrapper = styled.div`
   display: flex;
@@ -47,7 +55,22 @@ const LinkList = styled.ul`
 `;
 
 const ImageContainer = styled.div`
+  height: 100%;
   width: 20%;
+
+  &.mobile-only {
+    width: 40%;
+    height: 100%;
+    display: none;
+    min-width: 150px;
+  }
+
+  @media screen and (max-width: 850px) {
+    display: none;
+    &.mobile-only {
+      display: inline;
+    }
+  }
 `;
 
 const QAItem = ({ data, isQAOpen = false }) => {
@@ -86,11 +109,21 @@ const QAItem = ({ data, isQAOpen = false }) => {
 const FAQSection = (props) => {
   return (
     <Container {...props}>
-      <SectionTitleDescription
-        title={faqSection.title}
-        description={faqSection.description}
-      />
-
+      <TopSection>
+        <SectionTitleDescription
+          title={faqSection.title}
+          description={faqSection.description}
+        />
+        <ImageContainer className="mobile-only">
+          <Image
+            src="/img/person-mobile.png"
+            width="100"
+            height="168"
+            layout="responsive"
+            alt="¿Tienes dudas?"
+          />
+        </ImageContainer>
+      </TopSection>
       <FAQWrapper>
         <FAQContainer>
           {faqSection.qa.map((item, index) => {

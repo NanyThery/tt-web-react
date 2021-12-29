@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import HeaderCurso from "../components/Curso/HeaderCurso";
 import { cursoSection } from "../utils/copies";
-import FAQSection from "../components/Home/FAQSection";
+import FAQSection from "../components/FAQSection";
 import ContentCurso from "../components/Curso/ContentCurso";
 
 const Container = styled.div`

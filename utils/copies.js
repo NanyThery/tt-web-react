@@ -509,7 +509,7 @@ export const cursoSection = {
         ),
       },
       {
-        tag: "Semana 8, 9 y 10",
+        tag: "Semanas 8, 9 y 10",
         imageURL: "project.png",
         title: "Proyecto personal",
         description: (
@@ -518,7 +518,7 @@ export const cursoSection = {
             en práctica todo lo que has aprendido estas semanas. Porque a
             programar se aprende programando, así que con este proyecto (el que
             tú elijas) y mano a mano con tu mentor o mentora, te enfrentarás a
-            problemas reales de la programación. ¡Al acaba el curso
+            problemas reales de la programación. ¡Al acabar el curso
             compartiremos entre todos nuestro proyecto!
           </p>
         ),

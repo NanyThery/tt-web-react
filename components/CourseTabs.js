@@ -8,6 +8,7 @@ import { ButtonPrimary } from "./Button";
 const Container = styled.div`
   background-color: white;
   width: 100%;
+  height: fit-content;
 
   @media only screen and (min-width: 600px) and (max-width: 850px) {
     &. image {
