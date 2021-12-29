@@ -253,7 +253,6 @@ const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
             </div>
           </div>
           <div className="right-col-bottom">
-            {console.log(isCourseOpen)}
             {isCourseOpen ? (
               <ButtonPrimary onClick={() => {}}>
                 {courseInfo[option]["cta"]["open"]["text"]}

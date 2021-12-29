@@ -5,10 +5,10 @@ import { Badge } from "../Staff/Badges";
 const Container = styled.ul`
   margin: 0;
   list-style: none;
-  padding: 0 0 0 60px;
 
   @media screen and (max-width: 600px) {
-    padding: 0; 
+    padding: 0;
+  }
 `;
 
 const StyledBadge = styled((props) => <Badge {...props} />)`
@@ -41,9 +41,9 @@ const Card = styled.li`
   :before {
     content: "";
     position: absolute;
-    top: 60px;
+    top: 20px;
     left: -15px;
-    height: 310px;
+    height: 320px;
     width: 1px;
     border-left: 1px dashed gray;
   }
@@ -74,7 +74,6 @@ const Card = styled.li`
 `;
 
 const Syllabus = ({ data }) => {
-  console.log(data);
   return (
     <Container>
       {data.map(({ tag, imageURL, title, description }, index) => {

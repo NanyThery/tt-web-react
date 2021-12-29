@@ -3,6 +3,7 @@ import HeaderCurso from "../components/Curso/HeaderCurso";
 import { cursoSection } from "../utils/copies";
 import FAQSection from "../components/FAQSection";
 import ContentCurso from "../components/Curso/ContentCurso";
+import CourseCards from "../components/Curso/CourseCards";
 
 const Container = styled.div`
   width: 100%;
@@ -23,6 +24,7 @@ export default function Curso({ isCourseOpen }) {
         description={cursoSection.header.description}
       ></HeaderCurso>
       <ContentCurso cursoInfo={cursoSection} isCourseOpen={isCourseOpen} />
+      <CourseCards isCourseOpen={isCourseOpen} />
       <FAQSection />
     </Container>
   );
