@@ -13,7 +13,6 @@ const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
   width: 100%;
   height: fit-content;
-
   gap: 24px;
 
   &.full-container {
@@ -25,11 +24,20 @@ const Container = styled((props) => <SectionLayout {...props} />)`
   }
 `;
 
+const CardsContainer = styled.div`
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  gap: 24px;
+
+  @media only screen and (max-width: 850px) {
+    flex-flow: column;
+  }
+`;
+
 const StyledDescription = styled((props) => (
   <SectionTitleDescription {...props} />
-))`
-  padding: 0 24px;
-`;
+))``;
 
 const StyledBadge = styled((props) => <Badge {...props} />)`
   color: white;
@@ -130,9 +138,9 @@ const CourseCards = ({ isCourseOpen }) => {
         description={home.courseSection.description}
       />
       {isMobileVersion.includes(breakpoint) ? (
-        <CourseTabs isCourseOpen={isCourseOpen} variant="column" />
+        <CourseTabs isCourseOpen={isCourseOpen} variant="column-image" />
       ) : (
-        <Container>
+        <CardsContainer>
           {options.map((option) => {
             return (
               <CardContent key={option}>
@@ -204,7 +212,7 @@ const CourseCards = ({ isCourseOpen }) => {
               </CardContent>
             );
           })}
-        </Container>
+        </CardsContainer>
       )}
     </Container>
   );

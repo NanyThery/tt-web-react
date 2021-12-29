@@ -5,6 +5,7 @@ import { Badge } from "../Staff/Badges";
 const Container = styled.ul`
   margin: 0;
   list-style: none;
+  padding-left: 55px;
 
   @media screen and (max-width: 600px) {
     padding: 0;
@@ -55,6 +56,7 @@ const Card = styled.li`
   @media screen and (max-width: 1100px) {
     padding: 32px 46px;
     :before {
+      height: 400px;
     }
   }
 

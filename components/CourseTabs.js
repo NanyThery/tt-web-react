@@ -16,7 +16,6 @@ const Container = styled.div`
     }
   }
 `;
-
 const TabContainer = styled.div`
   display: flex;
   height: 74px;
@@ -57,6 +56,11 @@ const TabContent = styled.div`
   }
   &.column {
     padding: 0;
+  }
+
+  &.column-image {
+    flex-flow: column;
+    padding: 24px;
   }
 
   @media only screen and (max-width: 850px) {
@@ -141,11 +145,13 @@ const RightCol = styled.div`
 
   @media only screen and (max-width: 850px) {
     padding: 10px 24px;
+
     & .right-col-top {
       flex-flow: column;
     }
 
-    & .column {
+    & .column-image {
+      padding: 0;
     }
 
     & .image {
@@ -204,7 +210,7 @@ const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
         </Tab>
       </TabContainer>
       <TabContent className={variant}>
-        {variant === "image" && (
+        {(variant === "image" || variant === "column-image") && (
           <LeftCol option={option}>
             <div className="left-col-content">
               <h2>
@@ -222,7 +228,7 @@ const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
             </div>
           </LeftCol>
         )}
-        <RightCol variant={variant}>
+        <RightCol className={`${variant}`} variant={variant}>
           <div className={`right-col-top ${variant}`}>
             <div>
               <SectionTitle>Resumen</SectionTitle>

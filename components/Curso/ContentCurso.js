@@ -5,11 +5,10 @@ import Syllabus from "./Syllabus";
 
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
-  padding: 25px 20px;
   gap: 60px;
 
   @media only screen and (max-width: 850px) {
-    padding-bottom: 24px;
+    padding-top: 10px;
     flex-flow: column-reverse;
     align-items: center;
   }
@@ -20,7 +19,6 @@ const LeftCol = styled.div`
   flex-flow: column;
   flex: 1;
   transform: translateY(-60px);
-
   @media only screen and (max-width: 850px) {
     transform: none;
   }
