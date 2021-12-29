@@ -409,13 +409,8 @@ export const cursoSection = {
   videoId: "Ai0yO3zh06s",
   objective: {
     title: "¿Cuál es el objetivo del curso?",
-    description: (
-      <p>
-        El objetivo es que le pierdas el miedo y que veas que empezar es más
-        fácil de lo que crees. Nos adentraremos en la programación poquito a
-        poco, a través del desarrollo de una pequeña aplicación web.
-      </p>
-    ),
+    description:
+      "El objetivo es que le pierdas el miedo y que veas que empezar es más fácil de lo que crees. Nos adentraremos en la programación poquito a     poco, a través del desarrollo de una pequeña aplicación web.",
   },
   syllabus: {
     title: "Temario",
@@ -480,10 +475,10 @@ export const cursoSection = {
           <p>
             Vamos conocer las estructuras básicas de la programación y que están
             presentes en casi todos los lenguajes (no sólo en Javascript).
-            Trabajaremos el concepto de &aposarrays&apos (arreglos) para poder
-            manejar variables con muchos datos y cómo poder acceder a ellos y
-            usarlos. Para ello también tendremos que conocer los bucles una
-            estructura fundamental para trabajar con arrays, entre otras cosas.
+            Trabajaremos el concepto de arrays (arreglos) para poder manejar
+            variables con muchos datos y cómo poder acceder a ellos y usarlos.
+            Para ello también tendremos que conocer los bucles una estructura
+            fundamental para trabajar con arrays, entre otras cosas.
           </p>
         ),
       },
@@ -494,9 +489,8 @@ export const cursoSection = {
         description: (
           <p>
             Ampliemos nuestra caja de herramientas aprendiendo a eliminar
-            elementos de los arrays. Introduciremos el concepto de
-            &aposobjeto&apos dentro de la programación (también conocidos como
-            &aposdiccionarios&apos).
+            elementos de los arrays. Introduciremos el concepto de objeto dentro
+            de la programación (también conocidos como diccionarios).
           </p>
         ),
       },
