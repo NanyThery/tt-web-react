@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { HeroContainer, HeroInfo } from "../Home/Header";
 import staffHeaderImage from "../../public/img/staff-header.png";
-import { Strong } from "../Strong";
 import Image from "next/image";
 
 const Container = styled.div`
@@ -13,7 +12,6 @@ const Container = styled.div`
 `;
 const HeaderImage = styled((props) => (
   <div {...props}>
-    {" "}
     <Image src={props.src} />
   </div>
 ))`
@@ -79,12 +77,12 @@ const StaffHeaderSection = () => (
       <StyledHeroInfo>
         <header>
           <h2>Mentores & Profes</h2>
-          <Strong>Los que estamos detrás de todo esto.</Strong>
+          <strong>Los que estamos detrás de todo esto.</strong>
         </header>
         <p>
           Ya somos muchos los que desde 2021 llevamos impartiendo este curso.
-          Sin el esfuerzo de <Strong>profes</Strong>, <Strong>mentores</Strong>{" "}
-          y <Strong>colaboradores</Strong> nada de esto sería posible. ¿Quieres
+          Sin el esfuerzo de <strong>profes</strong>, <strong>mentores</strong>{" "}
+          y <strong>colaboradores</strong> nada de esto sería posible. ¿Quieres
           conocerlos?
         </p>
       </StyledHeroInfo>
@@ -93,7 +91,7 @@ const StaffHeaderSection = () => (
       </StyledHeroInfo>
       <HeaderVolunteerContainer as={StyledHeroInfo}>
         <HeaderVolunteer>
-          <Strong>¿Quieres ser voluntario?</Strong>
+          <strong>¿Quieres ser voluntario?</strong>
           <p>
             Si quieres ayudarnos puedes hacerte colaborador, mentor o profe. ¡Te
             esperamos!

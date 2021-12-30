@@ -67,6 +67,10 @@ h5 {
 .color-emphasys {
   color: #ff7c04;
 }
+
+strong {
+  font-weight: 500;
+}
 `;
 
 export default GlobalStyle;

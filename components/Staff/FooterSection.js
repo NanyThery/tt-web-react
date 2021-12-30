@@ -1,14 +1,8 @@
 import styled from "styled-components";
 import SectionLayout from "../SectionLayout";
 import saly from "../../public/img/saly.png";
-import { Strong } from "../Strong";
 import Image from "next/image";
 
-const FooterContainer = styled((props) => <SectionLayout {...props} />)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 const FooterBanner = styled.div`
   background: ${(props) => props.theme.gradients.backgroundOrange};
   border-radius: 6px;
@@ -50,15 +44,15 @@ const FooterBanner = styled.div`
 `;
 
 const FooterSection = () => (
-  <FooterContainer>
+  <SectionLayout>
     <FooterBanner>
       <div className="copy">
         <h2>Únete a Teach[Tech]</h2>
         <p>
-          Seguimos necesitando <Strong>colaboradores</Strong> que nos ayuden a
+          Seguimos necesitando <strong>colaboradores</strong> que nos ayuden a
           impulsar el proyecto. Si tienes un perfil en{" "}
-          <Strong>programación, diseño, marketing, social media</Strong> o
-          simplemente <Strong>quieres ayudar</Strong> y unirte a esta
+          <strong>programación, diseño, marketing, social media</strong> o
+          simplemente <strong>quieres ayudar</strong> y unirte a esta
           apasionante aventura, ¡te esperamos!
         </p>
       </div>
@@ -66,7 +60,7 @@ const FooterSection = () => (
         <Image src={saly} />
       </div>
     </FooterBanner>
-  </FooterContainer>
+  </SectionLayout>
 );
 
 export default FooterSection;

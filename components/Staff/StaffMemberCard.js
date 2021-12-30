@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Link from "next/link";
 import { StaffImage } from "./StaffImage";
 import { BadgesContainer, Badge } from "./Badges";
-import { Strong } from "../Strong";
 
 const StaffMemberContainer = styled.div`
   width: 255px;
@@ -106,7 +105,7 @@ export const StaffMemberCard = ({
     <div className="frame" />
     <div className="content">
       <StaffImage src={image} videoSrc={video} />
-      <Strong className="name">{name}</Strong>
+      <strong className="name">{name}</strong>
       <BadgesContainer>{badges}</BadgesContainer>
       <main>{body}</main>
       <footer>
