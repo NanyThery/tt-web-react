@@ -4,13 +4,11 @@ import staffHeaderImage from "../../public/img/staff-header.png";
 import { Strong } from "../Strong";
 import Image from "next/image";
 
-const HeaderContainer = styled.div`
+const Container = styled.div`
   background: ${(props) => props.theme.gradients.backgroundPurpleInverse};
-
   @media only screen and (max-width: 850px) {
-    background: transparent;
-    height: fit-content;
-    padding-bottom: 24px;
+    text-align: center;
+    background: ${(props) => props.theme.gradients.backgroundPurple};
   }
 `;
 const HeaderImage = styled((props) => (
@@ -21,8 +19,13 @@ const HeaderImage = styled((props) => (
 ))`
   width: 350px;
   display: flex;
+  max-width: 100%;
+  @media only screen and (min-width: 1140px) {
+    margin: 0 30px;
+  }
 `;
 const HeaderVolunteer = styled.div`
+  max-width: 255px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,6 +34,10 @@ const HeaderVolunteer = styled.div`
   border: 2px solid ${(props) => props.theme.colors.purpleLight};
   border-radius: 3px;
   text-align: center;
+  strong {
+    font-size: 18px;
+    white-space: nowrap;
+  }
   p {
     font-size: 14px;
     line-height: 24px;
@@ -39,23 +46,52 @@ const HeaderVolunteer = styled.div`
     margin-bottom: 8px;
   }
 `;
+const StyledHeroInfo = styled((props) => <HeroInfo {...props} />)`
+  color: white;
+  h2 {
+    margin-bottom: 16px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  @media only screen and (max-width: 850px) {
+    max-width: 100%;
+    padding: 0 8px;
+    h2 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    p {
+      color: #f2f6ff;
+    }
+  }
+`;
+const HeaderVolunteerContainer = styled.div`
+  @media only screen and (max-width: 1140px) {
+    display: none;
+  }
+`;
 
 const StaffHeaderSection = () => (
-  <HeaderContainer>
+  <Container>
     <HeroContainer>
-      <HeroInfo>
-        <h2>Mentores & Profes</h2>
-        <Strong>Los que estamos detrás de todo esto.</Strong>
+      <StyledHeroInfo>
+        <header>
+          <h2>Mentores & Profes</h2>
+          <Strong>Los que estamos detrás de todo esto.</Strong>
+        </header>
         <p>
           Ya somos muchos los que desde 2021 llevamos impartiendo este curso.
-          Sin el esfuerzo de profes, mentores y colaboradores nada de esto sería
-          posible. ¿Quieres conocerlos?
+          Sin el esfuerzo de <Strong>profes</Strong>, <Strong>mentores</Strong>{" "}
+          y <Strong>colaboradores</Strong> nada de esto sería posible. ¿Quieres
+          conocerlos?
         </p>
-      </HeroInfo>
-      <HeroInfo>
+      </StyledHeroInfo>
+      <StyledHeroInfo>
         <HeaderImage src={staffHeaderImage} />
-      </HeroInfo>
-      <HeroInfo>
+      </StyledHeroInfo>
+      <HeaderVolunteerContainer as={StyledHeroInfo}>
         <HeaderVolunteer>
           <Strong>¿Quieres ser voluntario?</Strong>
           <p>
@@ -63,9 +99,9 @@ const StaffHeaderSection = () => (
             esperamos!
           </p>
         </HeaderVolunteer>
-      </HeroInfo>
+      </HeaderVolunteerContainer>
     </HeroContainer>
-  </HeaderContainer>
+  </Container>
 );
 
 export default StaffHeaderSection;

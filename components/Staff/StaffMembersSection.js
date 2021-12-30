@@ -5,6 +5,7 @@ import SocialLinks from "./SocialLinks";
 import { StaffMemberCard } from "./StaffMemberCard";
 import { Badge, Badges } from "./Badges";
 import slug from "../../utils/slug";
+import SectionSeparator from "../SectionSeparator";
 
 const TabsContainer = styled.div`
   box-shadow: 0px 2px 0px #e9ecef;
@@ -29,14 +30,18 @@ const TabButton = styled.button`
 const StaffMembers = styled.ol`
   list-style: none;
   padding: 0;
-  padding-top: 16px;
-  padding-bottom: 64px;
+  margin: 0;
+  padding-top: 40px;
+  @media only screen and (max-width: 850px) {
+    padding-top: 28px;
+  }
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 30px;
   width: 100%;
-  > li {
-    padding: 8px 16px;
+  @media only screen and (max-width: 850px) {
+    gap: 22px 16px;
   }
 `;
 
@@ -87,6 +92,7 @@ const StaffMembersSection = ({ staff }) => {
           </li>
         </StaffMembers>
       </StaffSection>
+      <SectionSeparator />
     </Container>
   );
 };

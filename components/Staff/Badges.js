@@ -5,6 +5,10 @@ export const BadgesContainer = styled.div`
   gap: 6px;
   margin-top: 24px;
   margin-bottom: 16px;
+  @media only screen and (max-width: 850px) {
+    font-size: 16px;
+    margin-top: 16px;
+  }
 `;
 
 export const Badge = styled.span`

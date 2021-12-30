@@ -7,10 +7,21 @@ import SocialLinks from "./SocialLinks";
 
 const ModalContainer = styled.div`
   width: 600px;
+  max-width: 100%;
   header {
     display: flex;
     align-items: stretch;
     gap: 32px;
+    @media only screen and (max-width: 850px) {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      h2 {
+        font-size: 28px;
+      }
+    }
     ${StaffImage} {
       border-radius: 100%;
       width: 158px;
@@ -20,6 +31,9 @@ const ModalContainer = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @media only screen and (max-width: 850px) {
+        align-items: center;
+      }
     }
   }
   dt {

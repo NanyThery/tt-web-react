@@ -37,6 +37,23 @@ export default function Modal({ title, children, isOpen, onClose }) {
         .ReactModal__Overlay--before-close{
             opacity: 0;
         }
+
+        .ReactModal__Content {
+          padding: 48px 30px 24px 30px !important;
+        }
+
+        @media only screen and (max-width: 850px) {
+          .ReactModal__Content {
+            border: none !important;
+            height: 100%;
+          }
+        }
+
+        @media only screen and (min-width: 850px) {
+          .ReactModal__Content {
+            padding: 48px 48px 24px 48px !important;
+          }
+        }
       `}</style>
       <ReactModal
         isOpen={modalIsOpen}
@@ -56,7 +73,8 @@ export default function Modal({ title, children, isOpen, onClose }) {
             bottom: "auto",
             marginRight: "-50%",
             transform: "translate(-50%, -50%)",
-            padding: "48px 48px 24px 48px",
+            boxSizing: "border-box",
+            maxWidth: "100%",
           },
         }}
         onRequestClose={() => setModalIsOpen(false)}

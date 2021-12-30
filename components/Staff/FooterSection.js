@@ -8,7 +8,6 @@ const FooterContainer = styled((props) => <SectionLayout {...props} />)`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 42px;
 `;
 const FooterBanner = styled.div`
   background: ${(props) => props.theme.gradients.backgroundOrange};
@@ -20,8 +19,29 @@ const FooterBanner = styled.div`
   align-items: center;
   justify-content: center;
   gap: 56px;
+  @media only screen and (max-width: 850px) {
+    gap: 28px;
+    flex-direction: column;
+    padding: 32px 16px;
+    text-align: center;
+  }
   .copy {
     max-width: 431px;
+    @media only screen and (max-width: 850px) {
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        color: #f2f6ff;
+        font-size: 14px;
+        max-width: 350px;
+      }
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    .image {
+      max-width: 100%;
+    }
   }
   h2 {
     margin-bottom: 18px;

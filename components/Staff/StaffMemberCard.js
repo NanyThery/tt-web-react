@@ -1,17 +1,22 @@
 import styled from "styled-components";
 import Link from "next/link";
 import { StaffImage } from "./StaffImage";
-import { BadgesContainer } from "./Badges";
+import { BadgesContainer, Badge } from "./Badges";
 import { Strong } from "../Strong";
 
 const StaffMemberContainer = styled.div`
   width: 255px;
+  display: flex;
+  justify-content: center;
+  @media only screen and (max-width: 850px) {
+    width: 148px;
+  }
   position: relative;
   .content {
     position: relative;
     z-index: 1;
     box-sizing: border-box;
-    padding: 32px 20px;
+    padding: 0px 20px 32px 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -20,10 +25,17 @@ const StaffMemberContainer = styled.div`
       border-radius: 4px;
       width: 100%;
       height: 173px;
+      @media only screen and (max-width: 850px) {
+        height: 90px;
+      }
     }
     > strong {
       font-size: 22px;
       margin-top: 24px;
+      @media only screen and (max-width: 850px) {
+        font-size: 16px;
+        margin-top: 16px;
+      }
     }
   }
   &.inverse {
@@ -39,9 +51,19 @@ const StaffMemberContainer = styled.div`
     position absolute;
     bottom: 0;
     width: 100%;
-    top: 90px;
+    top: 60px;
+    @media only screen and (max-width: 850px) {
+      top: 30px;
+    }
     border: 1px solid #E1E5EE;
     border-radius: 4px;
+  }
+  ${Badge} {
+    @media only screen and (max-width: 850px) {
+      font-size: 10px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
   }
   main,footer {
     display: flex;
@@ -50,6 +72,9 @@ const StaffMemberContainer = styled.div`
     height: 32px;
     text-align: center;
     font-size: 14px;
+    @media only screen and (max-width: 850px) {
+      font-size: 11px;
+    }
     max-width: 100%;
   }
   main {
