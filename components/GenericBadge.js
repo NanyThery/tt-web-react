@@ -12,7 +12,7 @@ const Badge = styled.span`
   text-align: center;
 `;
 
-export const GenericBadge = ({ variant, children }) => {
+export const GenericBadge = ({ variant, children, onClick, ...other }) => {
   const theme = useTheme();
 
   const getBadgeVariant = (variant) => {
@@ -36,5 +36,9 @@ export const GenericBadge = ({ variant, children }) => {
     }
   };
 
-  return <Badge variant={getBadgeVariant(variant)}>{children}</Badge>;
+  return (
+    <Badge variant={getBadgeVariant(variant)} onClick={onClick} {...other}>
+      {children}
+    </Badge>
+  );
 };

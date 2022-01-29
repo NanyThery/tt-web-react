@@ -12,22 +12,33 @@ const Container = styled.div`
   border-radius: 6px;
 `;
 const TagContainer = styled.div`
-  display: flex;
   width: 100%;
+  display: flex;
   gap: 8px;
   flex-wrap: wrap;
 `;
 
-const TagSearch = () => {
+const StyledGenericBadge = styled((props) => <GenericBadge {...props} />)`
+  &:hover {
+    cursor: pointer;
+    background-color: ${(props) => props.theme.colors.text40};
+  }
+`;
+
+const TagSearch = ({ onTagSelection = () => {} }) => {
   return (
     <Container>
       <h4>{blogSection.explore}</h4>
       <TagContainer>
         {blogSection.popularTags.map((tag) => {
           return (
-            <GenericBadge key={tag} variant="text80">
+            <StyledGenericBadge
+              key={tag}
+              variant="text80"
+              onClick={() => onTagSelection(tag)}
+            >
               {tag}
-            </GenericBadge>
+            </StyledGenericBadge>
           );
         })}
       </TagContainer>

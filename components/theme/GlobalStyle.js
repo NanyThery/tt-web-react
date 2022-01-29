@@ -9,6 +9,9 @@ const GlobalStyle = createGlobalStyle`
 * {
     box-sizing: border-box ;
 }
+a {
+    color: #9D4EDD;
+}
 html {
     scroll-behavior: smooth;
     flex-flow: column; 
@@ -49,7 +52,6 @@ h4 {
 }
 h5 {
     font-size: 18px;
-    font-weight: 400; 
     line-height: 22px;
     margin: 0;
 }

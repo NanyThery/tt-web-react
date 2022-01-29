@@ -96,7 +96,9 @@ const CtaSection = ({ isCourseOpen, onClick }) => {
                 {home.ctaSection[status]["cta"]}
               </ButtonSecondaryWhite>
             ) : (
-              <NewsletterForm>{home.ctaSection[status]["cta"]}</NewsletterForm>
+              <NewsletterForm variant="light">
+                {home.ctaSection[status]["cta"]}
+              </NewsletterForm>
             ))
           }
         </ActionsContainer>

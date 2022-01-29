@@ -8,6 +8,7 @@ const Button = styled.button`
 `;
 
 export const ButtonPrimary = styled(Button)`
+  width: 100%;
   color: white;
   border: none;
   background-color: ${(props) => props.theme.colors.orange};

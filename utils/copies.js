@@ -84,7 +84,7 @@ export const home = {
       description:
         "¿Te interesa lo que has visto? Si quieres estar al día sobre la apertura de nuevas plazas, trucos sobre programación y mucho más, únete a nuestra newsletter.",
       img: "home-sign-hand.png",
-      cta: "here the email input",
+      cta: "¡Quiero apuntarme!",
     },
   },
   figuresSection: {
@@ -531,15 +531,12 @@ export const cursoSection = {
 
 export const blogSection = {
   explore: "Explora tags populares",
-  popularTags: [
-    "Back-End",
-    "Bases de Datos",
-    "Clases",
-    "Cursos",
-    "DevOps",
-    "Eventos",
-    "Front-End",
-    "Javascript",
-    "ReactJS",
-  ],
+  popularTags: ["Clases", "DevOps", "Eventos", "Ver todo"],
+  newsletter: {
+    title: "¡Suscríbete a nuestra newsletter!",
+    img: "home-sign-hand.png",
+    description:
+      "No te pierdas ninguna novedad, eventos, nuevos recursos y mucho más...",
+    cta: "¡Me suscribo!",
+  },
 };

@@ -47,3 +47,12 @@ export function usePagination(data, itemsPerPage) {
 
   return { next, currentData, currentPage, maxPage };
 }
+
+export function filterArticles(data, tag) {
+  const filtered = data.filter((article) => {
+    if (article.tags.includes(tag)) {
+      return article;
+    }
+  });
+  return filtered;
+}

@@ -15,11 +15,12 @@ const InputField = styled.div`
     padding: 8px;
     line-height: 2;
     border-radius: 4px;
-    border: 1px solid gray;
+    border: 1px solid ${(props) => props.theme.colors.text40};
     margin-bottom: 8px;
   }
 
   > label {
+    color: ${(props) => props.theme.colors.text80};
     font-size: 12px;
     font-weight: 700;
   }
@@ -37,18 +38,18 @@ const CheckboxInput = styled.div`
 
   > span,
   a {
-    color: white;
+    color: ${(props) => props.variant === "light" && "white"};
     font-size: 12px;
   }
 `;
 
-const CustomButton = styled((props) => <ButtonPrimary {...props} />)`
+const ButtonWrapper = styled.div`
+  width: 200px;
   @media only screen and (max-width: 850px) {
     margin-top: 15px;
-    width: 100%;
   }
 `;
-const NewsletterForm = () => {
+const NewsletterForm = ({ variant }) => {
   const [data, setData] = useState({ username: "", email: "", rgpd: "" });
   const urlId =
     "https://gmail.us10.list-manage.com/subscribe/post?u=1359a4d31ba1d60fad7f7d4e7&amp;id=616d10efaf";
@@ -96,7 +97,7 @@ const NewsletterForm = () => {
           />
         </InputField>
 
-        <CheckboxInput>
+        <CheckboxInput variant={variant}>
           <input
             type="checkbox"
             id="gdpr_56557"
@@ -125,7 +126,7 @@ const NewsletterForm = () => {
             style={{ display: "none" }}
           ></div>
         </div>
-        {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
+
         <div aria-hidden="true">
           <input
             hidden
@@ -136,18 +137,18 @@ const NewsletterForm = () => {
             readOnly
           />
         </div>
-        <CustomButton
-          type="submit"
-          value="Subscribe"
-          name="subscribe"
-          id="mc-embedded-subscribe"
-          className="button"
-        >
-          Enviar
-        </CustomButton>
+        <ButtonWrapper>
+          <ButtonPrimary
+            type="submit"
+            value="Subscribe"
+            name="subscribe"
+            id="mc-embedded-subscribe"
+            className="button"
+          >
+            ¡Quiero apuntarme!
+          </ButtonPrimary>
+        </ButtonWrapper>
       </form>
-
-      {/* <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script> */}
     </Container>
   );
 };
