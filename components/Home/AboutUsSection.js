@@ -70,7 +70,6 @@ const AboutUsImage = styled.div`
     border-radius: 8px;
 
     @media only screen and (max-width: 850px) {
-      box-sizing: border-box;
       width: 350px;
       height: 250px;
       justify-content: center;

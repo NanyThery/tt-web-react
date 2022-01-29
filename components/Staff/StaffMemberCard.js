@@ -14,7 +14,7 @@ const StaffMemberContainer = styled.div`
   .content {
     position: relative;
     z-index: 1;
-    box-sizing: border-box;
+    
     padding: 0px 20px 32px 20px;
     width: 100%;
     display: flex;

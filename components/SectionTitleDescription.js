@@ -13,7 +13,6 @@ export const Title = styled.h1`
   }
 `;
 const DescriptionContainer = styled.div`
-  box-sizing: border-box;
   margin-bottom: 30px;
   display: flex;
   flex-flow: column;

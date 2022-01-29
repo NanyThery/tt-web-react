@@ -19,8 +19,6 @@ export const HeroContainer = styled((props) => <SectionLayout {...props} />)`
   display: flex;
   justify-content: space-between;
   padding: 100px 20px 0 20px;
-  box-sizing: border-box;
-
   @media only screen and (max-width: 850px) {
     background: transparent;
     flex-flow: wrap column;
@@ -37,7 +35,7 @@ export const HeroInfo = styled.div`
   flex-wrap: wrap;
   flex-flow: column;
   justify-content: center;
-  box-sizing: border-box;
+
   gap: 16px;
 
   @media only screen and (max-width: 850px) {
@@ -75,7 +73,6 @@ const ActionsContainer = styled.div`
   margin-top: 10px;
 `;
 const HeroImg = styled.div`
-  box-sizing: border-box;
   padding: 50px;
   height: 80%;
   width: 100%;

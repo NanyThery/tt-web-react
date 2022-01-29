@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
-  box-sizing: border-box;
   width: 100%;
   max-width: 1150px;
   margin: 0 auto;

@@ -11,7 +11,6 @@ const NavbarContainerWrapper = styled.div`
   display: flex;
   justify-content: center;
   background-color: transparent;
-  box-sizing: border-box;
   font-size: 14px;
   color: white;
   top: ${(props) => props.startingPosition};
@@ -37,8 +36,7 @@ const NavBarContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
+  justify-content: space-between; ;
 `;
 
 const ItemsContainer = styled.div`

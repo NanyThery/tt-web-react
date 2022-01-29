@@ -6,6 +6,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Ubuntu, ';
     src: url();
 }
+* {
+     ;
+}
 html {
     scroll-behavior: smooth;
     flex-flow: column; 
@@ -13,6 +16,7 @@ html {
     display: flex; 
 }
 body {
+    
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
     background-color: #F2F6FF;

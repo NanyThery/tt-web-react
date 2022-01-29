@@ -5,7 +5,6 @@ import Image from "next/image";
 import SectionTitleDescription from "../SectionTitleDescription";
 
 const Container = styled((props) => <SectionLayout {...props} />)`
-  box-sizing: border-box;
   display: flex;
   gap: 40px;
   padding: 0 20px;
@@ -48,7 +47,6 @@ const RightCol = styled.div`
   }
 `;
 const LeftCol = styled.div`
-  box-sizing: border-box;
   width: 50%;
   display: flex;
   gap: 30px;

@@ -11,8 +11,6 @@ const Container = styled((props) => <SectionLayout {...props} />)`
 `;
 const LeftCol = styled.div`
   width: 50%;
-  box-sizing: border-box;
-
   height: 80%;
   position: relative;
 

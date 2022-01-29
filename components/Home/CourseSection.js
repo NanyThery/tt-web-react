@@ -7,7 +7,6 @@ import SectionTitleDescription from "../SectionTitleDescription";
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
   flex-flow: column;
 
   @media only screen and (max-width: 850px) {

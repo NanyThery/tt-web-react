@@ -68,7 +68,6 @@ const TabContent = styled.div`
   }
 `;
 const LeftCol = styled.div`
-  box-sizing: border-box;
   padding: 20px 24px 0 24px;
   color: white;
   background: ${(props) =>

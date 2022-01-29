@@ -12,7 +12,6 @@ const Container = styled.div`
 `;
 
 const HeroImg = styled.div`
-  box-sizing: border-box;
   height: 100%;
   width: 30%;
 

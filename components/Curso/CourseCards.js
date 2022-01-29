@@ -52,7 +52,6 @@ const CardContent = styled.div`
   border-radius: 0 0 8px 8px;
 `;
 const LeftCol = styled.div`
-  box-sizing: border-box;
   padding: 24px 40px 0 40px;
   color: white;
   background: ${(props) =>
