@@ -35,6 +35,14 @@ const RightCol = styled.div`
   display: flex;
   flex-flow: column;
   gap: 28px;
+
+  > p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 `;
 
 const BottomInfo = styled.div`
