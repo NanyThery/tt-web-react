@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     src: url();
 }
 * {
-     ;
+    box-sizing: border-box ;
 }
 html {
     scroll-behavior: smooth;

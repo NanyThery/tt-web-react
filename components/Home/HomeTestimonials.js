@@ -92,7 +92,7 @@ const TestimonialCard = styled.div`
   display: flex;
   flex-flow: column;
   position: relative;
-  max-width: 75%;
+
   height: fit-content;
   padding: 32px;
   gap: 24px;

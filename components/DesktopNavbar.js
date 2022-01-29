@@ -1,6 +1,6 @@
 import MenuItems from "../utils/menuItems";
 import NavLink from "next/link";
-import styled, { theme } from "styled-components";
+import styled from "styled-components";
 import Brand from "./Brand";
 
 const NavbarContainerWrapper = styled.div`
@@ -62,7 +62,11 @@ const NavItem = styled.div`
     border-radius: 4px;
   }
   & :hover {
-    color: white;
+    color: ${(props) =>
+      props.positiveStyle
+        ? props.theme.buttons.menuSelectedPositive
+        : props.theme.buttons.menuSelectedNegative};
+    text-decoration: underline;
     margin-bottom: 5px;
   }
   ${(props) =>
