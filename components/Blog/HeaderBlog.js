@@ -8,6 +8,7 @@ import { getFormattedPublishDate } from "../../utils/blogHelpers";
 
 const Container = styled.div`
   display: flex; 
+  position: relative; 
   align-items: center; 
   width: 100%;
   min-height; fit-content; 
@@ -20,6 +21,33 @@ const Container = styled.div`
     padding-bottom: 24px;
   }
 `;
+const DecorationContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+
+  .decor-1 {
+    position: absolute;
+    top: 200px;
+    left: 4%;
+  }
+  .decor-2 {
+    position: absolute;
+    top: 300px;
+    left: 8%;
+  }
+  .decor-3 {
+    position: absolute;
+    left: 60%;
+    bottom: 10px;
+  }
+  .decor-4 {
+    position: absolute;
+    left: 55%;
+    bottom: 50px;
+  }
+`;
 
 const TagContainer = styled.div`
   display: flex;
@@ -27,6 +55,7 @@ const TagContainer = styled.div`
 `;
 
 const LeftCol = styled.div`
+  z-index: 1;
   max-height: 350px;
   width: 50%;
   overflow: hidden;
@@ -40,6 +69,7 @@ const RightCol = styled.div`
   display: flex;
   flex-flow: column;
   gap: 28px;
+  z-index: 1;
 
   > p {
     display: -webkit-box;
@@ -77,6 +107,41 @@ const StyledHeroContainer = styled((props) => <HeroContainer {...props} />)`
 const HeaderBlog = ({ lastPost }) => {
   return (
     <Container>
+      <DecorationContainer>
+        <div className="decor-1">
+          <Image
+            alt="decoration"
+            width="69"
+            height="118"
+            src="/img/decor-snake.png"
+          />
+        </div>
+
+        <div className="decor-2">
+          <Image
+            alt="decoration"
+            width="65"
+            height="73"
+            src="/img/decor-twist1.png"
+          />
+        </div>
+        <div className="decor-3">
+          <Image
+            alt="decoration"
+            width="65"
+            height="65"
+            src="/img/decor-ball.png"
+          />
+        </div>
+        <div className="decor-4">
+          <Image
+            alt="decoration"
+            width="65"
+            height="68"
+            src="/img/decor-twist2.png"
+          />
+        </div>
+      </DecorationContainer>
       <StyledHeroContainer>
         <LeftCol>
           <NavLink href={`/blog/${lastPost.slug}`}>
