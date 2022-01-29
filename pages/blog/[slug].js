@@ -6,7 +6,7 @@ export default function Post({ source, frontmatter }) {
   return (
     <div>
       <h1></h1>
-      {frontmatter}
+
       <MDXRemote {...source} />
     </div>
   );

@@ -3,6 +3,8 @@ import { HeroContainer } from "../Home/Header";
 import { GenericBadge } from "../GenericBadge";
 import Image from "next/image";
 import Author from "./Author";
+import NavLink from "next/link";
+import { getFormattedPublishDate } from "../../utils/blogHelpers";
 
 const Container = styled.div`
   display: flex; 
@@ -28,6 +30,9 @@ const LeftCol = styled.div`
   max-height: 350px;
   width: 50%;
   overflow: hidden;
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 const RightCol = styled.div`
@@ -47,8 +52,21 @@ const RightCol = styled.div`
 
 const BottomInfo = styled.div`
   display: flex;
-  gap: 8px;
   justify-content: flex-start;
+  align-items: center;
+  > p {
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 1px solid white;
+  }
+`;
+
+const NavItem = styled.div`
+  cursor: pointer;
+
+  & :hover {
+    text-decoration: underline;
+  }
 `;
 
 const StyledHeroContainer = styled((props) => <HeroContainer {...props} />)`
@@ -61,7 +79,7 @@ const HeaderBlog = ({ lastPost }) => {
     <Container>
       <StyledHeroContainer>
         <LeftCol>
-          <div>
+          <NavLink href={`/blog/${lastPost.slug}`}>
             <Image
               src={`/img/posts/${lastPost.featuredImg}`}
               alt={lastPost.title}
@@ -70,7 +88,7 @@ const HeaderBlog = ({ lastPost }) => {
               layout="responsive"
               objectFit="cover"
             />
-          </div>
+          </NavLink>
         </LeftCol>
         <RightCol>
           <TagContainer>
@@ -82,13 +100,19 @@ const HeaderBlog = ({ lastPost }) => {
               );
             })}
           </TagContainer>
-          <h2>{lastPost.title}</h2>
-          <p>{lastPost.summary}</p>
+
+          <NavLink href={`/blog/${lastPost.slug}`}>
+            <NavItem>
+              <h2>{lastPost.title}</h2>
+              <p>{lastPost.summary}</p>
+            </NavItem>
+          </NavLink>
           <BottomInfo>
             <Author
               imgURL={`/img/authors/${lastPost.author}`}
               userName={lastPost.userName}
             />
+            <p>{getFormattedPublishDate(lastPost.publishDate)}</p>
           </BottomInfo>
         </RightCol>
       </StyledHeroContainer>

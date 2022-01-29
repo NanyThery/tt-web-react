@@ -1,4 +1,7 @@
+import { format, parse } from "date-fns";
+import { es } from "date-fns/locale";
 import authors from "../utils/authors.json";
+
 export function getAuthorData(userName) {
   return userName && authors.hasOwnProperty(userName.toLowerCase())
     ? authors[userName]
@@ -11,4 +14,13 @@ export function getAuthorImage(imageName) {
   }
 
   return `url(img/authors/${imageName})`;
+}
+
+export function getFormattedPublishDate(date) {
+  const validDate = parse(date, "dd/MM/yyyy", new Date());
+  const formattedDate = format(validDate, "dd MMM. yyyy", {
+    locale: es,
+  });
+
+  return formattedDate;
 }
