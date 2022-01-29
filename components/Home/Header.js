@@ -70,6 +70,7 @@ const Description = styled.p`
 `;
 
 const ActionsContainer = styled.div`
+  width: 200px;
   margin-top: 10px;
 `;
 const HeroImg = styled.div`
