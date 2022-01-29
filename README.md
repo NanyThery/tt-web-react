@@ -34,6 +34,10 @@ Where:
 - Cookie banner: we decided to postpone this banner since the website does not use cookies at the moment.
 - Adding a custom check box according to the original design.
 
+### Refactor
+
+- Unify all badges used in home, blog and profes
+
 ## Getting Started
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

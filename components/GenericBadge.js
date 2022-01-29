@@ -1,6 +1,7 @@
 import styled, { useTheme } from "styled-components";
 
 const Badge = styled.span`
+  width: fit-content;
   font-size: 14px;
   line-height: 24px;
   color: ${(props) => props.variant};
