@@ -25,7 +25,7 @@ const TagContainer = styled.div`
 `;
 
 const LeftCol = styled.div`
-  height: 331px;
+  max-height: 350px;
   width: 50%;
   overflow: hidden;
 `;
@@ -56,9 +56,11 @@ const HeaderBlog = ({ lastPost }) => {
           <div>
             <Image
               src={`/img/posts/${lastPost.featuredImg}`}
+              alt={lastPost.title}
               width="540"
               height="331"
               layout="responsive"
+              objectFit="cover"
             />
           </div>
         </LeftCol>
