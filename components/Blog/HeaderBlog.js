@@ -4,7 +4,9 @@ import { GenericBadge } from "../GenericBadge";
 import Image from "next/image";
 import Author from "./Author";
 import NavLink from "next/link";
+import Link from "next/link";
 import { getFormattedPublishDate } from "../../utils/blogHelpers";
+import React from "react";
 
 const Container = styled.div`
   display: flex; 
@@ -159,16 +161,18 @@ const HeaderBlog = ({ lastPost }) => {
       </DecorationContainer>
       <StyledHeroContainer>
         <LeftCol>
-          <NavLink href={`/blog/${lastPost.slug}`}>
-            <Image
-              src={`/img/posts/${lastPost.featuredImg}`}
-              alt={lastPost.title}
-              width="540"
-              height="331"
-              layout="responsive"
-              objectFit="cover"
-            />
-          </NavLink>
+          <Link href={`/blog/${lastPost.slug}`} passHref>
+            <div>
+              <Image
+                src={`/img/posts/${lastPost.featuredImg}`}
+                alt={lastPost.title}
+                width="540"
+                height="331"
+                layout="responsive"
+                objectFit="cover"
+              />
+            </div>
+          </Link>
         </LeftCol>
         <RightCol>
           <TagContainer>
