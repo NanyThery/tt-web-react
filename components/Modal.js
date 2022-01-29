@@ -45,7 +45,11 @@ export default function Modal({ title, children, isOpen, onClose }) {
         @media only screen and (max-width: 850px) {
           .ReactModal__Content {
             border: none !important;
+            border-radius: 0 !important;
             height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
           }
         }
 
