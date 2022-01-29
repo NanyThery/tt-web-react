@@ -528,3 +528,18 @@ export const cursoSection = {
     ],
   },
 };
+
+export const blogSection = {
+  explore: "Explora tags populares",
+  popularTags: [
+    "Back-End",
+    "Bases de Datos",
+    "Clases",
+    "Cursos",
+    "DevOps",
+    "Eventos",
+    "Front-End",
+    "Javascript",
+    "ReactJS",
+  ],
+};

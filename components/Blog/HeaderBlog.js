@@ -48,7 +48,14 @@ const DecorationContainer = styled.div`
     bottom: 50px;
   }
 `;
-
+const Summary = styled.div`
+  display: -webkit-box;
+  line-height: 1.5;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
 const TagContainer = styled.div`
   display: flex;
   gap: 16px;
@@ -62,6 +69,10 @@ const LeftCol = styled.div`
   :hover {
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 850px) {
+    width: 100%;
+  }
 `;
 
 const RightCol = styled.div`
@@ -71,12 +82,8 @@ const RightCol = styled.div`
   gap: 28px;
   z-index: 1;
 
-  > p {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  @media only screen and (max-width: 850px) {
+    max-width: 100%;
   }
 `;
 
@@ -101,7 +108,15 @@ const NavItem = styled.div`
 
 const StyledHeroContainer = styled((props) => <HeroContainer {...props} />)`
   gap: 100px;
+  padding-top: 0px;
   justify-content: center;
+
+  @media only screen and (max-width: 850px) {
+    flex-flow: column-reverse;
+    padding-top: 100px;
+    gap: 40px;
+    padding-bottom: 24px;
+  }
 `;
 
 const HeaderBlog = ({ lastPost }) => {
@@ -169,7 +184,7 @@ const HeaderBlog = ({ lastPost }) => {
           <NavLink href={`/blog/${lastPost.slug}`}>
             <NavItem>
               <h2>{lastPost.title}</h2>
-              <p>{lastPost.summary}</p>
+              <Summary>{lastPost.summary}</Summary>
             </NavItem>
           </NavLink>
           <BottomInfo>

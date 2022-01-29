@@ -6,6 +6,10 @@ const AvatarContainer = styled.div`
   display: flex;
   gap: 8px;
   align-items: center;
+
+  > p {
+    font-size: 14px;
+  }
 `;
 
 const Author = ({ userName }) => {
