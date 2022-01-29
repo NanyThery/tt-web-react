@@ -207,7 +207,7 @@ const HomeTestimonials = ({ data: testimonials }) => {
                 </span>
                 <p>{testimonial}</p>
                 <TestimonialInfo>
-                  <Avatar image={`/testimonials/${image}`} />
+                  <Avatar image={`${image}`} section="testimonials" />
                   <Signature>
                     <p> {author}</p>
                     <span className={"tag"}>{tag}</span>

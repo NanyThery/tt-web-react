@@ -6,7 +6,7 @@ export const Avatar = styled.div`
   height: 45px;
   border-radius: 50%;
   background-color: gray;
-  background: ${(props) => getAuthorImage(props.image)};
+  background: ${(props) => getAuthorImage(props.image, props.section)};
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

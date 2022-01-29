@@ -9,12 +9,12 @@ export function getAuthorData(userName) {
     : authors["tt"];
 }
 
-export function getAuthorImage(imageName) {
+export function getAuthorImage(imageName, section = "authors") {
   if (!imageName || imageName.includes("default")) {
     return `url(img/generic.png)`;
   }
 
-  return `url(img/authors/${imageName})`;
+  return `url(img/${section}/${imageName})`;
 }
 
 export function getFormattedPublishDate(date) {
