@@ -11,6 +11,10 @@ const Container = styled.div`
   gap: 32px;
   padding: 34px 0;
   border-bottom: 1px solid ${(props) => props.theme.colors.text40};
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const LeftCol = styled.div`

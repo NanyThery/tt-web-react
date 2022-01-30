@@ -11,10 +11,10 @@ export function getAuthorData(userName) {
 
 export function getAuthorImage(imageName, section = "authors") {
   if (!imageName || imageName.includes("default")) {
-    return `url(img/generic.png)`;
+    return `url(/img/generic.png)`;
   }
 
-  return `url(img/${section}/${imageName})`;
+  return `url(/img/${section}/${imageName})`;
 }
 
 export function getFormattedPublishDate(date) {

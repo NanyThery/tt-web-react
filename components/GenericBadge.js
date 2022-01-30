@@ -5,7 +5,11 @@ const Badge = styled.span`
   font-size: 14px;
   line-height: 24px;
   color: ${(props) => props.variant};
-  border: 1px solid ${(props) => props.variant};
+  border: 1px solid
+    ${(props) =>
+      props.variant === props.theme.colors.text80
+        ? props.theme.colors.text60
+        : props.variant};
   border-radius: 6px;
   padding: 4px 6px;
   font-weight: bold;

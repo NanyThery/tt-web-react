@@ -23,10 +23,23 @@ const Container = styled.div`
   }
 `;
 
+const checkIfIsDarkMode = (currentPath) => {
+  const routesWithDarkHeader = ["/", "/staff", "/curso", "/blog", "/blog/"];
+
+  if (currentPath.includes("/blog/")) {
+    return true;
+  }
+  if (routesWithDarkHeader.includes(currentPath)) {
+    return true;
+  }
+
+  return false;
+};
+
 export const Navbar = ({ router, startingPosition }) => {
   const [scrolledNavBar, setScrolledNavBar] = useState(false);
-  const routesWithDarkHeader = ["/", "/staff", "/curso", "/blog"];
-  const isDarkMode = routesWithDarkHeader.includes(router.asPath);
+
+  const isDarkMode = checkIfIsDarkMode(router.asPath);
   const currentLocale = router.locale;
 
   const handleScroll = () => {
