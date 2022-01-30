@@ -70,7 +70,6 @@ const AboutUsImage = styled.div`
     border-radius: 8px;
 
     @media only screen and (max-width: 850px) {
-      box-sizing: border-box;
       width: 350px;
       height: 250px;
       justify-content: center;
@@ -92,6 +91,9 @@ const AboutUsImage = styled.div`
     }
   }
 `;
+const ActionsContainer = styled.div`
+  max-width: 300px;
+`;
 const RightCol = styled.div`
   width: 50%;
   display: flex;
@@ -102,6 +104,7 @@ const RightCol = styled.div`
   @media only screen and (max-width: 850px) {
     width: 100%;
     text-align: center;
+    align-items: center;
 
     > div {
       display: flex;
@@ -137,11 +140,11 @@ const AboutUsSection = ({}) => {
           title={home.aboutUsSection.title}
           description={home.aboutUsSection.description}
         />
-        <div>
+        <ActionsContainer>
           <ButtonPrimary onClick={handlePrimaryCTA}>
             {home.aboutUsSection.cta}
           </ButtonPrimary>
-        </div>
+        </ActionsContainer>
         <NavLink href="/about">{home.aboutUsSection.link}</NavLink>
       </RightCol>
     </Container>

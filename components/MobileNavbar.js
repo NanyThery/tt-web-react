@@ -13,7 +13,6 @@ const MobileNavBarWrapper = styled.div`
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  box-sizing: border-box;
   font-size: 14px;
   color: white;
   padding: 16px;
@@ -68,7 +67,6 @@ const MenuButton = styled.div`
   align-items: center;
   padding: 0 10px;
   box-shadow: 0px 4px 25px rgba(93, 33, 209, 0.2);
-  box-sizing: border-box;
   border-radius: 4px;
   font-size: 16px;
   gap: 11px;

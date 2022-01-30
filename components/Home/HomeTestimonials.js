@@ -3,6 +3,7 @@ import SectionLayout from "../SectionLayout";
 import { QuotesIcon } from "../Icons";
 import { useState, useEffect } from "react";
 import SectionTitleDescription from "../SectionTitleDescription";
+import { Avatar } from "../Avatar";
 
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
@@ -11,7 +12,6 @@ const Container = styled((props) => <SectionLayout {...props} />)`
 `;
 
 const TestimonialContainer = styled.div`
-  box-sizing: border-box;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -92,7 +92,7 @@ const TestimonialCard = styled.div`
   display: flex;
   flex-flow: column;
   position: relative;
-  max-width: 75%;
+
   height: fit-content;
   padding: 32px;
   gap: 24px;
@@ -142,19 +142,6 @@ const Signature = styled.div`
   }
 `;
 
-const Avatar = styled.div`
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: gray;
-  background: ${(props) =>
-    props.image === "default" || props.image === ""
-      ? `url(https://picsum.photos/100/100)`
-      : `url(/testimonials/${props.image})`};
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-`;
 const getRandomTestimonials = ({ maxNum, testimonials }) => {
   let random = [];
 
@@ -220,7 +207,7 @@ const HomeTestimonials = ({ data: testimonials }) => {
                 </span>
                 <p>{testimonial}</p>
                 <TestimonialInfo>
-                  <Avatar image={image} />
+                  <Avatar image={`${image}`} section="testimonials" />
                   <Signature>
                     <p> {author}</p>
                     <span className={"tag"}>{tag}</span>

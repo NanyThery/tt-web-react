@@ -8,7 +8,6 @@ import NewsletterForm from "./NewsletterForm";
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
   border-radius: 6px;
   background: ${(props) => props.theme.gradients.backgroundPurple};
   gap: 24px;
@@ -28,7 +27,6 @@ const LeftCol = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: center;
-  box-sizing: border-box;
   gap: 16px;
 
   @media only screen and (max-width: 850px) {
@@ -98,7 +96,9 @@ const CtaSection = ({ isCourseOpen, onClick }) => {
                 {home.ctaSection[status]["cta"]}
               </ButtonSecondaryWhite>
             ) : (
-              <NewsletterForm>{home.ctaSection[status]["cta"]}</NewsletterForm>
+              <NewsletterForm variant="light">
+                {home.ctaSection[status]["cta"]}
+              </NewsletterForm>
             ))
           }
         </ActionsContainer>

@@ -1,6 +1,6 @@
 import MenuItems from "../utils/menuItems";
 import NavLink from "next/link";
-import styled, { theme } from "styled-components";
+import styled from "styled-components";
 import Brand from "./Brand";
 
 const NavbarContainerWrapper = styled.div`
@@ -11,7 +11,6 @@ const NavbarContainerWrapper = styled.div`
   display: flex;
   justify-content: center;
   background-color: transparent;
-  box-sizing: border-box;
   font-size: 14px;
   color: white;
   top: ${(props) => props.startingPosition};
@@ -37,8 +36,7 @@ const NavBarContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
+  justify-content: space-between; ;
 `;
 
 const ItemsContainer = styled.div`
@@ -64,7 +62,11 @@ const NavItem = styled.div`
     border-radius: 4px;
   }
   & :hover {
-    color: white;
+    color: ${(props) =>
+      props.positiveStyle
+        ? props.theme.buttons.menuSelectedPositive
+        : props.theme.buttons.menuSelectedNegative};
+    text-decoration: underline;
     margin-bottom: 5px;
   }
   ${(props) =>

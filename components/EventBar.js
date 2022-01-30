@@ -7,7 +7,6 @@ import NavLink from "next/link";
 const DesktopWrapper = styled.div`
   align-items: center;
   background-color: white;
-  box-sizing: border-box;
   display: flex;
   display: flex;
   gap: 16px;

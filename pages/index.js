@@ -25,7 +25,7 @@ export default function Home({ isCourseOpen, testimonials }) {
     <Container>
       <Header isCourseOpen={isCourseOpen}></Header>
       <SectionSeparator />
-      <AboutUsSection></AboutUsSection>
+      <AboutUsSection />
       <SectionSeparator />
       <HomeTestimonials data={testimonials} />
       <SectionSeparator />

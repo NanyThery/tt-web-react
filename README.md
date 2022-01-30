@@ -29,10 +29,54 @@ Where:
 - `eventLinkText`: the text of the link if any.
 - `eventLinkURL`: the URL where the link must head to.
 
+## Writing posts in the blog
+
+This website has a Markdown (MDX) blog. In order to write a post, you just need to create a new `.mdx` file in the folder `/posts`.
+
+It is **very important** that the post contains a header frontmatter with the following information:
+
+```js
+---
+title: La infraestructura como código, una introducción
+slug: la-infraestructura-como-codigo
+tags: [Clases, DevOps]
+featuredImg: infra.jpg
+summary: Desde el "hierro" a la "nube" han cambiado muchas cosas en el mundo de la Infraestructura y el Devops. En las últimas Winter Sessions, el profe Nacho nos ha contado cómo ha sido esta evolución y cómo se hace actualmente.
+userName: nanythery
+publishDate: "2021-12-06"
+---
+
+```
+
+- `title`: The title to be shown for the post
+- `slug`: Choose the slug for this post, preferrably keep it just like file name.
+- `tags`: Write all the tags within the array that can be aplicable to this post.
+- `featuredImg`: The featured image should be uploaded to the folder `/public/img/posts` in this field only write the name of the file and the extension.
+- `summary`: Write a summary to be shown in the featured post description.
+- `userName`: Enter the autor userName. If you don't have one, there's a generic TTStaff one.
+- `publishDate`: Enter the publish date in format "YYYY-MM-DD".
+
+Don't forget to include the `---` before and after the fields.
+
+You can start writing right away, following the same MarkDown format rules as usual.
+
+### Special components
+
+MDX files allows you to insert custom components. Since this blog has a custom format, there are several custom components you can use:
+
+- To insert images:
+  - `<CustomImage src='the full path-absolute or relative' alt="the description"/>`
+- To insert videos:
+  - `<YTvideo id='the id of the video' />`
+
 ## Tech debt
 
 - Cookie banner: we decided to postpone this banner since the website does not use cookies at the moment.
 - Adding a custom check box according to the original design.
+
+### Refactor
+
+- Unify all badges used in home, blog and profes
 
 ## Getting Started
 
