@@ -3,17 +3,29 @@ import Image from "next/image";
 import { GenericBadge } from "../GenericBadge";
 import Author from "./Author";
 import { getFormattedPublishDate } from "../../utils/blogHelpers";
+import MoreArticles from "./MoreArticles.js";
 
 const Container = styled.div`
   display: flex;
   flex-flow: column;
   align-items: center;
+  padding: 0 30px;
   width: 100%;
   background-image: ${(props) => props.theme.gradients.backgroundPurpleInverse},
     ${(props) => props.theme.gradients.neutralBackground};
   background-size: 100% 350px, 100% 100%;
   background-position: 0 0, 0 350px;
   background-repeat: no-repeat;
+
+  @media only screen and (max-width: 850px) {
+    background-size: 100% 250px, 100% 100%;
+    background-position: 0 0, 0 280px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    background-size: 100% 200px, 100% 100%;
+    background-position: 0 0, 0 200px;
+  }
 `;
 
 const BodyContent = styled.div`
@@ -34,6 +46,10 @@ const ImageWrapper = styled.div`
   border-radius: 6px;
   overflow: hidden;
   margin-bottom: 50px;
+
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const TagContainer = styled.div`
@@ -65,7 +81,7 @@ const BottomInfo = styled.div`
   }
 `;
 
-const PostLayout = ({ children, frontmatter }) => {
+const PostLayout = ({ children, frontmatter, lastPosts }) => {
   const { title, featuredImg, userName, publishDate, tags } = frontmatter;
 
   return (
@@ -103,6 +119,7 @@ const PostLayout = ({ children, frontmatter }) => {
 
         {children}
       </BodyContent>
+      <MoreArticles postsInfo={lastPosts} />
     </Container>
   );
 };

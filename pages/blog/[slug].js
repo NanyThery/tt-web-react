@@ -2,12 +2,12 @@ import { MDXRemote } from "next-mdx-remote";
 import PostLayout from "../../components/Blog/PostLayout";
 import { MDXComponents } from "../../components/Blog/MDXComponents";
 
-import { getFiles, getFileBySlug } from "../../lib/mdx";
+import { getFiles, getFileBySlug, getLastPosts } from "../../lib/mdx";
 
-export default function Post({ source, frontmatter }) {
+export default function Post({ source, frontmatter, lastPosts }) {
   return (
     <div>
-      <PostLayout frontmatter={frontmatter}>
+      <PostLayout frontmatter={frontmatter} lastPosts={lastPosts}>
         <MDXRemote {...source} components={MDXComponents} />
       </PostLayout>
     </div>
@@ -29,8 +29,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  console.log(params.slug);
   const { source, frontmatter } = await getFileBySlug(params.slug);
+  const lastPosts = await getLastPosts(4);
 
   return {
     props: {
@@ -39,6 +39,7 @@ export async function getStaticProps({ params }) {
         slug: params.slug,
         ...frontmatter,
       },
+      lastPosts,
     },
   };
 }

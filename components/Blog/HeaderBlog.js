@@ -195,6 +195,7 @@ const HeaderBlog = ({ lastPost }) => {
             <Author
               imgURL={`/img/authors/${lastPost.author}`}
               userName={lastPost.userName}
+              variant={"white"}
             />
             <p>{getFormattedPublishDate(lastPost.publishDate)}</p>
           </BottomInfo>

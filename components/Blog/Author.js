@@ -13,12 +13,13 @@ const AvatarContainer = styled.div`
   }
 `;
 
-const Author = ({ userName, variant }) => {
+const Author = ({ userName, variant, imageAvatar = true }) => {
   const { name: authorName, img } = getAuthorData(userName);
 
   const theme = useTheme();
 
   const variants = {
+    white: "white",
     purple: theme.colors.purple,
     orange: theme.colors.orange,
     yellow: theme.colors.yellow,
@@ -39,7 +40,7 @@ const Author = ({ userName, variant }) => {
     <>
       {authorName && (
         <AvatarContainer variant={getVariant(variant)}>
-          <Avatar image={img}></Avatar>
+          {imageAvatar && <Avatar image={img}></Avatar>}
           <p>{authorName}</p>
         </AvatarContainer>
       )}
