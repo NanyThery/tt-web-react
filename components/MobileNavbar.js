@@ -155,8 +155,8 @@ const MobileNavbar = ({ router }) => {
   return (
     <MobileNavBarWrapper>
       <NavBarContainer>
-        <NavLink href="/">
-          <MainLogo>
+        <NavLink href="/" passHref>
+          <MainLogo onClick={() => setShowMenu(!showMenu)}>
             <Brand height="28" width="150" positive={positiveStyle} />
           </MainLogo>
         </NavLink>
