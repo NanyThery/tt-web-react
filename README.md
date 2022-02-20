@@ -60,6 +60,14 @@ Don't forget to include the `---` before and after the fields.
 
 You can start writing right away, following the same MarkDown format rules as usual.
 
+## Adding teachers and mentors to staff
+
+1. Add a new entry to [staff.json](utils/staff.json).
+2. Add a jpg image to the [team](public/img/team) folder. The name must be the person's name in lowercase with dashes instead of spaces. For example `Rubén de Alba` maps to `ruben-de-alba.jpg`.
+3. Optionally, add an `mp4` following the same naming as the image. This will be displayed on hover. We normally get them from https://giphy.com which allows you to download gifs as mp4. The reason to use mp4 instead of gifs is to save a ton of bandwidth.
+
+See [this commit](https://github.com/NanyThery/tt-web-react/commit/9b6b35b6245ed7e66c3fd78622836956605217f5) for a real example.
+
 ### Special components
 
 MDX files allows you to insert custom components. Since this blog has a custom format, there are several custom components you can use:
