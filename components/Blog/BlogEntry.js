@@ -23,6 +23,11 @@ const LeftCol = styled.div`
   width: 255px;
   border-radius: 6px;
   overflow: hidden;
+
+  @media only screen and (max-width: 850px) {
+    width: 125px;
+    height: 125px;
+  }
 `;
 
 const RightCol = styled.div`
@@ -52,12 +57,16 @@ const BottomInfo = styled.div`
     margin-left: 10px;
     border-left: 1px solid ${(props) => props.theme.colors.text100};
   }
+
+  @media only screen and (max-width: 850px) {
+    display: none;
+  }
 `;
 
 export const BlogEntry = ({ postInfo }) => {
   const { tags, slug, title, featuredImg, userName, publishDate } = postInfo;
   return (
-    <NavLink href={`blog/${slug}`}>
+    <NavLink href={`blog/${slug}`} passHref>
       <Container>
         <LeftCol>
           <Image

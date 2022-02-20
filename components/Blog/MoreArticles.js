@@ -11,6 +11,11 @@ const Container = styled.div`
   border-top: 1px solid ${(props) => props.theme.colors.text60};
   margin-top: 60px;
   padding: 60px 0;
+
+  @media only screen and (max-width: 600px) {
+    flex-flow: column;
+    padding: 34px 0;
+  }
 `;
 
 const MoreArticles = ({ postsInfo }) => {
