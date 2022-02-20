@@ -485,5 +485,15 @@
     "firstProgram": "Juego Snake",
     "hobbies": "Snowboard, paddle surf",
     "quote": "La curiosidad mató al gato, pero se murió sabiéndolo"
+  },
+  {
+    "name": "Mel",
+    "mentor": true,
+    "linkedin": "jorgemelgosa",
+    "twitter": "asoglem",
+    "years": [2021],
+    "firstProgram": "Hundir la flota en C \"Madre qué viejo soy :)\"",
+    "hobbies": "Disfrutar de mi familia ahora más que nunca, leer y aprender cualquier cosa constantemente",
+    "quote": "Si tú no trabajas por tus sueños, alguien te contratará para que trabajes por los suyos. SteveJobs"
   }
 ]
