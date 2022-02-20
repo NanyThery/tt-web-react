@@ -22,10 +22,29 @@ const getIconByName = (iconName) => {
       return <PlusIcon />;
     case "smile":
       return <SmileIcon />;
+    case "left-chevron":
+      return <LeftChevron />;
     default:
       return;
   }
 };
+
+const LeftChevron = () => (
+  <svg
+    width="8"
+    height="15"
+    viewBox="0 0 8 15"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M7.70711 0.738328C8.09763 1.12885 8.09763 1.76202 7.70711 2.15254L2.41421 7.44543L7.70711 12.7383C8.09763 13.1289 8.09763 13.762 7.70711 14.1525C7.31658 14.5431 6.68342 14.5431 6.29289 14.1525L0.292893 8.15254C-0.0976311 7.76202 -0.0976311 7.12885 0.292893 6.73833L6.29289 0.738328C6.68342 0.347803 7.31658 0.347803 7.70711 0.738328Z"
+      fill="#767B91"
+    />
+  </svg>
+);
 
 const HomeIcon = () => (
   <svg
@@ -504,6 +523,7 @@ export {
   GithubIcon,
   HomeIcon,
   InfoIcon,
+  LeftChevron,
   LinkedinIcon,
   MedalIcon,
   MenuIcon,

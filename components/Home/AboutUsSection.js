@@ -29,7 +29,7 @@ const AboutUsImage = styled.div`
   position: relative;
   align-items: center;
   padding: 25px 0 25px 75px;
-  max-width: 400px;
+  width: 100%;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -58,7 +58,7 @@ const AboutUsImage = styled.div`
   div.browser-window-pic {
     display: flex;
     width: 85%;
-    height: 65%;
+    height: 85%;
     background-image: radial-gradient(circle, #767b91 50%, transparent 51%),
       radial-gradient(circle, #767b91 50%, transparent 51%),
       radial-gradient(circle, #767b91 50%, transparent 51%),

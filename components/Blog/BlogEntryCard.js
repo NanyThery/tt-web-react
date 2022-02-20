@@ -6,13 +6,17 @@ import { GenericBadge } from "../GenericBadge";
 import { getFormattedPublishDate } from "../../utils/blogHelpers";
 
 const Container = styled.div`
-  width: 250px;
+  width: 255px;
   display: flex;
   flex-flow: column;
   gap: 20px;
 
   &:hover {
     cursor: pointer;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
   }
 `;
 
@@ -43,6 +47,9 @@ const TopInfo = styled.div`
   gap: 15px;
 `;
 
+const StyledTitle = styled.h4`
+  font-weight: 500;
+`;
 const BottomInfo = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -82,7 +89,7 @@ const BlogEntryCard = ({ postInfo }) => {
               })}
             </TagContainer>
 
-            <h4>{title}</h4>
+            <StyledTitle>{title}</StyledTitle>
           </TopInfo>
           <BottomInfo>
             <Author

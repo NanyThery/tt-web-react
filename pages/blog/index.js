@@ -15,7 +15,12 @@ import VerticalNewsletter from "../../components/Blog/VerticalNewsletter";
 const ContentBlog = styled((props) => <SectionLayout {...props} />)`
   display: flex;
   gap: 100px;
-  padding: 60px 0 96px;
+  padding: 60px 34px 96px 34px;
+
+  @media only screen and (max-width: 850px) {
+    flex-flow: column;
+    padding: 0 34px;
+  }
 `;
 
 const LeftColumn = styled.div`
@@ -29,6 +34,9 @@ const RightColumn = styled.div`
   flex-flow: column;
   max-width: 255px;
   gap: 36px;
+  @media only screen and (max-width: 850px) {
+    display: none;
+  }
 `;
 
 export default function Blog({ posts }) {

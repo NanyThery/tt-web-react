@@ -117,7 +117,7 @@ const StyledHeroContainer = styled((props) => <HeroContainer {...props} />)`
     flex-flow: column-reverse;
     padding-top: 100px;
     gap: 40px;
-    padding-bottom: 24px;
+    padding: 32px 32px 0 32px;
   }
 `;
 
@@ -184,7 +184,6 @@ const HeaderBlog = ({ lastPost }) => {
               );
             })}
           </TagContainer>
-
           <NavLink href={`/blog/${lastPost.slug}`}>
             <NavItem>
               <h2>{lastPost.title}</h2>

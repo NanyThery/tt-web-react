@@ -8,5 +8,5 @@ export const eventBarInfo = {
     </p>
   ),
   eventLinkText: "Comprueba el calendario 👉",
-  eventLinkURL: "/blog",
+  eventLinkURL: "/blog/winter-sessions-2021",
 };

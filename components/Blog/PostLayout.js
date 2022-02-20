@@ -4,6 +4,8 @@ import { GenericBadge } from "../GenericBadge";
 import Author from "./Author";
 import { getFormattedPublishDate } from "../../utils/blogHelpers";
 import MoreArticles from "./MoreArticles.js";
+import NavLink from "next/link";
+import { getIconByName } from "../Icons";
 
 const Container = styled.div`
   display: flex;
@@ -80,6 +82,24 @@ const BottomInfo = styled.div`
     border-left: 1px solid ${(props) => props.theme.colors.text80};
   }
 `;
+const StyledText = styled.p`
+  color: ${(props) => props.theme.colors.text80};
+  line-height: 32px;
+  margin: 0 0 20px 0;
+
+  > svg {
+    height: 12px;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    color: ${(props) => props.theme.colors.purple};
+    > svg {
+      stroke: ${(props) => props.theme.colors.purple};
+    }
+    cursor: pointer;
+  }
+`;
 
 const PostLayout = ({ children, frontmatter, lastPosts }) => {
   const { title, featuredImg, userName, publishDate, tags } = frontmatter;
@@ -98,6 +118,12 @@ const PostLayout = ({ children, frontmatter, lastPosts }) => {
               objectFit="cover"
             />
           </ImageWrapper>
+          <NavLink href="/blog" passHref>
+            <StyledText>
+              {" "}
+              {getIconByName("left-chevron")} Volver al Blog
+            </StyledText>
+          </NavLink>
           <TopInfo>
             <TagContainer>
               {tags.map((tag, index) => {

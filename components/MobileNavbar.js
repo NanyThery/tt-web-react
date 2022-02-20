@@ -12,9 +12,8 @@ const MobileNavBarWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
+  background-color: white;
   font-size: 14px;
-  color: white;
   padding: 16px;
   z-index: 10;
   transition: all 0.5s ease-in-out, color 0.5s ease-in, padding 0.5s ease-in,
@@ -24,7 +23,6 @@ const MobileNavBarWrapper = styled.div`
     color: black;
   }
   &.scrolled-navbar {
-    background-color: white;
     color: black;
     padding: 15px 20px;
     height: 60px;
@@ -155,8 +153,8 @@ const MobileNavbar = ({ router }) => {
   return (
     <MobileNavBarWrapper>
       <NavBarContainer>
-        <NavLink href="/">
-          <MainLogo>
+        <NavLink href="/" passHref>
+          <MainLogo onClick={() => setShowMenu(!showMenu)}>
             <Brand height="28" width="150" positive={positiveStyle} />
           </MainLogo>
         </NavLink>

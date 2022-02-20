@@ -1,3 +1,5 @@
+import NavLink from "next/link";
+
 export const home = {
   header: {
     preTitle: {
@@ -314,8 +316,8 @@ export const courseInfo = {
         text: (
           <p>
             <span className="bold"> Inscripciones cerradas.</span> Pero puedes
-            apuntante a la <a href="#newsletter">newsletter</a> para estar al
-            tanto de las nuevas ediciones y eventos
+            apuntante a la <NavLink href="/#cta-section">newsletter</NavLink>{" "}
+            para estar al tanto de las nuevas ediciones y eventos
           </p>
         ),
       },
