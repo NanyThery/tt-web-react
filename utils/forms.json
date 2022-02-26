@@ -1,0 +1,161 @@
+{
+  "full-power": {
+    "title": "Inscripción al curso Full Power 🔥",
+    "description": "Te haremos unas preguntas que nos ayudarán a priorizar las plazas que reciben mentorización personalizada. ¡Muchas gracias!",
+    "destination": "/",
+    "form": [
+      {
+        "section": "Datos generales",
+        "fields": [
+          { "label": "Nombre", "type": "text" },
+          { "label": "Edad", "type": "text" },
+          { "label": "Email", "type": "text" },
+          {
+            "label": "Género",
+            "type": "checklist",
+            "options": [
+              { "label": "Mujer", "value": "mujer" },
+              { "label": "Hombre", "value": "hombre" },
+              { "label": "Otro", "value": "otro" },
+              { "label": "Prefiero no decirlo", "value": "nc" }
+            ]
+          },
+          { "label": "¿En qué país vives?", "type": "text" },
+          { "label": "¿A qué te dedicas?", "type": "text" }
+        ]
+      },
+      {
+        "section": "Requisitos técnicos",
+        "fields": [
+          {
+            "label": "¿Tienes ordenador propio y conexión a internet?",
+            "type": "radio",
+            "options": [
+              { "label": "Sí", "value": "sí" },
+              { "label": "No", "value": "no" }
+            ]
+          },
+          { "label": "Test de velocidad", "type": "speed-test" }
+        ]
+      },
+      {
+        "section": "Compromiso",
+        "fields": [
+          {
+            "label": "Las clases se impartirán todas las semanas, los miércoles de 18.00 a 20.00 hs (huso horario español peninsular), tienes disponibilidad para asistir?",
+            "type": "radio",
+            "options": [
+              { "label": "Sí", "value": "sí" },
+              { "label": "No", "value": "no" },
+              { "label": "No lo sé con seguridad", "value": "ns" }
+            ]
+          },
+          {
+            "label": "Recuerda que no se paga con dinero, pero sí con tiempo: ¿qué tiempo tienes disponible para dedicar al curso durante las semanas que dura (junio y julio)?",
+            "type": "radio",
+            "options": [
+              {
+                "label": "Plena disponibilidad",
+                "value": "plena disponibilidad"
+              },
+              {
+                "label": "Algo de disponibilidad",
+                "value": "disponibilidad parcial"
+              },
+              {
+                "label": "Poca disponibilidad, solo mis ratos libres",
+                "value": "ratos libres"
+              },
+              {
+                "label": "No tengo disponibilidad",
+                "value": "nada de disponibilidad"
+              },
+              { "label": "No lo sé", "value": "ns" }
+            ]
+          }
+        ]
+      },
+      {
+        "section": "Conocimiento Previo",
+        "fields": [
+          {
+            "label": "Selecciona la opción que mejor describa tus conocimientos en programación, siendo 1 \"no tengo ni idea\" y 5 \"entiendo qué es un bucle for\"",
+            "type": "radio",
+            "options": [
+              { "label": "1. No tengo ni idea", "value": "1" },
+              { "label": "2", "value": "2" },
+              { "label": "3", "value": "3" },
+              { "label": "4", "value": "4" },
+              { "label": "5. Entiendo qué es un bucle for", "value": "5" }
+            ]
+          }
+        ]
+      },
+      {
+        "section": "Motivación",
+        "fields": [
+          { "label": "¿Por qué quieres hacer este curso?", "type": "text-area" }
+        ]
+      },
+      {
+        "section": "Extra",
+        "fields": [
+          {
+            "label": "¿Tienes algún perfil en redes sociales que quieras compartir con nosotros?",
+            "type": "text-area"
+          },
+          {
+            "label": "Y por último, ¿cómo nos has conocido?",
+            "type": "textarea"
+          },
+          { "label": "Política de privacidad", "type": "privacy-policy" }
+        ]
+      }
+    ]
+  },
+  "a-tu-aire": {
+    "title": "Inscripción al curso A tu Aire 🌊",
+    "description": "Te haremos una preguntas para completar la inscripción en esta modalidad ¡Muchas gracias!",
+    "destination": "/",
+    "form": [
+      {
+        "section": "Datos generales",
+        "fields": [
+          { "label": "Nombre", "type": "text" },
+          { "label": "Edad", "type": "text" },
+          { "label": "Email", "type": "text" },
+          {
+            "label": "Género",
+            "type": "checklist",
+            "options": [
+              { "label": "Mujer", "value": "mujer" },
+              { "label": "Hombre", "value": "hombre" },
+              { "label": "Otro", "value": "otro" },
+              { "label": "Prefiero no decirlo", "value": "nc" }
+            ]
+          },
+          { "label": "¿En qué país vives?", "type": "text" },
+          { "label": "¿A qué te dedicas?", "type": "text" }
+        ]
+      },
+      {
+        "section": "Extra",
+        "fields": [
+          {
+            "label": "¿Tienes algún perfil en redes sociales que quieras compartir con nosotros?",
+            "type": "text-area"
+          },
+          {
+            "label": "¿Quieres comentarnos algo?",
+            "type": "text-area"
+          },
+          {
+            "label": "Y por último, ¿cómo nos has conocido?",
+            "type": "textarea"
+          },
+          { "label": "Política de privacidad", "type": "privacy-policy" }
+        ]
+      }
+    ]
+  }
+}
