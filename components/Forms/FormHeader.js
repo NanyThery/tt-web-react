@@ -8,6 +8,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 350px;
+  padding: 35px;
 
   @media only screen and (max-width: 850px) {
     background: ${(props) => props.theme.gradients.backgroundOrange};

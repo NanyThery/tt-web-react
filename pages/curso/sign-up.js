@@ -4,6 +4,14 @@ import FormHeader from "../../components/Forms/FormHeader";
 import forms from "../../utils/forms.json";
 import { useState } from "react";
 import StepsCount from "../../components/Forms/StepsCount";
+import { GenericBadge } from "../../components/GenericBadge";
+import TextInput from "../../components/Forms/TextInput";
+import RadioInput from "../../components/Forms/RadioInput";
+import CheckboxInput from "../../components/Forms/CheckboxInput";
+import MotivationVideo from "../../components/Forms/MotivationVideo";
+import PrivacyPolicy from "../privacy-policy";
+import TextAreaInput from "../../components/Forms/TextAreaInput";
+import { ButtonPrimary, ButtonSecondary } from "../../components/Button";
 
 const Container = styled.div`
   display: flex;
@@ -12,15 +20,59 @@ const Container = styled.div`
   flex-flow: column;
 `;
 
-const exampleData = {
-  label: "Nombre",
-  type: "text",
-};
+const FieldContainer = styled.div`
+  padding: 24px 0;
+  display: flex;
+  flex-flow: column;
+  gap: 32px;
+`;
 
+const FormActions = styled.div`
+  display: flex;
+  gap: 8px;
+`;
 const SignUp = ({ type = "full-power" }) => {
   //type: full-power, a-tu-aire, voluntarios
   const [step, setStep] = useState(1);
   const totalSections = forms[type]["form"].length;
+  const [formData, setFormData] = useState({});
+
+  const onDataChange = (evt) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [evt.target.name]: evt.target.value,
+    }));
+  };
+
+  const inputTypeComponents = {
+    radio: RadioInput,
+    text: TextInput,
+    checkbox: CheckboxInput,
+    ["motivation-video"]: MotivationVideo,
+    ["privacy-policy"]: PrivacyPolicy,
+    ["text-area"]: TextAreaInput,
+  };
+
+  const renderInputComponent = () => {
+    return function renderComponent(
+      { label, type, inputName, ...restProps },
+      index
+    ) {
+      const InputComponent = inputTypeComponents[type];
+
+      return (
+        <InputComponent
+          label={label}
+          key={index}
+          onChange={onDataChange}
+          value={formData[inputName]}
+          inputName={inputName}
+          {...restProps}
+        />
+      );
+    };
+  };
+
   return (
     <Container>
       <FormHeader
@@ -29,41 +81,33 @@ const SignUp = ({ type = "full-power" }) => {
         variation={type}
       />
       <FormContainer>
-        <StepsCount currentStep={step} totalSteps={totalSections} />
+        <StepsCount currentStep={step + 1} totalSteps={totalSections} />
+
+        <GenericBadge variant="purpleLight">
+          {forms[type]["form"][step].section}
+        </GenericBadge>
+        <FieldContainer>
+          {forms[type]["form"][step]["fields"].map(renderInputComponent())}
+        </FieldContainer>
+        <FormActions>
+          <ButtonSecondary
+            disabled={step === 0}
+            onClick={() => setStep((prev) => prev - 1)}
+          >
+            Volver
+          </ButtonSecondary>
+          {step + 1 !== totalSections ? (
+            <ButtonPrimary onClick={() => setStep((prev) => prev + 1)}>
+              {" "}
+              Siguiente{" "}
+            </ButtonPrimary>
+          ) : (
+            <ButtonPrimary> ¡Vamos! </ButtonPrimary>
+          )}
+        </FormActions>
       </FormContainer>
     </Container>
   );
 };
 
 export default SignUp;
-
-// const sectionComponentMap = {
-//   products: ProductCollection,
-//   "promotional-banner": PromotionalBanner,
-//   "shop-the-image": ShopTheImageCollection,
-//   "deparment-products": DepartmentProductCollection,
-// };
-
-// const sectionStylesMap = {
-//   products: styles.collectionSection,
-//   departments: styles.departmentsSection,
-//   "promotional-banner": styles.promoBannerSection,
-//   "shop-the-image": styles.shopTheImageSection,
-//   "deparment-products": styles.collectionWithImageSection,
-// };
-
-// function makeRenderSection({ navigation }) {
-//   return function renderSection({ section, handle, ...restProps }, index) {
-//     const SectionComponent = sectionComponentMap[section];
-
-//     return (
-//       <View key={index} style={[styles.section, sectionStylesMap[section]]}>
-//         <SectionComponent
-//           navigation={navigation}
-//           handle={handle}
-//           {...restProps}
-//         />
-//       </View>
-//     );
-//   };
-// }

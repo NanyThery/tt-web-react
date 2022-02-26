@@ -5,61 +5,77 @@
     "destination": "/",
     "form": [
       {
-        "section": "Datos generales",
+        "section": "Datos generales 😀",
         "fields": [
-          { "label": "Nombre", "type": "text" },
-          { "label": "Edad", "type": "text" },
-          { "label": "Email", "type": "text" },
+          {
+            "label": "Nombre",
+            "type": "text",
+            "inputName": "nombre",
+            "placeholder": "Escribe aquí tu nombre"
+          },
+          {
+            "label": "Edad",
+            "type": "text",
+            "inputName": "edad",
+            "placeholder": "Aquí cuántos años tienes"
+          },
+          {
+            "label": "Email",
+            "type": "text",
+            "inputName": "email",
+            "placeholder": "tuemail@email.com"
+          },
           {
             "label": "Género",
-            "type": "checklist",
+            "type": "radio",
+            "inputName": "genero",
             "options": [
               { "label": "Mujer", "value": "mujer" },
               { "label": "Hombre", "value": "hombre" },
-              { "label": "Otro", "value": "otro" },
+              { "label": "Otro", "value": "otro", "checked": true },
               { "label": "Prefiero no decirlo", "value": "nc" }
             ]
           },
-          { "label": "¿En qué país vives?", "type": "text" },
-          { "label": "¿A qué te dedicas?", "type": "text" }
+          {
+            "label": "¿En qué país vives?",
+            "type": "text",
+            "inputName": "pais"
+          },
+          {
+            "label": "¿A qué te dedicas?",
+            "type": "text",
+            "inputName": "profesion"
+          }
         ]
       },
       {
-        "section": "Requisitos técnicos",
+        "section": "Requisitos técnicos 🖥️",
         "fields": [
           {
-            "label": "¿Tienes ordenador propio y conexión a internet?",
+            "label": "¿Tienes ordenador propio con webcam y conexión a internet?",
+            "inputName": "acceso_ordenador_internet",
             "type": "radio",
             "options": [
               { "label": "Sí", "value": "sí" },
               { "label": "No", "value": "no" }
             ]
-          },
-          { "label": "Test de velocidad", "type": "speed-test" }
+          }
         ]
       },
       {
-        "section": "Compromiso",
+        "section": "Compromiso 💪",
         "fields": [
           {
-            "label": "Las clases se impartirán todas las semanas, los miércoles de 18.00 a 20.00 hs (huso horario español peninsular), tienes disponibilidad para asistir?",
+            "label": "Recuerda que no se paga con dinero, pero sí con tiempo: ¿qué tiempo tienes disponible para dedicar al curso y acudir a las clases (miércoles de 18 a 20 hs huso horario español peninsular) durante las semanas que dura (junio y julio)?",
             "type": "radio",
-            "options": [
-              { "label": "Sí", "value": "sí" },
-              { "label": "No", "value": "no" },
-              { "label": "No lo sé con seguridad", "value": "ns" }
-            ]
-          },
-          {
-            "label": "Recuerda que no se paga con dinero, pero sí con tiempo: ¿qué tiempo tienes disponible para dedicar al curso durante las semanas que dura (junio y julio)?",
-            "type": "radio",
+            "inputName": "disponibilidad",
             "options": [
               {
                 "label": "Plena disponibilidad",
                 "value": "plena disponibilidad"
               },
               {
-                "label": "Algo de disponibilidad",
+                "label": "Disponibilidad parcial (mañanas o tardes libres)",
                 "value": "disponibilidad parcial"
               },
               {
@@ -70,17 +86,18 @@
                 "label": "No tengo disponibilidad",
                 "value": "nada de disponibilidad"
               },
-              { "label": "No lo sé", "value": "ns" }
+              { "label": "No lo sé con seguridad", "value": "ns" }
             ]
           }
         ]
       },
       {
-        "section": "Conocimiento Previo",
+        "section": "Conocimiento Previo 🤓",
         "fields": [
           {
             "label": "Selecciona la opción que mejor describa tus conocimientos en programación, siendo 1 \"no tengo ni idea\" y 5 \"entiendo qué es un bucle for\"",
             "type": "radio",
+            "inputName": "nivel_conocimiento",
             "options": [
               { "label": "1. No tengo ni idea", "value": "1" },
               { "label": "2", "value": "2" },
@@ -92,23 +109,37 @@
         ]
       },
       {
-        "section": "Motivación",
+        "section": "Motivación 🙌",
         "fields": [
-          { "label": "¿Por qué quieres hacer este curso?", "type": "text-area" }
+          {
+            "label": "¿Por qué quieres hacer este curso?",
+            "type": "motivation-video",
+            "inputName": "motivacion"
+          }
         ]
       },
       {
-        "section": "Extra",
+        "section": "Extra 😉",
         "fields": [
           {
-            "label": "¿Tienes algún perfil en redes sociales que quieras compartir con nosotros?",
-            "type": "text-area"
+            "label": "¿Te gustaría pasar a la modalidad 'A tu aire' si no entras en 'Full Power'?",
+            "type": "radio",
+            "inputName": "a_tu_aire_acceptance",
+            "options": [
+              { "label": "Sí", "value": "sí" },
+              { "label": "No", "value": "no" }
+            ]
           },
           {
             "label": "Y por último, ¿cómo nos has conocido?",
-            "type": "textarea"
+            "type": "text-area",
+            "inputName": "como_conocido"
           },
-          { "label": "Política de privacidad", "type": "privacy-policy" }
+          {
+            "label": "Política de privacidad",
+            "type": "privacy-policy",
+            "inputName": "privacy-policy"
+          }
         ]
       }
     ]
@@ -119,18 +150,34 @@
     "destination": "/",
     "form": [
       {
-        "section": "Datos generales",
+        "section": "Datos generales 😀",
         "fields": [
-          { "label": "Nombre", "type": "text" },
-          { "label": "Edad", "type": "text" },
-          { "label": "Email", "type": "text" },
+          {
+            "label": "Nombre",
+            "type": "text",
+            "inputName": "nombre",
+            "placeholder": "Escribe aquí tu nombre"
+          },
+          {
+            "label": "Edad",
+            "type": "text",
+            "inputName": "edad",
+            "placeholder": "Aquí tu edad"
+          },
+          {
+            "label": "Email",
+            "type": "text",
+            "inputName": "email",
+            "placeholder": "tuemail@email.com"
+          },
           {
             "label": "Género",
-            "type": "checklist",
+            "type": "radio",
+            "inputName": "genero",
             "options": [
               { "label": "Mujer", "value": "mujer" },
               { "label": "Hombre", "value": "hombre" },
-              { "label": "Otro", "value": "otro" },
+              { "label": "Otro", "value": "otro", "checked": true },
               { "label": "Prefiero no decirlo", "value": "nc" }
             ]
           },
@@ -139,27 +186,86 @@
         ]
       },
       {
-        "section": "Extra",
+        "section": "Extra 😉",
         "fields": [
           {
             "label": "¿Tienes algún perfil en redes sociales que quieras compartir con nosotros?",
-            "type": "text-area"
+            "type": "text-area",
+            "inputName": "rr_ss"
           },
           {
             "label": "¿Quieres comentarnos algo?",
+            "inputName": "comments",
             "type": "text-area"
           },
           {
             "label": "Y por último, ¿cómo nos has conocido?",
-            "type": "textarea"
+            "inputName": "como_conocido",
+            "type": "text-area"
           },
-          { "label": "Política de privacidad", "type": "privacy-policy" }
+          {
+            "label": "Política de privacidad",
+            "type": "privacy-policy",
+            "inputName": "privacy-policy"
+          }
         ]
       }
     ]
   },
   "voluntarios": {
     "title": "¡Únete al equipo TeachT3ch!",
-    "description": "Si te gusta este proyecto y quieres formar parte de él hay muchas formas en las que puedes colaborar. Desde mentorizar, a dar clases, charlas o llevar las redes sociales ¡No necesitas saber programar para colaborar!"
+    "description": "Si te gusta este proyecto y quieres formar parte de él hay muchas formas en las que puedes colaborar. Desde mentorizar, a dar clases, charlas o llevar las redes sociales ¡No necesitas saber programar para colaborar!",
+    "form": [
+      {
+        "section": "Datos generales 😀",
+        "fields": [
+          {
+            "label": "Nombre",
+            "type": "text",
+            "inputName": "nombre",
+            "placeholder": "Escribe aquí tu nombre"
+          },
+          {
+            "label": "Email",
+            "type": "text",
+            "inputName": "email",
+            "placeholder": "tuemail@email.com"
+          },
+          {
+            "label": "¿En qué te gustaría colaborar (marca todas las que quieras)?",
+            "type": "checkbox",
+            "inputName": "typo_col",
+            "options": [
+              { "label": "Mentorizar", "value": "mentorizar" },
+              { "label": "Dar clases", "value": "clases" },
+              { "label": "Participar y organizar charlas", "value": "charlas" },
+              { "label": "Organización", "value": "organización" },
+              { "label": "Redes sociales y difusión", "value": "rrss" },
+              { "label": "Lo que sea", "value": "todo" }
+            ]
+          },
+          {
+            "label": "¿Tienes algún perfil en redes sociales que quieras compartir con nosotros (LinkedIn, Twitter...)?",
+            "type": "text-area",
+            "inputName": "rr_ss"
+          },
+          {
+            "label": "Cuéntanos lo que quieras",
+            "inputName": "comments",
+            "type": "text-area"
+          },
+          {
+            "label": "Y por último, ¿cómo nos has conocido?",
+            "inputName": "como_conocido",
+            "type": "text-area"
+          },
+          {
+            "label": "Política de privacidad",
+            "type": "privacy-policy",
+            "inputName": "privacy-policy"
+          }
+        ]
+      }
+    ]
   }
 }
