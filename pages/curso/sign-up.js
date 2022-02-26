@@ -2,6 +2,8 @@ import styled from "styled-components";
 import FormContainer from "../../components/Forms/FormContainer";
 import FormHeader from "../../components/Forms/FormHeader";
 import forms from "../../utils/forms.json";
+import { useState } from "react";
+import StepsCount from "../../components/Forms/StepsCount";
 
 const Container = styled.div`
   display: flex;
@@ -10,16 +12,24 @@ const Container = styled.div`
   flex-flow: column;
 `;
 
-const SignUp = ({ type = "a-tu-aire" }) => {
+const exampleData = {
+  label: "Nombre",
+  type: "text",
+};
+
+const SignUp = ({ type = "full-power" }) => {
   //type: full-power, a-tu-aire, voluntarios
+  const [step, setStep] = useState(1);
+  const totalSections = forms[type]["form"].length;
   return (
     <Container>
       <FormHeader
         title={forms[type].title}
         description={forms[type].description}
+        variation={type}
       />
       <FormContainer>
-        <p>Aquí un titulo o algo </p>
+        <StepsCount currentStep={step} totalSteps={totalSections} />
       </FormContainer>
     </Container>
   );

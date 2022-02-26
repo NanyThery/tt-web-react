@@ -157,5 +157,9 @@
         ]
       }
     ]
+  },
+  "voluntarios": {
+    "title": "¡Únete al equipo TeachT3ch!",
+    "description": "Si te gusta este proyecto y quieres formar parte de él hay muchas formas en las que puedes colaborar. Desde mentorizar, a dar clases, charlas o llevar las redes sociales ¡No necesitas saber programar para colaborar!"
   }
 }

@@ -30,6 +30,9 @@ const FormHeader = ({ title, description, variation = "orangeInverse" }) => {
     orange: theme.gradients.backgroundOrange,
     orangeInverse: theme.gradients.backgroundOrangeInverse,
     purpleInverse: theme.gradients.backgroundPurpleInverse,
+    ["a-tu-aire"]: theme.gradients.backgroundOrangeInverse,
+    ["full-power"]: theme.gradients.backgroundOrangeInverse,
+    voluntarios: theme.gradients.backgroundPurpleInverse,
   };
 
   return (
