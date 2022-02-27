@@ -11,19 +11,22 @@
             "label": "Nombre",
             "type": "text",
             "inputName": "nombre",
-            "placeholder": "Escribe aquí tu nombre"
+            "placeholder": "Escribe aquí tu nombre",
+            "required": true
           },
           {
             "label": "Edad",
             "type": "text",
             "inputName": "edad",
-            "placeholder": "Aquí cuántos años tienes"
+            "placeholder": "Aquí cuántos años tienes",
+            "required": true
           },
           {
             "label": "Email",
             "type": "text",
             "inputName": "email",
-            "placeholder": "tuemail@email.com"
+            "placeholder": "tuemail@email.com",
+            "required": true
           },
           {
             "label": "Género",
@@ -32,7 +35,7 @@
             "options": [
               { "label": "Mujer", "value": "mujer" },
               { "label": "Hombre", "value": "hombre" },
-              { "label": "Otro", "value": "otro", "checked": true },
+              { "label": "Otro", "value": "otro" },
               { "label": "Prefiero no decirlo", "value": "nc" }
             ]
           },
@@ -68,6 +71,7 @@
           {
             "label": "Recuerda que no se paga con dinero, pero sí con tiempo: ¿qué tiempo tienes disponible para dedicar al curso y acudir a las clases (miércoles de 18 a 20 hs huso horario español peninsular) durante las semanas que dura (junio y julio)?",
             "type": "radio",
+            "required": true,
             "inputName": "disponibilidad",
             "options": [
               {
@@ -97,6 +101,7 @@
           {
             "label": "Selecciona la opción que mejor describa tus conocimientos en programación, siendo 1 \"no tengo ni idea\" y 5 \"entiendo qué es un bucle for\"",
             "type": "radio",
+            "required": true,
             "inputName": "nivel_conocimiento",
             "options": [
               { "label": "1. No tengo ni idea", "value": "1" },
@@ -138,7 +143,8 @@
           {
             "label": "Política de privacidad",
             "type": "privacy-policy",
-            "inputName": "privacy-policy"
+            "inputName": "privacy-policy",
+            "required": true
           }
         ]
       }

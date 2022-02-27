@@ -12,6 +12,7 @@ import MotivationVideo from "../../components/Forms/MotivationVideo";
 import PrivacyPolicy from "../privacy-policy";
 import TextAreaInput from "../../components/Forms/TextAreaInput";
 import { ButtonPrimary, ButtonSecondary } from "../../components/Button";
+import { useFormik } from "formik";
 
 const Container = styled.div`
   display: flex;
@@ -31,18 +32,37 @@ const FormActions = styled.div`
   display: flex;
   gap: 8px;
 `;
+
+// Helper functions
+
+const getDinamycFormProps = (formName) => {
+  let formProps = { modalidad: formName };
+
+  forms[formName]["form"].forEach((section) => {
+    const props = section.fields.reduce((acc, item) => {
+      acc[item.inputName] = "";
+      return acc;
+    }, {});
+
+    formProps = { ...formProps, ...props };
+  });
+  return formProps;
+};
+
 const SignUp = ({ type = "full-power" }) => {
   //type: full-power, a-tu-aire, voluntarios
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(0);
   const totalSections = forms[type]["form"].length;
-  const [formData, setFormData] = useState({});
+  const initialFormProps = getDinamycFormProps(type);
 
-  const onDataChange = (evt) => {
-    setFormData((prevData) => ({
-      ...prevData,
-      [evt.target.name]: evt.target.value,
-    }));
-  };
+  const formik = useFormik({
+    initialValues: initialFormProps,
+    onSubmit: (values, actions) => {
+      return submitForm(values);
+    },
+  });
+
+  const { handleSubmit, handleChange, values, errors, isSubmitting } = formik;
 
   const inputTypeComponents = {
     radio: RadioInput,
@@ -64,8 +84,8 @@ const SignUp = ({ type = "full-power" }) => {
         <InputComponent
           label={label}
           key={index}
-          onChange={onDataChange}
-          value={formData[inputName]}
+          onChange={handleChange}
+          value={values[inputName]}
           inputName={inputName}
           {...restProps}
         />
@@ -90,19 +110,20 @@ const SignUp = ({ type = "full-power" }) => {
           {forms[type]["form"][step]["fields"].map(renderInputComponent())}
         </FieldContainer>
         <FormActions>
-          <ButtonSecondary
-            disabled={step === 0}
-            onClick={() => setStep((prev) => prev - 1)}
-          >
-            Volver
-          </ButtonSecondary>
+          {step > 0 && (
+            <ButtonSecondary onClick={() => setStep((prev) => prev - 1)}>
+              Volver
+            </ButtonSecondary>
+          )}
           {step + 1 !== totalSections ? (
             <ButtonPrimary onClick={() => setStep((prev) => prev + 1)}>
               {" "}
               Siguiente{" "}
             </ButtonPrimary>
           ) : (
-            <ButtonPrimary> ¡Vamos! </ButtonPrimary>
+            <ButtonPrimary type="submit" onClick={handleSubmit}>
+              ¡Vamos!
+            </ButtonPrimary>
           )}
         </FormActions>
       </FormContainer>
