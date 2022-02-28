@@ -25,7 +25,7 @@ const MenuItems = [
   },
   {
     label: "Sobre nosotros",
-    url: "/about",
+    url: "/aboutUs",
     active: true,
     style: "link",
     mobile: true,
