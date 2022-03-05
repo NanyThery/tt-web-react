@@ -187,8 +187,16 @@
               { "label": "Prefiero no decirlo", "value": "nc" }
             ]
           },
-          { "label": "¿En qué país vives?", "type": "text" },
-          { "label": "¿A qué te dedicas?", "type": "text" }
+          {
+            "label": "¿En qué país vives?",
+            "inputName": "pais",
+            "type": "text"
+          },
+          {
+            "label": "¿A qué te dedicas?",
+            "inputName": "profesion",
+            "type": "text"
+          }
         ]
       },
       {

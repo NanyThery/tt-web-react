@@ -15,6 +15,7 @@ import { ButtonPrimary, ButtonSecondary } from "../../components/Button";
 import { useFormik } from "formik";
 import { useRouter } from "next/router";
 import axios from "axios";
+import FormConfirmation from "../../components/Forms/FormConfirmation";
 
 const Container = styled.div`
   display: flex;
@@ -55,19 +56,16 @@ const sendData = async (form) => {
   console.log("entra en la llamada");
   const url = "/api/db";
 
-  const data = {
-    username: "prueba del front",
-    email: "prueba@betis.es",
-  };
-
   const config = {
     method: "post",
     url,
-    data: data,
+    data: { ...form },
     responseType: "text",
   };
 
   const sendForm = await axios(config);
+
+  return sendForm.status;
 };
 
 const SignUp = ({ formsData }) => {
@@ -77,11 +75,13 @@ const SignUp = ({ formsData }) => {
   const [step, setStep] = useState(0);
   const totalSections = formsData[type]["form"].length;
   const initialFormProps = getDinamycFormProps(type);
+  const [sentConfirmation, setSentConfirmation] = useState(false);
 
   const formik = useFormik({
     initialValues: initialFormProps,
-    onSubmit: (values, actions) => {
-      sendData(values);
+    onSubmit: async (values, { resetForm }) => {
+      const sent = await sendData(values);
+      resetForm();
     },
   });
 
@@ -124,31 +124,39 @@ const SignUp = ({ formsData }) => {
         variation={type}
       />
       <FormContainer>
-        <StepsCount currentStep={step + 1} totalSteps={totalSections} />
+        {sentConfirmation ? (
+          <FormConfirmation type={type}></FormConfirmation>
+        ) : (
+          <>
+            <StepsCount currentStep={step + 1} totalSteps={totalSections} />
 
-        <GenericBadge variant="purpleLight">
-          {formsData[type]["form"][step].section}
-        </GenericBadge>
-        <FieldContainer>
-          {formsData[type]["form"][step]["fields"].map(renderInputComponent())}
-        </FieldContainer>
-        <FormActions>
-          {step > 0 && (
-            <ButtonSecondary onClick={() => setStep((prev) => prev - 1)}>
-              Volver
-            </ButtonSecondary>
-          )}
-          {step + 1 !== totalSections ? (
-            <ButtonPrimary onClick={() => setStep((prev) => prev + 1)}>
-              {" "}
-              Siguiente{" "}
-            </ButtonPrimary>
-          ) : (
-            <ButtonPrimary type="submit" onClick={handleSubmit}>
-              ¡Vamos!
-            </ButtonPrimary>
-          )}
-        </FormActions>
+            <GenericBadge variant="purpleLight">
+              {formsData[type]["form"][step].section}
+            </GenericBadge>
+            <FieldContainer>
+              {formsData[type]["form"][step]["fields"].map(
+                renderInputComponent()
+              )}
+            </FieldContainer>
+            <FormActions>
+              {step > 0 && (
+                <ButtonSecondary onClick={() => setStep((prev) => prev - 1)}>
+                  Volver
+                </ButtonSecondary>
+              )}
+              {step + 1 !== totalSections ? (
+                <ButtonPrimary onClick={() => setStep((prev) => prev + 1)}>
+                  {" "}
+                  Siguiente{" "}
+                </ButtonPrimary>
+              ) : (
+                <ButtonPrimary type="submit" onClick={handleSubmit}>
+                  ¡Vamos!
+                </ButtonPrimary>
+              )}
+            </FormActions>
+          </>
+        )}
       </FormContainer>
     </Container>
   );

@@ -14,12 +14,9 @@ const StyledLabel = styled.label`
 `;
 
 const PrivacyPolicy = ({ label, ...props }) => {
-  const policyOptions = [
-    {
-      label: "Acepto la política de privacidad",
-      value: "privacy-policy-acceptance",
-    },
-  ];
+  const inputName = "privacy-policy";
+  const ChecklistLabel = "Acepto la política de privacidad";
+
   return (
     <Container>
       <StyledLabel>Política de Privacidad</StyledLabel>
@@ -31,7 +28,8 @@ const PrivacyPolicy = ({ label, ...props }) => {
         y cómo trataremos los datos que nos has proporcionado en este
         formulario.
       </p>
-      <CheckboxInput options={policyOptions} {...props} />
+
+      <CheckboxInput label={ChecklistLabel} inputName={inputName} {...props} />
     </Container>
   );
 };

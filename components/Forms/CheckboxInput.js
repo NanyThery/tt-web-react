@@ -63,22 +63,18 @@ const CheckboxInput = ({
   return (
     <Container {...rest}>
       <StyledLabel>{label}</StyledLabel>
-      {options.map((option, index) => {
-        return (
-          <RadioWrapper key={index}>
-            <StyledRadioInput
-              id={option.value}
-              type="checkbox"
-              name={inputName}
-              value={option.value}
-              onChange={onChange}
-              {...option}
-            />
-            <StyledRadioLabel htmlFor={value}></StyledRadioLabel>
-            <p>{option.label}</p>
-          </RadioWrapper>
-        );
-      })}
+
+      <RadioWrapper>
+        <StyledRadioInput
+          id={inputName}
+          type="checkbox"
+          name={inputName}
+          value={value}
+          onChange={onChange}
+        />
+        <StyledRadioLabel htmlFor={value}></StyledRadioLabel>
+        <p>{label}</p>
+      </RadioWrapper>
     </Container>
   );
 };
