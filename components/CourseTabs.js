@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { getIconByName } from "./Icons";
 import { ButtonPrimary } from "./Button";
+import NavLink from "next/link";
 
 const Container = styled.div`
   background-color: white;
@@ -259,9 +260,11 @@ const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
           </div>
           <div className="right-col-bottom">
             {isCourseOpen ? (
-              <ButtonPrimary onClick={() => {}}>
-                {courseInfo[option]["cta"]["open"]["text"]}
-              </ButtonPrimary>
+              <NavLink href={`/sign-up/${courseInfo[option]["url"]}`} passHref>
+                <ButtonPrimary onClick={() => {}}>
+                  {courseInfo[option]["cta"]["open"]["text"]}
+                </ButtonPrimary>
+              </NavLink>
             ) : (
               <InfoBox>
                 {getIconByName(courseInfo[option]["cta"]["closed"]["icon"])}

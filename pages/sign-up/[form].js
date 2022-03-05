@@ -13,6 +13,7 @@ import PrivacyPolicy from "../privacy-policy";
 import TextAreaInput from "../../components/Forms/TextAreaInput";
 import { ButtonPrimary, ButtonSecondary } from "../../components/Button";
 import { useFormik } from "formik";
+import { useRouter } from "next/router";
 
 const Container = styled.div`
   display: flex;
@@ -49,8 +50,10 @@ const getDinamycFormProps = (formName) => {
   return formProps;
 };
 
-const SignUp = ({ type = "full-power" }) => {
+const SignUp = () => {
   //type: full-power, a-tu-aire, voluntarios
+  const router = useRouter();
+  const type = router.query.form;
   const [step, setStep] = useState(0);
   const totalSections = forms[type]["form"].length;
   const initialFormProps = getDinamycFormProps(type);
