@@ -26,7 +26,7 @@ const Container = styled.div`
 const checkIfIsDarkMode = (currentPath) => {
   const routesWithDarkHeader = ["/", "/staff", "/curso", "/blog", "/blog/"];
 
-  if (currentPath.includes("/blog/") || currentPath.includes("/curso/")) {
+  if (currentPath.includes("/blog/") || currentPath.includes("/sign-up/")) {
     return true;
   }
   if (routesWithDarkHeader.includes(currentPath)) {

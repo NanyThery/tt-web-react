@@ -14,6 +14,7 @@ import TextAreaInput from "../../components/Forms/TextAreaInput";
 import { ButtonPrimary, ButtonSecondary } from "../../components/Button";
 import { useFormik } from "formik";
 import { useRouter } from "next/router";
+import axios from "axios";
 
 const Container = styled.div`
   display: flex;
@@ -36,10 +37,10 @@ const FormActions = styled.div`
 
 // Helper functions
 
-const getDinamycFormProps = (formName) => {
-  let formProps = { modalidad: formName };
+const getDinamycFormProps = (form) => {
+  let formProps = { modalidad: form };
 
-  forms[formName]["form"].forEach((section) => {
+  forms[form]["form"].forEach((section) => {
     const props = section.fields.reduce((acc, item) => {
       acc[item.inputName] = "";
       return acc;
@@ -50,18 +51,37 @@ const getDinamycFormProps = (formName) => {
   return formProps;
 };
 
-const SignUp = () => {
+const sendData = async (form) => {
+  console.log("entra en la llamada");
+  const url = "/api/db";
+
+  const data = {
+    username: "prueba del front",
+    email: "prueba@betis.es",
+  };
+
+  const config = {
+    method: "post",
+    url,
+    data: data,
+    responseType: "text",
+  };
+
+  const sendForm = await axios(config);
+};
+
+const SignUp = ({ formsData }) => {
   //type: full-power, a-tu-aire, voluntarios
   const router = useRouter();
   const type = router.query.form;
   const [step, setStep] = useState(0);
-  const totalSections = forms[type]["form"].length;
+  const totalSections = formsData[type]["form"].length;
   const initialFormProps = getDinamycFormProps(type);
 
   const formik = useFormik({
     initialValues: initialFormProps,
     onSubmit: (values, actions) => {
-      return submitForm(values);
+      sendData(values);
     },
   });
 
@@ -99,18 +119,18 @@ const SignUp = () => {
   return (
     <Container>
       <FormHeader
-        title={forms[type].title}
-        description={forms[type].description}
+        title={formsData[type].title}
+        description={formsData[type].description}
         variation={type}
       />
       <FormContainer>
         <StepsCount currentStep={step + 1} totalSteps={totalSections} />
 
         <GenericBadge variant="purpleLight">
-          {forms[type]["form"][step].section}
+          {formsData[type]["form"][step].section}
         </GenericBadge>
         <FieldContainer>
-          {forms[type]["form"][step]["fields"].map(renderInputComponent())}
+          {formsData[type]["form"][step]["fields"].map(renderInputComponent())}
         </FieldContainer>
         <FormActions>
           {step > 0 && (
@@ -135,3 +155,22 @@ const SignUp = () => {
 };
 
 export default SignUp;
+
+export async function getStaticProps() {
+  return {
+    props: {
+      formsData: forms,
+    },
+  };
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: [
+      { params: { form: "full-power" } },
+      { params: { form: "a-tu-aire" } },
+      { params: { form: "voluntarios" } },
+    ],
+    fallback: false, // false or 'blocking'
+  };
+}
