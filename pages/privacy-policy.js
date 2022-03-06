@@ -1,37 +1,40 @@
 import styled from "styled-components";
-import NavLink from "next/link";
-import CheckboxInput from "../components/Forms/CheckboxInput";
+import FormContainer from "../components/Forms/FormContainer";
+import FormHeader from "../components/Forms/FormHeader";
+import { MDXRemote } from "next-mdx-remote";
+import { getFileBySlug } from "../lib/mdx";
+import { MDXComponents } from "../components/Blog/MDXComponents";
 
 const Container = styled.div`
-  > p {
-    margin-top: 12px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-flow: column;
 `;
 
-const StyledLabel = styled.label`
-  font-weight: 700;
-  color: ${(props) => props.theme.colors.text100};
-`;
-
-const PrivacyPolicy = ({ label, ...props }) => {
-  const inputName = "privacy-policy";
-  const ChecklistLabel = "Acepto la política de privacidad";
+const PrivacyPolicyPage = ({ source }) => {
+  //type: full-power, a-tu-aire, voluntarios
 
   return (
     <Container>
-      <StyledLabel>Política de Privacidad</StyledLabel>
-      <p>
-        En{" "}
-        <NavLink href="/privacy-policy">
-          este enlace puedes consultar nuestra política de privacidad
-        </NavLink>{" "}
-        y cómo trataremos los datos que nos has proporcionado en este
-        formulario.
-      </p>
-
-      <CheckboxInput label={ChecklistLabel} inputName={inputName} {...props} />
+      <FormHeader
+        title="Política de Privacidad 🔒"
+        description="Aquí te explicamos qué hacemos con tus datos y cómo los almacenamos"
+        variation={"full-power"}
+      />
+      <FormContainer>
+        <MDXRemote {...source} components={MDXComponents} />
+      </FormContainer>
     </Container>
   );
 };
 
-export default PrivacyPolicy;
+export default PrivacyPolicyPage;
+
+export async function getStaticProps() {
+  const { source } = await getFileBySlug("privacy-policy", "PageTexts");
+  return {
+    props: { source },
+  };
+}
