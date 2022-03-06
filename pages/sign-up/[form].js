@@ -17,6 +17,7 @@ import { useRouter } from "next/router";
 import axios from "axios";
 import FormConfirmation from "../../components/Forms/FormConfirmation";
 import { scrollToTop } from "../../utils/scrollToTop";
+import CheckboxList from "../../components/Forms/CheckboxList";
 
 const Container = styled.div`
   display: flex;
@@ -116,6 +117,7 @@ const SignUp = ({ formsData }) => {
   const { handleSubmit, handleChange, values, errors, touched, handleBlur } =
     formik;
 
+  console.log(values);
   const inputTypeComponents = {
     radio: RadioInput,
     text: TextInput,
@@ -123,6 +125,7 @@ const SignUp = ({ formsData }) => {
     ["motivation-video"]: MotivationVideo,
     ["privacy-policy"]: PrivacyPolicy,
     ["text-area"]: TextAreaInput,
+    ["checkbox-list"]: CheckboxList,
   };
 
   async function handleNext() {

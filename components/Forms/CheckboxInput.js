@@ -54,15 +54,15 @@ const StyledLabel = styled.label`
 
 const CheckboxInput = ({
   label,
-  options,
   value,
+  sectionLabel,
   onChange = () => {},
   inputName,
   ...rest
 }) => {
   return (
     <Container {...rest}>
-      <StyledLabel>{label}</StyledLabel>
+      <StyledLabel>{sectionLabel}</StyledLabel>
 
       <RadioWrapper>
         <StyledRadioInput

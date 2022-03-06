@@ -53,6 +53,16 @@
         ]
       },
       {
+        "section": "Motivación 🙌",
+        "fields": [
+          {
+            "label": "¿Por qué quieres hacer este curso?",
+            "type": "motivation-video",
+            "inputName": "motivation-video"
+          }
+        ]
+      },
+      {
         "section": "Requisitos técnicos 🖥️",
         "fields": [
           {
@@ -119,16 +129,6 @@
         ]
       },
       {
-        "section": "Motivación 🙌",
-        "fields": [
-          {
-            "label": "¿Por qué quieres hacer este curso?",
-            "type": "motivation-video",
-            "inputName": "motivation-video"
-          }
-        ]
-      },
-      {
         "section": "Extra 😉",
         "fields": [
           {
@@ -149,6 +149,7 @@
           },
           {
             "label": "Política de privacidad",
+            "sectionLabel": "Política de privacidad",
             "type": "privacy-policy",
             "inputName": "privacy-policy",
             "required": true
@@ -259,8 +260,8 @@
           },
           {
             "label": "¿En qué te gustaría colaborar (marca todas las que quieras)?",
-            "type": "checkbox",
-            "inputName": "typo_col",
+            "type": "checkbox-list",
+            "inputName": "type_col",
             "options": [
               { "label": "Mentorizar", "value": "mentorizar" },
               { "label": "Dar clases", "value": "clases" },
