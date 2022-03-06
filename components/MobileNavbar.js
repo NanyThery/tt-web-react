@@ -171,24 +171,20 @@ const MobileNavbar = ({ router }) => {
         <MenuContainer onClick={() => setShowMenu(!showMenu)}>
           {MenuItems.map((item, index) => {
             return (
-              <>
-                {item.active && (
-                  <div key={index}>
-                    {item.mobile && (
-                      <NavItem
-                        className={`${router.asPath === item.url && "active"} ${
-                          item.style
-                        }`}
-                        key={index}
-                      >
-                        <NavLink href={item.url} passHref>
-                          <p>{item.label}</p>
-                        </NavLink>
-                      </NavItem>
-                    )}
-                  </div>
+              <div key={index}>
+                {item.active && item.mobile && (
+                  <NavItem
+                    className={`${router.asPath === item.url && "active"} ${
+                      item.style
+                    }`}
+                    key={index}
+                  >
+                    <NavLink href={item.url} passHref>
+                      <p>{item.label}</p>
+                    </NavLink>
+                  </NavItem>
                 )}
-              </>
+              </div>
             );
           })}
         </MenuContainer>
