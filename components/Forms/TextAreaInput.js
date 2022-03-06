@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import ErrorText from "./ErrorText";
+import RequiredLabel from "./RequiredLabel";
 
 const Container = styled.div`
   display: flex;
@@ -25,19 +27,27 @@ const StyledInput = styled.textarea`
 const TextAreaInput = ({
   label,
   value,
+  error,
+  touched,
+  showRequired,
   onChange = () => {},
   inputName,
   ...others
 }) => {
   return (
     <Container>
-      {label && <StyledLabel>{label}</StyledLabel>}
+      {label && (
+        <StyledLabel>
+          {label} {showRequired && <RequiredLabel />}{" "}
+        </StyledLabel>
+      )}
       <StyledInput
         name={inputName}
         value={value}
         onChange={onChange}
         {...others}
       />
+      {error && touched && <ErrorText> {error} </ErrorText>}
     </Container>
   );
 };

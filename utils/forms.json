@@ -31,6 +31,7 @@
           {
             "label": "Género",
             "type": "radio",
+            "defaultValue": "1",
             "inputName": "genero",
             "options": [
               { "label": "Mujer", "value": "mujer" },
@@ -58,6 +59,7 @@
             "label": "¿Tienes ordenador propio con webcam y conexión a internet?",
             "inputName": "acceso_ordenador_internet",
             "type": "radio",
+            "required": true,
             "options": [
               { "label": "Sí", "value": "sí" },
               { "label": "No", "value": "no" }
@@ -102,6 +104,7 @@
             "label": "Selecciona la opción que mejor describa tus conocimientos en programación, siendo 1 \"no tengo ni idea\" y 5 \"entiendo qué es un bucle for\"",
             "type": "radio",
             "required": true,
+            "defaultValue": "1",
             "inputName": "nivel_conocimiento",
             "options": [
               { "label": "1. No tengo ni idea", "value": "1" },
@@ -119,7 +122,7 @@
           {
             "label": "¿Por qué quieres hacer este curso?",
             "type": "motivation-video",
-            "inputName": "motivacion"
+            "inputName": "motivation-video"
           }
         ]
       },
@@ -129,6 +132,7 @@
           {
             "label": "¿Te gustaría pasar a la modalidad 'A tu aire' si no entras en 'Full Power'?",
             "type": "radio",
+            "required": true,
             "inputName": "a_tu_aire_acceptance",
             "options": [
               { "label": "Sí", "value": "sí" },
@@ -174,7 +178,8 @@
             "label": "Email",
             "type": "text",
             "inputName": "email",
-            "placeholder": "tuemail@email.com"
+            "placeholder": "tuemail@email.com",
+            "required": true
           },
           {
             "label": "Género",
@@ -220,7 +225,8 @@
           {
             "label": "Política de privacidad",
             "type": "privacy-policy",
-            "inputName": "privacy-policy"
+            "inputName": "privacy-policy",
+            "required": true
           }
         ]
       }
@@ -237,13 +243,15 @@
             "label": "Nombre",
             "type": "text",
             "inputName": "nombre",
+            "required": true,
             "placeholder": "Escribe aquí tu nombre"
           },
           {
             "label": "Email",
             "type": "text",
             "inputName": "email",
-            "placeholder": "tuemail@email.com"
+            "placeholder": "tuemail@email.com",
+            "required": true
           },
           {
             "label": "¿En qué te gustaría colaborar (marca todas las que quieras)?",
@@ -276,7 +284,8 @@
           {
             "label": "Política de privacidad",
             "type": "privacy-policy",
-            "inputName": "privacy-policy"
+            "inputName": "privacy-policy",
+            "required": true
           }
         ]
       }

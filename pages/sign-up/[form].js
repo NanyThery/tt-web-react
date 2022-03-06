@@ -9,13 +9,14 @@ import TextInput from "../../components/Forms/TextInput";
 import RadioInput from "../../components/Forms/RadioInput";
 import CheckboxInput from "../../components/Forms/CheckboxInput";
 import MotivationVideo from "../../components/Forms/MotivationVideo";
-import PrivacyPolicy from "../privacy-policy";
+import PrivacyPolicy from "../../components/Forms/PrivacyPolicy";
 import TextAreaInput from "../../components/Forms/TextAreaInput";
 import { ButtonPrimary, ButtonSecondary } from "../../components/Button";
-import { useFormik } from "formik";
+import { useFormik, Field } from "formik";
 import { useRouter } from "next/router";
 import axios from "axios";
 import FormConfirmation from "../../components/Forms/FormConfirmation";
+import { isValid } from "date-fns";
 
 const Container = styled.div`
   display: flex;
@@ -53,7 +54,6 @@ const getDinamycFormProps = (form) => {
 };
 
 const sendData = async (form) => {
-  console.log("entra en la llamada");
   const url = "/api/db";
 
   const config = {
@@ -77,15 +77,39 @@ const SignUp = ({ formsData }) => {
   const initialFormProps = getDinamycFormProps(type);
   const [sentConfirmation, setSentConfirmation] = useState(false);
 
+  const validate = (values) => {
+    const errors = {};
+
+    const requiredSectionFields = formsData[type]["form"][step][
+      "fields"
+    ].filter((item) => item.required === true);
+
+    requiredSectionFields.forEach((field) => {
+      if (!values[field.inputName]) {
+        errors[field.inputName] = "Este campo es obligatorio";
+      }
+    });
+
+    return errors;
+  };
+
   const formik = useFormik({
     initialValues: initialFormProps,
+    validate,
     onSubmit: async (values, { resetForm }) => {
+      const errors = await formik.validateForm();
+
+      if (Object.keys(errors).length > 0) {
+        return;
+      }
       const sent = await sendData(values);
+      setSentConfirmation(true);
       resetForm();
     },
   });
 
-  const { handleSubmit, handleChange, values, errors, isSubmitting } = formik;
+  const { handleSubmit, handleChange, values, errors, touched, handleBlur } =
+    formik;
 
   const inputTypeComponents = {
     radio: RadioInput,
@@ -96,9 +120,26 @@ const SignUp = ({ formsData }) => {
     ["text-area"]: TextAreaInput,
   };
 
+  async function handleNext() {
+    const requiredSectionFields = formsData[type]["form"][step][
+      "fields"
+    ].filter((item) => item.required === true);
+
+    requiredSectionFields.forEach(async (item) => {
+      await formik.setFieldTouched(item.inputName, true);
+    });
+
+    const errors = await formik.validateForm();
+
+    if (Object.keys(errors).length > 0) {
+      return;
+    }
+    setStep((prev) => prev + 1);
+  }
+
   const renderInputComponent = () => {
     return function renderComponent(
-      { label, type, inputName, ...restProps },
+      { label, type, inputName, required, ...restProps },
       index
     ) {
       const InputComponent = inputTypeComponents[type];
@@ -109,7 +150,11 @@ const SignUp = ({ formsData }) => {
           key={index}
           onChange={handleChange}
           value={values[inputName]}
+          onBlur={handleBlur}
+          touched={touched[inputName]}
           inputName={inputName}
+          error={errors[inputName]}
+          showRequired={required}
           {...restProps}
         />
       );
@@ -145,7 +190,7 @@ const SignUp = ({ formsData }) => {
                 </ButtonSecondary>
               )}
               {step + 1 !== totalSections ? (
-                <ButtonPrimary onClick={() => setStep((prev) => prev + 1)}>
+                <ButtonPrimary onClick={() => handleNext("next")}>
                   {" "}
                   Siguiente{" "}
                 </ButtonPrimary>

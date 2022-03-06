@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import ErrorText from "./ErrorText";
+import RequiredLabel from "./RequiredLabel";
 
 const Container = styled.div`
   display: flex;
@@ -27,11 +29,19 @@ const TextInput = ({
   value,
   onChange = () => {},
   inputName,
+  error,
+  touched,
+  showRequired,
   ...others
 }) => {
   return (
     <Container>
-      {label && <StyledLabel>{label}</StyledLabel>}
+      {touched}
+      {label && (
+        <StyledLabel>
+          {label} {showRequired && <RequiredLabel />}
+        </StyledLabel>
+      )}
       <StyledInput
         name={inputName}
         type="text"
@@ -39,6 +49,7 @@ const TextInput = ({
         onChange={onChange}
         {...others}
       />
+      {error && touched && <ErrorText> {error} </ErrorText>}
     </Container>
   );
 };

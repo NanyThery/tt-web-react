@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import ErrorText from "./ErrorText";
+import RequiredLabel from "./RequiredLabel";
 
 const Container = styled.div`
   display: flex;
@@ -51,13 +53,18 @@ const RadioInput = ({
   label,
   options,
   value,
+  error,
   onChange = () => {},
   inputName,
+  touched,
+  showRequired,
   ...rest
 }) => {
   return (
     <Container {...rest}>
-      <StyledLabel>{label}</StyledLabel>
+      <StyledLabel>
+        {label} {showRequired && <RequiredLabel />}
+      </StyledLabel>
       {options.map((option, index) => {
         return (
           <RadioWrapper key={index}>
@@ -67,6 +74,7 @@ const RadioInput = ({
               name={inputName}
               value={option.value}
               onChange={onChange}
+              checked={option.value === value}
               {...option}
             />
             <StyledRadioLabel htmlFor={value}></StyledRadioLabel>
@@ -74,6 +82,7 @@ const RadioInput = ({
           </RadioWrapper>
         );
       })}
+      {error && touched && <ErrorText> {error} </ErrorText>}
     </Container>
   );
 };
