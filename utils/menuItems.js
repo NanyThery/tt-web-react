@@ -18,10 +18,10 @@ const MenuItems = [
   {
     label: "Alumnos",
     url: "/alumnos",
-    active: true,
+    active: false,
     style: "link",
-    mobile: true,
-    desktop: true,
+    mobile: false,
+    desktop: false,
   },
   {
     label: "Sobre nosotros",

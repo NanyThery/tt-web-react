@@ -97,7 +97,7 @@ const DesktopNavbar = ({
       }`}
     >
       <NavBarContainer>
-        <NavLink href="/">
+        <NavLink href="/" passHref>
           <MainLogo>
             <Brand positive={positiveStyle} />
           </MainLogo>
@@ -105,20 +105,24 @@ const DesktopNavbar = ({
         <ItemsContainer>
           {MenuItems.map((item, index) => {
             return (
-              <div key={index}>
-                {item.active && item.desktop && (
-                  <NavItem
-                    positiveStyle={positiveStyle}
-                    itemStyle={item.style}
-                    className={router.asPath === item.url && "active"}
-                    key={index}
-                  >
-                    <NavLink href={item.url}>
-                      <p>{item.label}</p>
-                    </NavLink>
-                  </NavItem>
+              <>
+                {item.active && (
+                  <div key={index}>
+                    {item.desktop && (
+                      <NavItem
+                        positiveStyle={positiveStyle}
+                        itemStyle={item.style}
+                        className={router.asPath === item.url && "active"}
+                        key={index}
+                      >
+                        <NavLink href={item.url} passHref>
+                          <p>{item.label}</p>
+                        </NavLink>
+                      </NavItem>
+                    )}
+                  </div>
                 )}
-              </div>
+              </>
             );
           })}
         </ItemsContainer>

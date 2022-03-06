@@ -24,16 +24,13 @@ const Container = styled.div`
 `;
 
 const checkIfIsDarkMode = (currentPath) => {
-  const routesWithDarkHeader = ["/", "/staff", "/curso", "/blog", "/blog/"];
+  const routesWithLightHeader = [];
 
-  if (currentPath.includes("/blog/") || currentPath.includes("/sign-up/")) {
-    return true;
-  }
-  if (routesWithDarkHeader.includes(currentPath)) {
-    return true;
+  if (routesWithLightHeader.includes(currentPath)) {
+    return false;
   }
 
-  return false;
+  return true;
 };
 
 export const Navbar = ({ router, startingPosition }) => {
