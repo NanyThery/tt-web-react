@@ -117,7 +117,6 @@ const SignUp = ({ formsData }) => {
   const { handleSubmit, handleChange, values, errors, touched, handleBlur } =
     formik;
 
-  console.log(values);
   const inputTypeComponents = {
     radio: RadioInput,
     text: TextInput,

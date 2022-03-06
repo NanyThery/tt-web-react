@@ -60,7 +60,6 @@ const RadioInput = ({
   showRequired,
   ...rest
 }) => {
-  console.log(value);
   return (
     <Container {...rest}>
       <StyledLabel>
