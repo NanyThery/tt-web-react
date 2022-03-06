@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import HeaderCurso from "../components/Curso/HeaderCurso";
-import { cursoSection } from "../utils/copies";
-import FAQSection from "../components/FAQSection";
-import ContentCurso from "../components/Curso/ContentCurso";
-import CourseCards from "../components/Curso/CourseCards";
-import SectionSeparator from "../components/SectionSeparator";
+import HeaderCurso from "../../components/Curso/HeaderCurso";
+import { cursoSection } from "../../utils/copies";
+import FAQSection from "../../components/FAQSection";
+import ContentCurso from "../../components/Curso/ContentCurso";
+import CourseCards from "../../components/Curso/CourseCards";
+import SectionSeparator from "../../components/SectionSeparator";
 
 const Container = styled.div``;
 

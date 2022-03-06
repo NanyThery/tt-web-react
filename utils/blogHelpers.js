@@ -18,7 +18,8 @@ export function getAuthorImage(imageName, section = "authors") {
 }
 
 export function getFormattedPublishDate(date) {
-  const validDate = parse(date, "yyyy-mm-dd", new Date());
+  const validDate = parse(date, "yyyy-MM-dd", new Date());
+  console.log(validDate);
   const formattedDate = format(validDate, "dd MMM. yyyy", {
     locale: es,
   });

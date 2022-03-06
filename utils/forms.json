@@ -1,0 +1,328 @@
+{
+  "full-power": {
+    "title": "Inscripción al curso Full Power 🔥",
+    "description": "Te haremos unas preguntas que nos ayudarán a priorizar las plazas que reciben mentorización personalizada. ¡Muchas gracias!",
+    "destination": "/",
+    "form": [
+      {
+        "section": "Datos generales 😀",
+        "fields": [
+          {
+            "label": "Nombre",
+            "type": "text",
+            "inputName": "nombre",
+            "placeholder": "Escribe aquí tu nombre",
+            "required": true
+          },
+          {
+            "label": "Edad",
+            "type": "text",
+            "inputName": "edad",
+            "placeholder": "Aquí cuántos años tienes",
+            "required": true
+          },
+          {
+            "label": "Email",
+            "type": "text",
+            "inputName": "email",
+            "placeholder": "tuemail@email.com",
+            "required": true
+          },
+          {
+            "label": "Género",
+            "type": "radio",
+            "defaultValue": "otro",
+            "inputName": "genero",
+            "options": [
+              { "label": "Mujer", "value": "mujer" },
+              { "label": "Hombre", "value": "hombre" },
+              { "label": "Otro", "value": "otro" },
+              { "label": "Prefiero no decirlo", "value": "nc" }
+            ]
+          },
+          {
+            "label": "¿En qué país vives?",
+            "type": "text",
+            "inputName": "pais"
+          },
+          {
+            "label": "¿A qué te dedicas?",
+            "type": "text",
+            "inputName": "profesion"
+          }
+        ]
+      },
+      {
+        "section": "Motivación 🙌",
+        "fields": [
+          {
+            "label": "¿Por qué quieres hacer este curso?",
+            "type": "motivation-video",
+            "inputName": "motivation-video"
+          }
+        ]
+      },
+      {
+        "section": "Requisitos técnicos 🖥️",
+        "fields": [
+          {
+            "label": "¿Tienes ordenador propio con webcam y conexión a internet?",
+            "inputName": "acceso_ordenador_internet",
+            "defaultValue": "sí",
+            "type": "radio",
+            "required": true,
+            "options": [
+              { "label": "Sí", "value": "sí" },
+              { "label": "No", "value": "no" }
+            ]
+          }
+        ]
+      },
+      {
+        "section": "Compromiso 💪",
+        "fields": [
+          {
+            "label": "Recuerda que no se paga con dinero, pero sí con tiempo: ¿qué tiempo tienes disponible para dedicar al curso y acudir a las clases (miércoles de 18 a 20 hs huso horario español peninsular) durante las semanas que dura (junio y julio)?",
+            "type": "radio",
+            "required": true,
+            "defaultValue": "plena disponibilidad",
+            "inputName": "disponibilidad",
+            "options": [
+              {
+                "label": "Plena disponibilidad",
+                "value": "plena disponibilidad"
+              },
+              {
+                "label": "Disponibilidad parcial (mañanas o tardes libres)",
+                "value": "disponibilidad parcial"
+              },
+              {
+                "label": "Poca disponibilidad, solo mis ratos libres",
+                "value": "ratos libres"
+              },
+              {
+                "label": "No tengo disponibilidad",
+                "value": "nada de disponibilidad"
+              },
+              { "label": "No lo sé con seguridad", "value": "ns" }
+            ]
+          }
+        ]
+      },
+      {
+        "section": "Conocimiento Previo 🤓",
+        "fields": [
+          {
+            "label": "Selecciona la opción que mejor describa tus conocimientos en programación, siendo 1 \"no tengo ni idea\" y 5 \"entiendo qué es un bucle for\"",
+            "type": "radio",
+            "required": true,
+            "defaultValue": "1",
+            "inputName": "nivel_conocimiento",
+            "options": [
+              { "label": "1. No tengo ni idea", "value": "1" },
+              { "label": "2", "value": "2" },
+              { "label": "3", "value": "3" },
+              { "label": "4", "value": "4" },
+              { "label": "5. Entiendo qué es un bucle for", "value": "5" }
+            ]
+          }
+        ]
+      },
+      {
+        "section": "Extra 😉",
+        "fields": [
+          {
+            "label": "¿Te gustaría pasar a la modalidad 'A tu aire' si no entras en 'Full Power'?",
+            "type": "radio",
+            "defaultValue": "sí",
+            "required": true,
+            "inputName": "a_tu_aire_acceptance",
+            "options": [
+              { "label": "Sí", "value": "sí" },
+              { "label": "No", "value": "no" }
+            ]
+          },
+          {
+            "label": "Y por último, ¿cómo nos has conocido?",
+            "type": "text-area",
+            "inputName": "como_conocido"
+          },
+          {
+            "label": "Política de privacidad",
+            "sectionLabel": "Política de privacidad",
+            "type": "privacy-policy",
+            "inputName": "privacy-policy",
+            "required": true
+          }
+        ]
+      }
+    ]
+  },
+  "a-tu-aire": {
+    "title": "Inscripción al curso A tu Aire 🌊",
+    "description": "Te haremos una preguntas para completar la inscripción en esta modalidad ¡Muchas gracias!",
+    "destination": "/",
+    "form": [
+      {
+        "section": "Datos generales 😀",
+        "fields": [
+          {
+            "label": "Nombre",
+            "type": "text",
+            "inputName": "nombre",
+            "placeholder": "Escribe aquí tu nombre"
+          },
+          {
+            "label": "Edad",
+            "type": "text",
+            "inputName": "edad",
+            "placeholder": "Aquí tu edad"
+          },
+          {
+            "label": "Email",
+            "type": "text",
+            "inputName": "email",
+            "placeholder": "tuemail@email.com",
+            "required": true
+          },
+          {
+            "label": "Género",
+            "type": "radio",
+            "defaultValue": "otro",
+            "inputName": "genero",
+            "options": [
+              { "label": "Mujer", "value": "mujer" },
+              { "label": "Hombre", "value": "hombre" },
+              { "label": "Otro", "value": "otro" },
+              { "label": "Prefiero no decirlo", "value": "nc" }
+            ]
+          },
+          {
+            "label": "¿En qué país vives?",
+            "inputName": "pais",
+            "type": "text"
+          },
+          {
+            "label": "¿A qué te dedicas?",
+            "inputName": "profesion",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "section": "Extra 😉",
+        "fields": [
+          {
+            "label": "¿Tienes algún perfil en redes sociales que quieras compartir con nosotros?",
+            "type": "text-area",
+            "inputName": "rr_ss"
+          },
+          {
+            "label": "¿Quieres comentarnos algo?",
+            "inputName": "comments",
+            "type": "text-area"
+          },
+          {
+            "label": "Y por último, ¿cómo nos has conocido?",
+            "inputName": "como_conocido",
+            "type": "text-area"
+          },
+          {
+            "label": "Política de privacidad",
+            "type": "privacy-policy",
+            "inputName": "privacy-policy",
+            "required": true
+          }
+        ]
+      }
+    ]
+  },
+  "voluntarios": {
+    "title": "¡Únete al equipo TeachT3ch!",
+    "faqs": {
+      "title": "Preguntas frecuentes",
+      "description": "Aquí tienes algunas aclaraciones respecto a las colaboraciones, pero no dudes enviarnos el formulario con más comentarios si hay algo que no esté recogido aquí.",
+      "qas": [
+        {
+          "q": "¿Qué tendría que hacer al mentorizar?",
+          "a": "Las mentorizaciones son la parte más valiosa del curso, aparte de las clases en directo. Al menos una vez a la semana, en el horario que convengáis con tu mentorizado, tendríais una videollamada para repasar dudas que hayan surgido de las clases, repasar los ejercicios y corregirlos, y apoyarle con explicaciones si lo necesita. A partir de las últimas semanas, es fundamental tu apoyo para el desarrollo de proyecto de fin de curso, orientándole, guiándole, ayudándole a acotar el trabajo u organizarlo.",
+          "links": []
+        },
+        {
+          "q": "¿Qué nivel de programación tengo que tener para dar clases o mentorizar?",
+          "a": "Puedes echar un vistazo al temario del curso. Es un nivel de programación muy sencillo, donde explicamos las estructuras de flujo básicas y algo de manipulación del DOM para que puedan elaborar un proyecto de fin de curso con algo de soltura. Las tecnologías son HTML, CSS y Javascript Vanilla muy básicos.",
+          "links": [
+            {
+              "label": "Ver el temario del curso",
+              "url": "/curso"
+            }
+          ]
+        },
+        {
+          "q": "¿Cuánto tiempo tendría que dedicarle?",
+          "a": "En general, calculamos unas 2/3 horas a la semana como mínimo, incluyendo la videollamada de seguimiento. La forma y la frecuencia del contacto la acuerdas tú con tu mentorizado, el objetivo es que ambos estéis cómodos y el mentorizado pueda avanzar y contar contigo cuando lo necesite. El curso dura 8 semanas, generalmente del 01/06 al 31/07, y este es el período en el que tendrías que estar disponible para tu mentorizado."
+        },
+        {
+          "q": "No tengo tanto tiempo para mentorizar, pero quiero colaborar ¿qué puedo hacer?",
+          "a": "Hay muchísimas cosas en las que podrías colaborar con nosotros, desde echándonos una mano con las redes sociales, ayundándonos con las newsletters, apoyando a los mentores en la organización, organizando charlas y participando en ellas... hay muchas cosas que hacemos también durante el año y en el que nos vendría genial una mano."
+        }
+      ]
+    },
+    "description": "Si te gusta este proyecto y quieres formar parte de él hay muchas formas en las que puedes colaborar. Desde mentorizar, a dar clases, charlas o llevar las redes sociales ¡No necesitas saber programar para colaborar!",
+    "form": [
+      {
+        "section": "Datos generales 😀",
+        "fields": [
+          {
+            "label": "Nombre",
+            "type": "text",
+            "inputName": "nombre",
+            "required": true,
+            "placeholder": "Escribe aquí tu nombre"
+          },
+          {
+            "label": "Email",
+            "type": "text",
+            "inputName": "email",
+            "placeholder": "tuemail@email.com",
+            "required": true
+          },
+          {
+            "label": "¿En qué te gustaría colaborar (marca todas las que quieras)?",
+            "type": "checkbox-list",
+            "inputName": "type_col",
+            "options": [
+              { "label": "Mentorizar", "value": "mentorizar" },
+              { "label": "Dar clases", "value": "clases" },
+              { "label": "Participar y organizar charlas", "value": "charlas" },
+              { "label": "Organización", "value": "organización" },
+              { "label": "Redes sociales y difusión", "value": "rrss" },
+              { "label": "Lo que sea", "value": "todo" }
+            ]
+          },
+          {
+            "label": "¿Tienes algún perfil en redes sociales que quieras compartir con nosotros (LinkedIn, Twitter...)?",
+            "type": "text-area",
+            "inputName": "rr_ss"
+          },
+          {
+            "label": "Cuéntanos lo que quieras",
+            "inputName": "comments",
+            "type": "text-area"
+          },
+          {
+            "label": "Y por último, ¿cómo nos has conocido?",
+            "inputName": "como_conocido",
+            "type": "text-area"
+          },
+          {
+            "label": "Política de privacidad",
+            "type": "privacy-policy",
+            "inputName": "privacy-policy",
+            "required": true
+          }
+        ]
+      }
+    ]
+  }
+}

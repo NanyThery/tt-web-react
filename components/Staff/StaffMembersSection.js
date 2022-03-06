@@ -83,7 +83,7 @@ const StaffMembersSection = ({ staff }) => {
             <StaffMemberCard
               className="inverse"
               name="Tú"
-              href="/staff"
+              href="/sign-up/voluntarios"
               image="/img/team/placeholder.svg"
               badges={<Badge inverse>?????</Badge>}
               body="Esta puede ser tu próxima aventura."

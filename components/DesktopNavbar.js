@@ -97,7 +97,7 @@ const DesktopNavbar = ({
       }`}
     >
       <NavBarContainer>
-        <NavLink href="/">
+        <NavLink href="/" passHref>
           <MainLogo>
             <Brand positive={positiveStyle} />
           </MainLogo>
@@ -113,7 +113,7 @@ const DesktopNavbar = ({
                     className={router.asPath === item.url && "active"}
                     key={index}
                   >
-                    <NavLink href={item.url}>
+                    <NavLink href={item.url} passHref>
                       <p>{item.label}</p>
                     </NavLink>
                   </NavItem>
