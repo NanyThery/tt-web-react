@@ -60,6 +60,10 @@ const sendData = async (form) => {
   const url = "/api/db";
 
   const today = new Date();
+
+  if (form.modalidad == "voluntarios") {
+    form.type_col = form.type_col.toString();
+  }
   const config = {
     method: "post",
     url,
