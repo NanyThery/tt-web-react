@@ -188,7 +188,7 @@
             "options": [
               { "label": "Mujer", "value": "mujer" },
               { "label": "Hombre", "value": "hombre" },
-              { "label": "Otro", "value": "otro", "checked": true },
+              { "label": "Otro", "value": "otro" },
               { "label": "Prefiero no decirlo", "value": "nc" }
             ]
           },

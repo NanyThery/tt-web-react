@@ -2,7 +2,7 @@ import styled from "styled-components";
 import FormContainer from "../../components/Forms/FormContainer";
 import FormHeader from "../../components/Forms/FormHeader";
 import forms from "../../utils/forms.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import StepsCount from "../../components/Forms/StepsCount";
 import { GenericBadge } from "../../components/GenericBadge";
 import TextInput from "../../components/Forms/TextInput";
@@ -16,7 +16,7 @@ import { useFormik, Field } from "formik";
 import { useRouter } from "next/router";
 import axios from "axios";
 import FormConfirmation from "../../components/Forms/FormConfirmation";
-import { isValid } from "date-fns";
+import { scrollToTop } from "../../utils/scrollToTop";
 
 const Container = styled.div`
   display: flex;
@@ -56,10 +56,11 @@ const getDinamycFormProps = (form) => {
 const sendData = async (form) => {
   const url = "/api/db";
 
+  const today = new Date();
   const config = {
     method: "post",
     url,
-    data: { ...form },
+    data: { date: today, ...form },
     responseType: "text",
   };
 
@@ -76,6 +77,10 @@ const SignUp = ({ formsData }) => {
   const totalSections = formsData[type]["form"].length;
   const initialFormProps = getDinamycFormProps(type);
   const [sentConfirmation, setSentConfirmation] = useState(false);
+
+  useEffect(() => {
+    scrollToTop();
+  }, [step]);
 
   const validate = (values) => {
     const errors = {};
