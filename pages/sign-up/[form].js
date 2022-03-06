@@ -18,11 +18,13 @@ import axios from "axios";
 import FormConfirmation from "../../components/Forms/FormConfirmation";
 import { scrollToTop } from "../../utils/scrollToTop";
 import CheckboxList from "../../components/Forms/CheckboxList";
+import FormsFAQ from "../../components/Forms/FormsFAQ";
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 16px;
   flex-flow: column;
 `;
 
@@ -210,6 +212,12 @@ const SignUp = ({ formsData }) => {
           </>
         )}
       </FormContainer>
+
+      {!sentConfirmation && formsData[type]["faqs"] && (
+        <FormContainer>
+          <FormsFAQ faqs={formsData[type]["faqs"]} />
+        </FormContainer>
+      )}
     </Container>
   );
 };

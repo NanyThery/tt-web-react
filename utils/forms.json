@@ -239,6 +239,35 @@
   },
   "voluntarios": {
     "title": "¡Únete al equipo TeachT3ch!",
+    "faqs": {
+      "title": "Preguntas frecuentes",
+      "description": "Aquí tienes algunas aclaraciones respecto a las colaboraciones, pero no dudes enviarnos el formulario con más comentarios si hay algo que no esté recogido aquí.",
+      "qas": [
+        {
+          "q": "¿Qué tendría que hacer al mentorizar?",
+          "a": "Las mentorizaciones son la parte más valiosa del curso, aparte de las clases en directo. Al menos una vez a la semana, en el horario que convengáis con tu mentorizado, tendríais una videollamada para repasar dudas que hayan surgido de las clases, repasar los ejercicios y corregirlos, y apoyarle con explicaciones si lo necesita. A partir de las últimas semanas, es fundamental tu apoyo para el desarrollo de proyecto de fin de curso, orientándole, guiándole, ayudándole a acotar el trabajo u organizarlo.",
+          "links": []
+        },
+        {
+          "q": "¿Qué nivel de programación tengo que tener para dar clases o mentorizar?",
+          "a": "Puedes echar un vistazo al temario del curso. Es un nivel de programación muy sencillo, donde explicamos las estructuras de flujo básicas y algo de manipulación del DOM para que puedan elaborar un proyecto de fin de curso con algo de soltura. Las tecnologías son HTML, CSS y Javascript Vanilla muy básicos.",
+          "links": [
+            {
+              "label": "Ver el temario del curso",
+              "url": "/curso"
+            }
+          ]
+        },
+        {
+          "q": "¿Cuánto tiempo tendría que dedicarle?",
+          "a": "En general, calculamos unas 2/3 horas a la semana como mínimo, incluyendo la videollamada de seguimiento. La forma y la frecuencia del contacto la acuerdas tú con tu mentorizado, el objetivo es que ambos estéis cómodos y el mentorizado pueda avanzar y contar contigo cuando lo necesite. El curso dura 8 semanas, generalmente del 01/06 al 31/07, y este es el período en el que tendrías que estar disponible para tu mentorizado."
+        },
+        {
+          "q": "No tengo tanto tiempo para mentorizar, pero quiero colaborar ¿qué puedo hacer?",
+          "a": "Hay muchísimas cosas en las que podrías colaborar con nosotros, desde echándonos una mano con las redes sociales, ayundándonos con las newsletters, apoyando a los mentores en la organización, organizando charlas y participando en ellas... hay muchas cosas que hacemos también durante el año y en el que nos vendría genial una mano."
+        }
+      ]
+    },
     "description": "Si te gusta este proyecto y quieres formar parte de él hay muchas formas en las que puedes colaborar. Desde mentorizar, a dar clases, charlas o llevar las redes sociales ¡No necesitas saber programar para colaborar!",
     "form": [
       {
