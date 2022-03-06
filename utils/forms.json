@@ -31,7 +31,7 @@
           {
             "label": "Género",
             "type": "radio",
-            "defaultValue": "1",
+            "defaultValue": "otro",
             "inputName": "genero",
             "options": [
               { "label": "Mujer", "value": "mujer" },
@@ -58,6 +58,7 @@
           {
             "label": "¿Tienes ordenador propio con webcam y conexión a internet?",
             "inputName": "acceso_ordenador_internet",
+            "defaultValue": "sí",
             "type": "radio",
             "required": true,
             "options": [
@@ -74,6 +75,7 @@
             "label": "Recuerda que no se paga con dinero, pero sí con tiempo: ¿qué tiempo tienes disponible para dedicar al curso y acudir a las clases (miércoles de 18 a 20 hs huso horario español peninsular) durante las semanas que dura (junio y julio)?",
             "type": "radio",
             "required": true,
+            "defaultValue": "plena disponibilidad",
             "inputName": "disponibilidad",
             "options": [
               {
@@ -132,6 +134,7 @@
           {
             "label": "¿Te gustaría pasar a la modalidad 'A tu aire' si no entras en 'Full Power'?",
             "type": "radio",
+            "defaultValue": "sí",
             "required": true,
             "inputName": "a_tu_aire_acceptance",
             "options": [
@@ -184,6 +187,7 @@
           {
             "label": "Género",
             "type": "radio",
+            "defaultValue": "otro",
             "inputName": "genero",
             "options": [
               { "label": "Mujer", "value": "mujer" },

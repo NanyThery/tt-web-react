@@ -21,6 +21,12 @@ const StyledHeroInfo = styled((props) => <HeroInfo {...props} />)`
   width: 100%;
   max-width: 635px;
   text-align: center;
+
+  @media only screen and (max-width: 850px) {
+    background: ${(props) => props.theme.gradients.backgroundOrange};
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 `;
 
 const FormHeader = ({ title, description, variation = "orangeInverse" }) => {

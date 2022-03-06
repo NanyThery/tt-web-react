@@ -44,7 +44,7 @@ const getDinamycFormProps = (form) => {
 
   forms[form]["form"].forEach((section) => {
     const props = section.fields.reduce((acc, item) => {
-      acc[item.inputName] = "";
+      acc[item.inputName] = item.defaultValue;
       return acc;
     }, {});
 
