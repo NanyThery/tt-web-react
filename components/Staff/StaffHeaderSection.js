@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { HeroContainer, HeroInfo } from "../Home/Header";
 import staffHeaderImage from "../../public/img/staff-header.png";
 import Image from "next/image";
+import { ButtonSecondaryWhite } from "../Button";
+import NavLink from "next/link";
 
 const Container = styled.div`
   background: ${(props) => props.theme.gradients.backgroundPurpleInverse};
@@ -10,9 +12,13 @@ const Container = styled.div`
     background: ${(props) => props.theme.gradients.backgroundPurple};
   }
 `;
+
+const StyledHeroContainer = styled((props) => <HeroContainer {...props} />)`
+  padding: 100px 20px 20px 20px;
+`;
 const HeaderImage = styled((props) => (
   <div {...props}>
-    <Image src={props.src} />
+    <Image src={props.src} alt="Colaboradores" />
   </div>
 ))`
   width: 350px;
@@ -28,7 +34,8 @@ const HeaderVolunteer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 24px;
+  padding: 16px;
+  gap: 16px;
   border: 2px solid ${(props) => props.theme.colors.purpleLight};
   border-radius: 3px;
   text-align: center;
@@ -65,15 +72,11 @@ const StyledHeroInfo = styled((props) => <HeroInfo {...props} />)`
     }
   }
 `;
-const HeaderVolunteerContainer = styled.div`
-  @media only screen and (max-width: 1140px) {
-    display: none;
-  }
-`;
+const HeaderVolunteerContainer = styled.div``;
 
 const StaffHeaderSection = () => (
   <Container>
-    <HeroContainer>
+    <StyledHeroContainer>
       <StyledHeroInfo>
         <header>
           <h2>Mentores & Profes</h2>
@@ -96,9 +99,12 @@ const StaffHeaderSection = () => (
             Si quieres ayudarnos puedes hacerte colaborador, mentor o profe. ¡Te
             esperamos!
           </p>
+          <NavLink href="/sign-up/voluntarios" passHref>
+            <ButtonSecondaryWhite>Quiero colaborar</ButtonSecondaryWhite>
+          </NavLink>
         </HeaderVolunteer>
       </HeaderVolunteerContainer>
-    </HeroContainer>
+    </StyledHeroContainer>
   </Container>
 );
 
