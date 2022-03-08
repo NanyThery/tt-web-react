@@ -4,6 +4,7 @@ import { home } from "../../utils/copies";
 import { ButtonSecondaryWhite } from "../Button";
 import Image from "next/image";
 import NewsletterForm from "./NewsletterForm";
+import NavLink from "next/link";
 
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
@@ -90,17 +91,17 @@ const CtaSection = ({ isCourseOpen, onClick }) => {
         <Title>{home.ctaSection[status]["title"]}</Title>
         <Description>{home.ctaSection[status]["description"]}</Description>
         <ActionsContainer>
-          {
-            (isCourseOpen = false ? (
+          {isCourseOpen ? (
+            <NavLink href="/curso">
               <ButtonSecondaryWhite onClick={onClick}>
                 {home.ctaSection[status]["cta"]}
               </ButtonSecondaryWhite>
-            ) : (
-              <NewsletterForm variant="light">
-                {home.ctaSection[status]["cta"]}
-              </NewsletterForm>
-            ))
-          }
+            </NavLink>
+          ) : (
+            <NewsletterForm variant="light">
+              {home.ctaSection[status]["cta"]}
+            </NewsletterForm>
+          )}
         </ActionsContainer>
       </LeftCol>
       <RightCol>

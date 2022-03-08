@@ -51,7 +51,7 @@ publishDate: "2021-12-06"
 - `title`: The title to be shown for the post
 - `slug`: Choose the slug for this post, preferrably keep it just like file name.
 - `tags`: Write all the tags within the array that can be aplicable to this post.
-- `featuredImg`: The featured image should be uploaded to the folder `/public/img/posts` in this field only write the name of the file and the extension.
+- `featuredImg`: The featured image should be uploaded to the desired folder and write here the path. It also admits images from Unsplash and Pixabay. See below for more examples.
 - `summary`: Write a summary to be shown in the featured post description.
 - `userName`: Enter the autor userName. If you don't have one, there's a generic TTStaff one.
 - `publishDate`: Enter the publish date in format "YYYY-MM-DD".
@@ -59,14 +59,6 @@ publishDate: "2021-12-06"
 Don't forget to include the `---` before and after the fields.
 
 You can start writing right away, following the same MarkDown format rules as usual.
-
-## Adding teachers and mentors to staff
-
-1. Add a new entry to [staff.json](utils/staff.json).
-2. Add a jpg image to the [team](public/img/team) folder. The name must be the person's name in lowercase with dashes instead of spaces. For example `Rubén de Alba` maps to `ruben-de-alba.jpg`.
-3. Optionally, add an `mp4` following the same naming as the image. This will be displayed on hover. We normally get them from https://giphy.com which allows you to download gifs as mp4. The reason to use mp4 instead of gifs is to save a ton of bandwidth.
-
-See [this commit](https://github.com/NanyThery/tt-web-react/commit/9b6b35b6245ed7e66c3fd78622836956605217f5) for a real example.
 
 ### Special components
 
@@ -76,6 +68,29 @@ MDX files allows you to insert custom components. Since this blog has a custom f
   - `<CustomImage src='the full path-absolute or relative' alt="the description"/>`
 - To insert videos:
   - `<YTvideo id='the id of the video' />`
+
+### Images in posts
+
+You can use local images by uploading them to the folder /assets/posts/ and specifing the full path without quotes in the `featuredImg` field like:
+
+`featuredImg: /img/posts/infra.jpg`
+
+The web is also prepared to use image from Unsplash and Pixabay as remote locations. But in order to use them you must get the actual link to the image by right clicking on it and copying the link to the image. Like so:
+
+`featuredImg: https://cdn.pixabay.com/photo/2018/02/01/06/40/rocket-3122690_960_720.png`
+
+The web will admit images from:
+
+- https://cdn.pixabay.com/
+- https://images.unsplash.com/
+
+## Adding teachers and mentors to staff
+
+1. Add a new entry to [staff.json](utils/staff.json).
+2. Add a jpg image to the [team](public/img/team) folder. The name must be the person's name in lowercase with dashes instead of spaces. For example `Rubén de Alba` maps to `ruben-de-alba.jpg`.
+3. Optionally, add an `mp4` following the same naming as the image. This will be displayed on hover. We normally get them from https://giphy.com which allows you to download gifs as mp4. The reason to use mp4 instead of gifs is to save a ton of bandwidth.
+
+See [this commit](https://github.com/NanyThery/tt-web-react/commit/9b6b35b6245ed7e66c3fd78622836956605217f5) for a real example.
 
 ## Tech debt
 

@@ -2,6 +2,8 @@ import styled from "styled-components";
 import SectionLayout from "../SectionLayout";
 import saly from "../../public/img/saly.png";
 import Image from "next/image";
+import { ButtonSecondaryWhite } from "../Button";
+import NavLink from "next/link";
 
 const FooterBanner = styled.div`
   background: ${(props) => props.theme.gradients.backgroundOrange};
@@ -43,6 +45,10 @@ const FooterBanner = styled.div`
   }
 `;
 
+const StyledButtonWrapper = styled.div`
+  margin: 16px 0;
+`;
+
 const FooterSection = () => (
   <SectionLayout>
     <FooterBanner>
@@ -55,6 +61,11 @@ const FooterSection = () => (
           simplemente <strong>quieres ayudar</strong> y unirte a esta
           apasionante aventura, ¡te esperamos!
         </p>
+        <StyledButtonWrapper>
+          <NavLink href="/sign-up/voluntarios">
+            <ButtonSecondaryWhite>Quiero colaborar</ButtonSecondaryWhite>
+          </NavLink>
+        </StyledButtonWrapper>
       </div>
       <div className="image">
         <Image src={saly} />

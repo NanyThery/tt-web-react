@@ -1,12 +1,11 @@
 export const eventBarInfo = {
-  showUntilTimeStamp: null,
+  showUntilTimeStamp: 1652651999000,
   eventTitle: (
     <p>
-      No te pierdas las <span className="bold">Winter Sessions 2021</span>. No
-      te pierdas las Winter Sessions 2021. No te pierdas las Winter Sessions
-      2021. No te pierdas las Winter Sessions 2021.
+      ¡Atención! Próxima apertura de de inscripciones para la próxima edición
+      del 01/05/2022 al 15/05/2022
     </p>
   ),
-  eventLinkText: "Comprueba el calendario 👉",
-  eventLinkURL: "/blog/winter-sessions-2021",
+  eventLinkText: "Información del curso 👉",
+  eventLinkURL: "blog/proxima-edicion-2022",
 };

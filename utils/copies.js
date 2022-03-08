@@ -288,6 +288,7 @@ export const courseInfo = {
     title: "Full Power",
     imgFileName: "full-power.png",
     badge: "Plazas limitadas",
+    url: "full-power",
     description: (
       <p>
         Ideal si puedes dedicarle al menos{" "}
@@ -328,6 +329,7 @@ export const courseInfo = {
     badge: "Sin límite de plazas",
     icon: "🌊",
     description: "Por tu cuenta y a tu ritmo",
+    url: "a-tu-aire",
     imgFileName: "a-tu-aire.png",
     summary: [
       { icon: "cup", text: "Gestionas tu ritmo" },

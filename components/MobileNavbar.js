@@ -179,7 +179,7 @@ const MobileNavbar = ({ router }) => {
                     }`}
                     key={index}
                   >
-                    <NavLink href={item.url}>
+                    <NavLink href={item.url} passHref>
                       <p>{item.label}</p>
                     </NavLink>
                   </NavItem>

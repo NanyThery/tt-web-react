@@ -8,13 +8,18 @@ const Button = styled.button`
 `;
 
 export const ButtonPrimary = styled(Button)`
-  width: 100%;
   color: white;
   border: none;
   background-color: ${(props) => props.theme.colors.orange};
 
   &:hover {
     background-color: ${(props) => props.theme.colors.orangeDark};
+  }
+
+  &:disabled {
+    color: ${(props) => props.theme.colors.text80};
+    border: 2px solid ${(props) => props.theme.colors.text80};
+    background-color: ${(props) => props.theme.colors.text40};
   }
 `;
 export const ButtonSecondary = styled(Button)`
@@ -26,6 +31,11 @@ export const ButtonSecondary = styled(Button)`
     color: ${(props) => props.theme.colors.orangeDark};
     border: 2px solid ${(props) => props.theme.colors.orangeDark};
   }
+  &:disabled {
+    color: ${(props) => props.theme.colors.text80};
+    border: 2px solid ${(props) => props.theme.colors.text80};
+    background-color: ${(props) => props.theme.colors.text40};
+  }
 `;
 
 export const ButtonSecondaryWhite = styled(Button)`
@@ -35,6 +45,11 @@ export const ButtonSecondaryWhite = styled(Button)`
   &:hover {
     color: ${(props) => props.theme.colors.orangeDark};
     border: 2px solid ${(props) => props.theme.colors.orangeDark};
+  }
+  &:disabled {
+    color: ${(props) => props.theme.colors.text80};
+    border: 2px solid ${(props) => props.theme.colors.text80};
+    background-color: ${(props) => props.theme.colors.text40};
   }
 `;
 

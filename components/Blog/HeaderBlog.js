@@ -164,7 +164,7 @@ const HeaderBlog = ({ lastPost }) => {
           <Link href={`/blog/${lastPost.slug}`} passHref>
             <div>
               <Image
-                src={`/img/posts/${lastPost.featuredImg}`}
+                src={lastPost.featuredImg}
                 alt={lastPost.title}
                 width="540"
                 height="331"

@@ -16,14 +16,6 @@ const MenuItems = [
     desktop: true,
   },
   {
-    label: "Alumnos",
-    url: "/alumnos",
-    active: true,
-    style: "link",
-    mobile: true,
-    desktop: true,
-  },
-  {
     label: "Sobre nosotros",
     url: "/aboutUs",
     active: true,

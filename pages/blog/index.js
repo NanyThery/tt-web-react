@@ -43,7 +43,7 @@ export default function Blog({ posts }) {
   const [filteredData, setFilteredData] = useState(posts);
   const { next, currentPage, currentData, maxPage } = usePagination(
     filteredData,
-    3
+    4
   );
   const [element, setElement] = useState(null);
   const observer = useRef();
@@ -104,6 +104,7 @@ export default function Blog({ posts }) {
           <TagSearch onTagSelection={onTagSelection} />
           <VerticalNewsletter />
         </RightColumn>
+        {currentPage !== maxPage && <p ref={setElement}>Cargando...</p>}
       </ContentBlog>
     </div>
   );
