@@ -51,7 +51,7 @@ publishDate: "2021-12-06"
 - `title`: The title to be shown for the post
 - `slug`: Choose the slug for this post, preferrably keep it just like file name.
 - `tags`: Write all the tags within the array that can be aplicable to this post.
-- `featuredImg`: The featured image should be uploaded to the folder `/public/img/posts` in this field only write the name of the file and the extension.
+- `featuredImg`: The featured image should be uploaded to the desired folder and write here the path. It also admits images from Unsplash and Pixabay. See below for more examples.
 - `summary`: Write a summary to be shown in the featured post description.
 - `userName`: Enter the autor userName. If you don't have one, there's a generic TTStaff one.
 - `publishDate`: Enter the publish date in format "YYYY-MM-DD".
@@ -68,6 +68,21 @@ MDX files allows you to insert custom components. Since this blog has a custom f
   - `<CustomImage src='the full path-absolute or relative' alt="the description"/>`
 - To insert videos:
   - `<YTvideo id='the id of the video' />`
+
+### Images in posts
+
+You can use local images by uploading them to the folder /assets/posts/ and specifing the full path without quotes in the `featuredImg` field like:
+
+`featuredImg: /img/posts/infra.jpg`
+
+The web is also prepared to use image from Unsplash and Pixabay as remote locations. But in order to use them you must get the actual link to the image by right clicking on it and copying the link to the image. Like so:
+
+`featuredImg: https://cdn.pixabay.com/photo/2018/02/01/06/40/rocket-3122690_960_720.png`
+
+The web will admit images from:
+
+- https://cdn.pixabay.com/
+- https://images.unsplash.com/
 
 ## Adding teachers and mentors to staff
 
