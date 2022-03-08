@@ -81,9 +81,6 @@ const HandsVector = styled.div`
     .hand {
       position: absolute;
       bottom: -41.5%;
-      max-width: 100%;
-      height: auto;
-      border: 2px solid red;
     }
   }
 `;
