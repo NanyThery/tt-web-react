@@ -66,7 +66,7 @@ const BottomInfo = styled.div`
 export const BlogEntry = ({ postInfo }) => {
   const { tags, slug, title, featuredImg, userName, publishDate } = postInfo;
   return (
-    <NavLink href={`blog/${slug}`} passHref>
+    <NavLink href={`/blog/${slug}`} passHref>
       <Container>
         <LeftCol>
           <Image
