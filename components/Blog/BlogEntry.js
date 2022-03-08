@@ -70,7 +70,7 @@ export const BlogEntry = ({ postInfo }) => {
       <Container>
         <LeftCol>
           <Image
-            src={`/img/posts/${featuredImg}`}
+            src={featuredImg}
             alt={title}
             width={255}
             height={155}

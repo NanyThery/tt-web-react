@@ -110,7 +110,7 @@ const PostLayout = ({ children, frontmatter, lastPosts }) => {
         <Wrapper>
           <ImageWrapper>
             <Image
-              src={`/img/posts/${featuredImg}`}
+              src={featuredImg}
               alt={title}
               width={728}
               height={450}
