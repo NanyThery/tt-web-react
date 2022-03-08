@@ -7,5 +7,5 @@ export const eventBarInfo = {
     </p>
   ),
   eventLinkText: "Información del curso 👉",
-  eventLinkURL: "/blog/proxima-edicion-2022",
+  eventLinkURL: "blog/proxima-edicion-2022",
 };
