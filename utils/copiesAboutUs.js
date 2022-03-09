@@ -26,11 +26,6 @@ export const aboutUs = {
       description:
         "En mayo de 2020 volvimos a la carga. Con nuevas ideas, nuevas modalidades y con algo más de tiempo. El tiempo nos permitió doblar el número de alumnos pero también el de voluntarios. Y es que TeachT3ch es la fuerza de sus voluntarios, profes, mentores y colaboradores que nos ayudan a poner en marcha esta maquinaria cada verano.",
     },
-    {
-      title: "¡Y así fue!",
-      description:
-        "En mayo de 2020 volvimos a la carga. Con nuevas ideas, nuevas modalidades y con algo más de tiempo. El tiempo nos permitió doblar el número de alumnos pero también el de voluntarios. Y es que TeachT3ch es la fuerza de sus voluntarios, profes, mentores y colaboradores que nos ayudan a poner en marcha esta maquinaria cada verano.",
-    },
   ],
   collaboration: {
     title: "Y la historia continúa...",
