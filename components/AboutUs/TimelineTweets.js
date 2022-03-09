@@ -22,7 +22,9 @@ const TimelineTweetsVector = styled.div`
 const TimelineTweet = styled.div`
   div.timeline-screenshot-tweet {
     position: relative;
-    background: #000000;
+    background: #ffffff;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
     padding: 10px;
     z-index: 0;
   }
@@ -36,44 +38,18 @@ const TimelineTweet = styled.div`
 
   div.timeline-screenshot-tweet:nth-child(even) {
     right: 60%;
-    border-radius: 8px 0 8px 8px;
-    ::before {
-      content: "";
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      background: linear-gradient(135deg, #000 50%, transparent 51%);
-      right: -19px;
-      top: 0;
-    }
     @media only screen and (max-width: 850px) {
       border-radius: 8px;
       right: 0;
       margin: 20px 0;
-      ::before {
-        background: none;
-      }
     }
   }
   div.timeline-screenshot-tweet:nth-child(odd) {
     left: 60%;
-    border-radius: 0 8px 8px 8px;
-    ::before {
-      content: "";
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      background: linear-gradient(-135deg, #000 50%, transparent 51%);
-      left: -25px;
-      top: 0;
-    }
     @media only screen and (max-width: 850px) {
       border-radius: 8px;
       margin: 30px 0;
       left: 0;
-      ::before {
-        background: none;
-      }
     }
   }
 `;

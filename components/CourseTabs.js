@@ -17,6 +17,7 @@ const Container = styled.div`
     }
   }
 `;
+
 const TabContainer = styled.div`
   display: flex;
   height: 74px;
@@ -145,7 +146,6 @@ const RightCol = styled.div`
 
   @media only screen and (max-width: 850px) {
     padding: 10px 24px;
-
     & .right-col-top {
       flex-flow: column;
     }
