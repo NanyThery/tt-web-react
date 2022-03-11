@@ -31,6 +31,7 @@ const Title = styled.h2`
   @media only screen and (max-width: 850px) {
     font-size: 28px;
     line-height: 32px;
+    margin-top: 50px;
   }
 `;
 

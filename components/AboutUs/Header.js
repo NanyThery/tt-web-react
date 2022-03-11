@@ -131,7 +131,11 @@ const InitialVector = styled.div`
 
   div.timeline-vector {
     z-index: 0;
+  }
+
+  .timeline-vector-desktop {
     position: relative;
+    right: 50px;
   }
 `;
 
@@ -159,6 +163,7 @@ const Header = () => {
             src="/img/aboutUs/planet.png"
             size={[135, 85]}
             position={[76, 0, 0, 60]}
+            opacity = {1}
           />
         </HeaderImage>
       </HeroContainer>
@@ -173,7 +178,13 @@ const Header = () => {
             />
           </div>
         ) : (
-          <Image src="/img/aboutUs/vector3.png" width="475px" height="200px" />
+          <div className="timeline-vector-desktop">
+            <Image
+              src="/img/aboutUs/vectorRightToLeft.svg"
+              width="675px"
+              height="200px"
+            />
+          </div>
         )}
       </InitialVector>
     </HeaderContainer>

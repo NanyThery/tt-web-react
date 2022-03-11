@@ -19,13 +19,24 @@ const TimelineSectionContainer = styled.div`
   }
 
   div.timeline-vector {
+    position: relative;
     bottom: 40px;
     z-index: 0;
-    position: relative;
   }
 
   div.timeline-vector:last-child {
     bottom: 20px;
+  }
+
+  .timeline-vector-desktop {
+    position: relative;
+    right: 100px;
+  }
+
+  .timeline-vector-desktop:last-child  {
+    position: relative;
+    right: 200px;
+    
   }
 `;
 
@@ -38,25 +49,6 @@ const TimelineSection = () => {
         title={aboutUs.timeline[0].title}
         description={aboutUs.timeline[0].description}
         path={"tweetJM1.png"}
-        reverse={false}
-      ></TimelineContent>
-      {isMobileVersion.includes(breakpoint) ? (
-        <div className="timeline-vector">
-          <Image
-            src="/img/aboutUs/vectorLineMobile.svg"
-            width="4px"
-            height="100px"
-            alt="Line Vector"
-          />
-        </div>
-      ) : (
-        <Image src="/img/aboutUs/vector2.png" width="475px" height="200px" />
-      )}
-
-      <TimelineContent
-        title={aboutUs.timeline[1].title}
-        description={aboutUs.timeline[1].description}
-        path={"tweetJM2.png"}
         reverse={true}
       ></TimelineContent>
       {isMobileVersion.includes(breakpoint) ? (
@@ -69,12 +61,19 @@ const TimelineSection = () => {
           />
         </div>
       ) : (
-        <Image src="/img/aboutUs/vector3.png" width="475px" height="200px" />
+        <div className="timeline-vector-desktop">
+          <Image
+            src="/img/aboutUs/VectorLeftToRight.svg"
+            width="775px"
+            height="200px"
+          />
+        </div>
       )}
+
       <TimelineContent
-        title={aboutUs.timeline[2].title}
-        description={aboutUs.timeline[2].description}
-        path={"tweetJM3.png"}
+        title={aboutUs.timeline[1].title}
+        description={aboutUs.timeline[1].description}
+        path={"tweetJM2.png"}
         reverse={false}
       ></TimelineContent>
       {isMobileVersion.includes(breakpoint) ? (
@@ -87,7 +86,37 @@ const TimelineSection = () => {
           />
         </div>
       ) : (
-        <Image src="/img/aboutUs/vector3.png" width="475px" height="200px" />
+        <div className="timeline-vector-desktop">
+          <Image
+            src="/img/aboutUs/VectorRightToLeft.svg"
+            width="775px"
+            height="200px"
+          />
+        </div>
+      )}
+      <TimelineContent
+        title={aboutUs.timeline[2].title}
+        description={aboutUs.timeline[2].description}
+        path={"tweetJM3.png"}
+        reverse={true}
+      ></TimelineContent>
+      {isMobileVersion.includes(breakpoint) ? (
+        <div className="timeline-vector">
+          <Image
+            src="/img/aboutUs/vectorLineMobile.svg"
+            width="4px"
+            height="100px"
+            alt="Line Vector"
+          />
+        </div>
+      ) : (
+        <div className="timeline-vector-desktop">
+          <Image
+            src="/img/aboutUs/VectorLeftToRight.svg"
+            width="775px"
+            height="200px"
+          />
+        </div>
       )}
     </TimelineSectionContainer>
   );

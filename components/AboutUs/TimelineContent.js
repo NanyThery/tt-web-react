@@ -7,7 +7,7 @@ const TimelineSectionContent = styled((props) => <SectionLayout {...props} />)`
   justify-content: center;
   flex-direction: ${(props) => (props.reverse == true ? "row" : "row-reverse")};
 
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 1100px) {
     margin-top: 16px;
     flex-direction: column;
   }
@@ -23,7 +23,7 @@ const Title = styled.h2`
     color: #2a324b;
   }
 
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 1100px) {
     font-size: 28px;
     line-height: 37px;
     text-align: center;
@@ -36,7 +36,7 @@ const Description = styled.p`
   font-size: 16px;
   line-height: 26px;
 
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 1100px) {
     font-size: 14px;
     line-height: 24px;
     text-align: center;
@@ -50,6 +50,10 @@ const LeftCol = styled.div`
   color: #767b91;
   width: 445px;
   height: 212px;
+
+  @media only screen and (max-width: 1100px) {
+    height: 100%;
+  }
 
   @media only screen and (max-width: 850px) {
     width: 100%;

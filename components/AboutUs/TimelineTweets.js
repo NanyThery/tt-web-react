@@ -58,7 +58,7 @@ const TimelineTweets = ({ tweetsScreenshots }) => (
   <TimelineSectionContainer>
     <TimelineTweetsVector>
       <div className="timeline-vector">
-        <Image src="/img/aboutUs/vector6.png" width="5px" height="1100px" />
+        <Image src="/img/aboutUs/vectorMobile.png" width="5px" height="1200px" />
       </div>
       <TimelineTweet>
         {tweetsScreenshots.map((tweet) => (
