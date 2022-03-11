@@ -11,9 +11,23 @@
     "quote": "No tengas prisa, pero nunca te pares"
   },
   {
+    "name": "Nadine",
+    "female": true,
+    "mentor": true,
+    "teacher": false,
+    "linkedin": "nadinethery",
+    "twitter": "nanythery",
+    "years": [2021, 2020],
+    "firstProgram": "Una carta de restaurante en Visual Basic para cobrarle a mis padres los cafés que me pedían al día",
+    "hobbies": "Juegos de mesa (modernos). Grabar vídeos de youtube/podcast. Yoga. Senderismo",
+    "quote": "La paciencia es la madre de todas las ciencias"
+  },
+  {
     "name": "Adrián",
     "mentor": true,
     "teacher": true,
+    "linkedin": "adrianaguado",
+    "twitter": "aguadotzn",
     "years": [2021, 2020],
     "firstProgram": "Hola mundo en C",
     "hobbies": "Deporte (Triatlón). Naturaleza (Alpinismo, escalada). Lectura. Música. Viajes",
@@ -40,18 +54,6 @@
     "firstProgram": "Sumar y Restar números",
     "hobbies": "Videojuegos. Baloncesto. Todo lo que tenga motor y como mínimo rueda",
     "quote": "Nadie conoce un lenguaje de cabeza, no te vengas abajo y usa el buscador (siempre con cabeza)"
-  },
-  {
-    "name": "Nadine",
-    "female": true,
-    "mentor": true,
-    "teacher": false,
-    "linkedin": "nadinethery",
-    "twitter": "nanythery",
-    "years": [2021, 2020],
-    "firstProgram": "Una carta de restaurante en Visual Basic para cobrarle a mis padres los cafés que me pedían al día",
-    "hobbies": "Juegos de mesa (modernos). Grabar vídeos de youtube/podcast. Yoga. Senderismo",
-    "quote": "La paciencia es la madre de todas las ciencias"
   },
   {
     "name": "Dani",
