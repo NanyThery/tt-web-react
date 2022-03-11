@@ -4,6 +4,7 @@ import SectionTitleDescription from "../SectionTitleDescription";
 import { getIconByName } from "../Icons";
 import { Collapse } from "react-collapse";
 import { useState } from "react";
+import SharedButtons from "../shared/SharedButtons";
 
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
@@ -101,6 +102,7 @@ const FormsFAQ = ({ faqs, ...rest }) => {
           })}
         </FAQContainer>
       </FAQWrapper>
+      <SharedButtons/>
     </Container>
   );
 };
