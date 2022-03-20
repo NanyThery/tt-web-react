@@ -12,7 +12,7 @@ import MotivationVideo from "../../components/Forms/MotivationVideo";
 import PrivacyPolicy from "../../components/Forms/PrivacyPolicy";
 import TextAreaInput from "../../components/Forms/TextAreaInput";
 import { ButtonPrimary, ButtonSecondary } from "../../components/Button";
-import { useFormik, Field } from "formik";
+import { useFormik } from "formik";
 import { useRouter } from "next/router";
 import axios from "axios";
 import FormConfirmation from "../../components/Forms/FormConfirmation";
@@ -56,14 +56,14 @@ const getDinamycFormProps = (form) => {
   return formProps;
 };
 
-const sendData = async (form) => {
+const sendDataToDB = async (form) => {
   const url = "/api/db";
-
   const today = new Date();
 
   if (form.modalidad == "voluntarios") {
     form.type_col = form.type_col.toString();
   }
+
   const config = {
     method: "post",
     url,
@@ -71,7 +71,67 @@ const sendData = async (form) => {
     responseType: "text",
   };
 
-  const sendForm = await axios(config);
+  try {
+    await axios(config);
+  } catch (error) {
+    await sendBackupEmail(form);
+  }
+
+  return "200";
+};
+
+const sendBackupEmail = async (form) => {
+  const url = "/api/sendEmail";
+
+  if (form.modalidad == "voluntarios") {
+    form.type_col = form.type_col.toString();
+  }
+
+  const config = {
+    method: "post",
+    url,
+    data: {
+      template: "backup-email",
+      to: "nadinethery@gmail.com",
+      from: "teacht3ch@gmail.com",
+      subject: `Backup sign-up email ${form.modalidad}: ${form.email}`,
+      message: form,
+    },
+    responseType: "text",
+  };
+
+  const sendEmail = await axios(config);
+
+  return sendEmail.status;
+};
+
+const sendConfirmationEmail = async (form) => {
+  const url = "/api/sendEmail";
+
+  if (form.modalidad == "voluntarios") {
+    form.type_col = form.type_col.toString();
+  }
+  const config = {
+    method: "post",
+    url,
+    data: {
+      template: form.modalidad,
+      to: form.email,
+      subject: `Hemos recibido tu formulario`,
+      ...form,
+    },
+    responseType: "text",
+  };
+
+  const sendEmail = await axios(config);
+
+  return sendEmail.status;
+};
+
+const sendData = async (form) => {
+  const sendForm = await sendDataToDB(form);
+
+  await sendConfirmationEmail(form);
 
   return sendForm.status;
 };
@@ -115,6 +175,7 @@ const SignUp = ({ formsData }) => {
         return;
       }
       const sent = await sendData(values);
+
       setSentConfirmation(true);
       resetForm();
     },
