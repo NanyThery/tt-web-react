@@ -108,7 +108,6 @@ const ReqList = styled.ul`
 
   > li {
     display: flex;
-    align-items: flex-start;
     gap: 10px;
     color: ${(props) => props.theme.colors.text80};
     font-size: 14px;
@@ -170,7 +169,7 @@ const CourseCards = ({ isCourseOpen }) => {
                           ({ icon, text }, index) => {
                             return (
                               <li key={index}>
-                                {getIconByName(icon)} <p>{text}</p>
+                                <div>{getIconByName(icon)}</div> <p>{text}</p>
                               </li>
                             );
                           }
@@ -185,7 +184,8 @@ const CourseCards = ({ isCourseOpen }) => {
                           ({ icon, text }, index) => {
                             return (
                               <li key={index}>
-                                {getIconByName(icon)} <p>{text}</p>
+                                <div>{getIconByName(icon)} </div>
+                                <p>{text}</p>
                               </li>
                             );
                           }

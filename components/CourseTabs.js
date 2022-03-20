@@ -236,7 +236,7 @@ const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
                 {courseInfo[option]["summary"].map(({ icon, text }, index) => {
                   return (
                     <li key={index}>
-                      {getIconByName(icon)} <p>{text}</p>
+                      <div>{getIconByName(icon)}</div> <p>{text}</p>
                     </li>
                   );
                 })}
@@ -250,7 +250,7 @@ const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
                   ({ icon, text }, index) => {
                     return (
                       <li key={index}>
-                        {getIconByName(icon)} <p>{text}</p>
+                        <div>{getIconByName(icon)}</div> <p>{text}</p>
                       </li>
                     );
                   }
