@@ -93,7 +93,7 @@ const sendBackupEmail = async (form) => {
     url,
     data: {
       template: "backup-email",
-      to: "nadinethery@gmail.com",
+      to: "teacht3ch@gmail.com",
       from: "teacht3ch@gmail.com",
       subject: `Backup sign-up email ${form.modalidad}: ${form.email}`,
       message: form,
