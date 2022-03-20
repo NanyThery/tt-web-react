@@ -61,8 +61,8 @@ const TimelineTweets = ({ tweetsScreenshots }) => (
         <Image src="/img/aboutUs/vectorMobile.png" width="5px" height="1200px" />
       </div>
       <TimelineTweet>
-        {tweetsScreenshots.map((tweet) => (
-          <div className="timeline-screenshot-tweet">
+        {tweetsScreenshots.map((tweet, index) => (
+          <div key={index} className="timeline-screenshot-tweet">
             <img src={`${tweet}`}></img>
           </div>
         ))}
