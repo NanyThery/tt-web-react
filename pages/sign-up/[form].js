@@ -19,6 +19,7 @@ import FormConfirmation from "../../components/Forms/FormConfirmation";
 import { scrollToTop } from "../../utils/scrollToTop";
 import CheckboxList from "../../components/Forms/CheckboxList";
 import FormsFAQ from "../../components/Forms/FormsFAQ";
+import FormSending from "../../components/Forms/FormSending";
 
 const Container = styled.div`
   display: flex;
@@ -61,7 +62,7 @@ const sendDataToDB = async (form) => {
   const today = new Date();
 
   if (form.modalidad == "voluntarios") {
-    form.type_col = form.type_col.toString();
+    form.type_col = form.type_col?.toString() || "";
   }
 
   const config = {
@@ -181,9 +182,17 @@ const SignUp = ({ formsData }) => {
     },
   });
 
-  const { handleSubmit, handleChange, values, errors, touched, handleBlur } =
-    formik;
+  const {
+    handleSubmit,
+    handleChange,
+    values,
+    errors,
+    touched,
+    handleBlur,
+    isSubmitting,
+  } = formik;
 
+  console.log(isSubmitting);
   const inputTypeComponents = {
     radio: RadioInput,
     text: TextInput,
@@ -243,9 +252,12 @@ const SignUp = ({ formsData }) => {
         variation={type}
       />
       <FormContainer>
-        {sentConfirmation ? (
+        {isSubmitting && !sentConfirmation && <FormSending />}
+        {sentConfirmation && !isSubmitting && (
           <FormConfirmation type={type}></FormConfirmation>
-        ) : (
+        )}
+
+        {!isSubmitting && !sentConfirmation && (
           <>
             <StepsCount currentStep={step + 1} totalSteps={totalSections} />
 
