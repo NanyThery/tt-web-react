@@ -24,7 +24,6 @@ export const HeroContainer = styled((props) => <SectionLayout {...props} />)`
     flex-flow: wrap column;
     justify-content: center;
     align-items: center;
-
     gap: 40px;
   }
 `;

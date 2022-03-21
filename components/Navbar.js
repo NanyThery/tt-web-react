@@ -25,6 +25,7 @@ const Container = styled.div`
 
 const checkIfIsDarkMode = (currentPath) => {
   const routesWithLightHeader = [];
+  // const routesWithDarkHeader = ["/", "/staff", "/aboutUs", "/curso", "/blog", "/blog/"];
 
   if (routesWithLightHeader.includes(currentPath)) {
     return false;
@@ -35,7 +36,6 @@ const checkIfIsDarkMode = (currentPath) => {
 
 export const Navbar = ({ router, startingPosition }) => {
   const [scrolledNavBar, setScrolledNavBar] = useState(false);
-
   const isDarkMode = checkIfIsDarkMode(router.asPath);
   const currentLocale = router.locale;
 
