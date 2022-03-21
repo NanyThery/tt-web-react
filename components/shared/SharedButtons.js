@@ -27,44 +27,45 @@ const ShareContent = styled.div`
     justify-content: center;
   }
 
+  @media only screen and (max-width: 850px) {
+    h4 {
+      font-size: 14px;
+    }
+  }
+
   .share-buttons {
     padding: 10px;
+
+    .adrian {
+      background-color: red;
+    }
   }
 `;
 // This component is using this library: https://github.com/Bunlong/next-share
-const SharedButtons = () => {
+const SharedButtons = ({ text, url }) => {
   return (
     <ShareContent>
-      <h4>Ayúdanos a dar a conocer este proyecto </h4>
+      <h4>¿Nos ayudas a dar a conocer el proyecto? ¡Mil gracias!</h4>
       <div className="share-buttons">
-        <FacebookShareButton url={"http://localhost:3000"}>
-          <FacebookIcon size={32} round />
+        <FacebookShareButton
+          url={"http://localhost:3000"}
+          quote={text}
+          hashtag={"#teachtech"}
+        >
+          <FacebookIcon size={28} round />
         </FacebookShareButton>
-
-        <TwitterShareButton
-          url={"https://teacht3ch.com/"}
-          title={
-            "TeachTech es un proyecto para dar a conocer la programación. Conoce más sobre el proyecto aqui: "
-          }
-        >
-          <TwitterIcon size={32} round />
+        <TwitterShareButton url={url} title={text}>
+          <TwitterIcon size={28} round />
         </TwitterShareButton>
-        <LinkedinShareButton url={"https://teacht3ch.com/"}>
-          <LinkedinIcon size={32} round />
+        <LinkedinShareButton url={url}>
+          <LinkedinIcon size={28} round />
         </LinkedinShareButton>
-        <TelegramShareButton
-          url={"https://teacht3ch.com/"}
-          title={
-            "TeachTech es un proyecto para dar a conocer la programación. Conoce más sobre el proyecto aqui: "
-          }
-        >
-          <TelegramIcon size={32} round />
+        <TelegramShareButton url={url} title={text}>
+          <TelegramIcon size={28} round />
         </TelegramShareButton>
         <WhatsappShareButton
-          url={"https://teacht3ch.com/"}
-          title={
-            "TeachTech es un proyecto para dar a conocer la programación. Conoce más sobre el proyecto aqui: "
-          }
+          url={url}
+          title={text}
           separator=":: "
         >
           <WhatsappIcon size={32} round />

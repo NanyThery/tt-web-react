@@ -102,7 +102,7 @@ const FormsFAQ = ({ faqs, ...rest }) => {
           })}
         </FAQContainer>
       </FAQWrapper>
-      <SharedButtons/>
+      <SharedButtons text="TeachTech es un proyecto sin ánimo de lucro para enseñar las bases de la programación. Más info aquí: " url="https://teacht3ch.com/"/>
     </Container>
   );
 };
