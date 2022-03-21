@@ -15,7 +15,7 @@ const ImageWrapper = styled.div`
 `;
 
 const PostText = styled.p`
-  margin-bottom: 18px;
+  margin: 15px 0;
   line-height: 28px;
 `;
 

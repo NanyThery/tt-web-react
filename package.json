@@ -10,6 +10,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@babel/core": "^7.17.8",
     "@sendgrid/mail": "^7.6.2",
     "axios": "^0.26.0",
     "babel-preset-next": "^1.4.0",
