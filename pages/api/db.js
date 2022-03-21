@@ -20,9 +20,13 @@ import { addRow } from "../../lib/dbc";
 
  */
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   if (req.method === "POST") {
-    addRow(req.body);
+    const result = await addRow(req.body);
+
+    if (result !== 200) {
+      res.status(500).send("Something went wrong");
+    }
     res.status(200).send("OK");
   } else if (req.method === "GET" || req.method === "HEAD") {
     res.status(204).send("Nothing to see here!");

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backup Email</title>
+  </head>
+  <body>
+    <h1>Hola Equipo TT:</h1>
+    <h2>La inscripción en la hoja de Google Sheets ha fallado.</h2>
+    <h3>
+      Así que recibimos este correo con la info de backup para introducirla
+      manualmente:
+    </h3>
+    <ul>
+      <li>Formulario: ${data.message.modalidad}</li>
+      <li>Nombre: ${data.message.nombre}</li>
+      <li>Email: ${data.message.email}</li>
+      <li>Datos del form: ${JSON.stringify(data.message)}</li>
+    </ul>
+    <br />
+    <br />
+    <p>Con cariño,</p>
+    <strong>El 🤖 de la web de TeachT3ch</strong>
+  </body>
+</html>
