@@ -54,7 +54,7 @@ const Section = styled.div`
     }
   }
 `;
-const NavItem = styled.div`
+const NavItem = styled.li`
   font-size: small;
   cursor: pointer;
   :hover {
@@ -109,6 +109,14 @@ const Footer = () => {
         mobile: true,
         desktop: true,
       },
+      {
+        label: "Código de conducta",
+        url: "/code-conduct",
+        active: true,
+        style: "link",
+        mobile: true,
+        desktop: true,
+      },
     ],
     social: [...SocialMedia],
   };
@@ -117,11 +125,11 @@ const Footer = () => {
     <Container>
       <Section>
         <Brand height="28" width="150" positive={true} />
-        <NavItem>
+        {/* <NavItem>
           <NavLink href={"/code-conduct"}>
             <p>Código de conducta</p>
           </NavLink>
-        </NavItem>
+        </NavItem> */}
         <p>© Teach[T3ch] {today.getFullYear()}. All rights reserved. </p>
       </Section>
 

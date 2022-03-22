@@ -27,8 +27,10 @@ const CustomOl = styled.ol`
 `;
 
 const CustomLi = styled.li`
-  &:hover {
-    font-weight: bold;
+  > a {
+    &:hover {
+      font-weight: bold;
+    }
   }
 `;
 
