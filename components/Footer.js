@@ -6,7 +6,6 @@ import NavLink from "next/link";
 
 const Container = styled.div`
   display: flex;
-
   justify-content: center;
   font-size: small;
   color: ${(props) => props.theme.colors.text80};
@@ -110,6 +109,14 @@ const Footer = () => {
         mobile: true,
         desktop: true,
       },
+      {
+        label: "Código de conducta",
+        url: "/code-conduct",
+        active: true,
+        style: "link",
+        mobile: true,
+        desktop: true,
+      },
     ],
     social: [...SocialMedia],
   };
@@ -118,11 +125,15 @@ const Footer = () => {
     <Container>
       <Section>
         <Brand height="28" width="150" positive={true} />
-
+        {/* <NavItem>
+          <NavLink href={"/code-conduct"}>
+            <p>Código de conducta</p>
+          </NavLink>
+        </NavItem> */}
         <p>© Teach[T3ch] {today.getFullYear()}. All rights reserved. </p>
       </Section>
 
-      <Section className="linkContainer">
+      <Section>
         <ul>
           {footerItems.links.map((item, index) => {
             return (

@@ -15,7 +15,7 @@ const ImageWrapper = styled.div`
 `;
 
 const PostText = styled.p`
-  margin-bottom: 18px;
+  margin: 15px 0;
   line-height: 28px;
 `;
 
@@ -27,8 +27,10 @@ const CustomOl = styled.ol`
 `;
 
 const CustomLi = styled.li`
-  &:hover {
-    font-weight: bold;
+  > a {
+    &:hover {
+      font-weight: bold;
+    }
   }
 `;
 
