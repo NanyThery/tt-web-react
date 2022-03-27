@@ -2,6 +2,7 @@ import slug from "../utils/slug";
 import staff from "../utils/staff.json";
 import { existsSync } from "fs";
 import path from "path";
+import shuffle from "lodash.shuffle";
 import { useRouter } from "next/router";
 import StaffHeaderSection from "../components/Staff/StaffHeaderSection";
 import StaffMembersSection from "../components/Staff/StaffMembersSection";
@@ -14,7 +15,7 @@ export async function getStaticProps() {
     `/img/team/${slug(member)}.${extension}`;
   return {
     props: {
-      staff: staff.map((member) => {
+      staff: shuffle(staff).map((member) => {
         const imageUrl = getRelativeUrl(member, "jpg");
         const videoUrl = getRelativeUrl(member, "mp4");
         return {
