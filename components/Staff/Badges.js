@@ -25,6 +25,7 @@ export const Badge = styled.span`
 
 export const Badges = ({ member }) => (
   <>
+    {member.collaborator && <Badge>Colaborador{member.female && "a"}</Badge>}
     {member.mentor && <Badge>Mentor{member.female && "a"}</Badge>}
     {member.teacher && (
       <Badge secondary>Instructor{member.female && "a"}</Badge>
