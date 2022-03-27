@@ -497,5 +497,16 @@
     "firstProgram": "Hundir la flota en C \"Madre qué viejo soy :)\"",
     "hobbies": "Disfrutar de mi familia ahora más que nunca, leer y aprender cualquier cosa constantemente",
     "quote": "Si tú no trabajas por tus sueños, alguien te contratará para que trabajes por los suyos. SteveJobs"
+  },
+  {
+    "name": "Yoli",
+    "female": true,
+    "mentor": false,
+    "collaborator": true,
+    "linkedin": "yolanda-tamayo-a2b02243",
+    "years": [2021],
+    "firstProgram": "No programo, pero soy una diseñadora que se entiende muy bien con los programadores :)",
+    "hobbies": "Dibujar y los videojuegos son mis dos pasiones. También me encanta la música, y los conciertos son el último hobby que estoy retomando tras la pandemia",
+    "quote": "People ignores design that ignores people"
   }
 ]
