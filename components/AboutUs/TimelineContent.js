@@ -6,6 +6,7 @@ const TimelineSectionContent = styled((props) => <SectionLayout {...props} />)`
   align-items: center;
   gap: 30px;
   justify-content: space-between;
+
   flex-direction: ${(props) => (props.reverse == true ? "row" : "row-reverse")};
 
   @media only screen and (max-width: 850px) {
@@ -47,7 +48,6 @@ const LeftCol = styled.div`
   align-items: flex-start;
   color: #767b91;
   max-width: 445px;
-  min-height: 212px;
 
   @media only screen and (max-width: 1100px) {
     height: 100%;

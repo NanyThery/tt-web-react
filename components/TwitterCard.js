@@ -81,10 +81,12 @@ const TwitterCard = ({
         </UserInfo>
       </AvatarContainer>
       {children}
-      <BottomLine>
-        <span className="date-line"> {dateLine} ·</span>
-        <span className="twitter-app"> Twitter Web App</span>
-      </BottomLine>
+      {dateLine && (
+        <BottomLine>
+          <span className="date-line"> {dateLine} ·</span>
+          <span className="twitter-app"> Twitter Web App</span>
+        </BottomLine>
+      )}
     </Container>
   );
 };
