@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image";
+import aboutUs from "../../utils/copiesAboutUs.json";
+import TwitterCard from "../TwitterCard";
 
 const TimelineSectionContainer = styled.div`
   display: flex;
@@ -22,8 +24,7 @@ const TimelineTweetsVector = styled.div`
 const TimelineTweet = styled.div`
   div.timeline-screenshot-tweet {
     position: relative;
-    background: #ffffff;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+
     border-radius: 16px;
     padding: 10px;
     z-index: 0;
@@ -54,16 +55,28 @@ const TimelineTweet = styled.div`
   }
 `;
 
-const TimelineTweets = ({ tweetsScreenshots }) => (
+const TimelineTweets = () => (
   <TimelineSectionContainer>
     <TimelineTweetsVector>
       <div className="timeline-vector">
-        <Image src="/img/aboutUs/vectorMobile.png" width="5px" height="1200px" />
+        <Image
+          src="/img/aboutUs/vectorMobile.png"
+          width="5px"
+          height="1200px"
+          alt="path to other tweet"
+        />
       </div>
       <TimelineTweet>
-        {tweetsScreenshots.map((tweet, index) => (
+        {aboutUs.timelineTweets.map((tweet, index) => (
           <div key={index} className="timeline-screenshot-tweet">
-            <img src={`${tweet}`}></img>
+            <TwitterCard
+              imageFileName={tweet.imageFileName}
+              userName={tweet.userName}
+              twitterUser={tweet.twitterUser}
+              dateLine={tweet.dateLine}
+            >
+              {tweet.tweetContent}
+            </TwitterCard>
           </div>
         ))}
       </TimelineTweet>

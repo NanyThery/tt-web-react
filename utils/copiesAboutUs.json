@@ -48,5 +48,49 @@
     "title": "Y la historia continúa...",
     "description": "Queremos que TeachT3ch siga creciendo y celebrándose cada verano. Ya somos más de 40 voluntarios, 200 alumnos y un mónton de nuevas historias por vivir. Siempre recibimos con los brazos abiertos a nuevos colaboradores, patrocinadores, mentores y profes. Si tienes un perfil en programación, diseño, marketing, social media o simplemente quieres ayudar y unirte a esta apasionante aventura, ¡te esperamos!"
   },
-  "button": "¡Quiero colaborar!"
+  "button": "¡Quiero colaborar!",
+  "timelineTweets": [
+    {
+      "imageFileName": "irene-morgado.jpg",
+      "userName": "Irene M Morgado 🌱",
+      "twitterUser": "@IrnMM",
+      "tweetContent": "Esta semana estoy volviendo a hacer entrevistas para nuestra querida #GeneraciónK de @kairos_ds ... ¡y estoy encontrando a personas junior que me dan súper buen feedback sobre su experiencia con @teacht3ch !. Si no los conocéis aún, echad un vistazo 👩🏻‍💻👨🏾‍💻https://teacht3ch.com"
+    },
+    {
+      "imageFileName": "pablo-molina.jpg",
+      "userName": "Pablo Molina",
+      "twitterUser": "@p2kmgcl",
+      "tweetContent": "Esto es una locura...era una cosa pequeñita, muy pequeñita... y ahora necesitamos más gente que esté deseando compartir conocimiento 😍. No os hacéis una idea de las ganas que tengo de empezar."
+    },
+    {
+      "imageFileName": "lourdes-martinez.jpg",
+      "userName": "Lourdes Martínez",
+      "twitterUser": "@Lour_Martinez",
+      "tweetContent": "Ser mentora cambió mi vida, he conocido a mujeres maravillosas ingenieras, programadoras, que hoy son grandes amigas. Si os interesa, podéis ser mentoras, o difundirlo..."
+    },
+    {
+      "imageFileName": "roberto-gomez.jpg",
+      "userName": "Roberto.Gómez.",
+      "twitterUser": "@rgomezmu",
+      "tweetContent": "Yo ya formo parte de este grupo de 'locos' que intentan cambiar el mundo... ¿A qué estáis esperando para poner vuestro granito de arena? #teacht3ch #mentoring 👇🏻👇🏻"
+    },
+    {
+      "imageFileName": "ovinan.jpeg",
+      "userName": "ovinan",
+      "twitterUser": "@ovinan",
+      "tweetContent": "El subidón de poder ayudar: este verano lo volví a experimentar gracias a @teacht3ch"
+    },
+    {
+      "imageFileName": "roberto-gomez.jpg",
+      "userName": "Roberto.Gómez.",
+      "twitterUser": "@rgomezmu",
+      "tweetContent": "Yo ya formo parte de este grupo de 'locos' que intentan cambiar el mundo... ¿A qué estáis esperando para poner vuestro granito de arena? #teacht3ch #mentoring 👇🏻👇🏻"
+    },
+    {
+      "imageFileName": "david.jpg",
+      "userName": "DΛVID",
+      "twitterUser": "@DavidTweid",
+      "tweetContent": "Nunca ha sido tan fácil ayudar a personas que están empezando en este maravilloso mundo de escribir código. Eaaaaasy, dude!! 😎"
+    }
+  ]
 }
