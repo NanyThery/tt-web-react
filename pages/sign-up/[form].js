@@ -192,7 +192,6 @@ const SignUp = ({ formsData }) => {
     isSubmitting,
   } = formik;
 
-  console.log(isSubmitting);
   const inputTypeComponents = {
     radio: RadioInput,
     text: TextInput,

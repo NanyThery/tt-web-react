@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Image from "next/image";
 import aboutUs from "../../utils/copiesAboutUs.json";
 import TwitterCard from "../TwitterCard";
 
@@ -81,7 +80,6 @@ const TimelineTweets = () => (
     <div className="timeline-vector"></div>
     <RightCol>
       {aboutUs.timelineTweets.map((tweet, index) => {
-        console.log(index % 2);
         if (index % 2 != 0)
           return (
             <TwitterCard
