@@ -9,6 +9,7 @@ import AchieveSection from "../components/Home/AchieveSection";
 import CtaSection from "../components/Home/CtaSection";
 import FiguresSection from "../components/Home/FiguresSection";
 import FAQSection from "../components/FAQSection";
+import SponsorSection from "../components/Home/SponsorSection";
 
 const Container = styled.div`
   width: 100%;
@@ -36,6 +37,8 @@ export default function Home({ isCourseOpen, testimonials }) {
       <FiguresSection className="not-in-responsive" />
       <SectionSeparator className="not-in-responsive" />
       <FAQSection className="not-in-responsive" />
+      <SectionSeparator />
+      <SponsorSection />
       <SectionSeparator className="not-in-responsive" />
       <CtaSection isCourseOpen={isCourseOpen} />
       <SectionSeparator />

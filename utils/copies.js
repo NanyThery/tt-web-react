@@ -92,6 +92,28 @@ export const home = {
   figuresSection: {
     title: "Ya estamos logrando grandes cosas",
   },
+  sponsors: {
+    title: "¡Gracias a nuestras empresas colaboradoras!",
+    description:
+      "Además de nuestros voluntarios, también estas empresas ayudan a que este proyecto siga adelante, bien con financiación, con herramientas o aportando tiempo laboral para que nuestros voluntarios puedan participar aquí.",
+    companies: [
+      {
+        companyName: "Liferay",
+        url: "https://www.liferay.com/es/home",
+        imageURL: "/img/sponsors/liferay.png",
+      },
+      {
+        companyName: "Corunet",
+        url: "https://coru.net",
+        imageURL: "/img/sponsors/corunet.svg",
+      },
+      {
+        companyName: "Agile Spain",
+        url: "https://agile-spain.org/",
+        imageURL: "/img/sponsors/agile-spain.png",
+      },
+    ],
+  },
 };
 
 export const testimonials = {
