@@ -4,26 +4,24 @@ import SectionLayout from "../SectionLayout";
 const TimelineSectionContent = styled((props) => <SectionLayout {...props} />)`
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 30px;
+  justify-content: space-between;
   flex-direction: ${(props) => (props.reverse == true ? "row" : "row-reverse")};
 
-  @media only screen and (max-width: 1100px) {
-    margin-top: 16px;
+  @media only screen and (max-width: 850px) {
     flex-direction: column;
   }
 `;
 
 const Title = styled.h2`
   width: 100%;
-  > h2 {
-    line-height: 1;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 42px;
-    color: #2a324b;
-  }
+  line-height: 1;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #2a324b;
 
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 850px) {
     font-size: 28px;
     line-height: 37px;
     text-align: center;
@@ -48,8 +46,8 @@ const LeftCol = styled.div`
   flex-direction: column;
   align-items: flex-start;
   color: #767b91;
-  width: 445px;
-  height: 212px;
+  max-width: 445px;
+  min-height: 212px;
 
   @media only screen and (max-width: 1100px) {
     height: 100%;
@@ -59,7 +57,6 @@ const LeftCol = styled.div`
     width: 100%;
     text-align: center;
     justify-content: center;
-    height: 150px;
 
     & .left-col-content {
       & .img-container {
@@ -73,50 +70,20 @@ const LeftCol = styled.div`
 `;
 
 const RightCol = styled.div`
-  flex: 1;
   display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  padding: 10px 24px;
-
-  @media only screen and (max-width: 850px) {
-    padding: 10px 24px;
-  }
+  justify-content: ${(props) => props.align};
+  align-content: center;
 `;
 
-const TimelineTweet = styled.div`
-  margin: 20px 60px;
-  position: relative;
-  background: #ffff;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
-  padding: 10px;
-  z-index: 1;
-
-  img {
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  @media only screen and (max-width: 850px) {
-    border-radius: 8px;
-    margin: 20px 10px;
-  }
-`;
-
-const TimelineContent = ({ title, description, path, reverse = false }) => {
+const TimelineContent = ({ title, description, reverse = false, children }) => {
   return (
     <TimelineSectionContent reverse={reverse}>
       <LeftCol>
         <Title>{title}</Title>
         <Description>{description}</Description>
       </LeftCol>
-      <RightCol>
-        <TimelineTweet>
-          <img src={`/img/aboutUs/tweets/${path}`}></img>
-        </TimelineTweet>
+      <RightCol align={reverse ? "flex-end" : "flex-start"}>
+        {children}
       </RightCol>
     </TimelineSectionContent>
   );

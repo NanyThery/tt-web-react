@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { aboutUs } from "../../utils/copiesAboutUs";
+import aboutUs from "../../utils/copiesAboutUs.json";
 import Image from "next/image";
 import { AboutUsIllustration } from "./AboutUsIllustration";
 

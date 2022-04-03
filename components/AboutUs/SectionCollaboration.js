@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { aboutUs } from "../../utils/copiesAboutUs";
+import aboutUs from "../../utils/copiesAboutUs.json";
 import { ButtonSecondaryWhite } from "../Button";
 import Image from "next/image";
 import NavLink from "next/link";
