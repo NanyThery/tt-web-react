@@ -30,7 +30,6 @@ const Description = styled.div`
   font-size: 16px;
   font-weight: normal;
   line-height: 26px;
-  line-height: 26px;
   max-width: 730px;
   text-align: center;
   width: 100%;
