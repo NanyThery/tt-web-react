@@ -42,7 +42,6 @@ const TimelineSection = () => {
       <TimelineContent
         title={aboutUs.timeline[1].title}
         description={aboutUs.timeline[1].description}
-        path={"tweetJM2.png"}
         reverse={false}
       >
         <TwitterCard

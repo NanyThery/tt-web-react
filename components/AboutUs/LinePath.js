@@ -74,7 +74,7 @@ const LinePath = ({ rightToLeft = true, header = false }) => {
 
         <div className={`desktop-line ${!rightToLeft ? "left-to-right" : ""}`}>
           <Image
-            src="/img/aboutUs/vectorRightToLeft.svg"
+            src="/img/aboutUs/aboutUsPath.svg"
             width="650px"
             height="200px"
             layout="intrinsic"

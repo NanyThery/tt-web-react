@@ -3,73 +3,71 @@ import Image from "next/image";
 import aboutUs from "../../utils/copiesAboutUs.json";
 import TwitterCard from "../TwitterCard";
 
-const TimelineSectionContainer = styled.div`
+const LeftCol = styled.div`
+  padding: 80px 0 30px 0;
   display: flex;
-  align-items: center;
+  flex-flow: column;
+  width: 100%;
+  max-width: 475px;
+  gap: 48px;
+
+  @media screen and (max-width: 850px) {
+    padding: 48px 0 0 0;
+  }
+`;
+const RightCol = styled.div`
+  padding: 48px 0 0 0;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  max-width: 475px;
+  gap: 48px;
+`;
+
+const TimelineSectionContainer = styled.div`
+  padding: 0 30px 0px 30px;
+  display: flex;
   justify-content: center;
-  flex-direction: column;
-  padding: 20px;
-`;
+  gap: 30px;
 
-const TimelineTweetsVector = styled.div`
-  div.timeline-vector {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    position: absolute;
-    left: 50%;
-  }
-`;
-
-const TimelineTweet = styled.div`
-  div.timeline-screenshot-tweet {
-    position: relative;
-
-    border-radius: 16px;
-    padding: 10px;
-    z-index: 0;
-  }
-
-  img {
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  div.timeline-screenshot-tweet:nth-child(even) {
-    right: 60%;
-    @media only screen and (max-width: 850px) {
-      border-radius: 8px;
-      right: 0;
-      margin: 20px 0;
+  > div {
+    &.timeline-vector {
+      width: 10px;
+      background-image: linear-gradient(
+        rgba(199, 204, 219, 0.6) 60%,
+        transparent 20%
+      );
+      background-position: top;
+      background-size: 4px 20px;
+      background-repeat: repeat-y;
     }
   }
-  div.timeline-screenshot-tweet:nth-child(odd) {
-    left: 60%;
-    @media only screen and (max-width: 850px) {
-      border-radius: 8px;
-      margin: 30px 0;
-      left: 0;
+
+  @media screen and (max-width: 850px) {
+    padding: 0 30px 30px 30px;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    > div {
+      &.timeline-vector {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+      }
     }
   }
 `;
 
 const TimelineTweets = () => (
   <TimelineSectionContainer>
-    <TimelineTweetsVector>
-      <div className="timeline-vector">
-        <Image
-          src="/img/aboutUs/vectorMobile.png"
-          width="5px"
-          height="1200px"
-          alt="path to other tweet"
-        />
-      </div>
-      <TimelineTweet>
-        {aboutUs.timelineTweets.map((tweet, index) => (
-          <div key={index} className="timeline-screenshot-tweet">
+    <LeftCol>
+      {aboutUs.timelineTweets.map((tweet, index) => {
+        if (index % 2 == 0)
+          return (
             <TwitterCard
+              key={index}
               imageFileName={tweet.imageFileName}
               userName={tweet.userName}
               twitterUser={tweet.twitterUser}
@@ -77,10 +75,27 @@ const TimelineTweets = () => (
             >
               {tweet.tweetContent}
             </TwitterCard>
-          </div>
-        ))}
-      </TimelineTweet>
-    </TimelineTweetsVector>
+          );
+      })}
+    </LeftCol>
+    <div className="timeline-vector"></div>
+    <RightCol>
+      {aboutUs.timelineTweets.map((tweet, index) => {
+        console.log(index % 2);
+        if (index % 2 != 0)
+          return (
+            <TwitterCard
+              key={index}
+              imageFileName={tweet.imageFileName}
+              userName={tweet.userName}
+              twitterUser={tweet.twitterUser}
+              dateLine={tweet.dateLine}
+            >
+              {tweet.tweetContent}
+            </TwitterCard>
+          );
+      })}
+    </RightCol>
   </TimelineSectionContainer>
 );
 
