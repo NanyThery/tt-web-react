@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { aboutUs } from "../../utils/copiesAboutUs";
+import aboutUs from "../../utils/copiesAboutUs.json";
 import Image from "next/image";
 import { AboutUsIllustration } from "./AboutUsIllustration";
 
@@ -80,12 +80,14 @@ const TimelineSectionFinal = () => (
         src="/img/aboutUs/tweets/tweetThanks.png"
         width="400px"
         height="130px"
+        alt="Gracias tweet"
       />
       <Image
         className="timeline-gif"
         src="/img/aboutUs/sectionFinal/omg-thanks.gif"
         width="445px"
         height="275px"
+        alt="Shirley Temple gif"
       />
     </TimelineFinalTweet>
     <AboutUsIllustration

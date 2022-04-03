@@ -1,0 +1,90 @@
+{
+  "header": {
+    "title": "Sobre nosotros",
+    "subtitle": "Descubre la historia de Teachtech",
+    "description": "Desde 2020 varios locos y locas nos juntamos en verano  para impartir un curso mentorizado gratuito a gente que le pica el gusanillo de programar pero que no sabe cómo empezar. Desde entonces no hemos parado de crecer. ¿Quieres descubrir cómo empezó todo? ",
+    "link": "👇🏻 Haz scroll y descubre nuestra historia"
+  },
+  "timeline": [
+    {
+      "title": "Todo comenzó con un Tweet",
+      "description": "Esta historia está basada en un hecho real ambientado en medio de una pandemia mundial y un confinamiento. JM iba a darle clase a 4 personas más aparte del sobrino. Y preguntó por Twitter si alguien más estaría interesado. ",
+      "tweet": {
+        "imageFileName": "jm-twitter.png",
+        "userName": "JM",
+        "twitterUser": "@jmnavarro",
+        "tweetContent": "Mi sobrino quiere APRENDER A PROGRAMAR desde cero y me ha pedido que le ayude. Challenge accepted. 🤓 Pero voy a abrir un grupo de 4 personas más. RT para llegar a más gente. 🙏 Detalles en el hilo. 👇",
+        "dateLine": "12:36 AM · 8  Jun. 2020"
+      }
+    },
+    {
+      "title": "Que fue creciendo más y más...",
+      "description": "Y lo cierto es que surgieron muchísimos interesados, pero también muchos más profes que querían colaborar en esta iniciativa. ",
+      "tweet": {
+        "imageFileName": "jm-twitter.png",
+        "userName": "JM",
+        "twitterUser": "@jmnavarro",
+        "tweetContent": "Pues 7 días después de tirarme al barro, tenemos un grupo de 12 profesores (GRACIAS) y 43 apuntados al curso 😬",
+        "dateLine": "5:08 p.m. · 14  Jun. 2020"
+      }
+    },
+    {
+      "title": "Habrá que pensar en grande",
+      "description": "Y en tiempo récord, juntamos un grupo de 11 “personas orquesta” que daban clases, grababan vídeos, mentorizaban alumnos y preparaban newsletters. La primera edición de TeachT3ch tuvo a 19 alumnos! Este primer impulso nos dejó con tanta adrenalina en el cuerpo que acabamos el curso sabiendo que habría una segunda edición. Y que sería “más y mejor”.",
+      "tweet": {
+        "imageFileName": "jm-twitter.png",
+        "userName": "JM",
+        "twitterUser": "@jmnavarro",
+        "tweetContent": "GRACIAS a todos por la difusión. Por vosotros hemos podido llegar a muchísima más gente de la prevista. Y más gente, son más posibilidades de cambiar alguna vida (habrá que pensar en grande, ¿no?)",
+        "dateLine": "5:08 p.m. · 14  Jun. 2020"
+      }
+    },
+    {
+      "title": "¡Y así fue!",
+      "description": "En mayo de 2020 volvimos a la carga. Con nuevas ideas, nuevas modalidades y con algo más de tiempo. El tiempo nos permitió doblar el número de alumnos pero también el de voluntarios. Y es que TeachT3ch es la fuerza de sus voluntarios, profes, mentores y colaboradores que nos ayudan a poner en marcha esta maquinaria cada verano."
+    }
+  ],
+  "collaboration": {
+    "title": "Y la historia continúa...",
+    "description": "Queremos que TeachT3ch siga creciendo y celebrándose cada verano. Ya somos más de 40 voluntarios, 200 alumnos y un mónton de nuevas historias por vivir. Siempre recibimos con los brazos abiertos a nuevos colaboradores, patrocinadores, mentores y profes. Si tienes un perfil en programación, diseño, marketing, social media o simplemente quieres ayudar y unirte a esta apasionante aventura, ¡te esperamos!"
+  },
+  "button": "¡Quiero colaborar!",
+  "timelineTweets": [
+    {
+      "imageFileName": "irene-morgado.jpg",
+      "userName": "Irene M Morgado 🌱",
+      "twitterUser": "@IrnMM",
+      "tweetContent": "Esta semana estoy volviendo a hacer entrevistas para nuestra querida #GeneraciónK de @kairos_ds ... ¡y estoy encontrando a personas junior que me dan súper buen feedback sobre su experiencia con @teacht3ch !. Si no los conocéis aún, echad un vistazo 👩🏻‍💻👨🏾‍💻https://teacht3ch.com"
+    },
+    {
+      "imageFileName": "pablo-molina.jpg",
+      "userName": "Pablo Molina",
+      "twitterUser": "@p2kmgcl",
+      "tweetContent": "Esto es una locura...era una cosa pequeñita, muy pequeñita... y ahora necesitamos más gente que esté deseando compartir conocimiento 😍. No os hacéis una idea de las ganas que tengo de empezar."
+    },
+    {
+      "imageFileName": "lourdes-martinez.jpg",
+      "userName": "Lourdes Martínez",
+      "twitterUser": "@Lour_Martinez",
+      "tweetContent": "Ser mentora cambió mi vida, he conocido a mujeres maravillosas ingenieras, programadoras, que hoy son grandes amigas. Si os interesa, podéis ser mentoras, o difundirlo..."
+    },
+    {
+      "imageFileName": "ovinan.jpeg",
+      "userName": "ovinan",
+      "twitterUser": "@ovinan",
+      "tweetContent": "El subidón de poder ayudar: este verano lo volví a experimentar gracias a @teacht3ch"
+    },
+    {
+      "imageFileName": "roberto-gomez.jpg",
+      "userName": "Roberto.Gómez.",
+      "twitterUser": "@rgomezmu",
+      "tweetContent": "Yo ya formo parte de este grupo de 'locos' que intentan cambiar el mundo... ¿A qué estáis esperando para poner vuestro granito de arena? #teacht3ch #mentoring 👇🏻👇🏻"
+    },
+    {
+      "imageFileName": "david.jpg",
+      "userName": "DΛVID",
+      "twitterUser": "@DavidTweid",
+      "tweetContent": "Nunca ha sido tan fácil ayudar a personas que están empezando en este maravilloso mundo de escribir código. Eaaaaasy, dude!! 😎"
+    }
+  ]
+}
