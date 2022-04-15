@@ -17,10 +17,12 @@ const Container = styled.div`
   height: 700px; 
   background: ${(props) => props.theme.gradients.backgroundPurpleInverse};
   color: white;
+  
 
 
   @media only screen and (max-width: 850px) {
-    padding-bottom: 24px;
+    padding: 75px 0 30px 0; 
+    
   }
 `;
 const DecorationContainer = styled.div`
