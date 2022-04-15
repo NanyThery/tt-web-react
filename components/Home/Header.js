@@ -72,7 +72,10 @@ const ActionsContainer = styled.div`
   display: flex;
   width: 200px;
   margin-top: 10px;
-  justify-content: center;
+
+  @media only screen and (max-width: 850px) {
+    justify-content: center;
+  }
 `;
 const HeroImg = styled.div`
   padding: 50px;
