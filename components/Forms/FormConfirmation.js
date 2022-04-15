@@ -19,7 +19,7 @@ const Container = styled.div`
 
 const texts = {
   ["full-power"]:
-    "Muchas gracias por enviarnos tu solicitud. Revisaremos tu perfil y nos pondremos en contacto contigo si has sido seleccionad@ para la nueva edición de Tech[Tech].",
+    "Muchas gracias por enviarnos tu solicitud. Revisaremos tu perfil y nos pondremos en contacto contigo si has sido seleccionad@ para la nueva edición de Tech[Tech]. Si no recibes un correo de confirmación en los próximos minutos, por favor vuelve a enviar el formulario.",
   ["a-tu-aire"]:
     "Muchas gracias por enviarnos tu inscripción ¡Ya estás dentro de A tu Aire! En cuanto empiece el curso empezarás a recibir el material para darle caña ¡Atención al correo!",
   ["voluntarios"]:

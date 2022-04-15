@@ -23,6 +23,7 @@ const LeftCol = styled.div`
 
   @media only screen and (max-width: 850px) {
     width: 100%;
+    margin: 0;
   }
 `;
 const AboutUsImage = styled.div`

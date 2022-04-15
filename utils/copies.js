@@ -438,12 +438,12 @@ export const cursoSection = {
   objective: {
     title: "¿Cuál es el objetivo del curso?",
     description:
-      "El objetivo es que le pierdas el miedo y que veas que empezar es más fácil de lo que crees. Nos adentraremos en la programación poquito a     poco, a través del desarrollo de una pequeña aplicación web.",
+      "Durante los meses de junio y julio, el objetivo es que le pierdas el miedo y que veas que empezar es más fácil de lo que crees. Nos adentraremos en la programación poquito a poco, a través del desarrollo de una pequeña aplicación web.",
   },
   syllabus: {
     title: "Temario",
     description:
-      "Éstos son los contenidos que recorreremos juntos a lo largo de estas 10 semanas.",
+      "Éstos son los contenidos que recorreremos juntos a lo largo de estas 9 semanas.",
     items: [
       {
         tag: "Semana 1",
@@ -537,7 +537,7 @@ export const cursoSection = {
         ),
       },
       {
-        tag: "Semanas 8, 9 y 10",
+        tag: "Semanas 8 y 9 ",
         imageURL: "project.png",
         title: "Proyecto personal",
         description: (

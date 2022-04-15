@@ -5,7 +5,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   width: 100%;
   max-width: 1100px;
   border-top: 1px solid ${(props) => props.theme.colors.text60};

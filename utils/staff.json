@@ -3,9 +3,10 @@
     "name": "JM",
     "mentor": true,
     "teacher": true,
+
     "linkedin": "jmnavarro",
     "twitter": "jmnavarro",
-    "years": [2021, 2020],
+    "years": [2022, 2021, 2020],
     "firstProgram": "Mostrar por pantalla los números del 1 al 10",
     "hobbies": "Aprender (autodidacta) y enseñar. Juegos de rol y mundos de fantasía. Tocar la guitarra. Cocinar (y comerme lo que cocino)",
     "quote": "No tengas prisa, pero nunca te pares"
@@ -14,10 +15,11 @@
     "name": "Nadine",
     "female": true,
     "mentor": true,
-    "teacher": false,
+    "teacher": true,
+
     "linkedin": "nadinethery",
     "twitter": "nanythery",
-    "years": [2021, 2020],
+    "years": [2022, 2021, 2020],
     "firstProgram": "Una carta de restaurante en Visual Basic para cobrarle a mis padres los cafés que me pedían al día",
     "hobbies": "Juegos de mesa (modernos). Grabar vídeos de youtube/podcast. Yoga. Senderismo",
     "quote": "La paciencia es la madre de todas las ciencias"
@@ -28,7 +30,7 @@
     "teacher": true,
     "linkedin": "adrianaguado",
     "twitter": "aguadotzn",
-    "years": [2021, 2020],
+    "years": [2022, 2021, 2020],
     "firstProgram": "Hola mundo en C",
     "hobbies": "Deporte (Triatlón). Naturaleza (Alpinismo, escalada). Lectura. Música. Viajes",
     "quote": "Cuéntame algo y lo olvidaré. Enséñamelo y lo recordaré. Involúcrame y lo entenderé"
@@ -61,7 +63,7 @@
     "teacher": true,
     "linkedin": "dcarrion",
     "twitter": "dani_carrion",
-    "years": [2021, 2020],
+    "years": [2022, 2021, 2020],
     "firstProgram": "A los 7 años un programa en Commodore64 que imprimía COMMODORE64 infinitamente",
     "hobbies": "Tocar el teclado en bandas de rock. Ciencia ficción. NBA",
     "quote": "It's the user, stupid!"
@@ -82,7 +84,7 @@
     "name": "Rodrigo",
     "mentor": false,
     "teacher": true,
-    "years": [2021, 2020],
+    "years": [2022, 2021, 2020],
     "firstProgram": "Editor de sonidos para el Korg N364 (5 años antes)",
     "hobbies": "Música (toco el teclado en un grupo de metal). Deporte (practicarlo). Juegos de rol",
     "quote": "Digo muchas, pero no recuerdo ninguna. Además, probablemente no fuera mía"
@@ -115,7 +117,7 @@
     "teacher": true,
     "linkedin": "diego-dom%C3%ADnguez-gonz%C3%A1lez-11622b176",
     "twitter": "DGlez1111",
-    "years": [2021, 2020],
+    "years": [2022, 2021, 2020],
     "firstProgram": null,
     "hobbies": "Juegos de rol, wargames, videojuegos",
     "quote": "Beethoven era un buen compositor porque utilizaba ideas nuevas en combinación con ideas antiguas. Nadie, ni siquiera Beethoven podría inventar la música desde cero. Es igual con la informática"
@@ -125,7 +127,7 @@
     "mentor": true,
     "teacher": true,
     "twitter": "alejandrohdezma",
-    "years": [2021],
+    "years": [2022, 2021],
     "firstProgram": "Una aplicación para organizar archivos de películas y subtítulos en Haskell",
     "hobbies": "Juegos de mesa. CrossFit. Bricolaje",
     "quote": "Escucha al compilador, el compilador es tu amigo"
@@ -222,7 +224,7 @@
     "teacher": true,
     "linkedin": "p2kmgcl",
     "twitter": "p2kmgcl",
-    "years": [2021],
+    "years": [2022, 2021],
     "firstProgram": "Un bucle en C que escribía Cojo un muelle y lo tiro por el retrete... una y otra vez",
     "hobbies": "Juegos de mesa, videojuegos, senderismo y libros de fantasía",
     "quote": "Yo soy porque nosotros somos"
@@ -245,7 +247,7 @@
     "teacher": false,
     "linkedin": "andreamaganrey",
     "twitter": "AndreaMaganRey",
-    "years": [2021],
+    "years": [2022, 2021],
     "firstProgram": "Una 'caja registradora' que registraba un pago y calculaba la vuelta",
     "hobbies": "Me encantan los videojuegos y ahora estoy enganchada a los libros de Sanderson",
     "quote": "Primero resuelve el problema. Después, escribe el código -- John Johnson"
@@ -263,7 +265,7 @@
     "name": "Pere Zamora",
     "mentor": true,
     "teacher": false,
-    "years": [2021],
+    "years": [2022, 2021],
     "firstProgram": "Fue con Basic para un Sinclair ZX Spectum, intentar plasmar los juegos que veiamos en las revistas",
     "hobbies": "Salir al Monte y aprendizaje constante",
     "quote": "Han ido cambiando el tiempo, solo al cambio"
@@ -283,9 +285,10 @@
     "female": true,
     "mentor": true,
     "teacher": false,
+    "collaborator": true,
     "twitter": "beajmnz",
     "linkedin": "beatrizjimenez",
-    "years": [2021],
+    "years": [2022, 2021],
     "firstProgram": "Pues hace tantísimo (tendría yo 9 o 10 años) que ni me acuerdo qué hacia, pero seguro que fue en BASIC",
     "hobbies": "Bricolaje y las pelis de robos",
     "quote": "¿En qué puedo ayudarte?"
@@ -305,7 +308,7 @@
     "mentor": true,
     "teacher": true,
     "linkedin": "daniel-benítez-garcía-350a0550",
-    "years": [2021],
+    "years": [2022, 2021],
     "firstProgram": "Videojuego en Div 2 Games Studio o simulación planetaria en Basic no sé qué fue antes 😄",
     "hobbies": "La lectura, la escalada y el alpinismo. La tecnología y las personas",
     "quote": "Las preguntas son caminos a tierras inexploradas"
@@ -386,7 +389,7 @@
   {
     "name": "Luis de Santiago",
     "mentor": true,
-    "years": [2021],
+    "years": [2022, 2021],
     "linkedin": "tioluiso",
     "firstProgram": "Bufffff. El primero que soy capaz de recordar fue en mi época de instituto en el que hice un pequeño programa de Spectrum en el que podia dibujar graficas para funciones polinómicas. Ninguna maravilla",
     "hobbies": "Juegos de Rol, pintar miniaturas, cantar, comics, pelis..",
@@ -395,7 +398,7 @@
   {
     "name": "Marcos de la Calle",
     "mentor": true,
-    "years": [2021],
+    "years": [2022, 2021],
     "linkedin": "marcosdlcs",
     "twitter": "marcosDLCS",
     "firstProgram": "Contador de letras de un texto en Pascal",
@@ -431,7 +434,7 @@
     "name": "Raúl Moya Reyes",
     "mentor": true,
     "teacher": true,
-    "years": [2021],
+    "years": [2022, 2021],
     "linkedin": "raulmoyareyes",
     "twitter": "raulmoyareyes",
     "firstProgram": "Aplicación para guardar urls de internet en Visual Basic cuando IE todavía no tenía la barra de favoritos",
@@ -452,7 +455,7 @@
     "name": "Silvia García",
     "female": true,
     "mentor": true,
-    "years": [2021],
+    "years": [2022, 2021],
     "linkedin": "silvia-garcía-cacho",
     "twitter": "garcaplay",
     "firstProgram": "Juego de hacer parejas",
