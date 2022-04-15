@@ -356,9 +356,12 @@ export const courseInfo = {
     summary: [
       { icon: "cup", text: "Gestionas tu ritmo" },
       { icon: "book", text: "Dispones de las clases, ejercicios y soluciones" },
+      {
+        icon: "smile",
+        text: "Dispones de un grupo donde consultar dudas y apoyarte",
+      },
       { icon: "cross", text: "No entregas ejercicios" },
       { icon: "cross", text: "No entregas proyecto" },
-      { icon: "cross", text: "No dispones de mentor" },
     ],
     requirements: [
       { icon: "check", text: "Solo requieres de constancia" },
