@@ -37,9 +37,9 @@ export default function Home({ isCourseOpen, testimonials }) {
       <FiguresSection className="not-in-responsive" />
       <SectionSeparator className="not-in-responsive" />
       <FAQSection className="not-in-responsive" />
-      <SectionSeparator />
-      <SponsorSection />
       <SectionSeparator className="not-in-responsive" />
+      <SponsorSection />
+      <SectionSeparator />
       <CtaSection isCourseOpen={isCourseOpen} />
       <SectionSeparator />
     </Container>

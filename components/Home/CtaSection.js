@@ -19,6 +19,10 @@ const Container = styled((props) => <SectionLayout {...props} />)`
     align-items: center;
     gap: 40px;
   }
+
+  @media only screen and (max-width: 600px) {
+    border-radius: 0;
+  }
 `;
 const LeftCol = styled.div`
   width: 50%;
