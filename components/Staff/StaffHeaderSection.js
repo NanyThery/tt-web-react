@@ -83,9 +83,10 @@ const StaffHeaderSection = () => (
           <strong>Los que estamos detrás de todo esto.</strong>
         </header>
         <p>
-          Ya somos muchos los que desde 2021 llevamos impartiendo este curso.
-          Sin el esfuerzo de <strong>profes</strong>, <strong>mentores</strong>{" "}
-          y <strong>colaboradores</strong> nada de esto sería posible. ¿Quieres
+          Ya somos muchos los que desde 2020 llevamos impartiendo este curso y
+          organizando otras charlas y eventos. Sin el esfuerzo de{" "}
+          <strong>profes</strong>, <strong>mentores</strong> y{" "}
+          <strong>colaboradores</strong> nada de esto sería posible. ¿Quieres
           conocerlos?
         </p>
       </StyledHeroInfo>
