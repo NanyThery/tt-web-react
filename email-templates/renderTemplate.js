@@ -135,7 +135,7 @@ function fullPower(data) {
             ¡No te descuelgues! Haz un esfuerzo por seguir el curso aunque no
             estés en Full Power, ya que a
             <strong
-              >veces durante el curso hay gente que desafortunadamente a abandona
+              >veces durante el curso hay gente que desafortunadamente abandona
               y se nos liberan plazas</strong
             >.
           </li>

@@ -46,7 +46,7 @@ const StaffMembers = styled.ol`
 `;
 
 const StaffMembersSection = ({ staff }) => {
-  const [selectedYear, setSelectedYear] = useState(2021);
+  const [selectedYear, setSelectedYear] = useState(2022);
   return (
     <Container>
       <TabsContainer>
@@ -87,7 +87,7 @@ const StaffMembersSection = ({ staff }) => {
               image="/img/team/placeholder.svg"
               badges={<Badge inverse>?????</Badge>}
               body="Esta puede ser tu próxima aventura."
-              footer="!Únete a nosotros!"
+              footer="¡Únete a nosotros!"
             />
           </li>
         </StaffMembers>

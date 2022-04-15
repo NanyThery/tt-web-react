@@ -15,7 +15,14 @@ const StyledLabel = styled.label`
   color: ${(props) => props.theme.colors.text100};
 `;
 
-const PrivacyPolicy = ({ label, showRequired, touched, error, ...props }) => {
+const PrivacyPolicy = ({
+  label,
+  showRequired,
+  touched,
+  error,
+  sectionLabel,
+  ...props
+}) => {
   const inputName = "privacy-policy";
   const ChecklistLabel = "Acepto la política de privacidad";
 
@@ -33,7 +40,12 @@ const PrivacyPolicy = ({ label, showRequired, touched, error, ...props }) => {
         formulario.
       </p>
 
-      <CheckboxInput label={ChecklistLabel} inputName={inputName} {...props} />
+      <CheckboxInput
+        label={ChecklistLabel}
+        inputName={inputName}
+        sectionLabel=""
+        {...props}
+      />
       {error && touched && <ErrorText> {error} </ErrorText>}
     </Container>
   );
