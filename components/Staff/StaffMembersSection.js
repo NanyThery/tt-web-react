@@ -51,7 +51,7 @@ const StaffMembersSection = ({ staff }) => {
     <Container>
       <TabsContainer>
         <SectionLayout>
-          {[2020, 2021].reverse().map((year) => (
+          {[2020, 2021, 2022].reverse().map((year) => (
             <TabButton
               key={year}
               active={year === selectedYear}
