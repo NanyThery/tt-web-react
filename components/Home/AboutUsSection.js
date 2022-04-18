@@ -146,7 +146,7 @@ const AboutUsSection = ({}) => {
             {home.aboutUsSection.cta}
           </ButtonPrimary>
         </ActionsContainer>
-        <NavLink href="/about">{home.aboutUsSection.link}</NavLink>
+        <NavLink href="/aboutUs">{home.aboutUsSection.link}</NavLink>
       </RightCol>
     </Container>
   );
