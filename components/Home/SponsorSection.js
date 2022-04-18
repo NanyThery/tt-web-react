@@ -97,7 +97,7 @@ const { sponsors } = home;
 
 const SponsorSection = ({}) => {
   return (
-    <Container id="cta-section">
+    <Container id="sponsor-section">
       <LeftCol>
         <SponsorsContainer>
           {sponsors.companies.map((sponsor) => {
