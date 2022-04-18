@@ -23,7 +23,7 @@
     "quote": "La paciencia es la madre de todas las ciencias"
   },
   {
-    "name": "Adrián",
+    "name": "Adrián Aguado",
     "mentor": true,
     "teacher": true,
     "linkedin": "adrianaguado",
@@ -85,7 +85,9 @@
     "years": [2022, 2021, 2020],
     "firstProgram": "Editor de sonidos para el Korg N364 (5 años antes)",
     "hobbies": "Música (toco el teclado en un grupo de metal). Deporte (practicarlo). Juegos de rol",
-    "quote": "Digo muchas, pero no recuerdo ninguna. Además, probablemente no fuera mía"
+    "quote": "Digo muchas, pero no recuerdo ninguna. Además, probablemente no fuera mía",
+    "linkedin": "rodrigoborrego",
+    "twitter": "rodrigobbtw"
   },
   {
     "name": "Juan",
@@ -137,7 +139,9 @@
     "years": [2021],
     "firstProgram": "Modificar el juego Gorillas que venía en MS Dos, para cambiar las reglas de gravedad para mi gorila y ganar a mi primo 0=)",
     "hobbies": "Practicar deportes (especialmente tenis), rutas por la naturaleza, todo lo relacionado con tecnología y espacio, aprender cosas nuevas y enseñarlas",
-    "quote": "A los ignorantes les aventajan los que leen libros. A estos, los que retienen lo leído. A estos, los que comprenden lo leído. A estos, los que se ponen manos a la obra. Proverbio Hindú"
+    "quote": "A los ignorantes les aventajan los que leen libros. A estos, los que retienen lo leído. A estos, los que comprenden lo leído. A estos, los que se ponen manos a la obra. Proverbio Hindú",
+    "linkedin": "jorgeferrerzarzuela",
+    "twitter": "jorgeferrer"
   },
   {
     "name": "Manu",
@@ -203,7 +207,9 @@
     "years": [2021],
     "firstProgram": "Algún ejercicio básico en Ada",
     "hobbies": "Plantas y animales",
-    "quote": "Depende"
+    "quote": "Depende",
+    "twitter": "devjuggler",
+    "linkedin": "sergiosaenzromero"
   },
   {
     "name": "Alejandro Tardín",
@@ -239,7 +245,7 @@
     "quote": "Ningún viento es favorable si no sabes a qué puerto te diriges, Séneca"
   },
   {
-    "name": "Andrea",
+    "name": "Andrea Magán",
     "female": true,
     "mentor": true,
     "teacher": false,
@@ -266,7 +272,8 @@
     "years": [2022, 2021],
     "firstProgram": "Fue con Basic para un Sinclair ZX Spectum, intentar plasmar los juegos que veiamos en las revistas",
     "hobbies": "Salir al Monte y aprendizaje constante",
-    "quote": "Han ido cambiando el tiempo, solo al cambio"
+    "quote": "Han ido cambiando el tiempo, solo al cambio",
+    "linkedin": "pzamgar"
   },
   {
     "name": "Rubén de Alba",
@@ -276,7 +283,8 @@
     "years": [2021],
     "firstProgram": "Juego de preguntas en Basic (Amstrad cpc 464. :-O)",
     "hobbies": "Deporte (natación, ciclismo, pádel, montaña). Música (heavy, rock, viejo aprendiz de guitarra y nuevo de canto). Cine (clásico, actual, series).  Cervecearme con mi gente",
-    "quote": "No es más rico el que tiene más, sino el que menos sabe necesitar"
+    "quote": "No es más rico el que tiene más, sino el que menos sabe necesitar",
+    "linkedin": "rub%C3%A9n-de-alba-a247153"
   },
   {
     "name": "Bea Jimenez",
@@ -426,7 +434,8 @@
     "years": [2021],
     "firstProgram": "Calculadora de área, perímetro de distintas figuras geométricas en Vanilla JS",
     "hobbies": "Fotografías, leer, ahhh y el blues, por supuesto",
-    "quote": "Mañana amanece otra vez"
+    "quote": "Mañana amanece otra vez",
+    "linkedin": "paco-j%C3%A1%C3%B1ez-rodr%C3%ADguez"
   },
   {
     "name": "Raúl Moya Reyes",
@@ -509,5 +518,107 @@
     "firstProgram": "No programo, pero soy una diseñadora que se entiende muy bien con los programadores :)",
     "hobbies": "Dibujar y los videojuegos son mis dos pasiones. También me encanta la música, y los conciertos son el último hobby que estoy retomando tras la pandemia",
     "quote": "People ignores design that ignores people"
+  },
+  {
+    "name": "Adriana Aparicio",
+    "female": true,
+    "mentor": true,
+    "years": [2022],
+    "firstProgram": "Hola Mundo en Pascal",
+    "hobbies": "Viajar, fotografía, senderismo, esqui, voleibol",
+    "quote": "Carpe Diem",
+    "linkedin": "adriana-aparicio-mariju%C3%A1n-43349418",
+    "instagram": "adriapa5"
+  },
+  {
+    "name": "Andrea Casas",
+    "female": true,
+    "mentor": true,
+    "years": [2022],
+    "firstProgram": "Una calculadora en javascript",
+    "hobbies": "Encerrarme en una sala de cine y salir al sol a hacer la fotosíntesis. A veces pinturreo cosas, siempre acompañada de musiquita o un buen podcast",
+    "quote": "'Anónimo' era una mujer",
+    "linkedin": "andrea-casas-rodrigo-b3995a1a7"
+  },
+  {
+    "name": "Ricardo Rodríguez",
+    "female": false,
+    "mentor": true,
+    "years": [2022],
+    "firstProgram": "Un programa en java que pedía tu nombre y luego te saludaba educadamente",
+    "hobbies": "Deporte, senderismo, viajar, un buen concierto de Rock!",
+    "quote": "Todo es muy difícil antes de ser sencillo",
+    "linkedin": "ricardorv",
+    "twitter": "Ricardo_Roguez"
+  },
+  {
+    "name": "Jose Noguera",
+    "female": false,
+    "mentor": true,
+    "years": [2022],
+    "firstProgram": "Un juego super simple de 'carreras de caballos' en Delphi",
+    "hobbies": "Viajar, la cerveza y jugar",
+    "quote": "If you're tired of starting over, stop giving up",
+    "twitter": "joselkan"
+  },
+  {
+    "name": "Raquel Yuste",
+    "female": true,
+    "mentor": true,
+    "years": [2022],
+    "linkedin": "raqyuste",
+    "twitter": "raqyuste",
+    "firstProgram": "Código en C que imprimía por pantalla un árbol de navidad hecho de asteriscos",
+    "hobbies": "Salir un rato con la bici, hornear algún postre, ir a algún concierto de música en directo, intentar pintar algo con acuarelas o saludar a mis vecinos del Animal Crossing.",
+    "quote": "Empecemos por aquí… y ya vamos iterando!"
+  },
+  {
+    "name": "Eduardo Lanchares",
+    "female": false,
+    "mentor": true,
+    "years": [2022],
+    "firstProgram": "Conversor de divisas en Pascal",
+    "hobbies": "Cocinar y descubrir recetas nuevas, hacer rutas de senderismo, puzzles matematicos",
+    "quote": "Don't learn to code. Learn to think",
+    "twitter": "edulan"
+  },
+  {
+    "name": "Carmen Ramos",
+    "female": true,
+    "mentor": true,
+    "years": [2022],
+    "linkedin": "carmen-ramart",
+    "firstProgram": "Una página informativa  en html y css",
+    "hobbies": "Viajar y bailar, sobretodo salsa y bachata. Senderismo, camping. Familia,  Amigos y vino.",
+    "quote": "¿Quién dice que es tarde para comenzar algo nuevo? La vida es un aprendizaje continuo. ¡Atrévere!"
+  },
+  {
+    "name": "Alfonso García",
+    "female": false,
+    "mentor": true,
+    "years": [2022],
+    "linkedin": "alfonso-garc%C3%ADa-santisteban-474559211",
+    "firstProgram": "Hola mundo",
+    "hobbies": "Apasionado de los videojuegos y la música pero tambien me gustan mucho los deportes y probar un deporte nuevo cada año (este año toca kite surf)",
+    "quote": "No hay nada noble en ser superior a tu prójimo; la verdadera nobleza es ser superior a tu yo anterior - Ernest Hemingway"
+  },
+  {
+    "name": "Salva Carsi",
+    "female": false,
+    "mentor": true,
+    "years": [2022],
+    "linkedin": "salvador-carsi-moreno",
+    "firstProgram": "",
+    "hobbies": "El cine y el pádel",
+    "quote": ""
+  },
+  {
+    "name": "Meri",
+    "female": true,
+    "mentor": true,
+    "years": [2022],
+    "firstProgram": "¿Primer programa programado? Pues imagino q sería un hola mundo, ¿no?",
+    "hobbies": "Caballos (pasar tiempo con mi caballo, montar…) videojuegos, leer, nadear (hacer nada)",
+    "quote": ""
   }
 ]
