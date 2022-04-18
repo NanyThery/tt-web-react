@@ -8,7 +8,12 @@ import slug from "../../utils/slug";
 import SectionSeparator from "../SectionSeparator";
 
 const TabsContainer = styled.div`
+  overflow: auto;
   box-shadow: 0px 2px 0px #e9ecef;
+
+  @media only screen and (max-width: 600px) {
+    padding: 5px 0;
+  }
 `;
 const Container = styled.div`
   width: 100%;
