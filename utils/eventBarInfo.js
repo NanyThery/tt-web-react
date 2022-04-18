@@ -2,7 +2,7 @@ export const eventBarInfo = {
   showUntilTimeStamp: 1652651999000,
   eventTitle: (
     <p>
-      ¡Atención! Próxima apertura de inscripciones para la próxima edición del
+      ¡Atención! Próxima apertura de inscripciones para la inminente edición del
       01/05/2022 al 15/05/2022
     </p>
   ),
