@@ -451,7 +451,7 @@
   {
     "name": "Roberto Gómez",
     "mentor": true,
-    "years": [2021],
+    "years": [2021, 2022],
     "linkedin": "robertogomezm",
     "twitter": "rgomezmu",
     "firstProgram": "Hello World en C",
@@ -620,5 +620,49 @@
     "firstProgram": "¿Primer programa programado? Pues imagino q sería un hola mundo, ¿no?",
     "hobbies": "Caballos (pasar tiempo con mi caballo, montar…) videojuegos, leer, nadear (hacer nada)",
     "quote": ""
+  },
+  {
+    "name": "Eva Marco",
+    "female": true,
+    "mentor": true,
+    "twitter": "MigaraArcher",
+    "linkedin": "evamarcodominguez",
+    "years": [2022],
+    "firstProgram": "Hello word en Python",
+    "hobbies": "",
+    "quote": "No existe gran talento sin gran voluntad - Honore de Balzac"
+  },
+  {
+    "name": "Paula Guijarro",
+    "female": true,
+    "mentor": true,
+    "twitter": "",
+    "linkedin": "paula-guijarro",
+    "years": [2022],
+    "firstProgram": "“Hello World!” en Java",
+    "hobbies": "Patinaje en línea y senderismo, viajar y perseguir auroras boreales, tecnología y videojuegos",
+    "quote": "Screws fall out all the time. The world is an imperfect place"
+  },
+  {
+    "name": "Iván Sánchez",
+    "female": false,
+    "mentor": true,
+    "github": "surister",
+    "linkedin": "iv%C3%A1n-s%C3%A1nchez-valencia-78a573208",
+    "years": [2022],
+    "firstProgram": "",
+    "hobbies": "",
+    "quote": "Un problema bien definido esta medio solucionado - Charles Kettering"
+  },
+  {
+    "name": "Patricia Rozada",
+    "female": true,
+    "mentor": true,
+    "twitter": "pat_rozada",
+    "linkedin": "",
+    "years": [2022],
+    "firstProgram": "Mi primer programa fue un hello world en Python",
+    "hobbies": "La montaña, me gusta hacer senderismo, escalar, esquiar...",
+    "quote": "Lift as you raise"
   }
 ]
