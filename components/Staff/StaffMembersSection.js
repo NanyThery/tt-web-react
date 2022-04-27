@@ -71,8 +71,8 @@ const StaffMembersSection = ({ staff }) => {
         <StaffMembers>
           {staff
             .filter(({ years }) => years.includes(selectedYear))
-            .map((member, i) => (
-              <li key={i}>
+            .map((member) => (
+              <li key={member.name}>
                 <StaffMemberCard
                   name={member.name}
                   href={`/staff?name=${slug(member)}`}
