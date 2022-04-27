@@ -664,5 +664,16 @@
     "firstProgram": "Mi primer programa fue un hello world en Python",
     "hobbies": "La montaña, me gusta hacer senderismo, escalar, esquiar...",
     "quote": "Lift as you raise"
+  },
+  {
+    "name": "Elena Guidi",
+    "female": true,
+    "mentor": true,
+    "twitter": "ElenaPandino",
+    "linkedin": "elena-guidi-2607",
+    "years": [2022],
+    "firstProgram": "Hello world",
+    "hobbies": "Comer (no cocinar), viajar y mis gatos",
+    "quote": "Invalidate cache and restart"
   }
 ]
