@@ -14,7 +14,7 @@ const StaffMemberContainer = styled.div`
   .content {
     position: relative;
     z-index: 1;
-    
+
     padding: 0px 20px 32px 20px;
     width: 100%;
     display: flex;
@@ -24,6 +24,7 @@ const StaffMemberContainer = styled.div`
       border-radius: 4px;
       width: 100%;
       height: 173px;
+      background: #e9ecef;
       @media only screen and (max-width: 850px) {
         height: 90px;
       }
