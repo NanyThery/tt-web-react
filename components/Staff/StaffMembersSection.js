@@ -9,7 +9,7 @@ import SectionSeparator from "../SectionSeparator";
 
 const TabsContainer = styled.div`
   overflow: auto;
-  box-shadow: 0px 2px 0px #e9ecef;
+  box-shadow: inset 0 -2px 0 #e9ecef;
 
   @media only screen and (max-width: 600px) {
     padding: 5px 0;
@@ -30,7 +30,7 @@ const TabButton = styled.button`
   font-size: 22px;
   cursor: pointer;
   font-weight: 500;
-  ${(props) => (props.active ? "box-shadow: 0px 2px 0px #FF7C04;" : "")}
+  ${(props) => (props.active ? "box-shadow: inset 0 -2px 0 #FF7C04;" : "")}
 `;
 const StaffMembers = styled.ol`
   list-style: none;
