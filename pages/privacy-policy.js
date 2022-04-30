@@ -14,7 +14,6 @@ const Container = styled.div`
 `;
 
 const PrivacyPolicyPage = ({ source }) => {
-  //type: full-power, a-tu-aire, voluntarios
 
   return (
     <Container>
