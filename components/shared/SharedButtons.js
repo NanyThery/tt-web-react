@@ -30,18 +30,15 @@ const ShareContent = styled.div`
   @media only screen and (max-width: 850px) {
     h4 {
       font-size: 14px;
+      text-align: center;
     }
   }
 
   .share-buttons {
     padding: 10px;
-
-    .adrian {
-      background-color: red;
-    }
   }
 `;
-// This component is using this library: https://github.com/Bunlong/next-share
+// https://github.com/Bunlong/next-share
 const SharedButtons = ({ text, url }) => {
   return (
     <ShareContent>
@@ -63,11 +60,7 @@ const SharedButtons = ({ text, url }) => {
         <TelegramShareButton url={url} title={text}>
           <TelegramIcon size={28} round />
         </TelegramShareButton>
-        <WhatsappShareButton
-          url={url}
-          title={text}
-          separator=":: "
-        >
+        <WhatsappShareButton url={url} title={text} separator=":: ">
           <WhatsappIcon size={32} round />
         </WhatsappShareButton>
       </div>
