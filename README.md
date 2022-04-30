@@ -1,7 +1,6 @@
 ## Intro
 
-This is the TeachT3ch website revamped. It's build in NextJs and uses Styled Components for styling. Check out below how deploy and test environment.
-It is directly deployed in Vercel, and the repository `main` branch will automatically deploy.
+This is the TeachT3ch website revamped. It's build in NextJs and uses Styled Components for styling. Check out below how deploy and test environment. It is directly deployed in Vercel, and the repository `main` branch will automatically deploy.
 
 ## Adding Event info bar
 
@@ -94,7 +93,7 @@ See [this commit](https://github.com/NanyThery/tt-web-react/commit/9b6b35b6245ed
 
 ### Opening course status
 
-There's a variable called `IsCourseOpen` in app.js to control this behaviour. 
+There's a variable called `IsCourseOpen` in `_app.js`  to control this behaviour. This variable controls the admissions forms among other tiny details in the application. If false, the forms are hidden. 
 
 ### Tech debt
 
