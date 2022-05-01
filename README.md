@@ -1,7 +1,6 @@
 ## Intro
 
-This is the TeachT3ch website revamped. It's build in NextJs and uses Styled Components for styling. Check out below how deploy and test environment.
-It is directly deployed in Vercel, and the repository `main` branch will automatically deploy.
+This is the TeachT3ch website revamped. It's build in NextJs and uses Styled Components for styling. Check out below how deploy and test environment. It is directly deployed in Vercel, and the repository `main` branch will automatically deploy.
 
 ## Adding Event info bar
 
@@ -84,7 +83,7 @@ The web will admit images from:
 - https://cdn.pixabay.com/
 - https://images.unsplash.com/
 
-## Adding teachers and mentors to staff
+### Adding teachers and mentors to staff
 
 1. Add a new entry to [staff.json](utils/staff.json).
 2. Add a jpg image to the [team](public/img/team) folder. The name must be the person's name in lowercase with dashes instead of spaces. For example `Rubén de Alba` maps to `ruben-de-alba.jpg`.
@@ -92,7 +91,11 @@ The web will admit images from:
 
 See [this commit](https://github.com/NanyThery/tt-web-react/commit/9b6b35b6245ed7e66c3fd78622836956605217f5) for a real example.
 
-## Tech debt
+### Opening course status
+
+There's a variable called `IsCourseOpen` in `_app.js`  to control this behaviour. This variable controls the admissions forms among other tiny details in the application. If false, the forms are hidden. 
+
+### Tech debt
 
 - Cookie banner: we decided to postpone this banner since the website does not use cookies at the moment.
 - Adding a custom check box according to the original design.

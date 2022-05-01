@@ -37,10 +37,10 @@ const BodyContent = styled.div`
 `;
 
 const Wrapper = styled.div`
-width: 100%: 
-display: flex; 
-flex-flow: column; 
-margin-bottom: 40px; 
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 40px;
 `;
 
 const ImageWrapper = styled.div`

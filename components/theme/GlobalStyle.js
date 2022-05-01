@@ -37,6 +37,10 @@ h2 {
     font-weight: 400; 
     line-height: 42px;
     margin: 0;
+
+    @media only screen and (max-width: 600px) {
+    font-size: 24px;
+  }
 }
 h3 {
     font-size: 28px;

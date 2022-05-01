@@ -9,22 +9,20 @@ import { getFormattedPublishDate } from "../../utils/blogHelpers";
 import React from "react";
 
 const Container = styled.div`
-  display: flex; 
-  position: relative; 
-  align-items: center; 
+  display: flex;
+  position: relative;
+  align-items: center;
   width: 100%;
-  min-height; fit-content; 
-  height: 700px; 
+  min-height: fit-content;
+  height: 700px;
   background: ${(props) => props.theme.gradients.backgroundPurpleInverse};
   color: white;
-  
-
 
   @media only screen and (max-width: 850px) {
-    padding: 75px 0 30px 0; 
-    
+    padding: 75px 0 30px 0;
   }
 `;
+
 const DecorationContainer = styled.div`
   position: absolute;
   width: 100%;
