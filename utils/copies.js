@@ -436,18 +436,22 @@ export const faqSection = {
     {
       q: "¿Cuándo se realiza el curso?",
       a: "Las fechas concretas pueden variar dependiendo de la edición. Sin embargo te podemos contar algunas cosas que son fijas: tiene una duración de 10 semanas, se imparte en castellano, es 100% online y las clases son los miércoles de 18:00 a 20:00 (GMT+1, horario de España peninsular)",
-      links: [ {
-        label: "Si quieres saber más sobre el contenido y modalidades",
-        url: "http://localhost:3000/curso",
-      },],
+      links: [
+        {
+          label: "Si quieres saber más sobre el contenido y modalidades",
+          url: "https://www.teacht3ch.com/curso",
+        },
+      ],
     },
     {
       q: "¿Tenéis un código de conducta?",
       a: "Si, lo tenemos. Es muy importante y debes leerlo tanto si eres voluntario, alumno o formas parte de la iniciativa de cualquier otra manera",
-      links: [ {
-        label: "Accede aquí",
-        url: "https://www.teacht3ch.com/code-conduct",
-      },],
+      links: [
+        {
+          label: "Accede aquí",
+          url: "https://www.teacht3ch.com/code-conduct",
+        },
+      ],
     },
   ],
 };
