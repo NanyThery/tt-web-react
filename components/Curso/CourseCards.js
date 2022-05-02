@@ -8,6 +8,7 @@ import { Badge } from "../Staff/Badges";
 import useBreakpoints from "../../utils/hooks/useBreakpoints";
 import SectionTitleDescription from "../SectionTitleDescription";
 import CourseTabs from "../CourseTabs";
+import NavLink from "next/link";
 
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
@@ -195,9 +196,14 @@ const CourseCards = ({ isCourseOpen }) => {
                   </div>
                   <div className="right-col-bottom">
                     {isCourseOpen ? (
-                      <ButtonPrimary onClick={() => {}}>
-                        {courseInfo[option]["cta"]["open"]["text"]}
-                      </ButtonPrimary>
+                      <NavLink
+                        href={`/sign-up/${courseInfo[option]["url"]}`}
+                        passHref
+                      >
+                        <ButtonPrimary onClick={() => {}}>
+                          {courseInfo[option]["cta"]["open"]["text"]}
+                        </ButtonPrimary>
+                      </NavLink>
                     ) : (
                       <InfoBox>
                         {getIconByName(
