@@ -5,7 +5,7 @@ import Theme from "../components/theme/Theme";
 
 function MyApp({ Component, pageProps }) {
   //Change 'true/false" in order to show the open / close mode of the page.
-  const isCourseOpen = false;
+  const isCourseOpen = true;
 
   return (
     <>
