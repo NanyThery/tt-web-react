@@ -17,8 +17,8 @@ export const home = {
       </h1>
     ),
     description: {
-      open: `Descubre las bases de la programación con el curso de verano de la mano del equipo de profes y mentores de Teacht3ch.`,
-      closed: `Descubre las bases de la programación con el curso de verano de la mano del equipo de profes y mentores de Teacht3ch.`,
+      open: `Descubre las bases de la programación con este curso gratuito de verano de la mano del equipo de profes y mentores de Teacht3ch.`,
+      closed: `Descubre las bases de la programación con este curso gratuito de verano de la mano del equipo de profes y mentores de Teacht3ch.`,
     },
     cta: { open: `¡Quiero apuntarme!`, close: `¡Quiero informarme!` },
   },
@@ -323,6 +323,7 @@ export const courseInfo = {
       { icon: "code", text: "Clases en directo" },
       { icon: "people", text: "Mentorización del proyecto" },
       { icon: "medal", text: "Diploma tras presentar el proyecto" },
+      { icon: "check", text: "Gratuito" },
     ],
     requirements: [
       { icon: "check", text: "Implicación con las clases y ejercicios" },
@@ -362,6 +363,7 @@ export const courseInfo = {
       },
       { icon: "cross", text: "No entregas ejercicios" },
       { icon: "cross", text: "No entregas proyecto" },
+      { icon: "check", text: "Gratuito" },
     ],
     requirements: [
       { icon: "check", text: "Solo requieres de constancia" },
@@ -429,7 +431,12 @@ export const faqSection = {
       links: [],
     },
     {
-      q: "¿El curso es solo para en España?",
+      q: "¿Cuánto cuesta este curso?",
+      a: "Ambas modalidades son completamente gratuitas. Sólo pedimos compromiso por tu parte y dedicación durante las 8 semanas que dura el curso, igual que nosotros lo hacemos para ti.",
+      links: [],
+    },
+    {
+      q: "¿El curso es solo para España?",
       a: "Por supuesto que no. Puedes participar vengas de dónde vengas. Debes saber que para la modalidad 'Full Power 🔥' existe un proceso de selección y uno de los requisitos mínimos es el de poder atender las clases (miércoles de 18:00 a 20:00, CEST (GMT+2)). 'A tu aire 🌊' no tiene ningún límite de plazas.",
       links: [],
     },
