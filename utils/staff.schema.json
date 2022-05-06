@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/NanyThery/tt-web-react/main/utils/staff.schema.json",
+  "title": "TeachT3ch Staff",
+  "description": "TeachT3ch Staff schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "people": {
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name", "pronoun", "years"],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "pronoun": {
+              "type": "string",
+              "enum": ["he", "she", "they"]
+            },
+            "twitter": {
+              "type": "string"
+            },
+            "linkedin": {
+              "type": "string"
+            },
+            "firstProgram": {
+              "type": "string"
+            },
+            "hobbies": {
+              "type": "string"
+            },
+            "quote": {
+              "type": "string"
+            },
+            "years": {
+              "type": "object",
+              "additionalProperties": false,
+              "patternProperties": {
+                "20[2-3][0-9]": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "roles": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "string",
+                        "enum": ["mentor", "teacher", "collaborator"]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
