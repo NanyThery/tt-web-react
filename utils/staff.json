@@ -995,6 +995,46 @@
           "roles": ["collaborator", "mentor"]
         }
       }
+    },
+    "saul-blanco": {
+      "name": "Saúl Blanco",
+      "pronoun": "he",
+      "linkedin": "saul-bt",
+      "firstProgram": "Cifrador César (Caesar cipher) en Python",
+      "hobbies": "La criptográfia 😅, programar, escuchar música y jugar al billar",
+      "quote": "Nadie se da cuenta de qué trata la vida, y no importa. Hay que explorar el mundo. Casi todo es realmente interesante si profundizas lo suficiente. — Richard P. Feynman",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      }
+    },
+    "adrian-belmonte": {
+      "name": "Adrián Belmonte",
+      "pronoun": "he",
+      "firstProgram": "Un programa que te pedía un texto por consola y te lo mostraba",
+      "quote": "Soy incapaz de retener frases y chistes",
+      "hobbies": "Senderismo, videojuegos",
+      "twitter": "cassnyo",
+      "linkedin": "adrian-belmonte-gil",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      }
+    },
+    "irene-diaz": {
+      "name": "Irene Díaz",
+      "pronoun": "she",
+      "firstProgram": "Una web en FrontPage",
+      "hobbies": "Casi cualquier cosa que se pueda construir con las manos: la costura, tejer, hacer origami, etc, etc. Juegos de mesa, leer y un largo etcétera",
+      "quote": "It could be worse, it could be raining",
+      "linkedin": "idiazval",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      }
     }
   }
 }
