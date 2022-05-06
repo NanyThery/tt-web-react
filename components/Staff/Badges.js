@@ -23,12 +23,34 @@ export const Badge = styled.span`
   text-align: center;
 `;
 
-export const Badges = ({ member }) => (
-  <>
-    {member.collaborator && <Badge>Colaborador{member.female && "a"}</Badge>}
-    {member.mentor && <Badge>Mentor{member.female && "a"}</Badge>}
-    {member.teacher && (
-      <Badge secondary>Instructor{member.female && "a"}</Badge>
-    )}
-  </>
-);
+const BADGE_LABEL = {
+  mentor: {
+    he: "Mentor",
+    she: "Mentora",
+    they: "Mentore",
+  },
+  teacher: {
+    he: "Instructor",
+    she: "Instructora",
+    they: "Instructore",
+  },
+  collaborator: {
+    he: "Colaborador",
+    she: "Colaboradora",
+    they: "Colaboradore",
+  },
+};
+
+export const Badges = ({ member, year }) => {
+  const { roles } = member.years[year] || { roles: [] };
+
+  return (
+    <>
+      {roles.map((role) => (
+        <Badge key={role} secondary={role === "teacher"}>
+          {BADGE_LABEL[role][member.pronoun]}
+        </Badge>
+      ))}
+    </>
+  );
+};

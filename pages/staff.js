@@ -1,4 +1,3 @@
-import slug from "../utils/slug";
 import staff from "../utils/staff.json";
 import { existsSync } from "fs";
 import path from "path";
@@ -12,10 +11,13 @@ import StaffMemberModal from "../components/Staff/StaffMemberModal";
 
 export async function getStaticProps() {
   const getRelativeUrl = (member, extension) =>
-    `/img/team/${slug(member)}.${extension}`;
+    `/img/team/${member.id}.${extension}`;
+
   return {
     props: {
-      staff: shuffle(staff).map((member) => {
+      staff: shuffle(
+        Object.entries(staff.people).map(([id, person]) => ({ id, ...person }))
+      ).map((member) => {
         const imageUrl = getRelativeUrl(member, "jpg");
         const videoUrl = getRelativeUrl(member, "mp4");
         return {
@@ -34,7 +36,7 @@ export async function getStaticProps() {
 
 export default function Staff({ staff }) {
   const { query } = useRouter();
-  const selectedMember = staff.find((member) => slug(member) === query.name);
+  const selectedMember = staff.find((member) => member.id === query.id);
   return (
     <>
       <StaffHeaderSection />

@@ -4,7 +4,6 @@ import { useState } from "react";
 import SocialLinks from "./SocialLinks";
 import { StaffMemberCard } from "./StaffMemberCard";
 import { Badge, Badges } from "./Badges";
-import slug from "../../utils/slug";
 import SectionSeparator from "../SectionSeparator";
 
 const TabsContainer = styled.div`
@@ -51,12 +50,12 @@ const StaffMembers = styled.ol`
 `;
 
 const StaffMembersSection = ({ staff }) => {
-  const [selectedYear, setSelectedYear] = useState(2022);
+  const [selectedYear, setSelectedYear] = useState("2022");
   return (
     <Container>
       <TabsContainer>
         <SectionLayout>
-          {[2020, 2021, 2022].reverse().map((year) => (
+          {["2020", "2021", "2022"].reverse().map((year) => (
             <TabButton
               key={year}
               active={year === selectedYear}
@@ -70,15 +69,15 @@ const StaffMembersSection = ({ staff }) => {
       <StaffSection>
         <StaffMembers>
           {staff
-            .filter(({ years }) => years.includes(selectedYear))
+            .filter(({ years }) => Object.keys(years).includes(selectedYear))
             .map((member) => (
-              <li key={member.name}>
+              <li key={member.id}>
                 <StaffMemberCard
                   name={member.name}
-                  href={`/staff?name=${slug(member)}`}
+                  href={`/staff?id=${member.id}`}
                   image={member.image}
                   video={member.video}
-                  badges={<Badges member={member} />}
+                  badges={<Badges year={selectedYear} member={member} />}
                   body={<SocialLinks member={member} />}
                   footer={`Saber más sobre ${member.name}`}
                 />

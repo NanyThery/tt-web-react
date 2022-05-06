@@ -1,679 +1,1000 @@
-[
-  {
-    "name": "JM",
-    "mentor": true,
-    "teacher": true,
-    "linkedin": "jmnavarro",
-    "twitter": "jmnavarro",
-    "years": [2022, 2021, 2020],
-    "firstProgram": "Mostrar por pantalla los números del 1 al 10",
-    "hobbies": "Aprender (autodidacta) y enseñar. Juegos de rol y mundos de fantasía. Tocar la guitarra. Cocinar (y comerme lo que cocino)",
-    "quote": "No tengas prisa, pero nunca te pares"
-  },
-  {
-    "name": "Nadine",
-    "female": true,
-    "mentor": true,
-    "teacher": true,
-    "linkedin": "nadinethery",
-    "twitter": "nanythery",
-    "years": [2022, 2021, 2020],
-    "firstProgram": "Una carta de restaurante en Visual Basic para cobrarle a mis padres los cafés que me pedían al día",
-    "hobbies": "Juegos de mesa (modernos). Grabar vídeos de youtube/podcast. Yoga. Senderismo",
-    "quote": "La paciencia es la madre de todas las ciencias"
-  },
-  {
-    "name": "Adrián Aguado",
-    "mentor": true,
-    "teacher": true,
-    "linkedin": "adrianaguado",
-    "twitter": "aguadotzn",
-    "years": [2022, 2021, 2020],
-    "firstProgram": "Hola mundo en C",
-    "hobbies": "Deporte (Triatlón). Naturaleza (Alpinismo, escalada). Lectura. Música. Viajes",
-    "quote": "Cuéntame algo y lo olvidaré. Enséñamelo y lo recordaré. Involúcrame y lo entenderé"
-  },
-  {
-    "name": "Luis",
-    "mentor": true,
-    "teacher": true,
-    "linkedin": "luis-rodellar",
-    "twitter": "luisrbosso",
-    "years": [2022, 2021, 2020],
-    "firstProgram": "Hello World en PHP",
-    "hobbies": "Ciclismo. Ciberseguridad. Visitar parajes naturales",
-    "quote": "La función de un buen software es hacer que lo complejo aparente ser simple Grady Booch"
-  },
-  {
-    "name": "Juanlu",
-    "mentor": true,
-    "teacher": false,
-    "linkedin": "gomezchanclon",
-    "twitter": "juanlu_u",
-    "years": [2021, 2020],
-    "firstProgram": "Sumar y Restar números",
-    "hobbies": "Videojuegos. Baloncesto. Todo lo que tenga motor y como mínimo rueda",
-    "quote": "Nadie conoce un lenguaje de cabeza, no te vengas abajo y usa el buscador (siempre con cabeza)"
-  },
-  {
-    "name": "Dani",
-    "mentor": true,
-    "teacher": true,
-    "linkedin": "dcarrion",
-    "twitter": "dani_carrion",
-    "years": [2022, 2021, 2020],
-    "firstProgram": "A los 7 años un programa en Commodore64 que imprimía COMMODORE64 infinitamente",
-    "hobbies": "Tocar el teclado en bandas de rock. Ciencia ficción. NBA",
-    "quote": "It's the user, stupid!"
-  },
-  {
-    "name": "Teffa",
-    "female": true,
-    "mentor": true,
-    "teacher": true,
-    "linkedin": "estefaniaoterogarcia",
-    "twitter": "_teffa_",
-    "years": [2021, 2020],
-    "firstProgram": "Agenda telefónica que se imprimía por pantalla",
-    "hobbies": "Pilates. Videojuegos. Maratón de sries. Lectura de fantasía o ciencia ficción",
-    "quote": "Tengo muchos Teffa dixit pero nunca me acuerdo de ellos. De todas formas, en caso de duda, StackOverflow"
-  },
-  {
-    "name": "Rodrigo",
-    "mentor": false,
-    "teacher": true,
-    "years": [2022, 2021, 2020],
-    "firstProgram": "Editor de sonidos para el Korg N364 (5 años antes)",
-    "hobbies": "Música (toco el teclado en un grupo de metal). Deporte (practicarlo). Juegos de rol",
-    "quote": "Digo muchas, pero no recuerdo ninguna. Además, probablemente no fuera mía",
-    "linkedin": "rodrigoborrego",
-    "twitter": "rodrigobbtw"
-  },
-  {
-    "name": "Juan",
-    "mentor": true,
-    "teacher": true,
-    "linkedin": "juandebravo",
-    "twitter": "juandebravo",
-    "years": [2021, 2020],
-    "firstProgram": "Interfaz gráfico para la utilidad de Windows Net Send",
-    "hobbies": "Ciclismo. Trail running & Marathon. Tecnología",
-    "quote": "Esto es una maratón, dividida en sprints"
-  },
-  {
-    "name": "Nacho",
-    "mentor": false,
-    "teacher": true,
-    "linkedin": "icarretero",
-    "twitter": "Carretops",
-    "years": [2021, 2020],
-    "firstProgram": "Calcular el área de un círculo",
-    "hobbies": "Deporte (natación, remo y lo que surja). Lenguajes (en este caso no de programación). Perros",
-    "quote": "El no ya lo tienes"
-  },
-  {
-    "name": "Diego",
-    "mentor": true,
-    "teacher": true,
-    "linkedin": "diego-dom%C3%ADnguez-gonz%C3%A1lez-11622b176",
-    "twitter": "DGlez1111",
-    "years": [2022, 2021, 2020],
-    "firstProgram": null,
-    "hobbies": "Juegos de rol, wargames, videojuegos",
-    "quote": "Beethoven era un buen compositor porque utilizaba ideas nuevas en combinación con ideas antiguas. Nadie, ni siquiera Beethoven podría inventar la música desde cero. Es igual con la informática"
-  },
-  {
-    "name": "Alejandro",
-    "mentor": true,
-    "teacher": true,
-    "twitter": "alejandrohdezma",
-    "years": [2022, 2021],
-    "firstProgram": "Una aplicación para organizar archivos de películas y subtítulos en Haskell",
-    "hobbies": "Juegos de mesa. CrossFit. Bricolaje",
-    "quote": "Escucha al compilador, el compilador es tu amigo"
-  },
-  {
-    "name": "Jorge Ferrer",
-    "mentor": false,
-    "teacher": true,
-    "years": [2021],
-    "firstProgram": "Modificar el juego Gorillas que venía en MS Dos, para cambiar las reglas de gravedad para mi gorila y ganar a mi primo 0=)",
-    "hobbies": "Practicar deportes (especialmente tenis), rutas por la naturaleza, todo lo relacionado con tecnología y espacio, aprender cosas nuevas y enseñarlas",
-    "quote": "A los ignorantes les aventajan los que leen libros. A estos, los que retienen lo leído. A estos, los que comprenden lo leído. A estos, los que se ponen manos a la obra. Proverbio Hindú",
-    "linkedin": "jorgeferrerzarzuela",
-    "twitter": "jorgeferrer"
-  },
-  {
-    "name": "Manu",
-    "mentor": true,
-    "teacher": false,
-    "linkedin": "mdelapenya",
-    "twitter": "mdelapenya",
-    "years": [2021],
-    "firstProgram": "Jugueteé con calculadoras programables de adolescente, pero el primer programa serio fue el hundir la flota en la carrera",
-    "hobbies": "Programar. Juegos de rol y mundos de fantasía en todos sus formatos (juegos, series, películas, libros)",
-    "quote": "Es muy fácil: el ordenador no te insulta ni te va a morder, simplemente hace lo que tú le dices"
-  },
-  {
-    "name": "Joaquín",
-    "mentor": true,
-    "teacher": false,
-    "linkedin": "hjoaquindiez",
-    "years": [2021],
-    "firstProgram": "Una aplicación en Pascal de encuestas para el colegio",
-    "hobbies": "Jugar al tenis, ver Baloncesto, aprender sobre economía",
-    "quote": "Ama a la gente y usa cosas, por que lo contrario, no funciona"
-  },
-  {
-    "name": "Jesús Armand",
-    "mentor": true,
-    "teacher": false,
-    "years": [2021],
-    "firstProgram": "Cosas de empezar en esto con un spectrum 64k. Un programa que listaba por pantalla la plantilla del FCB y un cuadrado que simulaba un campo",
-    "hobbies": "Lectura (hace unos años conseguí completar el reto 52 libros 52 semanas) y perderme en Jaca con mi mujer y mi hija",
-    "quote": "Hacer predicciones es muy difícil, especialmente cuando se trata del futuro., Niels Bohr"
-  },
-  {
-    "name": "Jorge Jardines",
-    "mentor": true,
-    "teacher": false,
-    "years": [2021],
-    "firstProgram": "Hola mundo en C#",
-    "hobbies": "Cualquier actividad con mis hijas, prácticar deportes, la música para escucharla y bailarla, leer",
-    "quote": "Vive y Disfruta cada momento!"
-  },
-  {
-    "name": "Eduardo García",
-    "mentor": true,
-    "teacher": true,
-    "years": [2021],
-    "firstProgram": "Si programar un vídeo Beta no cuenta, entonces Hello World en Java :)",
-    "hobbies": "Comics. Dibujar. Viajar. Senderismo",
-    "quote": "El único hombre que no se equivoca es el que nunca hace nada Goethe"
-  },
-  {
-    "name": "Javier Gamarra",
-    "mentor": true,
-    "teacher": true,
-    "years": [2021],
-    "firstProgram": "Calculadora en Basic",
-    "hobbies": "Lego, Libros y Comics, Organizar conferencias, Películas",
-    "quote": "A fire-eater must eat fire even if he has to kindle it himself"
-  },
-  {
-    "name": "Sergio Saenz",
-    "mentor": false,
-    "teacher": true,
-    "years": [2021],
-    "firstProgram": "Algún ejercicio básico en Ada",
-    "hobbies": "Plantas y animales",
-    "quote": "Depende",
-    "twitter": "devjuggler",
-    "linkedin": "sergiosaenzromero"
-  },
-  {
-    "name": "Alejandro Tardín",
-    "mentor": true,
-    "teacher": true,
-    "linkedin": "alejandrotardin",
-    "twitter": "4lejandrito",
-    "years": [2021],
-    "firstProgram": "futbol.exe: un juego de lanzamiento de faltas en Visual Basic que de haberme pillado en la era iPhone me habría dado para jubilarme en Andorra",
-    "hobbies": "Programar y ser eterno aprendiz de la guitarra flamenca",
-    "quote": "Aquí estamos para lo que haga falta"
-  },
-  {
-    "name": "Pablo Molina",
-    "mentor": true,
-    "teacher": true,
-    "linkedin": "p2kmgcl",
-    "twitter": "p2kmgcl",
-    "years": [2022, 2021],
-    "firstProgram": "Un bucle en C que escribía Cojo un muelle y lo tiro por el retrete... una y otra vez",
-    "hobbies": "Juegos de mesa, videojuegos, senderismo y libros de fantasía",
-    "quote": "Yo soy porque nosotros somos"
-  },
-  {
-    "name": "Javier de Arcos",
-    "mentor": true,
-    "teacher": true,
-    "linkedin": "javierdearcos",
-    "twitter": "JavierDeArcosTL",
-    "years": [2021],
-    "firstProgram": "Ordenar los tiempos de una carrera de coches para obtener el ganador en Ada 95, en el primer año de universidad",
-    "hobbies": "Música, leer, planes de naturaleza y disfrutar de todo junto a la familia",
-    "quote": "Ningún viento es favorable si no sabes a qué puerto te diriges, Séneca"
-  },
-  {
-    "name": "Andrea Magán",
-    "female": true,
-    "mentor": true,
-    "teacher": false,
-    "linkedin": "andreamaganrey",
-    "twitter": "AndreaMaganRey",
-    "years": [2022, 2021],
-    "firstProgram": "Una 'caja registradora' que registraba un pago y calculaba la vuelta",
-    "hobbies": "Me encantan los videojuegos y ahora estoy enganchada a los libros de Sanderson",
-    "quote": "Primero resuelve el problema. Después, escribe el código -- John Johnson"
-  },
-  {
-    "name": "Roberto Villares",
-    "mentor": true,
-    "teacher": false,
-    "years": [2021],
-    "firstProgram": "Pues un clásico de un lenguaje de programación arcano: BASIC. Hice un ¡hola mundo!",
-    "hobbies": "Aparte de la informática, las típicas: la música, salir a pasear al monte, fotografía, y pasr todo el tiempo posible con mi familia y amigos... vamos soy un tío de lo más aburrido :)",
-    "quote": "Programar es crear"
-  },
-  {
-    "name": "Pere Zamora",
-    "mentor": true,
-    "teacher": false,
-    "years": [2022, 2021],
-    "firstProgram": "Fue con Basic para un Sinclair ZX Spectum, intentar plasmar los juegos que veiamos en las revistas",
-    "hobbies": "Salir al Monte y aprendizaje constante",
-    "quote": "Han ido cambiando el tiempo, solo al cambio",
-    "linkedin": "pzamgar"
-  },
-  {
-    "name": "Rubén de Alba",
-    "mentor": true,
-    "teacher": false,
-    "twitter": "rdealbade",
-    "years": [2021],
-    "firstProgram": "Juego de preguntas en Basic (Amstrad cpc 464. :-O)",
-    "hobbies": "Deporte (natación, ciclismo, pádel, montaña). Música (heavy, rock, viejo aprendiz de guitarra y nuevo de canto). Cine (clásico, actual, series).  Cervecearme con mi gente",
-    "quote": "No es más rico el que tiene más, sino el que menos sabe necesitar",
-    "linkedin": "rub%C3%A9n-de-alba-a247153"
-  },
-  {
-    "name": "Bea Jimenez",
-    "female": true,
-    "mentor": true,
-    "teacher": false,
-    "collaborator": true,
-    "twitter": "beajmnz",
-    "linkedin": "beatrizjimenez",
-    "years": [2022, 2021],
-    "firstProgram": "Pues hace tantísimo (tendría yo 9 o 10 años) que ni me acuerdo qué hacia, pero seguro que fue en BASIC",
-    "hobbies": "Bricolaje y las pelis de robos",
-    "quote": "¿En qué puedo ayudarte?"
-  },
-  {
-    "name": "Cris González",
-    "female": true,
-    "mentor": true,
-    "teacher": false,
-    "years": [2021],
-    "firstProgram": "Un menú semanal con HTML/CSS",
-    "hobbies": "Juegos de mesa, videojuegos y leer",
-    "quote": "Todo el mundo tiene una historia -- Diane Setterfield"
-  },
-  {
-    "name": "Dani Benítez",
-    "mentor": true,
-    "teacher": true,
-    "linkedin": "daniel-benítez-garcía-350a0550",
-    "years": [2022, 2021],
-    "firstProgram": "Videojuego en Div 2 Games Studio o simulación planetaria en Basic no sé qué fue antes 😄",
-    "hobbies": "La lectura, la escalada y el alpinismo. La tecnología y las personas",
-    "quote": "Las preguntas son caminos a tierras inexploradas"
-  },
-  {
-    "name": "Daniel Díaz Canel",
-    "mentor": true,
-    "teacher": false,
-    "linkedin": "diazknel",
-    "twitter": "diazknel",
-    "years": [2021],
-    "firstProgram": "Una calculadora en C++",
-    "hobbies": "Leer, deporte, viajar, bailar",
-    "quote": "Viaje antes que destino"
-  },
-  {
-    "name": "David Torres",
-    "mentor": true,
-    "teacher": true,
-    "linkedin": "david-torres-pascual-4599b7104",
-    "years": [2021],
-    "firstProgram": "Mmm, la verdad que no me acuerdo (memoria de historiador :P)",
-    "hobbies": "Hablar con gente, hacer ejecicio, comer fruta, leer cómics, etc..",
-    "quote": "Nullius in verba"
-  },
-  {
-    "name": "Eduardo Trapero",
-    "mentor": true,
-    "years": [2021],
-    "firstProgram": "Debio ser algo sacado de projecteuler.net con Python",
-    "hobbies": "Hacer mi casa inteligente y cocinar",
-    "quote": "No es estúpido si funciona"
-  },
-  {
-    "name": "Iván Cea",
-    "mentor": true,
-    "twitter": "ivancea96",
-    "linkedin": "iván-cea-fontenla-24496986",
-    "years": [2021],
-    "firstProgram": "El primer programa útil podría haber sido un juego estilo “Flappy Bird” en C++",
-    "hobbies": "Programar, jugar a Magic, juegos de mesa, videojuegos…",
-    "quote": "Todo en programación encaja. Si no encaja, está mal definido el problema o la solución"
-  },
-  {
-    "name": "Jesús Jiménez Ballano",
-    "mentor": true,
-    "years": [2021],
-    "firstProgram": "Un fichero .bat que se ejecutaba al arrancar el sistema (ms-dos) que me permitía arrancar los juegos escribiendo el número que le tocaba en la lista",
-    "hobbies": "Correr, aprender, viajar, no necesariamente en ese orden",
-    "quote": "Estimé mal el tiempo que pensaba que me llevaría hacer eso"
-  },
-  {
-    "name": "José Ramón Afonso",
-    "mentor": true,
-    "twitter": "worvast",
-    "linkedin": "jrafonso",
-    "years": [2021],
-    "firstProgram": "Un pong para Nintendo DS",
-    "hobbies": "Videojuegos, juegos de mesa, tenis, bicicleta, playa y las terrazas de los bares",
-    "quote": "Lo normal es aquello a lo que se le ha borrado la huella de cómo fue impuesto"
-  },
-  {
-    "name": "Juan Hernández",
-    "mentor": true,
-    "years": [2021],
-    "firstProgram": "Hello World en C",
-    "hobbies": "Todo lo relacionado con el deporte y la tecnología",
-    "quote": "La receta del éxito es: 1% inspiración y 99% transpiración"
-  },
-  {
-    "name": "Logan Benavente",
-    "mentor": true,
-    "years": [2021],
-    "firstProgram": "Una skill de Alexa para aprender capitales",
-    "hobbies": "Escribir cartas, rolear y comer",
-    "quote": "Lo cuqui no le quita lo serio"
-  },
-  {
-    "name": "Luis de Santiago",
-    "mentor": true,
-    "years": [2022, 2021],
-    "linkedin": "tioluiso",
-    "firstProgram": "Bufffff. El primero que soy capaz de recordar fue en mi época de instituto en el que hice un pequeño programa de Spectrum en el que podia dibujar graficas para funciones polinómicas. Ninguna maravilla",
-    "hobbies": "Juegos de Rol, pintar miniaturas, cantar, comics, pelis..",
-    "quote": "Croquetas, le gustan a todo el mundo (es mi respuesta genérica cuando cualquiera pregunta: ¿qué hacemos?)"
-  },
-  {
-    "name": "Marcos de la Calle",
-    "mentor": true,
-    "years": [2022, 2021],
-    "linkedin": "marcosdlcs",
-    "twitter": "marcosDLCS",
-    "firstProgram": "Contador de letras de un texto en Pascal",
-    "hobbies": "Lectura. Seriéfilo. Caminar a todas partes. Tecnología y ciencia en general",
-    "quote": "The limits of my language means the limits of my world -- Wittgenstein"
-  },
-  {
-    "name": "Marcos Díaz Navazo",
-    "mentor": true,
-    "years": [2021],
-    "firstProgram": "Mmm... la verdad que no lo recuerdo",
-    "hobbies": "La música (toco la dulzaina e intento tocar el ukelele) y el fútbol (tanto verlo como jugarlo)",
-    "quote": "¡El proyecto perfecto no existe!"
-  },
-  {
-    "name": "Natalia Alvarado",
-    "female": true,
-    "mentor": true,
-    "years": [2021],
-    "firstProgram": "Algo en R",
-    "hobbies": "Ukelele, coreano",
-    "quote": "Funciona y no sé por qué"
-  },
-  {
-    "name": "Paco Jáñez",
-    "mentor": true,
-    "years": [2021],
-    "firstProgram": "Calculadora de área, perímetro de distintas figuras geométricas en Vanilla JS",
-    "hobbies": "Fotografías, leer, ahhh y el blues, por supuesto",
-    "quote": "Mañana amanece otra vez",
-    "linkedin": "paco-j%C3%A1%C3%B1ez-rodr%C3%ADguez"
-  },
-  {
-    "name": "Raúl Moya Reyes",
-    "mentor": true,
-    "teacher": true,
-    "years": [2022, 2021],
-    "linkedin": "raulmoyareyes",
-    "twitter": "raulmoyareyes",
-    "firstProgram": "Aplicación para guardar urls de internet en Visual Basic cuando IE todavía no tenía la barra de favoritos",
-    "hobbies": "Los documentales, el hardware y la música electrónica",
-    "quote": "Sé pragmático, no resuelvas problemas que no tienes"
-  },
-  {
-    "name": "Roberto Gómez",
-    "mentor": true,
-    "years": [2021, 2022],
-    "linkedin": "robertogomezm",
-    "twitter": "rgomezmu",
-    "firstProgram": "Hello World en C",
-    "hobbies": "Cualquier deporte de equipo especialmente el Futbol y baloncesto, senderismo y fotografía",
-    "quote": "Asegúrate de que tu peor enemigo no viva entre tus dos oídos"
-  },
-  {
-    "name": "Silvia García",
-    "female": true,
-    "mentor": true,
-    "years": [2022, 2021],
-    "linkedin": "silvia-garcía-cacho",
-    "twitter": "garcaplay",
-    "firstProgram": "Juego de hacer parejas",
-    "hobbies": "Ayudar todo lo que puedo en la comunidad tech, disfrutar del aire libre, participar de vez en cuando en fanzines con relatos cortos, ¡y jugar a Los Sims!",
-    "quote": "¿Has probado a apagar y encender?"
-  },
-  {
-    "name": "Mónica Martín",
-    "female": true,
-    "mentor": true,
-    "years": [2020],
-    "linkedin": "monicamh",
-    "firstProgram": "El juego de tres en raya (tic tac toe) y una web HTML conmuchos gifs",
-    "hobbies": "3D Maker. Lectura. Senderismo",
-    "quote": "¿Con qué no vas a poder? Si yo he visto flores romper asfaltos"
-  },
-  {
-    "name": "Óscar Viñan",
-    "mentor": true,
-    "years": [2020],
-    "linkedin": "ovinan",
-    "twitter": "ovinan",
-    "firstProgram": "Que el ordenador me preguntase y me saludase por mi nombre en un ZX-Spectrum 48K 😅",
-    "hobbies": "Oír música en directo. Serie y películas (ciencia aficción preferentemente). Jugar con mis peques",
-    "quote": "Rock and Roll 🤘"
-  },
-  {
-    "name": "Maite",
-    "mentor": true,
-    "twitter": "q3scrum",
-    "years": [2020],
-    "firstProgram": "Juego Snake",
-    "hobbies": "Snowboard, paddle surf",
-    "quote": "La curiosidad mató al gato, pero se murió sabiéndolo"
-  },
-  {
-    "name": "Mel",
-    "mentor": true,
-    "linkedin": "jorgemelgosa",
-    "twitter": "asoglem",
-    "years": [2021],
-    "firstProgram": "Hundir la flota en C \"Madre qué viejo soy :)\"",
-    "hobbies": "Disfrutar de mi familia ahora más que nunca, leer y aprender cualquier cosa constantemente",
-    "quote": "Si tú no trabajas por tus sueños, alguien te contratará para que trabajes por los suyos. SteveJobs"
-  },
-  {
-    "name": "Yoli",
-    "female": true,
-    "mentor": false,
-    "collaborator": true,
-    "linkedin": "yolanda-tamayo-a2b02243",
-    "years": [2021],
-    "firstProgram": "No programo, pero soy una diseñadora que se entiende muy bien con los programadores :)",
-    "hobbies": "Dibujar y los videojuegos son mis dos pasiones. También me encanta la música, y los conciertos son el último hobby que estoy retomando tras la pandemia",
-    "quote": "People ignores design that ignores people"
-  },
-  {
-    "name": "Adriana Aparicio",
-    "female": true,
-    "mentor": true,
-    "years": [2022],
-    "firstProgram": "Hola Mundo en Pascal",
-    "hobbies": "Viajar, fotografía, senderismo, esqui, voleibol",
-    "quote": "Carpe Diem",
-    "linkedin": "adriana-aparicio-mariju%C3%A1n-43349418",
-    "instagram": "adriapa5"
-  },
-  {
-    "name": "Andrea Casas",
-    "female": true,
-    "mentor": true,
-    "years": [2022],
-    "firstProgram": "Una calculadora en javascript",
-    "hobbies": "Encerrarme en una sala de cine y salir al sol a hacer la fotosíntesis. A veces pinturreo cosas, siempre acompañada de musiquita o un buen podcast",
-    "quote": "'Anónimo' era una mujer",
-    "linkedin": "andrea-casas-rodrigo-b3995a1a7"
-  },
-  {
-    "name": "Ricardo Rodríguez",
-    "female": false,
-    "mentor": true,
-    "years": [2022],
-    "firstProgram": "Un programa en java que pedía tu nombre y luego te saludaba educadamente",
-    "hobbies": "Deporte, senderismo, viajar, un buen concierto de Rock!",
-    "quote": "Todo es muy difícil antes de ser sencillo",
-    "linkedin": "ricardorv",
-    "twitter": "Ricardo_Roguez"
-  },
-  {
-    "name": "Jose Noguera",
-    "female": false,
-    "mentor": true,
-    "years": [2022],
-    "firstProgram": "Un juego super simple de 'carreras de caballos' en Delphi",
-    "hobbies": "Viajar, la cerveza y jugar",
-    "quote": "If you're tired of starting over, stop giving up",
-    "twitter": "joselkan"
-  },
-  {
-    "name": "Raquel Yuste",
-    "female": true,
-    "mentor": true,
-    "years": [2022],
-    "linkedin": "raqyuste",
-    "twitter": "raqyuste",
-    "firstProgram": "Código en C que imprimía por pantalla un árbol de navidad hecho de asteriscos",
-    "hobbies": "Salir un rato con la bici, hornear algún postre, ir a algún concierto de música en directo, intentar pintar algo con acuarelas o saludar a mis vecinos del Animal Crossing.",
-    "quote": "Empecemos por aquí… y ya vamos iterando!"
-  },
-  {
-    "name": "Eduardo Lanchares",
-    "female": false,
-    "mentor": true,
-    "years": [2022],
-    "firstProgram": "Conversor de divisas en Pascal",
-    "hobbies": "Cocinar y descubrir recetas nuevas, hacer rutas de senderismo, puzzles matematicos",
-    "quote": "Don't learn to code. Learn to think",
-    "twitter": "edulan"
-  },
-  {
-    "name": "Carmen Ramos",
-    "female": true,
-    "mentor": true,
-    "years": [2022],
-    "linkedin": "carmen-ramart",
-    "firstProgram": "Una página informativa  en html y css",
-    "hobbies": "Viajar y bailar, sobretodo salsa y bachata. Senderismo, camping. Familia,  Amigos y vino.",
-    "quote": "¿Quién dice que es tarde para comenzar algo nuevo? La vida es un aprendizaje continuo. ¡Atrévere!"
-  },
-  {
-    "name": "Alfonso García",
-    "female": false,
-    "mentor": true,
-    "years": [2022],
-    "linkedin": "alfonso-garc%C3%ADa-santisteban-474559211",
-    "firstProgram": "Hola mundo",
-    "hobbies": "Apasionado de los videojuegos y la música pero tambien me gustan mucho los deportes y probar un deporte nuevo cada año (este año toca kite surf)",
-    "quote": "No hay nada noble en ser superior a tu prójimo; la verdadera nobleza es ser superior a tu yo anterior - Ernest Hemingway"
-  },
-  {
-    "name": "Salva Carsi",
-    "female": false,
-    "mentor": true,
-    "years": [2022],
-    "linkedin": "salvador-carsi-moreno",
-    "firstProgram": "",
-    "hobbies": "El cine y el pádel",
-    "quote": ""
-  },
-  {
-    "name": "Meri",
-    "female": true,
-    "mentor": true,
-    "years": [2022],
-    "firstProgram": "¿Primer programa programado? Pues imagino q sería un hola mundo, ¿no?",
-    "hobbies": "Caballos (pasar tiempo con mi caballo, montar…) videojuegos, leer, nadear (hacer nada)",
-    "quote": ""
-  },
-  {
-    "name": "Eva Marco",
-    "female": true,
-    "mentor": true,
-    "twitter": "MigaraArcher",
-    "linkedin": "evamarcodominguez",
-    "years": [2022],
-    "firstProgram": "Hello word en Python",
-    "hobbies": "",
-    "quote": "No existe gran talento sin gran voluntad - Honore de Balzac"
-  },
-  {
-    "name": "Paula Guijarro",
-    "female": true,
-    "mentor": true,
-    "twitter": "",
-    "linkedin": "paula-guijarro",
-    "years": [2022],
-    "firstProgram": "“Hello World!” en Java",
-    "hobbies": "Patinaje en línea y senderismo, viajar y perseguir auroras boreales, tecnología y videojuegos",
-    "quote": "Screws fall out all the time. The world is an imperfect place"
-  },
-  {
-    "name": "Iván Sánchez",
-    "female": false,
-    "mentor": true,
-    "github": "surister",
-    "linkedin": "iv%C3%A1n-s%C3%A1nchez-valencia-78a573208",
-    "years": [2022],
-    "firstProgram": "",
-    "hobbies": "",
-    "quote": "Un problema bien definido esta medio solucionado - Charles Kettering"
-  },
-  {
-    "name": "Patricia Rozada",
-    "female": true,
-    "mentor": true,
-    "twitter": "pat_rozada",
-    "linkedin": "",
-    "years": [2022],
-    "firstProgram": "Mi primer programa fue un hello world en Python",
-    "hobbies": "La montaña, me gusta hacer senderismo, escalar, esquiar...",
-    "quote": "Lift as you raise"
-  },
-  {
-    "name": "Elena Guidi",
-    "female": true,
-    "mentor": true,
-    "twitter": "ElenaPandino",
-    "linkedin": "elena-guidi-2607",
-    "years": [2022],
-    "firstProgram": "Hello world",
-    "hobbies": "Comer (no cocinar), viajar y mis gatos",
-    "quote": "Invalidate cache and restart"
+{
+  "$schema": "./staff.schema.json",
+  "people": {
+    "jm": {
+      "name": "JM",
+      "pronoun": "he",
+      "linkedin": "jmnavarro",
+      "twitter": "jmnavarro",
+      "firstProgram": "Mostrar por pantalla los números del 1 al 10",
+      "hobbies": "Aprender (autodidacta) y enseñar. Juegos de rol y mundos de fantasía. Tocar la guitarra. Cocinar (y comerme lo que cocino)",
+      "quote": "No tengas prisa, pero nunca te pares",
+      "years": {
+        "2020": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2022": {
+          "roles": ["mentor"]
+        }
+      }
+    },
+    "nadine": {
+      "name": "Nadine",
+      "pronoun": "she",
+      "years": {
+        "2020": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2022": {
+          "roles": ["collaborator"]
+        }
+      },
+      "linkedin": "nadinethery",
+      "twitter": "nanythery",
+      "firstProgram": "Una carta de restaurante en Visual Basic para cobrarle a mis padres los cafés que me pedían al día",
+      "hobbies": "Juegos de mesa (modernos). Grabar vídeos de youtube/podcast. Yoga. Senderismo",
+      "quote": "La paciencia es la madre de todas las ciencias"
+    },
+    "adrian-aguado": {
+      "name": "Adrián Aguado",
+      "pronoun": "he",
+      "linkedin": "adrianaguado",
+      "twitter": "aguadotzn",
+      "years": {
+        "2020": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2022": {
+          "roles": ["collaborator"]
+        }
+      },
+      "firstProgram": "Hola mundo en C",
+      "hobbies": "Deporte (Triatlón). Naturaleza (Alpinismo, escalada). Lectura. Música. Viajes",
+      "quote": "Cuéntame algo y lo olvidaré. Enséñamelo y lo recordaré. Involúcrame y lo entenderé"
+    },
+    "luis": {
+      "name": "Luis",
+      "pronoun": "he",
+      "linkedin": "luis-rodellar",
+      "twitter": "luisrbosso",
+      "years": {
+        "2020": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2022": {
+          "roles": ["teacher", "mentor"]
+        }
+      },
+      "firstProgram": "Hello World en PHP",
+      "hobbies": "Ciclismo. Ciberseguridad. Visitar parajes naturales",
+      "quote": "La función de un buen software es hacer que lo complejo aparente ser simple Grady Booch"
+    },
+    "juanlu": {
+      "name": "Juanlu",
+      "pronoun": "he",
+      "linkedin": "gomezchanclon",
+      "twitter": "juanlu_u",
+      "years": {
+        "2020": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        }
+      },
+      "firstProgram": "Sumar y Restar números",
+      "hobbies": "Videojuegos. Baloncesto. Todo lo que tenga motor y como mínimo rueda",
+      "quote": "Nadie conoce un lenguaje de cabeza, no te vengas abajo y usa el buscador (siempre con cabeza)"
+    },
+    "dani": {
+      "name": "Dani",
+      "pronoun": "he",
+      "linkedin": "dcarrion",
+      "twitter": "dani_carrion",
+      "years": {
+        "2020": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2022": {
+          "roles": ["teacher"]
+        }
+      },
+      "firstProgram": "A los 7 años un programa en Commodore64 que imprimía COMMODORE64 infinitamente",
+      "hobbies": "Tocar el teclado en bandas de rock. Ciencia ficción. NBA",
+      "quote": "It's the user, stupid!"
+    },
+    "teffa": {
+      "name": "Teffa",
+      "pronoun": "she",
+      "linkedin": "estefaniaoterogarcia",
+      "twitter": "_teffa_",
+      "years": {
+        "2020": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        }
+      },
+      "firstProgram": "Agenda telefónica que se imprimía por pantalla",
+      "hobbies": "Pilates. Videojuegos. Maratón de sries. Lectura de fantasía o ciencia ficción",
+      "quote": "Tengo muchos Teffa dixit pero nunca me acuerdo de ellos. De todas formas, en caso de duda, StackOverflow"
+    },
+    "rodrigo": {
+      "name": "Rodrigo",
+      "pronoun": "he",
+      "years": {
+        "2020": {
+          "roles": ["teacher"]
+        },
+        "2021": {
+          "roles": ["teacher"]
+        },
+        "2022": {
+          "roles": ["teacher", "mentor"]
+        }
+      },
+      "firstProgram": "Editor de sonidos para el Korg N364 (5 años antes)",
+      "hobbies": "Música (toco el teclado en un grupo de metal). Deporte (practicarlo). Juegos de rol",
+      "quote": "Digo muchas, pero no recuerdo ninguna. Además, probablemente no fuera mía",
+      "linkedin": "rodrigoborrego",
+      "twitter": "rodrigobbtw"
+    },
+    "juan": {
+      "name": "Juan",
+      "pronoun": "he",
+      "linkedin": "juandebravo",
+      "twitter": "juandebravo",
+      "years": {
+        "2020": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        }
+      },
+      "firstProgram": "Interfaz gráfico para la utilidad de Windows Net Send",
+      "hobbies": "Ciclismo. Trail running & Marathon. Tecnología",
+      "quote": "Esto es una maratón, dividida en sprints"
+    },
+    "nacho": {
+      "name": "Nacho",
+      "pronoun": "he",
+      "linkedin": "icarretero",
+      "twitter": "Carretops",
+      "years": {
+        "2020": {
+          "roles": ["teacher"]
+        },
+        "2021": {
+          "roles": ["teacher"]
+        },
+        "2022": {
+          "roles": ["teacher"]
+        }
+      },
+      "firstProgram": "Calcular el área de un círculo",
+      "hobbies": "Deporte (natación, remo y lo que surja). Lenguajes (en este caso no de programación). Perros",
+      "quote": "El no ya lo tienes"
+    },
+    "diego": {
+      "name": "Diego",
+      "pronoun": "he",
+      "linkedin": "diego-dom%C3%ADnguez-gonz%C3%A1lez-11622b176",
+      "twitter": "DGlez1111",
+      "years": {
+        "2020": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "hobbies": "Juegos de rol, wargames, videojuegos",
+      "quote": "Beethoven era un buen compositor porque utilizaba ideas nuevas en combinación con ideas antiguas. Nadie, ni siquiera Beethoven podría inventar la música desde cero. Es igual con la informática"
+    },
+    "alejandro": {
+      "name": "Alejandro",
+      "pronoun": "he",
+      "twitter": "alejandrohdezma",
+      "years": {
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2022": {
+          "roles": ["mentor", "teacher"]
+        }
+      },
+      "firstProgram": "Una aplicación para organizar archivos de películas y subtítulos en Haskell",
+      "hobbies": "Juegos de mesa. CrossFit. Bricolaje",
+      "quote": "Escucha al compilador, el compilador es tu amigo"
+    },
+    "jorge-ferrer": {
+      "name": "Jorge Ferrer",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["teacher"]
+        },
+        "2022": {
+          "roles": ["teacher"]
+        }
+      },
+      "firstProgram": "Modificar el juego Gorillas que venía en MS Dos, para cambiar las reglas de gravedad para mi gorila y ganar a mi primo 0=)",
+      "hobbies": "Practicar deportes (especialmente tenis), rutas por la naturaleza, todo lo relacionado con tecnología y espacio, aprender cosas nuevas y enseñarlas",
+      "quote": "A los ignorantes les aventajan los que leen libros. A estos, los que retienen lo leído. A estos, los que comprenden lo leído. A estos, los que se ponen manos a la obra. Proverbio Hindú",
+      "linkedin": "jorgeferrerzarzuela",
+      "twitter": "jorgeferrer"
+    },
+    "manu": {
+      "name": "Manu",
+      "pronoun": "he",
+      "linkedin": "mdelapenya",
+      "twitter": "mdelapenya",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Jugueteé con calculadoras programables de adolescente, pero el primer programa serio fue el hundir la flota en la carrera",
+      "hobbies": "Programar. Juegos de rol y mundos de fantasía en todos sus formatos (juegos, series, películas, libros)",
+      "quote": "Es muy fácil: el ordenador no te insulta ni te va a morder, simplemente hace lo que tú le dices"
+    },
+    "joaquin": {
+      "name": "Joaquín",
+      "pronoun": "he",
+      "linkedin": "hjoaquindiez",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Una aplicación en Pascal de encuestas para el colegio",
+      "hobbies": "Jugar al tenis, ver Baloncesto, aprender sobre economía",
+      "quote": "Ama a la gente y usa cosas, por que lo contrario, no funciona"
+    },
+    "jesus-armand": {
+      "name": "Jesús Armand",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Cosas de empezar en esto con un spectrum 64k. Un programa que listaba por pantalla la plantilla del FCB y un cuadrado que simulaba un campo",
+      "hobbies": "Lectura (hace unos años conseguí completar el reto 52 libros 52 semanas) y perderme en Jaca con mi mujer y mi hija",
+      "quote": "Hacer predicciones es muy difícil, especialmente cuando se trata del futuro., Niels Bohr"
+    },
+    "jorge-jardines": {
+      "name": "Jorge Jardines",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Hola mundo en C#",
+      "hobbies": "Cualquier actividad con mis hijas, prácticar deportes, la música para escucharla y bailarla, leer",
+      "quote": "Vive y Disfruta cada momento!"
+    },
+    "eduardo-garcia": {
+      "name": "Eduardo García",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        }
+      },
+      "firstProgram": "Si programar un vídeo Beta no cuenta, entonces Hello World en Java :)",
+      "hobbies": "Comics. Dibujar. Viajar. Senderismo",
+      "quote": "El único hombre que no se equivoca es el que nunca hace nada Goethe"
+    },
+    "javier-gamarra": {
+      "name": "Javier Gamarra",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2022": {
+          "roles": ["teacher", "mentor"]
+        }
+      },
+      "firstProgram": "Calculadora en Basic",
+      "hobbies": "Lego, Libros y Comics, Organizar conferencias, Películas",
+      "quote": "A fire-eater must eat fire even if he has to kindle it himself"
+    },
+    "sergio-saenz": {
+      "name": "Sergio Saenz",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["teacher"]
+        }
+      },
+      "firstProgram": "Algún ejercicio básico en Ada",
+      "hobbies": "Plantas y animales",
+      "quote": "Depende",
+      "twitter": "devjuggler",
+      "linkedin": "sergiosaenzromero"
+    },
+    "alejandro-tardin": {
+      "name": "Alejandro Tardín",
+      "pronoun": "he",
+      "linkedin": "alejandrotardin",
+      "twitter": "4lejandrito",
+      "years": {
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "futbol.exe: un juego de lanzamiento de faltas en Visual Basic que de haberme pillado en la era iPhone me habría dado para jubilarme en Andorra",
+      "hobbies": "Programar y ser eterno aprendiz de la guitarra flamenca",
+      "quote": "Aquí estamos para lo que haga falta"
+    },
+    "pablo-molina": {
+      "name": "Pablo Molina",
+      "pronoun": "he",
+      "linkedin": "p2kmgcl",
+      "twitter": "p2kmgcl",
+      "years": {
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2022": {
+          "roles": ["mentor", "teacher"]
+        }
+      },
+      "firstProgram": "Un bucle en C que escribía Cojo un muelle y lo tiro por el retrete... una y otra vez",
+      "hobbies": "Juegos de mesa, videojuegos, senderismo y libros de fantasía",
+      "quote": "Yo soy porque nosotros somos"
+    },
+    "javier-de-arcos": {
+      "name": "Javier de Arcos",
+      "pronoun": "he",
+      "linkedin": "javierdearcos",
+      "twitter": "JavierDeArcosTL",
+      "years": {
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2022": {
+          "roles": ["mentor", "teacher"]
+        }
+      },
+      "firstProgram": "Ordenar los tiempos de una carrera de coches para obtener el ganador en Ada 95, en el primer año de universidad",
+      "hobbies": "Música, leer, planes de naturaleza y disfrutar de todo junto a la familia",
+      "quote": "Ningún viento es favorable si no sabes a qué puerto te diriges, Séneca"
+    },
+    "andrea-magan": {
+      "name": "Andrea Magán",
+      "pronoun": "she",
+      "linkedin": "andreamaganrey",
+      "twitter": "AndreaMaganRey",
+      "years": {
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2022": {
+          "roles": ["collaborator", "mentor"]
+        }
+      },
+      "firstProgram": "Una 'caja registradora' que registraba un pago y calculaba la vuelta",
+      "hobbies": "Me encantan los videojuegos y ahora estoy enganchada a los libros de Sanderson",
+      "quote": "Primero resuelve el problema. Después, escribe el código -- John Johnson"
+    },
+    "roberto-villares": {
+      "name": "Roberto Villares",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Pues un clásico de un lenguaje de programación arcano: BASIC. Hice un ¡hola mundo!",
+      "hobbies": "Aparte de la informática, las típicas: la música, salir a pasear al monte, fotografía, y pasr todo el tiempo posible con mi familia y amigos... vamos soy un tío de lo más aburrido :)",
+      "quote": "Programar es crear"
+    },
+    "pere-zamora": {
+      "name": "Pere Zamora",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        },
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Fue con Basic para un Sinclair ZX Spectum, intentar plasmar los juegos que veiamos en las revistas",
+      "hobbies": "Salir al Monte y aprendizaje constante",
+      "quote": "Han ido cambiando el tiempo, solo al cambio",
+      "linkedin": "pzamgar"
+    },
+    "ruben-de-alba": {
+      "name": "Rubén de Alba",
+      "pronoun": "he",
+      "twitter": "rdealbade",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Juego de preguntas en Basic (Amstrad cpc 464. :-O)",
+      "hobbies": "Deporte (natación, ciclismo, pádel, montaña). Música (heavy, rock, viejo aprendiz de guitarra y nuevo de canto). Cine (clásico, actual, series).  Cervecearme con mi gente",
+      "quote": "No es más rico el que tiene más, sino el que menos sabe necesitar",
+      "linkedin": "rub%C3%A9n-de-alba-a247153"
+    },
+    "bea-jimenez": {
+      "name": "Bea Jimenez",
+      "pronoun": "she",
+      "twitter": "beajmnz",
+      "linkedin": "beatrizjimenez",
+      "years": {
+        "2021": {
+          "roles": ["mentor", "collaborator"]
+        },
+        "2022": {
+          "roles": ["collaborator"]
+        }
+      },
+      "firstProgram": "Pues hace tantísimo (tendría yo 9 o 10 años) que ni me acuerdo qué hacia, pero seguro que fue en BASIC",
+      "hobbies": "Bricolaje y las pelis de robos",
+      "quote": "¿En qué puedo ayudarte?"
+    },
+    "cris-gonzalez": {
+      "name": "Cris González",
+      "pronoun": "she",
+      "years": {
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        }
+      },
+      "firstProgram": "Un menú semanal con HTML/CSS",
+      "hobbies": "Juegos de mesa, videojuegos y leer",
+      "quote": "Todo el mundo tiene una historia -- Diane Setterfield"
+    },
+    "dani-benitez": {
+      "name": "Dani Benítez",
+      "pronoun": "he",
+      "linkedin": "daniel-benítez-garcía-350a0550",
+      "years": {
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2022": {
+          "roles": ["collaborator"]
+        }
+      },
+      "firstProgram": "Videojuego en Div 2 Games Studio o simulación planetaria en Basic no sé qué fue antes 😄",
+      "hobbies": "La lectura, la escalada y el alpinismo. La tecnología y las personas",
+      "quote": "Las preguntas son caminos a tierras inexploradas"
+    },
+    "daniel-diaz-canel": {
+      "name": "Daniel Díaz Canel",
+      "pronoun": "he",
+      "linkedin": "diazknel",
+      "twitter": "diazknel",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Una calculadora en C++",
+      "hobbies": "Leer, deporte, viajar, bailar",
+      "quote": "Viaje antes que destino"
+    },
+    "david-torres": {
+      "name": "David Torres",
+      "pronoun": "he",
+      "linkedin": "david-torres-pascual-4599b7104",
+      "years": {
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        }
+      },
+      "firstProgram": "Mmm, la verdad que no me acuerdo (memoria de historiador :P)",
+      "hobbies": "Hablar con gente, hacer ejecicio, comer fruta, leer cómics, etc..",
+      "quote": "Nullius in verba"
+    },
+    "eduardo-trapero": {
+      "name": "Eduardo Trapero",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Debio ser algo sacado de projecteuler.net con Python",
+      "hobbies": "Hacer mi casa inteligente y cocinar",
+      "quote": "No es estúpido si funciona"
+    },
+    "ivan-cea": {
+      "name": "Iván Cea",
+      "pronoun": "he",
+      "twitter": "ivancea96",
+      "linkedin": "iván-cea-fontenla-24496986",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "El primer programa útil podría haber sido un juego estilo “Flappy Bird” en C++",
+      "hobbies": "Programar, jugar a Magic, juegos de mesa, videojuegos…",
+      "quote": "Todo en programación encaja. Si no encaja, está mal definido el problema o la solución"
+    },
+    "jesus-jimenez-ballano": {
+      "name": "Jesús Jiménez Ballano",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Un fichero .bat que se ejecutaba al arrancar el sistema (ms-dos) que me permitía arrancar los juegos escribiendo el número que le tocaba en la lista",
+      "hobbies": "Correr, aprender, viajar, no necesariamente en ese orden",
+      "quote": "Estimé mal el tiempo que pensaba que me llevaría hacer eso"
+    },
+    "jose-ramon-afonso": {
+      "name": "José Ramón Afonso",
+      "pronoun": "he",
+      "twitter": "worvast",
+      "linkedin": "jrafonso",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Un pong para Nintendo DS",
+      "hobbies": "Videojuegos, juegos de mesa, tenis, bicicleta, playa y las terrazas de los bares",
+      "quote": "Lo normal es aquello a lo que se le ha borrado la huella de cómo fue impuesto"
+    },
+    "juan-hernandez": {
+      "name": "Juan Hernández",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        },
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Hello World en C",
+      "hobbies": "Todo lo relacionado con el deporte y la tecnología",
+      "quote": "La receta del éxito es: 1% inspiración y 99% transpiración"
+    },
+    "logan-benavente": {
+      "name": "Logan Benavente",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Una skill de Alexa para aprender capitales",
+      "hobbies": "Escribir cartas, rolear y comer",
+      "quote": "Lo cuqui no le quita lo serio"
+    },
+    "luis-de-santiago": {
+      "name": "Luis de Santiago",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        },
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "linkedin": "tioluiso",
+      "firstProgram": "Bufffff. El primero que soy capaz de recordar fue en mi época de instituto en el que hice un pequeño programa de Spectrum en el que podia dibujar graficas para funciones polinómicas. Ninguna maravilla",
+      "hobbies": "Juegos de Rol, pintar miniaturas, cantar, comics, pelis..",
+      "quote": "Croquetas, le gustan a todo el mundo (es mi respuesta genérica cuando cualquiera pregunta: ¿qué hacemos?)"
+    },
+    "marcos-de-la-calle": {
+      "name": "Marcos de la Calle",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        },
+        "2022": {
+          "roles": ["collaborator", "mentor"]
+        }
+      },
+      "linkedin": "marcosdlcs",
+      "twitter": "marcosDLCS",
+      "firstProgram": "Contador de letras de un texto en Pascal",
+      "hobbies": "Lectura. Seriéfilo. Caminar a todas partes. Tecnología y ciencia en general",
+      "quote": "The limits of my language means the limits of my world -- Wittgenstein"
+    },
+    "marcos-diaz-navazo": {
+      "name": "Marcos Díaz Navazo",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Mmm... la verdad que no lo recuerdo",
+      "hobbies": "La música (toco la dulzaina e intento tocar el ukelele) y el fútbol (tanto verlo como jugarlo)",
+      "quote": "¡El proyecto perfecto no existe!"
+    },
+    "natalia-alvarado": {
+      "name": "Natalia Alvarado",
+      "pronoun": "she",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Algo en R",
+      "hobbies": "Ukelele, coreano",
+      "quote": "Funciona y no sé por qué"
+    },
+    "paco-janez": {
+      "name": "Paco Jáñez",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Calculadora de área, perímetro de distintas figuras geométricas en Vanilla JS",
+      "hobbies": "Fotografías, leer, ahhh y el blues, por supuesto",
+      "quote": "Mañana amanece otra vez",
+      "linkedin": "paco-j%C3%A1%C3%B1ez-rodr%C3%ADguez"
+    },
+    "raul-moya-reyes": {
+      "name": "Raúl Moya Reyes",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor", "teacher"]
+        },
+        "2022": {
+          "roles": ["mentor", "teacher"]
+        }
+      },
+      "linkedin": "raulmoyareyes",
+      "twitter": "raulmoyareyes",
+      "firstProgram": "Aplicación para guardar urls de internet en Visual Basic cuando IE todavía no tenía la barra de favoritos",
+      "hobbies": "Los documentales, el hardware y la música electrónica",
+      "quote": "Sé pragmático, no resuelvas problemas que no tienes"
+    },
+    "roberto-gomez": {
+      "name": "Roberto Gómez",
+      "pronoun": "he",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        },
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "linkedin": "robertogomezm",
+      "twitter": "rgomezmu",
+      "firstProgram": "Hello World en C",
+      "hobbies": "Cualquier deporte de equipo especialmente el Futbol y baloncesto, senderismo y fotografía",
+      "quote": "Asegúrate de que tu peor enemigo no viva entre tus dos oídos"
+    },
+    "silvia-garcia": {
+      "name": "Silvia García",
+      "pronoun": "she",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        },
+        "2022": {
+          "roles": ["mentor", "teacher"]
+        }
+      },
+      "linkedin": "silvia-garcía-cacho",
+      "twitter": "garcaplay",
+      "firstProgram": "Juego de hacer parejas",
+      "hobbies": "Ayudar todo lo que puedo en la comunidad tech, disfrutar del aire libre, participar de vez en cuando en fanzines con relatos cortos, ¡y jugar a Los Sims!",
+      "quote": "¿Has probado a apagar y encender?"
+    },
+    "monica-martin": {
+      "name": "Mónica Martín",
+      "pronoun": "she",
+      "years": {
+        "2020": {
+          "roles": ["mentor"]
+        }
+      },
+      "linkedin": "monicamh",
+      "firstProgram": "El juego de tres en raya (tic tac toe) y una web HTML conmuchos gifs",
+      "hobbies": "3D Maker. Lectura. Senderismo",
+      "quote": "¿Con qué no vas a poder? Si yo he visto flores romper asfaltos"
+    },
+    "oscar-vinan": {
+      "name": "Óscar Viñan",
+      "pronoun": "he",
+      "years": {
+        "2020": {
+          "roles": ["mentor"]
+        }
+      },
+      "linkedin": "ovinan",
+      "twitter": "ovinan",
+      "firstProgram": "Que el ordenador me preguntase y me saludase por mi nombre en un ZX-Spectrum 48K 😅",
+      "hobbies": "Oír música en directo. Serie y películas (ciencia aficción preferentemente). Jugar con mis peques",
+      "quote": "Rock and Roll 🤘"
+    },
+    "maite": {
+      "name": "Maite",
+      "pronoun": "she",
+      "twitter": "q3scrum",
+      "years": {
+        "2020": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Juego Snake",
+      "hobbies": "Snowboard, paddle surf",
+      "quote": "La curiosidad mató al gato, pero se murió sabiéndolo"
+    },
+    "mel": {
+      "name": "Mel",
+      "pronoun": "he",
+      "linkedin": "jorgemelgosa",
+      "twitter": "asoglem",
+      "years": {
+        "2021": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Hundir la flota en C \"Madre qué viejo soy :)\"",
+      "hobbies": "Disfrutar de mi familia ahora más que nunca, leer y aprender cualquier cosa constantemente",
+      "quote": "Si tú no trabajas por tus sueños, alguien te contratará para que trabajes por los suyos. SteveJobs"
+    },
+    "yoli": {
+      "name": "Yoli",
+      "pronoun": "she",
+      "linkedin": "yolanda-tamayo-a2b02243",
+      "years": {
+        "2021": {
+          "roles": ["collaborator"]
+        },
+        "2022": {
+          "roles": ["collaborator"]
+        }
+      },
+      "firstProgram": "No programo, pero soy una diseñadora que se entiende muy bien con los programadores :)",
+      "hobbies": "Dibujar y los videojuegos son mis dos pasiones. También me encanta la música, y los conciertos son el último hobby que estoy retomando tras la pandemia",
+      "quote": "People ignores design that ignores people"
+    },
+    "adriana-aparicio": {
+      "name": "Adriana Aparicio",
+      "pronoun": "she",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Hola Mundo en Pascal",
+      "hobbies": "Viajar, fotografía, senderismo, esqui, voleibol",
+      "quote": "Carpe Diem",
+      "linkedin": "adriana-aparicio-mariju%C3%A1n-43349418"
+    },
+    "andrea-casas": {
+      "name": "Andrea Casas",
+      "pronoun": "she",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Una calculadora en javascript",
+      "hobbies": "Encerrarme en una sala de cine y salir al sol a hacer la fotosíntesis. A veces pinturreo cosas, siempre acompañada de musiquita o un buen podcast",
+      "quote": "'Anónimo' era una mujer",
+      "linkedin": "andrea-casas-rodrigo-b3995a1a7"
+    },
+    "ricardo-rodriguez": {
+      "name": "Ricardo Rodríguez",
+      "pronoun": "he",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Un programa en java que pedía tu nombre y luego te saludaba educadamente",
+      "hobbies": "Deporte, senderismo, viajar, un buen concierto de Rock!",
+      "quote": "Todo es muy difícil antes de ser sencillo",
+      "linkedin": "ricardorv",
+      "twitter": "Ricardo_Roguez"
+    },
+    "jose-noguera": {
+      "name": "Jose Noguera",
+      "pronoun": "he",
+      "years": {
+        "2022": {
+          "roles": ["collaborator", "mentor"]
+        }
+      },
+      "firstProgram": "Un juego super simple de 'carreras de caballos' en Delphi",
+      "hobbies": "Viajar, la cerveza y jugar",
+      "quote": "If you're tired of starting over, stop giving up",
+      "twitter": "joselkan"
+    },
+    "raquel-yuste": {
+      "name": "Raquel Yuste",
+      "pronoun": "she",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "linkedin": "raqyuste",
+      "twitter": "raqyuste",
+      "firstProgram": "Código en C que imprimía por pantalla un árbol de navidad hecho de asteriscos",
+      "hobbies": "Salir un rato con la bici, hornear algún postre, ir a algún concierto de música en directo, intentar pintar algo con acuarelas o saludar a mis vecinos del Animal Crossing.",
+      "quote": "Empecemos por aquí… y ya vamos iterando!"
+    },
+    "eduardo-lanchares": {
+      "name": "Eduardo Lanchares",
+      "pronoun": "he",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Conversor de divisas en Pascal",
+      "hobbies": "Cocinar y descubrir recetas nuevas, hacer rutas de senderismo, puzzles matematicos",
+      "quote": "Don't learn to code. Learn to think",
+      "twitter": "edulan"
+    },
+    "carmen-ramos": {
+      "name": "Carmen Ramos",
+      "pronoun": "she",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "linkedin": "carmen-ramart",
+      "firstProgram": "Una página informativa  en html y css",
+      "hobbies": "Viajar y bailar, sobretodo salsa y bachata. Senderismo, camping. Familia,  Amigos y vino.",
+      "quote": "¿Quién dice que es tarde para comenzar algo nuevo? La vida es un aprendizaje continuo. ¡Atrévere!"
+    },
+    "alfonso-garcia": {
+      "name": "Alfonso García",
+      "pronoun": "he",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "linkedin": "alfonso-garc%C3%ADa-santisteban-474559211",
+      "firstProgram": "Hola mundo",
+      "hobbies": "Apasionado de los videojuegos y la música pero tambien me gustan mucho los deportes y probar un deporte nuevo cada año (este año toca kite surf)",
+      "quote": "No hay nada noble en ser superior a tu prójimo; la verdadera nobleza es ser superior a tu yo anterior - Ernest Hemingway"
+    },
+    "salva-carsi": {
+      "name": "Salva Carsi",
+      "pronoun": "he",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "linkedin": "salvador-carsi-moreno",
+      "hobbies": "El cine y el pádel"
+    },
+    "meri": {
+      "name": "meri Fernández",
+      "pronoun": "she",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "twitter": "meri_minimeri",
+      "linkedin": "minimeri",
+      "firstProgram": "¿Primer programa programado? Pues imagino q sería un hola mundo, ¿no?",
+      "hobbies": "Caballos (pasar tiempo con mi caballo, montar…) videojuegos, leer, nadear (hacer nada)"
+    },
+    "eva-marco": {
+      "name": "Eva Marco",
+      "pronoun": "she",
+      "twitter": "MigaraArcher",
+      "linkedin": "evamarcodominguez",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Hello word en Python",
+      "quote": "No existe gran talento sin gran voluntad - Honore de Balzac"
+    },
+    "paula-guijarro": {
+      "name": "Paula Guijarro",
+      "pronoun": "she",
+      "linkedin": "paula-guijarro",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "“Hello World!” en Java",
+      "hobbies": "Patinaje en línea y senderismo, viajar y perseguir auroras boreales, tecnología y videojuegos",
+      "quote": "Screws fall out all the time. The world is an imperfect place"
+    },
+    "ivan-sanchez": {
+      "name": "Iván Sánchez",
+      "pronoun": "he",
+      "linkedin": "iv%C3%A1n-s%C3%A1nchez-valencia-78a573208",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "quote": "Un problema bien definido esta medio solucionado - Charles Kettering"
+    },
+    "patricia-rozada": {
+      "name": "Patricia Rozada",
+      "pronoun": "she",
+      "twitter": "pat_rozada",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Mi primer programa fue un hello world en Python",
+      "hobbies": "La montaña, me gusta hacer senderismo, escalar, esquiar...",
+      "quote": "Lift as you raise"
+    },
+    "elena-guidi": {
+      "name": "Elena Guidi",
+      "pronoun": "she",
+      "twitter": "ElenaPandino",
+      "linkedin": "elena-guidi-2607",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      },
+      "firstProgram": "Hello world",
+      "hobbies": "Comer (no cocinar), viajar y mis gatos",
+      "quote": "Invalidate cache and restart"
+    },
+    "laura-albarracin": {
+      "name": "Laura Albarracín",
+      "pronoun": "she",
+      "linkedin": "albalau-dev",
+      "twitter": "albalaudev",
+      "firstProgram": "Hello World! en C",
+      "hobbies": "Pintar al óleo pastel, running, ver peliculas de misterio, aprendo armónica, rock",
+      "quote": "Sé feliz",
+      "years": {
+        "2022": {
+          "roles": ["collaborator", "mentor"]
+        }
+      }
+    }
   }
-]
+}
