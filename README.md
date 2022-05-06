@@ -85,7 +85,7 @@ The web will admit images from:
 
 ### Adding teachers and mentors to staff
 
-1. Add a new entry to [staff.json](utils/staff.json).
+1. Add a new entry to [staff.json](utils/staff.json), VSCode and other editors should have autocompletion based on the [staff.schema.json](utils/staff.schema.json) schema.
 2. Add a jpg image to the [team](public/img/team) folder. The name must be the person's name in lowercase with dashes instead of spaces. For example `Rubén de Alba` maps to `ruben-de-alba.jpg`.
 3. Optionally, add an `mp4` following the same naming as the image. This will be displayed on hover. We normally get them from https://giphy.com which allows you to download gifs as mp4. The reason to use mp4 instead of gifs is to save a ton of bandwidth.
 
@@ -93,7 +93,7 @@ See [this commit](https://github.com/NanyThery/tt-web-react/commit/9b6b35b6245ed
 
 ### Opening course status
 
-There's a variable called `IsCourseOpen` in `_app.js`  to control this behaviour. This variable controls the admissions forms among other tiny details in the application. If false, the forms are hidden. 
+There's a variable called `IsCourseOpen` in `_app.js` to control this behaviour. This variable controls the admissions forms among other tiny details in the application. If false, the forms are hidden.
 
 ### Tech debt
 
