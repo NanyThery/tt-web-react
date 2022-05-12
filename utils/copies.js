@@ -4,7 +4,7 @@ export const home = {
   header: {
     preTitle: {
       open: `¡Edición 2022 en marcha 🚀!`,
-      closed: "Preparando próxima edición... 👨‍🍳👩‍🍳",
+      closed: "Muy pronto novedades y admitidos🔥 en #TeachTech2022",
     },
     title: (
       <h1>
@@ -339,9 +339,10 @@ export const courseInfo = {
         icon: "info",
         text: (
           <p>
-            <span className="bold"> Inscripciones cerradas.</span> Pero puedes
-            apuntante a la <NavLink href="/#cta-section">newsletter</NavLink>{" "}
-            para estar al tanto de las nuevas ediciones y eventos
+            <span className="bold"> Inscripciones para 2022 cerradas.</span>{" "}
+            Pero puedes apuntante a la{" "}
+            <NavLink href="/#cta-section">newsletter</NavLink> para estar al
+            tanto de las próximas ediciones y eventos.
           </p>
         ),
       },
@@ -375,9 +376,10 @@ export const courseInfo = {
         icon: "info",
         text: (
           <p>
-            <span className="bold"> Inscripciones cerradas.</span> Pero puedes
-            apuntante a la <a href="#newsletter">newsletter</a> para estar al
-            tanto de las nuevas ediciones y eventos
+            <span className="bold"> Inscripciones para 2022 cerradas.</span>{" "}
+            Pero puedes apuntante a la{" "}
+            <NavLink href="/#cta-section">newsletter</NavLink> para estar al
+            tanto de las próximas ediciones y eventos.
           </p>
         ),
       },
