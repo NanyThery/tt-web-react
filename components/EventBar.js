@@ -108,7 +108,7 @@ const EventBar = ({
         <DesktopWrapper ref={ref}>
           <ImageContainer>
             <Image
-              src="/img/event-bar.png"
+              src="/img/event-bar-2.png"
               height="34"
               width="34"
               layout="fixed"
