@@ -1,5 +1,5 @@
 export const eventBarInfo = {
-  showUntilTimeStamp: 1652651999000,
+  showUntilTimeStamp: 1653893915000,
   eventTitle: (
     <p>
       Las inscripciones se encuentran cerradas. Muchas gracias a todos. Más

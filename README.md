@@ -23,7 +23,7 @@ export const eventBarInfo = {
 
 Where:
 
-- `showUntilTimeStamp`: the bar will be displaying this event until this date. Enter it in timestamp format, number. If empty, the event bar will always show on load.
+- `showUntilTimeStamp`: the bar will be displaying this event until this date. Enter it in timestamp format, number, in milliseconds. If empty, the event bar will always show on load.
 - `eventTitle`: the text that will describe the event. Bar will grow according to this text. Max recommended 160 char. Ideal: 100 char.
 - `eventLinkText`: the text of the link if any.
 - `eventLinkURL`: the URL where the link must head to.
