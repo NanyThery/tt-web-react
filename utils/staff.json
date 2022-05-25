@@ -1035,6 +1035,47 @@
           "roles": ["mentor"]
         }
       }
+    },
+    "beltran-rengifo": {
+      "name": "Beltrán Rengifo",
+      "pronoun": "he",
+      "quote": "Si no te equivocas de vez en cuando, es que no lo intentas - Woody Allen",
+      "hobbies": "Pedalear, cocinar, tirar de las orejas a mi perro y tratar de seguir el ritmo a los frameworks de frontend (spoiler, no se consigue)",
+      "twitter": "BeltranRengifo",
+      "linkedin": "beltranrengifo",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      }
+    },
+    "mauro-gomez": {
+      "name": "Mauro Gómez",
+      "pronoun": "he",
+      "firstProgram": "Una calculadora en la primera práctica de la universidad 🥲",
+      "quote": "People who are truly strong lift others up. People who are truly powerful bring others together - Michelle Obama",
+      "hobbies": "Juego a Tenis de Mesa y tengo una camper en la que me escapo 3 meses al año",
+      "twitter": "chosco_",
+      "linkedin": "maurogomezparada",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      }
+    },
+    "everardo-sanchez": {
+      "name": "Everardo Sánchez",
+      "pronoun": "he",
+      "firstProgram": "Hola mundo en C",
+      "quote": "Se vuelve fácil, solo debes hacerlo todos los días, esa es la parte difícil, pero se vuelve más fácil - Bojack horseman",
+      "hobbies": "Fotografía, poesía, filosofía, literatura, skateboarding",
+      "twitter": "everitosan",
+      "linkedin": "everitosan",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      }
     }
   }
 }
