@@ -4,7 +4,7 @@ export const home = {
   header: {
     preTitle: {
       open: `¡Edición 2022 en marcha 🚀!`,
-      closed: "Muy pronto novedades y admitidos🔥 en #TeachTech2022",
+      closed: "Inscripciones 2022 ya cerradas, ¡a por 2023!",
     },
     title: (
       <h1>
