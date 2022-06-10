@@ -1076,6 +1076,20 @@
           "roles": ["mentor"]
         }
       }
+    },
+    "juan-antonio-brena": {
+      "name": "Juan Antonio Breña Moral",
+      "pronoun": "he",
+      "firstProgram": "RANDOMIZE",
+      "quote": "Pressure makes diamonds - George S. Patton Jr.",
+      "hobbies": "Windsurf",
+      "twitter": "juanantoniobm",
+      "linkedin": "juanantoniobrenamoral",
+      "years": {
+        "2022": {
+          "roles": ["mentor"]
+        }
+      }
     }
   }
 }
