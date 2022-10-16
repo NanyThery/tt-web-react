@@ -390,13 +390,22 @@ export const courseInfo = {
 export const figures = [
   // Modify first element to update figures. If you want to keep track of the figures, unused data can be pushed to the end of the array. The home will only display the first two elements.
   {
-    event: "Última Edición (2021)",
+    event: "Última Edición (2022)",
+    figures: [
+      { number: 190, description: "Alumnxs FullPower y ATuAire" },
+      { number: "79%", description: "Alumnxs continúan formándose" },
+      { number: 65, description: "Profes y mentorxs" },
+    ],
+  },
+  {
+    event: "Segunda edición (2021)",
     figures: [
       { number: 140, description: "Alumnxs FullPower y ATuAire" },
       { number: "88%", description: "Alumnxs continúan formándose" },
       { number: 40, description: "Profes y mentorxs" },
     ],
   },
+  ,
   {
     event: "Primera edición (2020)",
     figures: [

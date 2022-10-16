@@ -13,10 +13,15 @@ const LeftCol = styled.div`
   width: 50%;
   height: 80%;
   position: relative;
+  bottom: -50px;
+
+  div {
+    bottom: -50px;
+  }
 
   &::after {
     content: "";
-    bottom: 0;
+    bottom: -50px;
     width: 100%;
     height: 80%;
     border-radius: 8px;
@@ -108,7 +113,7 @@ const FiguresSection = (props) => {
           {figures.map(({ event, figures }, index) => {
             return (
               <div key={event}>
-                {index < 2 && (
+                {index < 4 && (
                   <FigureWrapper className={index > 0 && "past"}>
                     <Tag>{event}</Tag>
                     <FigureContainer className={index > 0 && "past"}>
@@ -121,7 +126,7 @@ const FiguresSection = (props) => {
                         );
                       })}
                     </FigureContainer>
-                    {index === 0 && <Divider />}
+                    {<Divider />}
                   </FigureWrapper>
                 )}
               </div>
