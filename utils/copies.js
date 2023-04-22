@@ -484,12 +484,12 @@ export const cursoSection = {
   objective: {
     title: "¿Cuál es el objetivo del curso?",
     description:
-      "Durante los meses de junio y julio, el objetivo es que le pierdas el miedo y que veas que empezar es más fácil de lo que crees. Nos adentraremos en la programación poquito a poco, a través del desarrollo de una pequeña aplicación web.",
+      "Durante los meses de junio y julio, el objetivo es que le pierdas el miedo al código y que veas que empezar es más fácil de lo que crees. Nos adentraremos en la programación poquito a poco, con módulos a estudiar semanalmente y a través del desarrollo de una pequeña aplicación web (¡tu primer proyecto personal!).",
   },
   syllabus: {
     title: "Temario",
     description:
-      "Éstos son los contenidos que recorreremos juntos a lo largo de estas 9 semanas.",
+      "Éstos son los contenidos que recorreremos juntos a lo largo de estas 10 semanas.",
     items: [
       {
         tag: "Semana 1",
@@ -588,12 +588,13 @@ export const cursoSection = {
         title: "Proyecto personal",
         description: (
           <p>
-            Durante estas semanas, tendrás que ponerte manos a la obra y poner
-            en práctica todo lo que has aprendido estas semanas. Porque a
-            programar se aprende programando, así que con este proyecto (el que
-            tú elijas) y mano a mano con tu mentor o mentora, te enfrentarás a
-            problemas reales de la programación. ¡Al acabar el curso
-            compartiremos entre todos nuestro proyecto!
+            Durante estas semanas, tendrás tiempo extra para hacer los últimos
+            cambios a tu proyecto, poniendo en práctica todo lo que has
+            aprendido en los módulos anteriores. Porque a programar se aprende
+            programando, con este proyecto (el que tú elijas) y la guía de tu
+            mentor o mentora, te enfrentarás a problemas reales de la
+            programación. ¡Al acabar el curso expondremos todos nuestro
+            proyecto!
           </p>
         ),
       },
