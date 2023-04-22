@@ -45,31 +45,31 @@ export const home = {
   achieveSection: {
     title: "¿Y cómo lo conseguiremos?",
     description:
-      "La clave está en dedicarle tiempo al curso, al igual que los profes y mentores lo dedican en prepararlo para ti.",
+      "La clave está en dedicarle tiempo al curso, semana a semana, al igual que los mentores y otros voluntarios se lo dedican a prepararlo para ti",
     items: [
       {
-        img: "calendar.png",
-        title: "Clases semanales",
+        img: "manos.png",
+        title: "Mentorización",
         description:
-          "Clases online una vez por semana donde prodrás interactuar con otros alumnos y profesores",
+          "Uno de nuestros miembros de Teach[T3ch] te acompañará personalmente durante todo el proceso (tu mentora o mentor)",
       },
       {
         img: "carpeta.png",
-        title: "Ejercicios",
+        title: "Temario y Ejercicios",
         description:
-          "Tendrás ejercicios para aplica los nuevos conocimientos de diversa dificultad",
+          "Cada semana te facilitaremos recursos para aprender, como clases pre-grabadas de cada módulo y ejercicios prácticos",
       },
       {
-        img: "manos.png",
-        title: "Una mentorización",
+        img: "calendar.png",
+        title: "Tutorías Semanales",
         description:
-          "Uno de nuestros miembros de Teach[T3ch] te acompañará personalmente durante todo el proceso",
+          "Sesiones online los miércoles donde prodrás resolver dudas del temario con los tutores e interactuar con otros alumnos",
       },
       {
         img: "mano-lapiz.png",
-        title: "Proyecto final",
+        title: "Proyecto Final",
         description:
-          "Harás un proyecto que tú elijas para poner en práctica todo lo que has aprendido",
+          "A lo largo del curso desarrollarás un proyecto personal para poner en práctica todo lo que vas aprendiendo",
       },
     ],
   },
