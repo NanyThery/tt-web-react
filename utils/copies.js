@@ -423,7 +423,7 @@ export const faqSection = {
   qa: [
     {
       q: "¿Cuáles son los requisitos técnicos?",
-      a: "Los ejercicios de programación que haremos no requieren disponer de un gran despliegue tecnológico. Pero es fundamental que puedas disponer de un ordenador y conexión a internet que te permitan asistir y participar en las clases sin interrupciones.",
+      a: "Los ejercicios de programación que haremos no requieren disponer de un gran despliegue tecnológico. Pero es fundamental que puedas disponer de un ordenador y conexión a internet que te permitan asistir y participar en las sesiones online sin interrupciones.",
       links: [
         {
           label: "Velocidad que necesitas para una videollamada",
@@ -438,22 +438,22 @@ export const faqSection = {
     },
     {
       q: "¿Qué significa que hace falta implicación en el curso?",
-      a: "Si quieres apuntarte a la modalidad 'Full Power 🔥', tienes que asistir a las clases, interactuar con los demás, realizar los ejercicios, entregarlos y preparar el proyecto. Si tus ocupaciones actuales no te permiten atender esto, quizás te interese apuntarte mejor a la modalidad 'A tu aire 🌊'. Pedimos implicación porque durante las 10 semanas que dura el curso tanto los profes como los mentores estamos implicados al 100% con el proyecto y con el aprendizaje y pedimos lo mismo a cambio para que la iniciativa sea un éxito.",
+      a: "Si quieres apuntarte a la modalidad 'Full Power 🔥', tienes que asistir a las sesiones semanales, mantener videollamadas con tu mentor/a, interactuar con los demás alumnos/as, realizar los ejercicios, entregarlos y preparar el proyecto final. Si tus ocupaciones actuales no te permiten atender esto, quizás te interese apuntarte mejor a la modalidad 'A tu aire 🌊'. Pedimos implicación porque durante las 10 semanas que dura el curso tanto los tutores como los mentores estamos implicados al 100% con el proyecto y con el aprendizaje y pedimos lo mismo a cambio para que la iniciativa sea un éxito.",
       links: [],
     },
     {
       q: "¿Cuánto cuesta este curso?",
-      a: "Ambas modalidades son completamente gratuitas. Sólo pedimos compromiso por tu parte y dedicación durante las 8 semanas que dura el curso, igual que nosotros lo hacemos para ti.",
+      a: "Ambas modalidades son completamente gratuitas. Sólo pedimos compromiso por tu parte y dedicación durante las 10 semanas que dura el curso, igual que nosotros lo hacemos para ti.",
       links: [],
     },
     {
       q: "¿El curso es solo para España?",
-      a: "Por supuesto que no. Puedes participar vengas de dónde vengas. Debes saber que para la modalidad 'Full Power 🔥' existe un proceso de selección y uno de los requisitos mínimos es el de poder atender las clases (miércoles de 18:00 a 20:00, CEST (GMT+2)). 'A tu aire 🌊' no tiene ningún límite de plazas.",
+      a: "Por supuesto que no. Puedes participar vengas de dónde vengas. Debes saber que para la modalidad 'Full Power 🔥' existe un proceso de selección y uno de los requisitos mínimos es el de poder atender las sesiones semanales (miércoles de 18:00 a 20:00, CEST (GMT+2)) y las videollamadas con tu mentor/a. 'A tu aire 🌊' no tiene ningún límite de plazas ni de tiempo.",
       links: [],
     },
     {
       q: "¿Cuándo se realiza el curso?",
-      a: "Las fechas concretas pueden variar dependiendo de la edición. Sin embargo te podemos contar algunas cosas que son fijas: tiene una duración de 10 semanas, se imparte en castellano, es 100% online y las clases son los miércoles de 18:00 a 20:00 (CEST (GMT+2), horario de España peninsular)",
+      a: "Las fechas concretas pueden variar dependiendo de la edición. Sin embargo te podemos contar algunas cosas que son fijas: tiene una duración de 10 semanas, se imparte en castellano, es 100% online y las sesiones online son los miércoles de 18:00 a 20:00 (CEST (GMT+2), horario de España peninsular)",
       links: [
         {
           label: "Si quieres saber más sobre el contenido y modalidades",
