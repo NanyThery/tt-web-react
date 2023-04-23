@@ -320,7 +320,8 @@ export const courseInfo = {
     summary: [
       { icon: "smile", text: "Una mentora o mentor asignado" },
       { icon: "chat", text: "Grupo privado con otros alumnos" },
-      { icon: "code", text: "Clases en directo" },
+      { icon: "book", text: "Clases pre-grabadas y ejercicios" },
+      { icon: "code", text: "Tutorías grupales semanales" },
       { icon: "people", text: "Mentorización del proyecto" },
       { icon: "medal", text: "Diploma tras presentar el proyecto" },
       { icon: "check", text: "Gratuito" },
@@ -358,10 +359,6 @@ export const courseInfo = {
     summary: [
       { icon: "cup", text: "Gestionas tu ritmo" },
       { icon: "book", text: "Dispones de las clases, ejercicios y soluciones" },
-      {
-        icon: "smile",
-        text: "Dispones de un grupo donde consultar dudas y apoyarte",
-      },
       { icon: "cross", text: "No entregas ejercicios" },
       { icon: "cross", text: "No entregas proyecto" },
       { icon: "check", text: "Gratuito" },
