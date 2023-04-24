@@ -105,7 +105,7 @@ function fullPower(data) {
         <ul>
           <li>
             Vamos a esperar a que finalice el plazo de inscripciones (<strong
-              >10/05/2022</strong
+              >14/05/2023</strong
             >
             inclusive)
           </li>
@@ -117,34 +117,12 @@ function fullPower(data) {
             <strong class="accent" style="color: #ff7c04"
               >¡Atención a tu correo!</strong
             >
-            En la semana del <strong>23/05/2022</strong> recibirás un correo
-            indicándote si has sido seleccionado/a para la modalidad Full Power, y
-            debes respondernos antes del <strong>28/05/2022</strong> para
-            confirmar tu plaza.
+            En la semana del <strong>22/05/2023</strong> recibirás un correo
+            indicándote si has sido seleccionado/a. Y debes respondernos antes del
+            <strong>26/05/2023</strong> para confirmar tu plaza.
           </li>
         </ul>
-        <h3>¿Y si no estoy dentro?</h3>
-        <ul>
-          <li>
-            Si has indicado que quieres estar en la modalidad
-            <strong>'A tu aire🌊'</strong> en caso de no ser seleccionad@,
-            recibirás toda la info a partir del comienzo del curso el
-            <strong>01/06/2022</strong>.
-          </li>
-          <li>
-            ¡No te descuelgues! Haz un esfuerzo por seguir el curso aunque no
-            estés en Full Power, ya que a
-            <strong
-              >veces durante el curso hay gente que desafortunadamente abandona
-              y se nos liberan plazas</strong
-            >.
-          </li>
-          <li>
-            Participa en los grupos, haz tus ejercicios y mantente activ@ en redes
-            sociales así sabemos que podemos contar contigo si se nos libera una
-            plaza.
-          </li>
-        </ul>
+  
         <p>¡A por todas, este es el año del cambio!</p>
         <p>Un abrazo,</p>
         <strong
@@ -159,7 +137,8 @@ function fullPower(data) {
         >
       </main>
     </body>
-  </html>`;
+  </html>
+  `;
 }
 
 function aTuAire(data) {

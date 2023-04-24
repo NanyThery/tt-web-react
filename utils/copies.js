@@ -38,9 +38,9 @@ export const home = {
     link: "O descubre cómo surgió Teach[t3ch]",
   },
   courseSection: {
-    title: "Mismo curso, dos modalidades",
+    title: "Claves del curso",
     description:
-      "En cada edición buscamos tener un enfoque práctico que te ayude a aprender con las manos en la masa. Podrás completar el curso en dos modalidades, Full Power o A tu aire.",
+      "En cada edición buscamos tener un enfoque práctico que te ayude a aprender con las manos en la masa.",
   },
   achieveSection: {
     title: "¿Y cómo lo conseguiremos?",
