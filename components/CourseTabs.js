@@ -201,13 +201,6 @@ const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
         >
           {courseInfo.modA.icon} {courseInfo.modA.title}
         </Tab>
-        <Tab
-          className={variant}
-          active={option === "modB"}
-          onClick={() => setOption("modB")}
-        >
-          {courseInfo.modB.icon} {courseInfo.modB.title}
-        </Tab>
       </TabContainer>
       <TabContent className={variant}>
         {(variant === "image" || variant === "column-image") && (
