@@ -45,31 +45,31 @@ export const home = {
   achieveSection: {
     title: "¿Y cómo lo conseguiremos?",
     description:
-      "La clave está en dedicarle tiempo al curso, al igual que los profes y mentores lo dedican en prepararlo para ti.",
+      "La clave está en dedicarle tiempo al curso, semana a semana, al igual que los mentores y otros voluntarios se lo dedican a prepararlo para ti",
     items: [
       {
-        img: "calendar.png",
-        title: "Clases semanales",
+        img: "manos.png",
+        title: "Mentorización",
         description:
-          "Clases online una vez por semana donde prodrás interactuar con otros alumnos y profesores",
+          "Uno de nuestros miembros de Teach[T3ch] te acompañará personalmente durante todo el proceso (tu mentora o mentor)",
       },
       {
         img: "carpeta.png",
-        title: "Ejercicios",
+        title: "Temario y Ejercicios",
         description:
-          "Tendrás ejercicios para aplica los nuevos conocimientos de diversa dificultad",
+          "Cada semana te facilitaremos recursos para aprender, como clases pre-grabadas de cada módulo y ejercicios prácticos",
       },
       {
-        img: "manos.png",
-        title: "Una mentorización",
+        img: "calendar.png",
+        title: "Tutorías Semanales",
         description:
-          "Uno de nuestros miembros de Teach[T3ch] te acompañará personalmente durante todo el proceso",
+          "Sesiones online los miércoles donde prodrás resolver dudas del temario con los tutores e interactuar con otros alumnos",
       },
       {
         img: "mano-lapiz.png",
-        title: "Proyecto final",
+        title: "Proyecto Final",
         description:
-          "Harás un proyecto que tú elijas para poner en práctica todo lo que has aprendido",
+          "A lo largo del curso desarrollarás un proyecto personal para poner en práctica todo lo que vas aprendiendo",
       },
     ],
   },
@@ -320,7 +320,8 @@ export const courseInfo = {
     summary: [
       { icon: "smile", text: "Una mentora o mentor asignado" },
       { icon: "chat", text: "Grupo privado con otros alumnos" },
-      { icon: "code", text: "Clases en directo" },
+      { icon: "book", text: "Clases pre-grabadas y ejercicios" },
+      { icon: "code", text: "Tutorías grupales semanales" },
       { icon: "people", text: "Mentorización del proyecto" },
       { icon: "medal", text: "Diploma tras presentar el proyecto" },
       { icon: "check", text: "Gratuito" },
@@ -358,10 +359,6 @@ export const courseInfo = {
     summary: [
       { icon: "cup", text: "Gestionas tu ritmo" },
       { icon: "book", text: "Dispones de las clases, ejercicios y soluciones" },
-      {
-        icon: "smile",
-        text: "Dispones de un grupo donde consultar dudas y apoyarte",
-      },
       { icon: "cross", text: "No entregas ejercicios" },
       { icon: "cross", text: "No entregas proyecto" },
       { icon: "check", text: "Gratuito" },
@@ -423,7 +420,7 @@ export const faqSection = {
   qa: [
     {
       q: "¿Cuáles son los requisitos técnicos?",
-      a: "Los ejercicios de programación que haremos no requieren disponer de un gran despliegue tecnológico. Pero es fundamental que puedas disponer de un ordenador y conexión a internet que te permitan asistir y participar en las clases sin interrupciones.",
+      a: "Los ejercicios de programación que haremos no requieren disponer de un gran despliegue tecnológico. Pero es fundamental que puedas disponer de un ordenador y conexión a internet que te permitan asistir y participar en las sesiones online sin interrupciones.",
       links: [
         {
           label: "Velocidad que necesitas para una videollamada",
@@ -438,22 +435,22 @@ export const faqSection = {
     },
     {
       q: "¿Qué significa que hace falta implicación en el curso?",
-      a: "Si quieres apuntarte a la modalidad 'Full Power 🔥', tienes que asistir a las clases, interactuar con los demás, realizar los ejercicios, entregarlos y preparar el proyecto. Si tus ocupaciones actuales no te permiten atender esto, quizás te interese apuntarte mejor a la modalidad 'A tu aire 🌊'. Pedimos implicación porque durante las 10 semanas que dura el curso tanto los profes como los mentores estamos implicados al 100% con el proyecto y con el aprendizaje y pedimos lo mismo a cambio para que la iniciativa sea un éxito.",
+      a: "Si quieres apuntarte a la modalidad 'Full Power 🔥', tienes que asistir a las sesiones semanales, mantener videollamadas con tu mentor/a, interactuar con los demás alumnos/as, realizar los ejercicios, entregarlos y preparar el proyecto final. Si tus ocupaciones actuales no te permiten atender esto, quizás te interese apuntarte mejor a la modalidad 'A tu aire 🌊'. Pedimos implicación porque durante las 10 semanas que dura el curso tanto los tutores como los mentores estamos implicados al 100% con el proyecto y con el aprendizaje y pedimos lo mismo a cambio para que la iniciativa sea un éxito.",
       links: [],
     },
     {
       q: "¿Cuánto cuesta este curso?",
-      a: "Ambas modalidades son completamente gratuitas. Sólo pedimos compromiso por tu parte y dedicación durante las 8 semanas que dura el curso, igual que nosotros lo hacemos para ti.",
+      a: "Ambas modalidades son completamente gratuitas. Sólo pedimos compromiso por tu parte y dedicación durante las 10 semanas que dura el curso, igual que nosotros lo hacemos para ti.",
       links: [],
     },
     {
       q: "¿El curso es solo para España?",
-      a: "Por supuesto que no. Puedes participar vengas de dónde vengas. Debes saber que para la modalidad 'Full Power 🔥' existe un proceso de selección y uno de los requisitos mínimos es el de poder atender las clases (miércoles de 18:00 a 20:00, CEST (GMT+2)). 'A tu aire 🌊' no tiene ningún límite de plazas.",
+      a: "Por supuesto que no. Puedes participar vengas de dónde vengas. Debes saber que para la modalidad 'Full Power 🔥' existe un proceso de selección y uno de los requisitos mínimos es el de poder atender las sesiones semanales (miércoles de 18:00 a 20:00, CEST (GMT+2)) y las videollamadas con tu mentor/a. 'A tu aire 🌊' no tiene ningún límite de plazas ni de tiempo.",
       links: [],
     },
     {
       q: "¿Cuándo se realiza el curso?",
-      a: "Las fechas concretas pueden variar dependiendo de la edición. Sin embargo te podemos contar algunas cosas que son fijas: tiene una duración de 10 semanas, se imparte en castellano, es 100% online y las clases son los miércoles de 18:00 a 20:00 (CEST (GMT+2), horario de España peninsular)",
+      a: "Las fechas concretas pueden variar dependiendo de la edición. Sin embargo te podemos contar algunas cosas que son fijas: tiene una duración de 10 semanas, se imparte en castellano, es 100% online y las sesiones online son los miércoles de 18:00 a 20:00 (CEST (GMT+2), horario de España peninsular)",
       links: [
         {
           label: "Si quieres saber más sobre el contenido y modalidades",
@@ -484,12 +481,12 @@ export const cursoSection = {
   objective: {
     title: "¿Cuál es el objetivo del curso?",
     description:
-      "Durante los meses de junio y julio, el objetivo es que le pierdas el miedo y que veas que empezar es más fácil de lo que crees. Nos adentraremos en la programación poquito a poco, a través del desarrollo de una pequeña aplicación web.",
+      "Durante los meses de junio y julio, el objetivo es que le pierdas el miedo al código y que veas que empezar es más fácil de lo que crees. Nos adentraremos en la programación poquito a poco, con módulos a estudiar semanalmente y a través del desarrollo de una pequeña aplicación web (¡tu primer proyecto personal!).",
   },
   syllabus: {
     title: "Temario",
     description:
-      "Éstos son los contenidos que recorreremos juntos a lo largo de estas 9 semanas.",
+      "Éstos son los contenidos que recorreremos juntos a lo largo de estas 10 semanas.",
     items: [
       {
         tag: "Semana 1",
@@ -588,12 +585,13 @@ export const cursoSection = {
         title: "Proyecto personal",
         description: (
           <p>
-            Durante estas semanas, tendrás que ponerte manos a la obra y poner
-            en práctica todo lo que has aprendido estas semanas. Porque a
-            programar se aprende programando, así que con este proyecto (el que
-            tú elijas) y mano a mano con tu mentor o mentora, te enfrentarás a
-            problemas reales de la programación. ¡Al acabar el curso
-            compartiremos entre todos nuestro proyecto!
+            Durante estas semanas, tendrás tiempo extra para hacer los últimos
+            cambios a tu proyecto, poniendo en práctica todo lo que has
+            aprendido en los módulos anteriores. Porque a programar se aprende
+            programando, con este proyecto (el que tú elijas) y la guía de tu
+            mentor o mentora, te enfrentarás a problemas reales de la
+            programación. ¡Al acabar el curso expondremos todos nuestro
+            proyecto!
           </p>
         ),
       },
