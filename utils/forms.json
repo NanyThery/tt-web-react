@@ -41,14 +41,16 @@
             ]
           },
           {
-            "label": "¿En qué país vives?",
+            "label": "¿En qué país vives? (ej: España, Uruguay, Italia,...)",
             "type": "text",
-            "inputName": "pais"
+            "inputName": "pais",
+            "required": true
           },
           {
             "label": "¿A qué te dedicas?",
             "type": "text",
-            "inputName": "profesion"
+            "inputName": "profesion",
+            "required": true
           }
         ]
       },
@@ -56,9 +58,15 @@
         "section": "Motivación 🙌",
         "fields": [
           {
-            "label": "¿Por qué quieres hacer este curso?",
+            "label": "¿Por qué quieres hacer este curso? (Tu carta de motivación)",
+            "type": "text-area",
+            "inputName": "motivation_text",
+            "required": true
+          },
+          {
+            "label": "¿Por qué quieres hacer este curso? (Tu video de motivación, valoraremos muy positivamente que lo incluyas)",
             "type": "motivation-video",
-            "inputName": "motivation-video"
+            "inputName": "motivation_video"
           }
         ]
       },
@@ -93,11 +101,11 @@
                 "value": "plena disponibilidad"
               },
               {
-                "label": "Disponibilidad parcial (mañanas o tardes libres)",
+                "label": "Disponibilidad parcial (puedo asistir a las sesiones y dedicarle una hora más a la semana)",
                 "value": "disponibilidad parcial"
               },
               {
-                "label": "Poca disponibilidad, solo mis ratos libres",
+                "label": "Poca disponibilidad (casi no puedo ni asistir a las sesiones) ",
                 "value": "ratos libres"
               },
               {
@@ -120,7 +128,7 @@
             "inputName": "nivel_conocimiento",
             "options": [
               { "label": "1. No tengo ni idea", "value": "1" },
-              { "label": "2. Bueno, sé términología", "value": "2" },
+              { "label": "2. Bueno, sé terminología", "value": "2" },
               { "label": "3. He visto algo de código", "value": "3" },
               { "label": "4. He tocado algo de código", "value": "4" },
               {
@@ -135,14 +143,14 @@
         "section": "Extra 😉",
         "fields": [
           {
-            "label": "Y por último, ¿cómo nos has conocido?",
+            "label": "Y por último, ¿cómo nos has conocido? (Twitter, una amiga, un voluntario del curso...)",
             "type": "text-area",
             "inputName": "como_conocido"
           },
           {
             "label": "Política de privacidad",
             "sectionLabel": "Política de privacidad",
-            "type": "privacy-policy",
+            "type": "privacy_policy",
             "inputName": "privacy-policy",
             "required": true
           }
@@ -224,14 +232,14 @@
             "type": "text-area"
           },
           {
-            "label": "Y por último, ¿cómo nos has conocido?",
+            "label": "Y por último, ¿cómo nos has conocido? (Twitter, una amiga, un voluntario del curso...)",
             "inputName": "como_conocido",
             "type": "text-area"
           },
           {
             "label": "Política de privacidad",
             "type": "privacy-policy",
-            "inputName": "privacy-policy",
+            "inputName": "privacy_policy",
             "required": true
           }
         ]

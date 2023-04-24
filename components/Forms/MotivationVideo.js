@@ -42,7 +42,8 @@ const MotivationVideo = ({ label, ...rest }) => {
       </p>
       <p>
         Péganos 👇 aquí el enlace 👇 para que podamos ver tu vídeo (¡no te
-        olvides de dar permiso a &quot;cualquier persona con el enlace&quot;!)
+        olvides de dar permiso a &quot;cualquier persona con el enlace&quot;!).
+        Valoraremos muy positivamente que lo incluyas.
       </p>
 
       <TextInput label="URL de tu vídeo" {...rest} />
