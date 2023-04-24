@@ -196,10 +196,10 @@ const SignUp = ({ formsData }) => {
     radio: RadioInput,
     text: TextInput,
     checkbox: CheckboxInput,
-    ["motivation-video"]: MotivationVideo,
-    ["privacy-policy"]: PrivacyPolicy,
-    ["text-area"]: TextAreaInput,
-    ["checkbox-list"]: CheckboxList,
+    ["motivation_video"]: MotivationVideo,
+    ["privacy_policy"]: PrivacyPolicy,
+    ["text_area"]: TextAreaInput,
+    ["checkbox_list"]: CheckboxList,
   };
 
   async function handleNext() {

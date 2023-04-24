@@ -59,13 +59,13 @@
         "fields": [
           {
             "label": "¿Por qué quieres hacer este curso? (Tu carta de motivación)",
-            "type": "text-area",
+            "type": "text_area",
             "inputName": "motivation_text",
             "required": true
           },
           {
             "label": "¿Por qué quieres hacer este curso? (Tu video de motivación, valoraremos muy positivamente que lo incluyas)",
-            "type": "motivation-video",
+            "type": "motivation_video",
             "inputName": "motivation_video"
           }
         ]
@@ -144,14 +144,14 @@
         "fields": [
           {
             "label": "Y por último, ¿cómo nos has conocido? (Twitter, una amiga, un voluntario del curso...)",
-            "type": "text-area",
+            "type": "text_area",
             "inputName": "como_conocido"
           },
           {
             "label": "Política de privacidad",
             "sectionLabel": "Política de privacidad",
             "type": "privacy_policy",
-            "inputName": "privacy-policy",
+            "inputName": "privacy_policy",
             "required": true
           }
         ]
@@ -210,7 +210,7 @@
           },
           {
             "label": "¿En qué te gustaría colaborar (marca todas las que quieras)?",
-            "type": "checkbox-list",
+            "type": "checkbox_list",
             "inputName": "type_col",
             "options": [
               { "label": "Mentorizar", "value": "mentorizar" },
@@ -223,22 +223,22 @@
           },
           {
             "label": "¿Tienes algún perfil en redes sociales que quieras compartir con nosotros (LinkedIn, Twitter...)?",
-            "type": "text-area",
+            "type": "text_area",
             "inputName": "rr_ss"
           },
           {
             "label": "Cuéntanos lo que quieras",
             "inputName": "comments",
-            "type": "text-area"
+            "type": "text_area"
           },
           {
             "label": "Y por último, ¿cómo nos has conocido? (Twitter, una amiga, un voluntario del curso...)",
             "inputName": "como_conocido",
-            "type": "text-area"
+            "type": "text_area"
           },
           {
             "label": "Política de privacidad",
-            "type": "privacy-policy",
+            "type": "privacy_policy",
             "inputName": "privacy_policy",
             "required": true
           }
