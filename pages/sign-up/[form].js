@@ -312,7 +312,6 @@ export async function getStaticPaths() {
   return {
     paths: [
       { params: { form: "full-power" } },
-      { params: { form: "a-tu-aire" } },
       { params: { form: "voluntarios" } },
     ],
     fallback: false, // false or 'blocking'
