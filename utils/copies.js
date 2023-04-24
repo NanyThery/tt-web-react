@@ -107,11 +107,6 @@ export const home = {
         url: "https://coru.net",
         imageURL: "/img/sponsors/corunet.svg",
       },
-      {
-        companyName: "Agile Spain",
-        url: "https://agile-spain.org/",
-        imageURL: "/img/sponsors/agile-spain.png",
-      },
     ],
   },
 };
@@ -435,12 +430,12 @@ export const faqSection = {
     },
     {
       q: "¿Qué significa que hace falta implicación en el curso?",
-      a: "Si quieres apuntarte a la modalidad 'Full Power 🔥', tienes que asistir a las sesiones semanales, mantener videollamadas con tu mentor/a, interactuar con los demás alumnos/as, realizar los ejercicios, entregarlos y preparar el proyecto final. Si tus ocupaciones actuales no te permiten atender esto, quizás te interese apuntarte mejor a la modalidad 'A tu aire 🌊'. Pedimos implicación porque durante las 10 semanas que dura el curso tanto los tutores como los mentores estamos implicados al 100% con el proyecto y con el aprendizaje y pedimos lo mismo a cambio para que la iniciativa sea un éxito.",
+      a: "Si quieres apuntarte al curso 'Full Power 🔥', tienes que asistir a las sesiones semanales, mantener videollamadas con tu mentor/a, interactuar con los demás alumnos/as, realizar los ejercicios, entregarlos y preparar el proyecto final. Pedimos implicación porque durante las 8 semanas que dura el curso tanto los tutores como los mentores estamos implicados al 100% con el proyecto y con el aprendizaje y pedimos lo mismo a cambio para que la iniciativa sea un éxito.",
       links: [],
     },
     {
       q: "¿Cuánto cuesta este curso?",
-      a: "Ambas modalidades son completamente gratuitas. Sólo pedimos compromiso por tu parte y dedicación durante las 10 semanas que dura el curso, igual que nosotros lo hacemos para ti.",
+      a: "Ambas modalidades son completamente gratuitas. Sólo pedimos compromiso por tu parte y dedicación durante las 8 semanas que dura el curso, igual que nosotros lo hacemos para ti.",
       links: [],
     },
     {
@@ -450,7 +445,7 @@ export const faqSection = {
     },
     {
       q: "¿Cuándo se realiza el curso?",
-      a: "Las fechas concretas pueden variar dependiendo de la edición. Sin embargo te podemos contar algunas cosas que son fijas: tiene una duración de 10 semanas, se imparte en castellano, es 100% online y las sesiones online son los miércoles de 18:00 a 20:00 (CEST (GMT+2), horario de España peninsular)",
+      a: "Las fechas concretas pueden variar dependiendo de la edición. Sin embargo te podemos contar algunas cosas que son fijas: tiene una duración de 8 semanas, se imparte en castellano, es 100% online y las sesiones online son los miércoles de 18:00 a 20:00 (CEST (GMT+2), horario de España peninsular)",
       links: [
         {
           label: "Si quieres saber más sobre el contenido y modalidades",
@@ -486,7 +481,7 @@ export const cursoSection = {
   syllabus: {
     title: "Temario",
     description:
-      "Éstos son los contenidos que recorreremos juntos a lo largo de estas 10 semanas.",
+      "Éstos son los contenidos que recorreremos juntos a lo largo de estas 8 semanas.",
     items: [
       {
         tag: "Semana 1",
@@ -566,21 +561,7 @@ export const cursoSection = {
         ),
       },
       {
-        tag: "Semana 7",
-        imageURL: "data.png",
-        title: "Persistencia de datos en Local Storage",
-        description: (
-          <p>
-            En algún punto quizás necesites guardar información y luego poder
-            recuperarla. Hay muchas formas de conseguir esto, como con bases de
-            datos. Pero vamos a conocer una forma muy sencilla para que puedas
-            ir empezando. Aprenderemos cómo persistir (guardar) datos en nuestro
-            disco local a través de nuestra app y cómo recuperarlos.
-          </p>
-        ),
-      },
-      {
-        tag: "Semanas 8 y 9 ",
+        tag: "Semanas 7 y 8",
         imageURL: "project.png",
         title: "Proyecto personal",
         description: (
