@@ -3,8 +3,8 @@ import NavLink from "next/link";
 export const home = {
   header: {
     preTitle: {
-      open: `¡Edición 2022 en marcha 🚀!`,
-      closed: "Volvemos en primavera 2023. Atent@s a nuestras redes.",
+      open: `¡Edición 2023 en marcha 🚀!`,
+      closed: "Volvemos en primavera 2024. Atent@s a nuestras redes.",
     },
     title: (
       <h1>
@@ -218,16 +218,6 @@ export const testimonials = {
       },
       {
         testimonial:
-          "He aprendido mucho, l@s profesor@s y mi mentora siempre me han atendido y ayudado, ha sido una experiencia muy buena.",
-        author: "Elsa",
-        image: "default",
-        role: "student",
-        tag: "Alumna - Edición 2021",
-        edition: "2021",
-        work: "",
-      },
-      {
-        testimonial:
           "Lo recomendaría con los ojos cerrados. Para mí fue un sueño hecho realidad. La organización del curso, las clases, el material de apoyo, los profesores y mentores son maravillosos.",
         author: "Loana",
         image: "default",
@@ -264,6 +254,66 @@ export const testimonials = {
         role: "student",
         tag: "Alumna - Edición 2021",
         edition: "2021",
+        work: "",
+      },
+      {
+        testimonial:
+          "TeachTech me ha ayudado a darme cuenta de lo mucho que me gusta el mundo del desarrollo y ha supuesto ese punto de inflexión para redirigir mi carrera hacia la ciencia de datos.",
+        author: "Noelia",
+        image: "default",
+        role: "student",
+        tag: "Alumno - Edición 2022",
+        edition: "2022",
+        work: "https://udf6ct.csb.app/",
+      },
+      {
+        testimonial:
+          "TeachTech me ha ayudado a darme cuenta de lo mucho que me gusta el mundo del desarrollo y ha supuesto ese punto de inflexión para redirigir mi carrera hacia la ciencia de datos.",
+        author: "Noelia",
+        image: "default",
+        role: "student",
+        tag: "Alumno - Edición 2022",
+        edition: "2022",
+        work: "https://udf6ct.csb.app/",
+      },
+      {
+        testimonial:
+          "Es un curso que recomendaría porque aprendes mucho incluso partiendo de cero en el mundo de la programación. Son un gran equipo y un gran apoyo para los/as alumnos/as.",
+        author: "Tania",
+        image: "default",
+        role: "student",
+        tag: "Alumna - Edición 2022",
+        edition: "2022",
+        work: "https://v2qgkj.csb.app/",
+      },
+      {
+        testimonial:
+          "Es un curso que recomendaría porque aprendes mucho incluso partiendo de cero en el mundo de la programación. Son un gran equipo y un gran apoyo para los/as alumnos/as.",
+        author: "Tania",
+        image: "default",
+        role: "student",
+        tag: "Alumna - Edición 2022",
+        edition: "2022",
+        work: "https://v2qgkj.csb.app/",
+      },
+      {
+        testimonial:
+          "TeachTech es el comienzo de esta gran aventura que es programar. Tener a personas dispuestas a transmitir sus conocimientos a cambio de tu interés y compromiso no tiene precio.",
+        author: "Iván",
+        image: "default",
+        role: "student",
+        tag: "Alumno - Edición 2022",
+        edition: "2022",
+        work: "",
+      },
+      {
+        testimonial:
+          "TeachTech es el comienzo de esta gran aventura que es programar. Tener a personas dispuestas a transmitir sus conocimientos a cambio de tu interés y compromiso no tiene precio.",
+        author: "Iván",
+        image: "default",
+        role: "student",
+        tag: "Alumno - Edición 2022",
+        edition: "2022",
         work: "",
       },
     ],
@@ -335,7 +385,7 @@ export const courseInfo = {
         icon: "info",
         text: (
           <p>
-            <span className="bold"> Inscripciones para 2022 cerradas.</span>{" "}
+            <span className="bold"> Inscripciones para 2023 cerradas.</span>{" "}
             Pero puedes apuntante a la{" "}
             <NavLink href="/#cta-section">newsletter</NavLink> para estar al
             tanto de las próximas ediciones y eventos.
@@ -368,7 +418,7 @@ export const courseInfo = {
         icon: "info",
         text: (
           <p>
-            <span className="bold"> Inscripciones para 2022 cerradas.</span>{" "}
+            <span className="bold"> Inscripciones para 2023 cerradas.</span>{" "}
             Pero puedes apuntante a la{" "}
             <NavLink href="/#cta-section">newsletter</NavLink> para estar al
             tanto de las próximas ediciones y eventos.

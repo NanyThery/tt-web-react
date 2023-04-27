@@ -6,6 +6,6 @@ export const eventBarInfo = {
       información en breve.
     </p>
   ),
-  eventLinkText: "Contenido curso 2022 👉",
+  eventLinkText: "Contenido curso 2023 👉",
   eventLinkURL: "curso",
 };
