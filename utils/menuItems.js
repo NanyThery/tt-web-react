@@ -8,7 +8,7 @@ const MenuItems = [
     desktop: true,
   },
   {
-    label: "Mentores y Profes",
+    label: "Colaboradores",
     url: "/staff",
     active: true,
     style: "link",

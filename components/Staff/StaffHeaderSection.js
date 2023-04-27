@@ -79,7 +79,7 @@ const StaffHeaderSection = () => (
     <StyledHeroContainer>
       <StyledHeroInfo>
         <header>
-          <h2>Mentores & Profes</h2>
+          <h2>Mentores & Voluntarios</h2>
           <strong>Los que estamos detrás de todo esto.</strong>
         </header>
         <p>
