@@ -130,7 +130,7 @@ const Header = () => {
           <div className="browser-window-pic">
             <img
               src="../img/About-Us-Image.png"
-              alt="Los profes y mentores"
+              alt="Voluntarios y mentores"
             ></img>
           </div>
           <AboutUsIllustration

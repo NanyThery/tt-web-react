@@ -34,7 +34,7 @@ export const home = {
         que veas que es posible conseguir eso que te ronda hace tiempo.
       </p>
     ),
-    cta: "Conoce a los profes y mentores",
+    cta: "Conoce a los voluntarios y mentores",
     link: "O descubre cómo surgió Teach[t3ch]",
   },
   courseSection: {
@@ -77,7 +77,7 @@ export const home = {
     open: {
       title: "¡Este año sí que sí!",
       description:
-        "¿Te interesa lo que has visto? Pues vamos a por ello. El equipo de profes y mentores de TeachT3ch estará encantado de tenerte en nuestras filas.",
+        "¿Te interesa lo que has visto? Pues vamos a por ello. El equipo de voluntarios y mentores de TeachT3ch estará encantado de tenerte en nuestras filas.",
       img: "home-victory.png",
       cta: "¡Quiero apuntarme!",
     },
