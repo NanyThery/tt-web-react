@@ -28,7 +28,7 @@ const MotivationVideo = ({ label, ...rest }) => {
         <span className="bold"> un breve vídeo (5 min aprox)</span>:
       </p>
       <StyledList>
-        <li>¿Por qué quieres hacer la modalidad mentorizada?</li>
+        <li>¿Por qué quieres hacer este curso?</li>
         <li>
           ¿Has intentado aprender a programar antes? ¿Por qué no salió bien?
         </li>

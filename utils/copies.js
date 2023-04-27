@@ -435,12 +435,12 @@ export const faqSection = {
     },
     {
       q: "¿Cuánto cuesta este curso?",
-      a: "Ambas modalidades son completamente gratuitas. Sólo pedimos compromiso por tu parte y dedicación durante las 8 semanas que dura el curso, igual que nosotros lo hacemos para ti.",
+      a: "Este curso es completamente gratuito. Sólo pedimos compromiso por tu parte y dedicación durante las 8 semanas que dura el curso, igual que nosotros lo hacemos para ti.",
       links: [],
     },
     {
       q: "¿El curso es solo para España?",
-      a: "Por supuesto que no. Puedes participar vengas de dónde vengas. Debes saber que para la modalidad 'Full Power 🔥' existe un proceso de selección y uno de los requisitos mínimos es el de poder atender las sesiones semanales (miércoles de 18:00 a 20:00, CEST (GMT+2)) y las videollamadas con tu mentor/a. 'A tu aire 🌊' no tiene ningún límite de plazas ni de tiempo.",
+      a: "Por supuesto que no. Puedes participar vengas de dónde vengas. Debes saber que para el curso 'Full Power 🔥' existe un proceso de selección y uno de los requisitos mínimos es el de poder atender las sesiones semanales (miércoles de 18:00 a 20:00, CEST (GMT+2)) y las videollamadas con tu mentor/a.",
       links: [],
     },
     {
@@ -448,7 +448,7 @@ export const faqSection = {
       a: "Las fechas concretas pueden variar dependiendo de la edición. Sin embargo te podemos contar algunas cosas que son fijas: tiene una duración de 8 semanas, se imparte en castellano, es 100% online y las sesiones online son los miércoles de 18:00 a 20:00 (CEST (GMT+2), horario de España peninsular)",
       links: [
         {
-          label: "Si quieres saber más sobre el contenido y modalidades",
+          label: "Si quieres saber más sobre el curso y su contenido",
           url: "https://www.teacht3ch.com/curso",
         },
       ],
