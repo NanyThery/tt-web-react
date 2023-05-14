@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image";
 import { YTVideo } from "./YTVideo";
+import { CourseCards } from "../Curso/CourseCards";
 
 const ImageWrapper = styled.div`
   display: flex;
@@ -49,6 +50,10 @@ const CustomImage = (props) => {
       </div>
     </ImageWrapper>
   );
+};
+
+const ProjectCard = (props) => {
+  return <CourseCards></CourseCards>;
 };
 
 export const MDXComponents = {
