@@ -4,7 +4,7 @@ export const home = {
   header: {
     preTitle: {
       open: `¡Edición 2023 en marcha 🚀!`,
-      closed: "Volvemos en primavera 2024. Atent@s a nuestras redes.",
+      closed: "Nos encontramos revisando candidaturas. ¡Atentxs al mail!",
     },
     title: (
       <h1>
@@ -480,7 +480,7 @@ export const faqSection = {
     },
     {
       q: "¿Qué significa que hace falta implicación en el curso?",
-      a: "Si quieres apuntarte al curso 'Full Power 🔥', tienes que asistir a las sesiones semanales, mantener videollamadas con tu mentor/a, interactuar con los demás alumnos/as, realizar los ejercicios, entregarlos y preparar el proyecto final. Pedimos implicación porque durante las 8 semanas que dura el curso tanto los tutores como los mentores estamos implicados al 100% con el proyecto y con el aprendizaje y pedimos lo mismo a cambio para que la iniciativa sea un éxito.",
+      a: "Buscamos gente que quiera y, sobre todo PUEDA, asistir a las sesiones semanales, mantener videollamadas con tu mentor/a, interactuar con los demás alumnos/as, realizar los ejercicios, entregarlos y preparar el proyecto final. Pedimos implicación porque durante las 8 semanas que dura el curso tanto los tutores como los mentores estamos implicados al 100% con el proyecto y con el aprendizaje y pedimos lo mismo a cambio para que la iniciativa sea un éxito.",
       links: [],
     },
     {
@@ -490,12 +490,12 @@ export const faqSection = {
     },
     {
       q: "¿El curso es solo para España?",
-      a: "Por supuesto que no. Puedes participar vengas de dónde vengas. Debes saber que para el curso 'Full Power 🔥' existe un proceso de selección y uno de los requisitos mínimos es el de poder atender las sesiones semanales (miércoles de 18:00 a 20:00, CEST (GMT+2)) y las videollamadas con tu mentor/a.",
+      a: "Por supuesto que no. Puedes participar vengas de dónde vengas. Debes saber que existe un proceso de selección (aunque nos gustaría, no podemos coger a todo el mundo) y uno de los requisitos mínimos es el de poder tener una disponibilidad plena: asistir a las tutorías/clases y a las videollamadas con tu mentor/a (en caso de que así lo establezcáis).",
       links: [],
     },
     {
       q: "¿Cuándo se realiza el curso?",
-      a: "Las fechas concretas pueden variar dependiendo de la edición. Sin embargo te podemos contar algunas cosas que son fijas: tiene una duración de 8 semanas, se imparte en castellano, es 100% online y las sesiones online son los miércoles de 18:00 a 20:00 (CEST (GMT+2), horario de España peninsular)",
+      a: "Las fechas concretas pueden variar dependiendo de la edición. Sin embargo te podemos contar algunas cosas que son fijas: tiene una duración de 8 semanas, se imparte en castellano, es 100% online y las sesiones online suelen ser los miércoles de 18:00 a 20:00 (CEST (GMT+2), horario de España peninsular)",
       links: [
         {
           label: "Si quieres saber más sobre el curso y su contenido",
@@ -505,7 +505,7 @@ export const faqSection = {
     },
     {
       q: "¿Tenéis un código de conducta?",
-      a: "Si, lo tenemos. Es muy importante y debes leerlo tanto si eres voluntario, alumno o formas parte de la iniciativa de cualquier otra manera",
+      a: "Si, lo tenemos. Por favor, leélo antes de participar. Es muy importante y debes leerlo tanto si eres voluntario, alumno o formas parte de la iniciativa de cualquier otra manera",
       links: [
         {
           label: "Accede aquí",
