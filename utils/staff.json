@@ -1159,6 +1159,20 @@
           "roles": ["mentor"]
         }
       }
+    },
+    "jesus-perez-roca": {
+      "name": "Jesús Ángel Pérez-Roca Fernández",
+      "pronoun": "he",
+      "firstProgram": "Un programa que sumaba polinomios, escrito en Pascal",
+      "quote": "La vida es aquello que te va sucediendo mientras te empeñas en hacer otros planes - John Lennon",
+      "hobbies": "Ver series en casa, ir al cine, jugar al fútbol, escuchar música",
+      "twitter": "yisusbauer",
+      "linkedin": "jesusperezrocafernandez",
+      "years": {
+        "2023": {
+          "roles": ["mentor"]
+        }
+      }
     }
   }
 }
