@@ -18,6 +18,9 @@
         },
         "2022": {
           "roles": ["mentor"]
+        },
+        "2023": {
+          "roles": ["collaborator"]
         }
       }
     },
@@ -32,6 +35,9 @@
           "roles": ["mentor", "teacher"]
         },
         "2022": {
+          "roles": ["collaborator"]
+        },
+        "2023": {
           "roles": ["collaborator"]
         }
       },
@@ -55,6 +61,9 @@
         },
         "2022": {
           "roles": ["collaborator"]
+        },
+        "2023": {
+          "roles": ["collaborator"]
         }
       },
       "firstProgram": "Hola mundo en C",
@@ -75,6 +84,9 @@
         },
         "2022": {
           "roles": ["teacher", "mentor"]
+        },
+        "2023": {
+          "roles": ["mentor"]
         }
       },
       "firstProgram": "Hello World en PHP",
@@ -112,6 +124,9 @@
         },
         "2022": {
           "roles": ["teacher"]
+        },
+        "2023": {
+          "roles": ["mentor", "collaborator"]
         }
       },
       "firstProgram": "A los 7 años un programa en Commodore64 que imprimía COMMODORE64 infinitamente",
@@ -206,6 +221,9 @@
         },
         "2022": {
           "roles": ["mentor"]
+        },
+        "2023": {
+          "roles": ["collaborator"]
         }
       },
       "hobbies": "Juegos de rol, wargames, videojuegos",
@@ -221,6 +239,9 @@
         },
         "2022": {
           "roles": ["mentor", "teacher"]
+        },
+        "2023": {
+          "roles": ["mentor", "collaborator"]
         }
       },
       "firstProgram": "Una aplicación para organizar archivos de películas y subtítulos en Haskell",
@@ -316,6 +337,9 @@
         },
         "2022": {
           "roles": ["teacher", "mentor"]
+        },
+        "2023": {
+          "roles": ["mentor", "collaborator"]
         }
       },
       "firstProgram": "Calculadora en Basic",
@@ -347,6 +371,9 @@
         },
         "2022": {
           "roles": ["mentor"]
+        },
+        "2023": {
+          "roles": ["mentor", "collaborator"]
         }
       },
       "firstProgram": "futbol.exe: un juego de lanzamiento de faltas en Visual Basic que de haberme pillado en la era iPhone me habría dado para jubilarme en Andorra",
@@ -364,6 +391,9 @@
         },
         "2022": {
           "roles": ["mentor", "teacher"]
+        },
+        "2023": {
+          "roles": ["mentor", "collaborator"]
         }
       },
       "firstProgram": "Un bucle en C que escribía Cojo un muelle y lo tiro por el retrete... una y otra vez",
@@ -381,6 +411,9 @@
         },
         "2022": {
           "roles": ["mentor", "teacher"]
+        },
+        "2023": {
+          "roles": ["collaborator"]
         }
       },
       "firstProgram": "Ordenar los tiempos de una carrera de coches para obtener el ganador en Ada 95, en el primer año de universidad",
@@ -398,6 +431,9 @@
         },
         "2022": {
           "roles": ["collaborator", "mentor"]
+        },
+        "2023": {
+          "roles": ["collaborator"]
         }
       },
       "firstProgram": "Una 'caja registradora' que registraba un pago y calculaba la vuelta",
@@ -484,6 +520,9 @@
           "roles": ["mentor", "teacher"]
         },
         "2022": {
+          "roles": ["collaborator"]
+        },
+        "2023": {
           "roles": ["collaborator"]
         }
       },
@@ -622,6 +661,9 @@
         },
         "2022": {
           "roles": ["collaborator", "mentor"]
+        },
+        "2023": {
+          "roles": ["collaborator", "mentor"]
         }
       },
       "linkedin": "marcosdlcs",
@@ -676,6 +718,9 @@
         },
         "2022": {
           "roles": ["mentor", "teacher"]
+        },
+        "2023": {
+          "roles": ["collaborator"]
         }
       },
       "linkedin": "raulmoyareyes",
@@ -707,6 +752,9 @@
       "years": {
         "2021": {
           "roles": ["mentor"]
+        },
+        "2023": {
+          "roles": ["collaborator"]
         }
       },
       "linkedin": "silvia-garcía-cacho",
@@ -804,6 +852,9 @@
       "years": {
         "2022": {
           "roles": ["mentor"]
+        },
+        "2023": {
+          "roles": ["collaborator"]
         }
       },
       "firstProgram": "Una calculadora en javascript",
@@ -817,6 +868,9 @@
       "years": {
         "2022": {
           "roles": ["mentor"]
+        },
+        "2023": {
+          "roles": ["mentor", "collaborator"]
         }
       },
       "firstProgram": "Un programa en java que pedía tu nombre y luego te saludaba educadamente",
@@ -830,6 +884,9 @@
       "pronoun": "he",
       "years": {
         "2022": {
+          "roles": ["collaborator", "mentor"]
+        },
+        "2023": {
           "roles": ["collaborator", "mentor"]
         }
       },
@@ -871,6 +928,9 @@
       "years": {
         "2022": {
           "roles": ["mentor"]
+        },
+        "2023": {
+          "roles": ["mentor"]
         }
       },
       "linkedin": "carmen-ramart",
@@ -883,6 +943,9 @@
       "pronoun": "he",
       "years": {
         "2022": {
+          "roles": ["mentor"]
+        },
+        "2023": {
           "roles": ["mentor"]
         }
       },
@@ -934,6 +997,9 @@
       "linkedin": "paula-guijarro",
       "years": {
         "2022": {
+          "roles": ["mentor"]
+        },
+        "2023": {
           "roles": ["mentor"]
         }
       },
@@ -990,6 +1056,9 @@
       "years": {
         "2022": {
           "roles": ["collaborator", "mentor"]
+        },
+        "2023": {
+          "roles": ["mentor", "collaborator"]
         }
       }
     },
@@ -1002,6 +1071,9 @@
       "quote": "Nadie se da cuenta de qué trata la vida, y no importa. Hay que explorar el mundo. Casi todo es realmente interesante si profundizas lo suficiente. — Richard P. Feynman",
       "years": {
         "2022": {
+          "roles": ["mentor"]
+        },
+        "2023": {
           "roles": ["mentor"]
         }
       }
