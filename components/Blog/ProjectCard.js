@@ -5,7 +5,7 @@ const Card = styled.div`
   display: grid;
   padding: 1em;
   grid-template-columns: 100px 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr auto;
   color: white;
   background: ${(props) => props.theme.gradients.backgroundOrange};
   border-radius: 8px;
@@ -15,36 +15,47 @@ const Card = styled.div`
 
 const CardAvatar = styled(Avatar)`
   grid-area: 1 / 1 / 3 / 2;
+  margin-top: 8px;
+  margin-left: 16px;
+  background-color: white;
 `;
 
 const CardName = styled.p`
   grid-area: 1 / 2 / 2 / 3;
   font-size: 28px;
-`;
-
-const CardYear = styled.p`
-  grid-area: 2 / 2 / 3 / 3;
-  width: fit-content;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-bottom: 4px;
-  padding-top: 4px;
-  border-radius: 6px;
-  line-height: 12px;
-  width: 60px;
-  background-color: ${(props) => props.theme.colors.text60};
-  font-size: 12px;
   align-self: center;
 `;
 
-const CardTitle = styled.p`
-  grid-area: 3 / 1 / 4 / 3;
-  font-size: 18px;
+const CardYear = styled.p`
+  grid-area: 1 / 3 / 2 / 4;
+  width: fit-content;
+  height: fit-content;
+  font-size: 12px;
+  line-height: 16px;
+  border: 1px solid "white";
+  border-radius: 6px;
+  padding: 4px 16px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  align-self: center;
+  color: ${(props) => props.theme.colors.purpleLight};
 `;
 
-const CardLink = styled.a`
-  grid-area: 4 / 1 / 5 / 3;
+const CardTitle = styled.a`
   font-size: 18px;
+  color: ${(props) => props.theme.colors.orange};
+`;
+
+const CardDataContainer = styled.div`
+  grid-area: 2 / 2 / 3 / 4;
+  background-color: white;
+  width: 100%;
+  border-radius: 6px;
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const ProjectCard = ({
@@ -54,8 +65,6 @@ export const ProjectCard = ({
   projectTitle,
   projectLink,
 }) => {
-  // TODO: terminar diseño
-
   return (
     <Card>
       <CardAvatar
@@ -65,8 +74,9 @@ export const ProjectCard = ({
       />
       <CardName>{developer}</CardName>
       <CardYear>{year}</CardYear>
-      <CardTitle>{projectTitle}</CardTitle>
-      <CardLink>{projectLink}</CardLink>
+      <CardDataContainer>
+        <CardTitle href={projectLink}>{projectTitle}</CardTitle>
+      </CardDataContainer>
     </Card>
   );
 };
