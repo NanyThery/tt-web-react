@@ -50,12 +50,12 @@ const StaffMembers = styled.ol`
 `;
 
 const StaffMembersSection = ({ staff }) => {
-  const [selectedYear, setSelectedYear] = useState("2022");
+  const [selectedYear, setSelectedYear] = useState("2023");
   return (
     <Container>
       <TabsContainer>
         <SectionLayout>
-          {["2020", "2021", "2022"].reverse().map((year) => (
+          {["2020", "2021", "2022", "2023"].reverse().map((year) => (
             <TabButton
               key={year}
               active={year === selectedYear}

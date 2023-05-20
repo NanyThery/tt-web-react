@@ -47,7 +47,7 @@ export const Badges = ({ member, year }) => {
   return (
     <>
       {roles.map((role) => (
-        <Badge key={role} secondary={role === "teacher"}>
+        <Badge key={role} secondary={role === "collaborator"}>
           {BADGE_LABEL[role][member.pronoun]}
         </Badge>
       ))}
