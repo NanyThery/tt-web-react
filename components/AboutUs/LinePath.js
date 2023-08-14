@@ -65,8 +65,8 @@ const LinePath = ({ rightToLeft = true, header = false }) => {
         <div className="mobile-line">
           <Image
             src="/img/aboutUs/vectorLineMobile.svg"
-            width="20px"
-            height="100px"
+            width="20"
+            height="100"
             layout="fixed"
             alt="camino about us"
           />
@@ -75,8 +75,8 @@ const LinePath = ({ rightToLeft = true, header = false }) => {
         <div className={`desktop-line ${!rightToLeft ? "left-to-right" : ""}`}>
           <Image
             src="/img/aboutUs/AboutUsPath.svg"
-            width="650px"
-            height="200px"
+            width="650"
+            height="200"
             layout="intrinsic"
             alt="camino about us"
           />

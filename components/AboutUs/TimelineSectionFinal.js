@@ -68,25 +68,25 @@ const TimelineFinalTweet = styled.div`
   }
 `;
 
-const TimelineSectionFinal = () => (
+const TimelineSectionFinal = ({ copies }) => (
   <TimelineSectionContainer>
     <Title>
-      <h2>{aboutUs.timeline[3].title}</h2>
+      <h2>{copies.title}</h2>
     </Title>
-    <Description>{aboutUs.timeline[3].description}</Description>
+    <Description>{copies.description}</Description>
     <TimelineFinalTweet>
       <Image
         className="final-tweet"
         src="/img/aboutUs/tweets/tweetThanks.png"
-        width="400px"
-        height="130px"
+        width="400"
+        height="130"
         alt="Gracias tweet"
       />
       <Image
         className="timeline-gif"
         src="/img/aboutUs/sectionFinal/omg-thanks.gif"
-        width="445px"
-        height="275px"
+        width="445"
+        height="275"
         alt="Shirley Temple gif"
       />
     </TimelineFinalTweet>

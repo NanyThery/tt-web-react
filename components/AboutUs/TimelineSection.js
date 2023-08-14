@@ -20,22 +20,22 @@ const TimelineSectionContainer = styled.div`
   }
 `;
 
-const TimelineSection = () => {
+const TimelineSection = ({ copies }) => {
   return (
     <TimelineSectionContainer id="timeline">
       <LinePath header={true} />
       <TimelineContent
-        title={aboutUs.timeline[0].title}
-        description={aboutUs.timeline[0].description}
+        title={copies.title}
+        description={copies.description}
         reverse={true}
       >
         <TwitterCard
-          imageFileName={aboutUs.timeline[0].tweet.imageFileName}
-          userName={aboutUs.timeline[0].tweet.userName}
-          twitterUser={aboutUs.timeline[0].tweet.twitterUser}
-          dateLine={aboutUs.timeline[0].tweet.dateLine}
+          imageFileName={copies.tweet.imageFileName}
+          userName={copies.tweet.userName}
+          twitterUser={copies.tweet.twitterUser}
+          dateLine={copies.tweet.dateLine}
         >
-          {aboutUs.timeline[0].tweet.tweetContent}
+          {copies.tweet.tweetContent}
         </TwitterCard>
       </TimelineContent>
       <LinePath rightToLeft={false} />
