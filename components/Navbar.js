@@ -7,7 +7,7 @@ const Container = styled.div`
   position: fixed;
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 90px;
   background-color: transparent;
   transition: all 0.5s ease;
