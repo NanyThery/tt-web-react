@@ -53,6 +53,11 @@ const NavItem = styled.div`
   cursor: pointer;
   border-bottom: none;
   transition: all 0.2s ease-in-out;
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
   &.active {
     background-color: ${(props) =>
       props.positiveStyle
@@ -61,6 +66,7 @@ const NavItem = styled.div`
     padding: 8px;
     border-radius: 4px;
   }
+
   & :hover {
     color: ${(props) =>
       props.positiveStyle
@@ -114,7 +120,7 @@ const DesktopNavbar = ({
                     key={index}
                   >
                     <NavLink href={item.url} passHref>
-                      <p>{item.label}</p>
+                      {item.label}
                     </NavLink>
                   </NavItem>
                 )}
