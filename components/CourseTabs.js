@@ -91,8 +91,9 @@ const LeftCol = styled.div`
 
     & .img-container {
       position: relative;
+
       width: 100%;
-      height: 57%;
+      height: 100%;
     }
   }
 
@@ -212,10 +213,11 @@ const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
               {courseInfo[option]["description"]}
               <div className="img-container">
                 <Image
+                  style={{ objectFit: "contain", objectPosition: "bottom" }}
                   key={courseInfo[option]["imgFileName"]}
                   src={`/img/${courseInfo[option]["imgFileName"]}`}
                   alt="Imagen full power"
-                  layout="fill"
+                  fill="true"
                 />
               </div>
             </div>
