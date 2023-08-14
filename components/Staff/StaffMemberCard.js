@@ -14,7 +14,6 @@ const StaffMemberContainer = styled.div`
   .content {
     position: relative;
     z-index: 1;
-
     padding: 0px 20px 32px 20px;
     width: 100%;
     display: flex;
@@ -38,6 +37,7 @@ const StaffMemberContainer = styled.div`
       }
     }
   }
+
   &.inverse {
     .frame {
       background: ${(props) => props.theme.gradients.backgroundPurple};
@@ -47,25 +47,26 @@ const StaffMemberContainer = styled.div`
       color: white;
     }
   }
-  > .frame {
-    position absolute;
+  .frame {
+    position: absolute;
     bottom: 0;
     width: 100%;
     top: 60px;
+    border: 1px solid #e1e5ee;
+    border-radius: 4px;
     @media only screen and (max-width: 850px) {
       top: 30px;
     }
-    border: 1px solid #E1E5EE;
-    border-radius: 4px;
   }
   ${Badge} {
     @media only screen and (max-width: 850px) {
       font-size: 10px;
-      padding-left: 8px;
-      padding-right: 8px;
+      padding-left: 4px;
+      padding-right: 4px;
     }
   }
-  main,footer {
+  main,
+  footer {
     display: flex;
     align-items: end;
     justify-content: center;
@@ -81,9 +82,10 @@ const StaffMemberContainer = styled.div`
     margin-bottom: 4px;
   }
   footer a {
-    color: #9D4EDD;
+    color: #9d4edd;
   }
-  footer a, .name {
+  footer a,
+  .name {
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
