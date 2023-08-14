@@ -21,7 +21,8 @@ const LeftCol = styled.div`
 
   &::after {
     content: "";
-    bottom: -50px;
+    bottom: 0px;
+    left: 0px;
     width: 100%;
     height: 80%;
     border-radius: 8px;
