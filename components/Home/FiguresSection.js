@@ -99,7 +99,6 @@ const FiguresSection = (props) => {
       <LeftCol>
         <Image
           src="/img/discover.png"
-          layout="responsive"
           alt="Conquistando retos"
           height="516"
           width="445"

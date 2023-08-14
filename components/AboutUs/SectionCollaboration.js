@@ -9,6 +9,7 @@ import hand2 from "../../public/img/aboutUs/hand2.svg";
 import hand3 from "../../public/img/aboutUs/hand3.svg";
 import hand4 from "../../public/img/aboutUs/hand4.svg";
 import hand5 from "../../public/img/aboutUs/hand5.svg";
+import handsMobile from "../../public/img/aboutUs/hands-mobile.svg";
 
 const TimelineSectionContainer = styled.div`
   background: ${(props) => props.theme.gradients.backgroundPurpleInverse};
@@ -56,6 +57,9 @@ const Description = styled.div`
 `;
 
 const HandsVector = styled.div`
+  height: 250px;
+  width: 100%;
+  position: relative;
   display: flex;
   .hands-wrapper {
     display: flex;
@@ -94,10 +98,10 @@ const SectionCollaboration = ({ copies }) => {
       {showMobile ? (
         <HandsVector>
           <Image
-            src="/img/aboutUs/hands-mobile.svg"
-            width="516"
-            height="279"
+            src={handsMobile}
+            style={{ objectFit: "contain", objectPosition: "bottom" }}
             alt="hand-quiero-colaborar"
+            fill
           />
         </HandsVector>
       ) : (
