@@ -1,7 +1,10 @@
 {
   "functions": {
     "src/pages/staff.js": {
-      "excludeFiles": "public/**"
+      "excludeFiles": "public/**/*"
+    },
+    "src/pages/aboutUs.js": {
+      "excludeFiles": "public/**/*"
     }
   }
 }
