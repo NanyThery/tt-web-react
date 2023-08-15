@@ -117,7 +117,7 @@ const EventBar = ({
           </ImageContainer>
           <TextContainer>{eventTitle}</TextContainer>
           <StyledNavLink>
-            <NavLink href={eventLinkURL}>
+            <NavLink href={eventLinkURL} passHref>
               <p>{eventLinkText}</p>
             </NavLink>
           </StyledNavLink>

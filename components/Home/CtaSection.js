@@ -96,7 +96,7 @@ const CtaSection = ({ isCourseOpen, onClick }) => {
         <Description>{home.ctaSection[status]["description"]}</Description>
         <ActionsContainer>
           {isCourseOpen ? (
-            <NavLink href="/curso">
+            <NavLink href="/curso" passHref>
               <ButtonSecondaryWhite onClick={onClick}>
                 {home.ctaSection[status]["cta"]}
               </ButtonSecondaryWhite>

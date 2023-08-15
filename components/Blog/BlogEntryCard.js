@@ -66,7 +66,7 @@ const BottomInfo = styled.div`
 const BlogEntryCard = ({ postInfo }) => {
   const { tags, slug, title, featuredImg, userName, publishDate } = postInfo;
   return (
-    <NavLink href={`/blog/${slug}`}>
+    <NavLink href={`/blog/${slug}`} passHref>
       <Container>
         <LeftCol>
           <Image

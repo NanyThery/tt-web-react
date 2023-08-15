@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styled from "styled-components";
 
 const SocialContainer = styled.div`
@@ -13,7 +14,12 @@ const SocialLink = styled((props) => (
     target="_blank"
     rel="noreferrer"
   >
-    <img src={`/img/${props.name}.svg`} />
+    <Image
+      width={24}
+      height={25}
+      src={`/img/${props.name}.svg`}
+      alt={props.name}
+    />
   </a>
 ))`
   width: 32px;

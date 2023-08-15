@@ -5,6 +5,7 @@ import SectionLayout from "../SectionLayout";
 import { ButtonPrimary } from "../Button";
 import { useRouter } from "next/router";
 import SectionTitleDescription from "../SectionTitleDescription";
+import Image from "next/image";
 
 const Container = styled((props) => <SectionLayout {...props} />)`
   display: flex;
@@ -35,18 +36,6 @@ const AboutUsImage = styled.div`
   display: flex;
   justify-content: center;
 
-  ::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 75%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 8px;
-    background-color: ${(props) => props.theme.colors.purple};
-  }
-
   @media only screen and (max-width: 850px) {
     padding: 5px 0 5px 75px;
   }
@@ -55,41 +44,43 @@ const AboutUsImage = styled.div`
     padding: 10px;
     height: 200px;
   }
+`;
 
-  div.browser-window-pic {
-    display: flex;
-    width: 85%;
-    height: 85%;
-    background-image: radial-gradient(circle, #767b91 50%, transparent 51%),
-      radial-gradient(circle, #767b91 50%, transparent 51%),
-      radial-gradient(circle, #767b91 50%, transparent 51%),
-      linear-gradient(to bottom, #e1e5ee 25px, #150639 26px);
-    background-size: 15px 15px, 15px 15px, 15px 15px, 100% 100%;
-    background-position: 5px 5px, 25px 5px, 45px 5px, top right;
-    background-repeat: no-repeat;
-    padding: 50px 25px 25px 25px;
-    border-radius: 8px;
+const BrowserWindow = styled.div`
+  display: flex;
+  width: 80%;
+  height: 80%;
+  position: relative;
+  background-image: radial-gradient(circle, #767b91 50%, transparent 51%),
+    radial-gradient(circle, #767b91 50%, transparent 51%),
+    radial-gradient(circle, #767b91 50%, transparent 51%),
+    linear-gradient(to bottom, #e1e5ee 25px, #150639 26px);
+  background-size: 15px 15px, 15px 15px, 15px 15px, 100% 100%;
+  background-position: 5px 5px, 25px 5px, 45px 5px, top right;
+  background-repeat: no-repeat;
+  padding: 50px 25px 25px 25px;
+  border-radius: 8px;
 
-    @media only screen and (max-width: 850px) {
-      width: 350px;
-      height: 250px;
-      justify-content: center;
-      padding: 30px 10px 10px 10px;
-    }
+  @media only screen and (max-width: 850px) {
+    width: 350px;
+    height: 250px;
+    justify-content: center;
+    padding: 30px 10px 10px 10px;
+  }
 
-    > img {
-      width: 100%;
-    }
+  > img {
+    width: 100%;
+    height: 100%;
+  }
 
-    @media only screen and (max-width: 650px) {
-      max-width: 284px;
-      min-width: 250px;
-    }
+  @media only screen and (max-width: 650px) {
+    max-width: 284px;
+    min-width: 250px;
+  }
 
-    @media only screen and (max-width: 375px) {
-      width: 200px;
-      height: 175px;
-    }
+  @media only screen and (max-width: 375px) {
+    width: 200px;
+    height: 175px;
   }
 `;
 const ActionsContainer = styled.div`
@@ -127,14 +118,14 @@ const AboutUsSection = ({}) => {
   return (
     <Container>
       <LeftCol>
-        <AboutUsImage>
-          <div className="browser-window-pic">
-            <img
-              src="../img/About-Us-Image.png"
-              alt="Voluntarios y mentores"
-            ></img>
-          </div>
-        </AboutUsImage>
+        <BrowserWindow>
+          <Image
+            width={200}
+            height={150}
+            src="/img/About-Us-Image.png"
+            alt="Voluntarios y mentores"
+          />
+        </BrowserWindow>
       </LeftCol>
       <RightCol>
         <SectionTitleDescription
