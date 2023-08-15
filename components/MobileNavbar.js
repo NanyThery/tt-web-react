@@ -114,6 +114,11 @@ const NavItem = styled.h3`
   margin: 0;
   color: rgb(255, 255, 255, 0.7);
 
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   &.active > p {
     width: fit-content;
     text-align: center;
