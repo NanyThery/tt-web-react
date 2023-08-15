@@ -4,24 +4,25 @@ import Image from "next/image";
 const RandomIllustration = styled.div`
   position: absolute;
   opacity: ${(props) => props.opacity};
-  z-index: 1;
-
+  z-index: 0;
   top: ${(props) => `${props.position[0]}%`};
   right: 0px;
   bottom: 0px;
+  width: ${(props) => `${props.width}px`};
+  height: ${(props) => `${props.height}px`};
   left: ${(props) => `${props.position[3]}%`};
-  width: 150px;
-
-  @media only screen and (max-width: 850px) {
-    width: 50px;
-  }
 `;
 
 export const AboutUsIllustration = styled(
   ({ src, size, position, opacity = 0.5 }) => {
     return (
-      <RandomIllustration position={position} opacity={opacity}>
-        <Image src={src} alt="Illustration" width={size[0]} height={size[1]} />
+      <RandomIllustration
+        position={position}
+        opacity={opacity}
+        width={size[0]}
+        height={size[1]}
+      >
+        <Image src={src} alt="Illustration" fill />
       </RandomIllustration>
     );
   }

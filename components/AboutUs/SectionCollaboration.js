@@ -57,9 +57,9 @@ const Description = styled.div`
 `;
 
 const HandsVector = styled.div`
-  height: 250px;
   width: 100%;
   position: relative;
+  justify-content: center;
   display: flex;
   .hands-wrapper {
     display: flex;
@@ -70,6 +70,9 @@ const HandsVector = styled.div`
     position: relative;
     width: 170px;
     height: 200px;
+  }
+  @media only screen and (max-width: 850px) {
+    height: 250px;
   }
 `;
 
