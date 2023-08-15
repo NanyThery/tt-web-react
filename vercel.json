@@ -1,9 +1,6 @@
 {
   "functions": {
-    "pages/api/staff.js": {
-      "excludeFiles": "public/**/*"
-    },
-    "pages/api/aboutUs.js": {
+    "staff.js": {
       "excludeFiles": "public/**/*"
     }
   }
