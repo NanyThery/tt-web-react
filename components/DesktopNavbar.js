@@ -72,7 +72,8 @@ const NavItem = styled.div`
       props.positiveStyle
         ? props.theme.buttons.menuSelectedPositive
         : props.theme.buttons.menuSelectedNegative};
-    text-decoration: underline;
+    d fghjiop
+     : underline;
     margin-bottom: 5px;
   }
   ${(props) =>
@@ -97,7 +98,7 @@ const DesktopNavbar = ({
   const positiveStyle = (!isDarkMode && !scrolledNavBar) || scrolledNavBar;
   return (
     <NavbarContainerWrapper
-      startingPosition={startingPosition}
+      startingPosition={startingPosition.toString()}
       className={`${scrolledNavBar && "scrolled-navbar"} ${
         !isDarkMode && "lightBackground"
       }`}

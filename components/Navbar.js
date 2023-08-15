@@ -53,11 +53,11 @@ export const Navbar = ({ router, startingPosition }) => {
   return (
     <Container
       className={scrolledNavBar && "scrolled-navbar"}
-      startingPosition={startingPosition}
+      startingPosition={startingPosition.toString()}
     >
       <MobileNavbar router={router} />
       <DesktopNavbar
-        startingPosition={startingPosition}
+        startingPosition={startingPosition.toString()}
         isDarkMode={isDarkMode}
         scrolledNavBar={scrolledNavBar}
         router={router}

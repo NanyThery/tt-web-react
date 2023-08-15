@@ -89,7 +89,7 @@ const StaffMembersSection = ({ staff }) => {
               name="Tú"
               href="/sign-up/voluntarios"
               image="/img/team/placeholder.svg"
-              badges={<Badge inverse>?????</Badge>}
+              badges={<Badge inverse="true">?????</Badge>}
               body="Esta puede ser tu próxima aventura."
               footer="¡Únete a nosotros!"
             />
