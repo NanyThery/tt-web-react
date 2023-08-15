@@ -1,6 +1,6 @@
 {
   "functions": {
-    "/staff.js": {
+    "pages/**/*": {
       "excludeFiles": "public/**/*"
     }
   }

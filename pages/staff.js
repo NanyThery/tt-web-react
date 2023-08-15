@@ -25,9 +25,7 @@ export async function getStaticProps() {
           image: existsSync(path.join(process.cwd(), "public", imageUrl))
             ? imageUrl
             : `/img/team/placeholder.svg`,
-          video: existsSync(path.join(process.cwd(), "public", videoUrl))
-            ? videoUrl
-            : null,
+          video: null,
         };
       }),
     },
