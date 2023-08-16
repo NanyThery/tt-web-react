@@ -72,8 +72,7 @@ const NavItem = styled.div`
       props.positiveStyle
         ? props.theme.buttons.menuSelectedPositive
         : props.theme.buttons.menuSelectedNegative};
-    d fghjiop
-     : underline;
+    text-decoration : underline;
     margin-bottom: 5px;
   }
   ${(props) =>
