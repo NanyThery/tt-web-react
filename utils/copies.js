@@ -4,7 +4,7 @@ export const home = {
   header: {
     preTitle: {
       open: `¡Edición 2023 en marcha 🚀!`,
-      closed: "Edición 2023 finalizada. Nos vemos en verano 2024!",
+      closed: "Edición 2023 finalizada. ¡Nos vemos en verano 2024!",
     },
     title: (
       <h1>
