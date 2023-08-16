@@ -105,9 +105,8 @@ const SponsorSection = ({}) => {
               <NavLink key={sponsor.companyName} href={sponsor.url} passHref>
                 <Image
                   src={sponsor.imageURL}
-                  layout="intrinsic"
-                  width="125px"
-                  height="50px"
+                  width="125"
+                  height="50"
                   alt={sponsor.companyName}
                 />
               </NavLink>

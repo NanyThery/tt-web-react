@@ -38,7 +38,8 @@ const RightCol = styled.div`
 
 const TagContainer = styled.div`
   display: flex;
-  gap: 16px;
+  gap: 8px;
+  flex-wrap: wrap;
 `;
 
 const TopInfo = styled.div`
@@ -66,7 +67,7 @@ const BottomInfo = styled.div`
 const BlogEntryCard = ({ postInfo }) => {
   const { tags, slug, title, featuredImg, userName, publishDate } = postInfo;
   return (
-    <NavLink href={`/blog/${slug}`}>
+    <NavLink href={`/blog/${slug}`} passHref>
       <Container>
         <LeftCol>
           <Image

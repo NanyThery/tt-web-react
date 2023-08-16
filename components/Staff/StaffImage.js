@@ -11,7 +11,7 @@ export const StaffImage = styled(({ src, videoSrc, ...rest }) => {
       onMouseLeave={() => setShowVideo(false)}
       {...rest}
     >
-      <Image src={src} alt="" layout="fill" objectFit="cover" />
+      <Image src={src} alt="" fill style={{ objectFit: "cover" }} />
       {videoSrc && (showVideo || videoReady) && (
         <video
           style={{ opacity: showVideo && videoReady ? 1 : 0 }}

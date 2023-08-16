@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import SectionLayout from "../SectionLayout";
-import aboutUs from "../../utils/copiesAboutUs";
+import aboutUsImage from "../../public/img/About-Us-Image.png";
 import { AboutUsIllustration } from "./AboutUsIllustration";
 import NavLink from "next/link";
+import Image from "next/image";
 
 const HeaderContainer = styled.div`
   width: 100%;
@@ -116,22 +117,23 @@ const HeaderImage = styled.div`
   }
 `;
 
-const Header = () => {
+const Header = ({ copies }) => {
   return (
     <HeaderContainer>
       <HeroContainer>
         <HeroInfo>
-          <Title>{aboutUs.header.title}</Title>
-          <SubTitle>{aboutUs.header.subtitle}</SubTitle>
-          <Description>{aboutUs.header.description}</Description>
-          <NavLink href="/aboutUs#timeline">{aboutUs.header.link}</NavLink>
+          <h2>{copies.title}</h2>
+          <SubTitle>{copies.subtitle}</SubTitle>
+          <Description>{copies.description}</Description>
+          <NavLink href="/aboutUs#timeline">{copies.link}</NavLink>
         </HeroInfo>
         <HeaderImage>
           <div className="browser-window-pic">
-            <img
-              src="../img/About-Us-Image.png"
+            <Image
+              style={{ objectFit: "cover", height: "100%" }}
+              src={aboutUsImage}
               alt="Voluntarios y mentores"
-            ></img>
+            />
           </div>
           <AboutUsIllustration
             src="/img/aboutUs/planet.png"

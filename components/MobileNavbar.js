@@ -92,14 +92,14 @@ const Panel = styled.div`
   position: absolute;
   height: 100vh;
   top: 0;
-  right: -100vw;
+  right: -100%;
   transition: all 0.5s ease-in;
   overflow: auto;
   background: ${(props) => props.theme.gradients.backgroundPurple};
   display: flex;
   gap: 30px;
   flex-flow: column;
-  width: 100vw;
+  width: 100%;
   &.show-menu {
     right: 0;
   }
@@ -113,6 +113,11 @@ const NavItem = styled.h3`
   width: 100%;
   margin: 0;
   color: rgb(255, 255, 255, 0.7);
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
 
   &.active > p {
     width: fit-content;

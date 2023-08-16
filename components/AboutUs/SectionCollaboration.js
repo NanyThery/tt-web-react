@@ -4,6 +4,12 @@ import { ButtonSecondaryWhite } from "../Button";
 import Image from "next/image";
 import NavLink from "next/link";
 import useBreakpoints from "../../utils/hooks/useBreakpoints";
+import hand1 from "../../public/img/aboutUs/hand1.svg";
+import hand2 from "../../public/img/aboutUs/hand2.svg";
+import hand3 from "../../public/img/aboutUs/hand3.svg";
+import hand4 from "../../public/img/aboutUs/hand4.svg";
+import hand5 from "../../public/img/aboutUs/hand5.svg";
+import handsMobile from "../../public/img/aboutUs/hands-mobile.svg";
 
 const TimelineSectionContainer = styled.div`
   background: ${(props) => props.theme.gradients.backgroundPurpleInverse};
@@ -51,6 +57,9 @@ const Description = styled.div`
 `;
 
 const HandsVector = styled.div`
+  width: 100%;
+  position: relative;
+  justify-content: center;
   display: flex;
   .hands-wrapper {
     display: flex;
@@ -58,11 +67,16 @@ const HandsVector = styled.div`
     width: 100%;
   }
   .hand {
+    position: relative;
     width: 170px;
+    height: 200px;
+  }
+  @media only screen and (max-width: 850px) {
+    height: 250px;
   }
 `;
 
-const SectionCollaboration = () => {
+const SectionCollaboration = ({ copies }) => {
   const breakpoint = useBreakpoints();
   const isMobileVersion = ["xs", "s", "m"];
   const showMobile = isMobileVersion.includes(breakpoint);
@@ -71,13 +85,13 @@ const SectionCollaboration = () => {
     <TimelineSectionContainer>
       <Image
         src="/img/brand/isotype-white.svg"
-        width="55px"
-        height="55px"
+        width="55"
+        height="55"
         alt="isotipo tt blanco"
       />
       <Description>
-        <h2> {aboutUs.collaboration.title}</h2>
-        <p>{aboutUs.collaboration.description}</p>
+        <h2> {copies.title}</h2>
+        <p>{copies.description}</p>
         <NavLink href={`/sign-up/voluntarios`} passHref>
           <ButtonSecondaryWhite onClick={() => {}}>
             {aboutUs.button}
@@ -87,59 +101,29 @@ const SectionCollaboration = () => {
       {showMobile ? (
         <HandsVector>
           <Image
-            src="/img/aboutUs/hands-mobile.svg"
-            width="516px"
-            height="279px"
+            src={handsMobile}
+            style={{ objectFit: "contain", objectPosition: "bottom" }}
             alt="hand-quiero-colaborar"
+            fill
           />
         </HandsVector>
       ) : (
         <HandsVector>
           <div className="hands-wrapper">
             <div className="hand hands-vector1">
-              <Image
-                src="/img/aboutUs/hand1.svg"
-                width="170px"
-                height="250px"
-                alt="hand-quiero-colaborar"
-                layout="responsive"
-              />
+              <Image src={hand1} alt="hand-quiero-colaborar" fill />
             </div>
             <div className="hand hands-vector2">
-              <Image
-                src="/img/aboutUs/hand2.svg"
-                width="170px"
-                height="250px"
-                alt="hand-quiero-colaborar"
-                layout="responsive"
-              />
+              <Image src={hand2} alt="hand-quiero-colaborar" fill />
             </div>
             <div className="hand hands-vector3">
-              <Image
-                src="/img/aboutUs/hand3.svg"
-                width="170px"
-                height="250px"
-                alt="hand-quiero-colaborar"
-                layout="responsive"
-              />
+              <Image src={hand3} alt="hand-quiero-colaborar" fill />
             </div>
             <div className="hand hands-vector4">
-              <Image
-                src="/img/aboutUs/hand4.svg"
-                width="170px"
-                height="250px"
-                alt="hand-quiero-colaborar"
-                layout="responsive"
-              />
+              <Image src={hand4} alt="hand-quiero-colaborar" fill />
             </div>
             <div className="hand hands-vector5">
-              <Image
-                src="/img/aboutUs/hand5.svg"
-                width="170px"
-                height="250px"
-                alt="hand-quiero-colaborar"
-                layout="responsive"
-              />
+              <Image src={hand5} alt="hand-quiero-colaborar" fill />
             </div>
           </div>
         </HandsVector>

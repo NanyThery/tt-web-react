@@ -140,7 +140,7 @@ const Footer = () => {
               <div key={index}>
                 {item.active && (
                   <NavItem key={index}>
-                    <NavLink href={item.url}>
+                    <NavLink href={item.url} passHref>
                       <p>{item.label}</p>
                     </NavLink>
                   </NavItem>

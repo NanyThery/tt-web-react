@@ -59,10 +59,10 @@ const TimelineSectionContainer = styled.div`
   }
 `;
 
-const TimelineTweets = () => (
+const TimelineTweets = ({ copies }) => (
   <TimelineSectionContainer>
     <LeftCol>
-      {aboutUs.timelineTweets.map((tweet, index) => {
+      {copies.map((tweet, index) => {
         if (index % 2 == 0)
           return (
             <TwitterCard
@@ -79,7 +79,7 @@ const TimelineTweets = () => (
     </LeftCol>
     <div className="timeline-vector"></div>
     <RightCol>
-      {aboutUs.timelineTweets.map((tweet, index) => {
+      {copies.map((tweet, index) => {
         if (index % 2 != 0)
           return (
             <TwitterCard

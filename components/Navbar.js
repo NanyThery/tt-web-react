@@ -7,7 +7,7 @@ const Container = styled.div`
   position: fixed;
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 90px;
   background-color: transparent;
   transition: all 0.5s ease;
@@ -53,11 +53,11 @@ export const Navbar = ({ router, startingPosition }) => {
   return (
     <Container
       className={scrolledNavBar && "scrolled-navbar"}
-      startingPosition={startingPosition}
+      startingPosition={startingPosition.toString()}
     >
       <MobileNavbar router={router} />
       <DesktopNavbar
-        startingPosition={startingPosition}
+        startingPosition={startingPosition.toString()}
         isDarkMode={isDarkMode}
         scrolledNavBar={scrolledNavBar}
         router={router}

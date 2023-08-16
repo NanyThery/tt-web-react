@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import ReactModal from "react-modal";
 import styled from "styled-components";
@@ -86,7 +87,7 @@ export default function Modal({ title, children, isOpen, onClose }) {
       >
         {children}
         <CloseButton onClick={() => setModalIsOpen(false)}>
-          <img src="/img/close.svg" alt="Cerrar" />
+          <Image width={24} height={25} src="/img/close.svg" alt="Cerrar" />
         </CloseButton>
       </ReactModal>
     </>

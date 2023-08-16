@@ -4,6 +4,7 @@ import router from "next/router";
 import { StaffImage } from "./StaffImage";
 import { BadgesContainer, Badges } from "./Badges";
 import SocialLinks from "./SocialLinks";
+import Image from "next/image";
 
 const ModalContainer = styled.div`
   width: 600px;
@@ -77,7 +78,13 @@ const StaffMemberModal = ({ member }) => (
           {member.firstProgram && (
             <>
               <dt>
-                <img src="/img/program.svg" /> Primer Programa
+                <Image
+                  width={24}
+                  height={25}
+                  src="/img/program.svg"
+                  alt="Primer Programa"
+                />{" "}
+                Primer Programa
               </dt>
               <dd>{member.firstProgram}.</dd>
             </>
@@ -85,7 +92,13 @@ const StaffMemberModal = ({ member }) => (
           {member.hobbies && (
             <>
               <dt>
-                <img src="/img/hobby.svg" /> Hobbies
+                <Image
+                  width={24}
+                  height={25}
+                  src="/img/hobby.svg"
+                  alt="Hobbies"
+                />{" "}
+                Hobbies
               </dt>
               <dd>{member.hobbies}.</dd>
             </>
@@ -93,7 +106,13 @@ const StaffMemberModal = ({ member }) => (
           {member.quote && (
             <>
               <dt>
-                <img src="/img/quote.svg" /> Frase destacada
+                <Image
+                  width={24}
+                  height={25}
+                  src="/img/quote.svg"
+                  alt="Frase destacada"
+                />{" "}
+                Frase destacada
               </dt>
               <dd>“{member.quote}.”</dd>
             </>

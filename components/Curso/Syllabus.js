@@ -39,7 +39,7 @@ const Card = styled.li`
     color: ${(props) => props.theme.colors.text80};
   }
 
-  :before {
+  &:before {
     content: "";
     position: absolute;
     top: 20px;
@@ -49,13 +49,13 @@ const Card = styled.li`
     border-left: 1px dashed gray;
   }
 
-  :last-child:before {
+  &:last-child:before {
     height: 0;
   }
 
   @media screen and (max-width: 1100px) {
     padding: 32px 46px;
-    :before {
+    &:before {
       height: 400px;
     }
   }
@@ -69,7 +69,7 @@ const Card = styled.li`
       left: 32px;
       border-radius: 8px;
     }
-    :before {
+    &:before {
       height: 0;
     }
   }

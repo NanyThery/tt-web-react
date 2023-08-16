@@ -2,76 +2,100 @@ import styled from "styled-components";
 import SectionLayout from "../SectionLayout";
 import saly from "../../public/img/saly.png";
 import Image from "next/image";
+
 import { ButtonSecondaryWhite } from "../Button";
 import NavLink from "next/link";
 
-const FooterBanner = styled.div`
-  background: ${(props) => props.theme.gradients.backgroundOrange};
+const Container = styled((props) => <SectionLayout {...props} />)`
+  display: flex;
+  justify-content: space-between;
   border-radius: 6px;
+  background: white;
+  background: ${(props) => props.theme.gradients.backgroundOrange};
+  gap: 24px;
+  @media only screen and (max-width: 850px) {
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+`;
+const LeftCol = styled.div`
+  width: 50%;
+  height: 100%;
   color: white;
-  padding: 80px;
+  padding: 80px 0 80px 80px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  gap: 16px;
+
+  @media only screen and (max-width: 850px) {
+    width: 100%;
+    padding: 32px 32px 0 32px;
+    align-items: center;
+    color: ${(props) => props.theme.colors.white};
+  }
+`;
+
+const SponsorsContainer = styled.div`
   display: flex;
   width: 100%;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
   justify-content: center;
-  gap: 56px;
-  @media only screen and (max-width: 850px) {
-    gap: 28px;
-    flex-direction: column;
-    padding: 32px 16px;
-    text-align: center;
-  }
-  .copy {
-    max-width: 431px;
-    @media only screen and (max-width: 850px) {
-      h2 {
-        font-size: 28px;
-      }
-      p {
-        color: #f2f6ff;
-        font-size: 14px;
-        max-width: 350px;
-      }
+  align-items: center;
+
+  > div {
+    flex-shrink: 0;
+
+    :hover {
+      cursor: pointer;
     }
-  }
-  @media only screen and (max-width: 850px) {
-    .image {
-      max-width: 100%;
-    }
-  }
-  h2 {
-    margin-bottom: 18px;
-    line-height: 42px;
   }
 `;
 
-const StyledButtonWrapper = styled.div`
-  margin: 16px 0;
-`;
+const RightCol = styled.div`
+  width: 50%;
+  padding: 40px 40px 40px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
 
+  @media only screen and (max-width: 850px) {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    color: ${(props) => props.theme.colors.white};
+    height: 200px;
+  }
+`;
 const FooterSection = () => (
-  <SectionLayout>
-    <FooterBanner>
-      <div className="copy">
-        <h2>Únete a Teach[Tech]</h2>
-        <p>
-          Seguimos necesitando <strong>colaboradores</strong> que nos ayuden a
-          impulsar el proyecto. Si tienes un perfil en{" "}
-          <strong>programación, diseño, marketing, social media</strong> o
-          simplemente <strong>quieres ayudar</strong> y unirte a esta
-          apasionante aventura, ¡te esperamos!
-        </p>
-        <StyledButtonWrapper>
-          <NavLink href="/sign-up/voluntarios">
-            <ButtonSecondaryWhite>Quiero colaborar</ButtonSecondaryWhite>
-          </NavLink>
-        </StyledButtonWrapper>
-      </div>
-      <div className="image">
-        <Image src={saly} />
-      </div>
-    </FooterBanner>
-  </SectionLayout>
+  <Container>
+    <LeftCol>
+      <h2>Únete a Teach[Tech]</h2>
+      <p>
+        Seguimos necesitando <strong>colaboradores</strong> que nos ayuden a
+        impulsar el proyecto. Si tienes un perfil en{" "}
+        <strong>programación, diseño, marketing, social media</strong> o
+        simplemente <strong>quieres ayudar</strong> y unirte a esta apasionante
+        aventura, ¡te esperamos!
+      </p>
+
+      <NavLink href="/sign-up/voluntarios" passHref>
+        <ButtonSecondaryWhite>Quiero colaborar</ButtonSecondaryWhite>
+      </NavLink>
+    </LeftCol>
+    <RightCol>
+      <Image
+        style={{ objectFit: "contain" }}
+        src={saly}
+        alt="TeachT3ch aprende a programar"
+        fill
+      />
+    </RightCol>
+  </Container>
 );
 
 export default FooterSection;

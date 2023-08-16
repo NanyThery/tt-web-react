@@ -18,14 +18,18 @@ const Container = styled.div`
 `;
 
 const LeftCol = styled.div`
+  position: relative;
+  flex: 1;
+  flex-flow: column;
   display: flex;
-  height: 100%;
-  width: 255px;
+  width: 100%;
+  max-width: 255px;
   border-radius: 6px;
   overflow: hidden;
 
   @media only screen and (max-width: 850px) {
-    width: 125px;
+    width: 100%;
+    max-width: 125px;
     height: 125px;
   }
 `;
@@ -35,11 +39,17 @@ const RightCol = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  gap: 16px;
 `;
 
 const TagContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
+
+  @media only screen and (max-width: 850px) {
+    gap: 4px;
+  }
 `;
 
 const TopInfo = styled.div`
@@ -66,15 +76,14 @@ const BottomInfo = styled.div`
 export const BlogEntry = ({ postInfo }) => {
   const { tags, slug, title, featuredImg, userName, publishDate } = postInfo;
   return (
-    <NavLink href={`/blog/${slug}`} passHref>
+    <NavLink style={{ textDecoration: "none" }} href={`/blog/${slug}`} passHref>
       <Container>
         <LeftCol>
           <Image
+            style={{ objectFit: "cover" }}
             src={featuredImg}
             alt={title}
-            width={255}
-            height={155}
-            objectFit="cover"
+            fill
           />
         </LeftCol>
         <RightCol>

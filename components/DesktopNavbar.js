@@ -53,6 +53,11 @@ const NavItem = styled.div`
   cursor: pointer;
   border-bottom: none;
   transition: all 0.2s ease-in-out;
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
   &.active {
     background-color: ${(props) =>
       props.positiveStyle
@@ -61,12 +66,13 @@ const NavItem = styled.div`
     padding: 8px;
     border-radius: 4px;
   }
+
   & :hover {
     color: ${(props) =>
       props.positiveStyle
         ? props.theme.buttons.menuSelectedPositive
         : props.theme.buttons.menuSelectedNegative};
-    text-decoration: underline;
+    text-decoration : underline;
     margin-bottom: 5px;
   }
   ${(props) =>
@@ -91,7 +97,7 @@ const DesktopNavbar = ({
   const positiveStyle = (!isDarkMode && !scrolledNavBar) || scrolledNavBar;
   return (
     <NavbarContainerWrapper
-      startingPosition={startingPosition}
+      startingPosition={startingPosition.toString()}
       className={`${scrolledNavBar && "scrolled-navbar"} ${
         !isDarkMode && "lightBackground"
       }`}
@@ -114,7 +120,7 @@ const DesktopNavbar = ({
                     key={index}
                   >
                     <NavLink href={item.url} passHref>
-                      <p>{item.label}</p>
+                      {item.label}
                     </NavLink>
                   </NavItem>
                 )}

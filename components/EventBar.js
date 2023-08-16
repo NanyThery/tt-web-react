@@ -15,7 +15,7 @@ const DesktopWrapper = styled.div`
   min-height: 70px;
   padding: 0 25px;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   z-index: 10;
 
   > div:last-child {
@@ -117,7 +117,7 @@ const EventBar = ({
           </ImageContainer>
           <TextContainer>{eventTitle}</TextContainer>
           <StyledNavLink>
-            <NavLink href={eventLinkURL}>
+            <NavLink href={eventLinkURL} passHref>
               <p>{eventLinkText}</p>
             </NavLink>
           </StyledNavLink>
@@ -140,7 +140,7 @@ const EventBar = ({
             <TextContainer>
               {eventTitle}
               <StyledNavLink>
-                <NavLink href={eventLinkURL}>
+                <NavLink href={eventLinkURL} passHref>
                   <p>{eventLinkText}</p>
                 </NavLink>
               </StyledNavLink>
