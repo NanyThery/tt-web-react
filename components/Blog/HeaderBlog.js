@@ -13,8 +13,8 @@ const Container = styled.div`
   position: relative;
   align-items: center;
   width: 100%;
-  min-height: fit-content;
-  height: 700px;
+  min-height: 600px;
+
   background: ${(props) => props.theme.gradients.backgroundPurpleInverse};
   color: white;
 
@@ -100,12 +100,14 @@ const BottomInfo = styled.div`
   }
 `;
 
-const NavItem = styled.div`
+const NavItem = styled.div`ç
+  
   cursor: pointer;
 
   & :hover {
     text-decoration: underline;
   }
+  
 `;
 
 const StyledHeroContainer = styled((props) => <HeroContainer {...props} />)`
@@ -162,16 +164,14 @@ const HeaderBlog = ({ lastPost }) => {
       <StyledHeroContainer>
         <LeftCol>
           <Link href={`/blog/${lastPost.slug}`} passHref>
-            <div>
-              <Image
-                src={lastPost.featuredImg}
-                alt={lastPost.title}
-                width="540"
-                height="331"
-                layout="responsive"
-                objectFit="cover"
-              />
-            </div>
+            <Image
+              src={lastPost.featuredImg}
+              alt={lastPost.title}
+              width="540"
+              height="331"
+              layout="responsive"
+              objectFit="cover"
+            />
           </Link>
         </LeftCol>
         <RightCol>

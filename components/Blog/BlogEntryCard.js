@@ -38,7 +38,8 @@ const RightCol = styled.div`
 
 const TagContainer = styled.div`
   display: flex;
-  gap: 16px;
+  gap: 8px;
+  flex-wrap: wrap;
 `;
 
 const TopInfo = styled.div`
