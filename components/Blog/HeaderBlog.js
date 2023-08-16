@@ -100,7 +100,7 @@ const BottomInfo = styled.div`
   }
 `;
 
-const NavItem = styled.div`ç
+const NavItem = styled.div`
   
   cursor: pointer;
 
