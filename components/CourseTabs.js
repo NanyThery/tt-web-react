@@ -217,7 +217,7 @@ const CourseTabs = ({ isCourseOpen, variant = "image" }) => {
                   key={courseInfo[option]["imgFileName"]}
                   src={`/img/${courseInfo[option]["imgFileName"]}`}
                   alt="Imagen full power"
-                  fill="true"
+                  layout="fill"
                 />
               </div>
             </div>
