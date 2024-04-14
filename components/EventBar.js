@@ -41,6 +41,7 @@ const StyledNavLink = styled.div`
   }
   border-bottom: 1px solid ${(props) => props.theme.colors.purpleLight};
   white-space: nowrap;
+  a { text-decoration: none; }
 `;
 
 const ImageContainer = styled.div`
@@ -130,7 +131,7 @@ const EventBar = ({
           <div className="row">
             <ImageContainer>
               <Image
-                src="/img/event-bar.png"
+                src="/img/event-bar-2.png"
                 height="34"
                 width="34"
                 layout="fixed"
