@@ -385,7 +385,7 @@ export const courseInfo = {
         icon: "info",
         text: (
           <p>
-            <span className="bold"> Inscripciones para 2023 cerradas.</span>{" "}
+            <span className="bold"> Inscripciones cerradas.</span>{" "}
             Pero puedes apuntante a la{" "}
             <NavLink href="/#cta-section">newsletter</NavLink> para estar al
             tanto de las próximas ediciones y eventos.
@@ -418,7 +418,7 @@ export const courseInfo = {
         icon: "info",
         text: (
           <p>
-            <span className="bold"> Inscripciones para 2023 cerradas.</span>{" "}
+            <span className="bold"> Inscripciones cerradas.</span>{" "}
             Pero puedes apuntante a la{" "}
             <NavLink href="/#cta-section">newsletter</NavLink> para estar al
             tanto de las próximas ediciones y eventos.
@@ -432,11 +432,19 @@ export const courseInfo = {
 export const figures = [
   // Modify first element to update figures. If you want to keep track of the figures, unused data can be pushed to the end of the array. The home will only display the first two elements.
   {
-    event: "Última Edición (2022)",
+    event: "Última Edición (2023)",
+    figures: [
+      { number: 50, description: "Alumnxs FullPower y ATuAire" },
+      { number: "68%", description: "Alumnxs continúan formándose" },
+      { number: 35, description: "Profes y mentorxs" },
+    ],
+  },
+  {
+    event: "Tercera Edición (2022)",
     figures: [
       { number: 190, description: "Alumnxs FullPower y ATuAire" },
       { number: "79%", description: "Alumnxs continúan formándose" },
-      { number: 65, description: "Profes y mentorxs" },
+      { number: 68, description: "Profes y mentorxs" },
     ],
   },
   {

@@ -78,7 +78,7 @@ const MobileWrapper = styled(DesktopWrapper)`
     ${TextContainer} {
       width: 100%;
       flex-flow: column;
-      align-items: flex-start;
+      align-items: center;
     }
   }
 `;
