@@ -18,7 +18,7 @@ const StyledHeroContainer = styled((props) => <HeroContainer {...props} />)`
 `;
 const HeaderImage = styled((props) => (
   <div style={{ position: "relative", flex: 1 }} {...props}>
-    <Image src={props.src} alt="Colaboradores" fill />
+    <Image src={props.src} alt="Colaboradores" layout="fill" />
   </div>
 ))`
   width: 350px;

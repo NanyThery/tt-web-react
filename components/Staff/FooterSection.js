@@ -92,7 +92,7 @@ const FooterSection = () => (
         style={{ objectFit: "contain" }}
         src={saly}
         alt="TeachT3ch aprende a programar"
-        fill
+        layout="fill"
       />
     </RightCol>
   </Container>

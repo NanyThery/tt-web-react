@@ -22,7 +22,7 @@ export const AboutUsIllustration = styled(
         width={size[0]}
         height={size[1]}
       >
-        <Image src={src} alt="Illustration" fill />
+        <Image src={src} alt="Illustration" layout="fill" />
       </RandomIllustration>
     );
   }

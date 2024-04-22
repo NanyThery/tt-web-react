@@ -104,26 +104,26 @@ const SectionCollaboration = ({ copies }) => {
             src={handsMobile}
             style={{ objectFit: "contain", objectPosition: "bottom" }}
             alt="hand-quiero-colaborar"
-            fill
+            layout="fill"
           />
         </HandsVector>
       ) : (
         <HandsVector>
           <div className="hands-wrapper">
             <div className="hand hands-vector1">
-              <Image src={hand1} alt="hand-quiero-colaborar" fill />
+              <Image src={hand1} alt="hand-quiero-colaborar" layout="fill" />
             </div>
             <div className="hand hands-vector2">
-              <Image src={hand2} alt="hand-quiero-colaborar" fill />
+              <Image src={hand2} alt="hand-quiero-colaborar" layout="fill" />
             </div>
             <div className="hand hands-vector3">
-              <Image src={hand3} alt="hand-quiero-colaborar" fill />
+              <Image src={hand3} alt="hand-quiero-colaborar" layout="fill" />
             </div>
             <div className="hand hands-vector4">
-              <Image src={hand4} alt="hand-quiero-colaborar" fill />
+              <Image src={hand4} alt="hand-quiero-colaborar" layout="fill" />
             </div>
             <div className="hand hands-vector5">
-              <Image src={hand5} alt="hand-quiero-colaborar" fill />
+              <Image src={hand5} alt="hand-quiero-colaborar" layout="fill" />
             </div>
           </div>
         </HandsVector>

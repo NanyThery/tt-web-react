@@ -83,7 +83,7 @@ export const BlogEntry = ({ postInfo }) => {
             style={{ objectFit: "cover" }}
             src={featuredImg}
             alt={title}
-            fill
+            layout="fill"
           />
         </LeftCol>
         <RightCol>
