@@ -41,6 +41,7 @@ const StyledNavLink = styled.div`
   }
   border-bottom: 1px solid ${(props) => props.theme.colors.purpleLight};
   white-space: nowrap;
+  a { text-decoration: none; }
 `;
 
 const ImageContainer = styled.div`
@@ -77,7 +78,7 @@ const MobileWrapper = styled(DesktopWrapper)`
     ${TextContainer} {
       width: 100%;
       flex-flow: column;
-      align-items: flex-start;
+      align-items: center;
     }
   }
 `;
@@ -130,7 +131,7 @@ const EventBar = ({
           <div className="row">
             <ImageContainer>
               <Image
-                src="/img/event-bar.png"
+                src="/img/event-bar-2.png"
                 height="34"
                 width="34"
                 layout="fixed"

@@ -1,11 +1,10 @@
 export const eventBarInfo = {
-  showUntilTimeStamp: 1653893915000,
+  showUntilTimeStamp: 1725189263000,
   eventTitle: (
     <p>
-      Las inscripciones se encuentran cerradas. Muchas gracias a todos. Más
-      información en breve.
+      En 2024 no habrá curso de verano. Puedes leer la última entrada del blog.
     </p>
   ),
-  eventLinkText: "Contenido curso 2023 👉",
-  eventLinkURL: "curso",
+  eventLinkText: "🚨 Anuncio 🚨",
+  eventLinkURL: "/blog/no-edicion-2024",
 };
